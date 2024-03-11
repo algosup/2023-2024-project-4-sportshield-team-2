@@ -17,12 +17,8 @@
   - [III. Strategy](#iii-strategy)
       - [A. Test Strategy](#a-test-strategy)
       - [B. Testing Type](#b-testing-type)
-      - [C. Test cases](#c-test-cases)
   - [IV. Installation Qualification](#iv-installation-qualification)
-      - [V. Test Documentation](#v-test-documentation)
-  - [VI. Testing Schedule](#vi-testing-schedule)
-  - [VII. Revision History](#vii-revision-history)
-  - [VIII. Approvals](#viii-approvals)
+  - [V. Test Documentation](#v-test-documentation)
   - [Glossary](#glossary)
 
 </details>
@@ -56,7 +52,16 @@
 
 #### A. Testing Environment
 
-<span style="color:red">to be defined</span>
+Operating system : MacOS, Windows, Arduino
+language : C, Arduino
+Integrated Development Environment : VisualStudioCode
+Libraries :
+- [NRF52_MBED_TimerInterrupt](https://github.com/khoih-prog/NRF52_MBED_TimerInterrupt) V1.4.1
+- [ArduinoBLE](https://www.arduino.cc/reference/en/libraries/arduinoble/) V1.3.6
+- [Adafruit GPS Library](https://www.arduino.cc/reference/en/libraries/adafruit-gps-library/) V1.7.4 (install all)
+- [Sim800L http connector](https://www.arduino.cc/reference/en/libraries/sim800l-http-connector/) V1.14.0
+- [Seeed Arduino LSM6DS3](https://www.arduino.cc/reference/en/libraries/seeed-arduino-lsm6ds3/) V2.0.3
+- [OneWire](https://github.com/PaulStoffregen/OneWire) V2.3.7
 
 #### B. Testing Tool Requirements
 
@@ -74,33 +79,55 @@
 
 #### B. Testing Type
 
-<span style="color:red">to be defined</span>
+**Unit tests**
 
-#### C. Test cases
+Unit tests are very low level and close to the source of an application. They consist in testing individual methods and functions of the classes, components, or modules used by your software. Unit tests are generally quite cheap to automate and can run very quickly by a continuous integration server.
 
-<span style="color:red">link</span>
+**Integration tests**
+
+Integration tests verify that different modules or services used by your application work well together. For example, it can be testing the interaction with the database or making sure that microservices work together as expected. These types of tests are more expensive to run as they require multiple parts of the application to be up and running.
+
+**Functional tests**
+
+Functional tests focus on the business requirements of an application. They only verify the output of an action and do not check the intermediate states of the system when performing that action.
+
+**End-to-end tests**
+
+End-to-end testing replicates a user behavior with the software in a complete application environment. It verifies that various user flows work as expected.
+
+**Smoke tests**
+
+Smoke tests are basic tests that check the basic functionality of an application. They are meant to be quick to execute, and their goal is to give you the assurance that the major features of your system are working as expected.
+
+*source : [Atlsassian - types of software testing](https://www.atlassian.com/continuous-delivery/software-testing/types-of-software-testing)*
 
 ## IV. Installation Qualification
 
 <span style="color:red">to be defined</span>
 
-#### V. Test Documentation
+## V. Test Documentation
 
 <span style="color:red">to be defined</span>
 
-## VI. Testing Schedule
+**Criterias**
 
 <span style="color:red">to be defined</span>
 
-## VII. Revision History
+**Testing Schedule**
+
+| ID | Function | Developer | Description | Deadline | Completion date |
+| - | - | - | - | - | - |
+| 01 |  |  |  | XX/0X/2024 | XX/0X/2024 |
+| 02 |  |  |  | XX/0X/2024 | XX/0X/2024 |
+| 03 |  |  |  | XX/0X/2024 | XX/0X/2024 |
+| 04 |  |  |  | XX/0X/2024 | XX/0X/2024 |
+| 05 |  |  |  | XX/0X/2024 | XX/0X/2024 |
+
+**Test convention**
 
 <span style="color:red">to be defined</span>
 
-## VIII. Approvals
-
-<span style="color:red">to be defined</span>
-
-[Readme](https://github.com/algosup/2023-2024-project-4-sportshield-team-2/blob/main/README.md)
+[Test case](https://github.com/algosup/2023-2024-project-4-sportshield-team-2/issues) is done on GitHub issues category.
 
 ## Glossary
 
