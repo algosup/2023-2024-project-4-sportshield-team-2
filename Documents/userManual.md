@@ -44,10 +44,12 @@ A fully-charged SportShield has a battery life of 6+ days.
 
 To charge SportShield:
 
-1. Plug the charging cable into the USB port blabla.
-2. Hold the other end of the charging cable near the port on the back of the SportShield blabla.
+1. Plug the charging cable into the USB port.
+2. Hold the other end of the charging cable near the port on the back of the SportShield.
 
 <!--images of the steps-->
+
+The SportShield is now charging. Try to not use SportShield during its charging.
 
 <div style="page-break-after: always;"></div>
 
