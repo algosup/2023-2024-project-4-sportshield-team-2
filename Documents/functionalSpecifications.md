@@ -15,6 +15,15 @@ The goal of the project is to optimize the battery consumption to make keep it a
   - [Functional requirements](#functional-requirements)
   - [Deliverables and milestones](#deliverables-and-milestones)
   - [Personas and use cases](#personas-and-use-cases)
+    - [Persona 1 - Ashley Ricks](#persona-1---ashley-ricks)
+      - [Goals](#goals)
+      - [Challenges](#challenges)
+    - [Persona 2 - William Greener](#persona-2---william-greener)
+      - [Goals](#goals-1)
+      - [Challenges](#challenges-1)
+    - [Persona 3 - Steve Sinclair](#persona-3---steve-sinclair)
+      - [Goals](#goals-2)
+      - [Challenges](#challenges-2)
   - [Acceptance criteria](#acceptance-criteria)
   - [Solution overview](#solution-overview)
     - [Errors](#errors)
@@ -84,7 +93,45 @@ No libraries outside of the ones already use in the existing software.
 
 ## Personas and use cases
 
+### Persona 1 - Ashley Ricks
 
+Ashley Ricks is a 22-year-old student in vacation to the mountain.
+
+#### Goals
+  - Ashley want to secure her skies with the SportShield.
+  - She hope the system is secured and she will not receive false positive.
+
+#### Challenges
+  - Ashley needs to be able to let her skies in outdoor lockers without the sportshield freeze.
+  - She needs to be able to use it during the entire week without running out of battery.
+  - She needs to by notice if someone touch to her skies.
+
+### Persona 2 - William Greener
+
+William is a 37-year-old fan of surfs where I goes everymonth.
+
+#### Goals
+  - He aims to use the product for a while.
+  - He want to secure is surf board.
+  - He want to be able to use it during an entire week-end or during is vacation in the Canary Islands.
+
+#### Challenges
+  - Bill needs a product which will not burn in the heat sun of Canary islandes.
+  - He needs a production wich will not run out of battery.
+  - He need a device that is durable and weatherproof to withstand outdoor conditions (Water & Sand).
+
+### Persona 3 - Steve Sinclair
+
+Steve Sinclair is a 63-year-old retreated. He is in road trip around the world with his wife, to enjoy his retreat.
+
+#### Goals
+  - He want to protect is stuff will he is not in his camping-car.
+  - He intends to stay alert if someone touch to his stuff but he is not very good with smartphones.
+
+#### Challenges
+  - He need to be able to use another way of unlocking than his smartphone.
+  - He intends a hardware which will resist to different climate he can encounter.
+  - It should have a connectivity around the world.
 
 ## Acceptance criteria
 
