@@ -2,7 +2,7 @@
 
 This project was requested by [Coris Innovation](https://www.corisinnovation.com/), a French IT company.
 
-The goal of the project is to optimize the consumption to make it last longer, from 3 days to 7 days or more, adding NFC component, improve the security and the user experience based on the existing prototype.
+The goal of the project is to optimize the consumption to make it last longer, from 3 days to 7 days or more, adding NFC [[1]](#glossary-1) component, improve the security and the user experience based on the existing prototype.
 
 <details>
 <summary>Table of Contents</summary>
@@ -53,22 +53,22 @@ The goal of the project is to optimize the consumption to make it last longer, f
 
 ### Other stakeholders
 
-| Name    | Occupation                                                    | Links                                       |
-| ------- | ------------------------------------------------------------- | ------------------------------------------- |
-| Florent | Client (Coris Innovation - Management of innovative projects) | [Website](https://www.corisinnovation.com/) |
+| Name         | Occupation                                                    | Links                                       |
+| ------------ | ------------------------------------------------------------- | ------------------------------------------- |
+| Florent ANON | Client (Coris Innovation - Management of innovative projects) | [Website](https://www.corisinnovation.com/) |
 
 ## Project scope
 
 We have multiple objectives for this project:
 - Reducing the battery consumption.
 - Increasing the security.
-- Implement the NFC module.
+- Implement the NFC [[1]](#glossary-1) module.
 - Improve the alarm function to be able to stop it whenever we want, either the alarm cycle is finished or not.
 
 ## Functional requirements
 
 The SportShield must allow for the following actions:
-- Send device information to the API
+- Send device information to the API [[2]](#glossary-2)
   - Battery level
   - Position (latitude, longitude)
   - Movement (rotation, new position)
@@ -77,7 +77,7 @@ The SportShield must allow for the following actions:
   - 5 long high sounds when a strong shock is detected
   - Give possibility for user to make the alarm stop ringing whenever he wants.
 
-All the code must be written in the Arduino's language (a variant of the C++ programming language), following the existing code convention. No libraries except the ones that have already been given are allowed.
+All the code must be written in the Arduino's [[3]](#glossary-3) language (a variant of the C++ [[4]](#glossary-4) programming language), following the existing code convention. No libraries except the ones that have already been given are allowed.
 
 ## Deliverables and milestones
 
@@ -151,7 +151,7 @@ To ensure that the project is viable, all the specifications must be approved by
 ### Errors
 
 The program will must never be stuck on an issue, and continue without this features in the following case:
-- **Impossible to reach the API server**
+- **Impossible to reach the API [[2]](#glossary-2) server**
   - Retrying in few minutes
 - **Impossible to find a signal**
   -  Retrying in few minutes
@@ -178,9 +178,9 @@ In the event the client decides to change their requirements, we must be able to
 
 ### Usability
 
-Although we used a selfmade API to test efficently the program the client can easily replace it by is own API.
+Although we used a selfmade API [[2]](#glossary-2) to test efficently the program the client can easily replace it by is own API [[2]](#glossary-2).
 
-This API will receive JSON array cointaing device informations like:
+This API [[2]](#glossary-2) will receive JSON [[5]](#glossary-5) array cointaing device informations like:
 ```json
 {
     "latitude":"{currentLatitude}", 
@@ -189,7 +189,7 @@ This API will receive JSON array cointaing device informations like:
 }
 ```
 
-but we will probably add some usefull information like batterie level (in percent), which you can use or not in your API
+but we will probably add some usefull information like batterie level (in percent), which you can use or not in your API [[2]](#glossary-2)
 
 ### Security
 
@@ -199,17 +199,27 @@ We can update the internal program by plugin on the charging port, it can lead t
 
 
 
-| ID  | Description                                 | Risks                                                                                                                                                                                    | Impact | Likelihood | Solution                                                                                                                                                                     |
-| --- | ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | Difficulty to understand the existing code. | We may not clearly understand how the existing code works leading to a bad implementation or program issues.                                                                             | ![High](https://img.shields.io/badge/High-bb2124)   | ![Medium](https://img.shields.io/badge/Medium-E4A11B)     | We should reverse Engineer the program and comment uncommented stuff.                                                                                                        |
-| 2   | Hardware issue or code misswriting.         | As a prototype not used very often, the hardware can malfunctionning leading to understandable issue if not detected as soon as possible, and the libraries or API urls can be outdated. | ![High](https://img.shields.io/badge/High-bb2124)   | ![Low](https://img.shields.io/badge/Low-3B71CA)        | We will test each hardware module and the existing/fixing if needed before working on it improvement.                                                                        |
-| 3   | Lack of documentation for reference.        | Inadequate documentation may hinder troubleshooting or leading to inefficiencies or delays.                                                                                              | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | ![Medium](https://img.shields.io/badge/Medium-E4A11B)     | Implement a documentation strategy to comprehensively capture, components, and usage instructions.                                                                           |
-| 4   | Inadequate security measures                | Inadequate security measures could make the device vulnerable to unauthorized access or data breaches, compromising user privacy and system integrity.                                   | ![High](https://img.shields.io/badge/High-bb2124)   | ![Low](https://img.shields.io/badge/Low-3B71CA)        | Implement robust encryption protocols, secure authentication mechanisms, and regular security audits.                                                                        |
-| 5   | Environmental factors affecting performance | Environmental factors such as temperature, humidity, or physical shocks may impact the device's performance or durability, affecting its reliability in various conditions.              | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | ![Medium](https://img.shields.io/badge/Medium-E4A11B)     | Conduct rigorous environmental testing to assess the device's performance under different conditions.                                                                        |
-| 6   | Lack of user acceptance                     | If users do not find the device easy to use, intuitive, or beneficial, adoption rates may be low, leading to reduced market penetration and revenue generation.                          | ![High](https://img.shields.io/badge/High-bb2124)   | ![Medium](https://img.shields.io/badge/Medium-E4A11B)     | Conduct user research and usability testing to understand user needs and preferences, incorporate feedback into the design process, and provide comprehensive user training. |
+| ID  | Description                                 | Risks                                                                                                                                                                                    | Impact                                                | Likelihood                                            | Solution                                                                                                                                                                     |
+| --- | ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1**   | Difficulty to understand the existing code. | We may not clearly understand how the existing code works leading to a bad implementation or program issues.                                                                             | ![High](https://img.shields.io/badge/High-bb2124)     | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | We should reverse Engineer the program and comment uncommented stuff.                                                                                                        |
+| **2**   | Hardware issue or code misswriting.         | As a prototype not used very often, the hardware can malfunctionning leading to understandable issue if not detected as soon as possible, and the libraries or API [[2]](#glossary-2) urls can be outdated. | ![High](https://img.shields.io/badge/High-bb2124)     | ![Low](https://img.shields.io/badge/Low-3B71CA)       | We will test each hardware module and the existing/fixing if needed before working on it improvement.                                                                        |
+| **3**   | Lack of documentation for reference.        | Inadequate documentation may hinder troubleshooting or leading to inefficiencies or delays.                                                                                              | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | Implement a documentation strategy to comprehensively capture, components, and usage instructions.                                                                           |
+| **4**   | Inadequate security measures                | Inadequate security measures could make the device vulnerable to unauthorized access or data breaches, compromising user privacy and system integrity.                                   | ![High](https://img.shields.io/badge/High-bb2124)     | ![Low](https://img.shields.io/badge/Low-3B71CA)       | Implement robust encryption protocols, secure authentication mechanisms, and regular security audits.                                                                        |
+| **5**   | Environmental factors affecting performance | Environmental factors such as temperature, humidity, or physical shocks may impact the device's performance or durability, affecting its reliability in various conditions.              | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | Conduct rigorous environmental testing to assess the device's performance under different conditions.                                                                        |
+| **6**   | Lack of user acceptance                     | If users do not find the device easy to use, intuitive, or beneficial, adoption rates may be low, leading to reduced market penetration and revenue generation.                          | ![High](https://img.shields.io/badge/High-bb2124)     | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | Conduct user research and usability testing to understand user needs and preferences, incorporate feedback into the design process, and provide comprehensive user training. |
 
 ## Future improvements
 
-<!-- TODO: After we choose what we will get or not -->
+<!-- TODO: After we choose what we will do or not -->
+
+[test](#glossary-1)
 
 ## Glossary
+
+| Id                       | Term        | Definition                                                                                                                                                                                                                     | What it means in this project                                                                              | Additional Content                                                  |
+| :----------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| <p id="glossary-1">1</p> | **NFC**     | Near Field Communication (NFC) is a set of short-range wireless technologies, typically requiring a distance of 4 cm or less to initiate a connection.                                                                         | The SportShield will be able to be lock or unlock with a card or a badge.                                  | [Wikipedia](https://en.wikipedia.org/wiki/Near-field_communication) |
+| <p id="glossary-2">2</p> | **API**     | API stands for Application Programming Interface. In the context of APIs, the word Application refers to any software with a distinct function. Interface can be thought of as a contract of service between two applications. | The device must send data from the application through the API to keep the user informed of device status. | [Wikipedia](https://en.wikipedia.org/wiki/API)                      |
+| <p id="glossary-3">3</p> | **Arduino** | Arduino is an Italian open-source hardware and software company, project, and user community that designs and manufactures single-board microcontrollers and microcontroller kits for building digital devices.                | We will used Arduino IDE and a variant of C++ made for arduino during this project.                        | [Wikipedia](https://en.wikipedia.org/wiki/Arduino)                  |
+| <p id="glossary-4">4</p> | **C++**     | C++ is a high-level, general-purpose programming language created by Danish computer scientist Bjarne Stroustrup.                                                                                                              | Arduino's Language is a variant for C++ specialized to managed their microcontrollers.                     | [Wikipedia](https://en.wikipedia.org/wiki/C%2B%2B)                  |
+| <p id="glossary-5">5</p> | **JSON**    | JSON is a text format that is completely language independent but uses conventions that are familiar to programmers of the C-family of languages, including C, C++.                                                            | Information about the device (position, battery, etc...) will be sent to the API in JSON format.           | [Wikipedia](https://en.wikipedia.org/wiki/JSON)                     |
