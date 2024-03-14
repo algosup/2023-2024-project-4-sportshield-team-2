@@ -77,7 +77,7 @@ The SportShield must allow for the following actions:
   - 5 long high sounds when a strong shock is detected
   - Give possibility for user to make the alarm stop ringing whenever he wants.
 
-All the code must be written in the Arduino language (a variant of the C++ programming language), following the existing code convention. No libraries except the ones that have already been given are allowed.
+All the code must be written in the Arduino's language (a variant of the C++ programming language), following the existing code convention. No libraries except the ones that have already been given are allowed.
 
 ## Deliverables and milestones
 
@@ -115,7 +115,7 @@ William is a 37 years old fan of surfing, where he goes every month.
   - He wants to be able to use it during an entire week-end or during his vacation in the Canary Islands.
 
 #### Challenges
-  - Bill needs a product which won't burn under the sun's heat of Canary islandes.
+  - William needs a product which won't burn under the sun's heat of Canary islandes.
   - He needs a product which won't often run out of battery.
   - He needs a durable and weatherproof device to withstand outdoor conditions (Water & Sand).
 
@@ -199,12 +199,17 @@ We can update the internal program by plugin on the charging port, it can lead t
 
 
 
-| ID  | Description                                 | Risks                                                                                                                                                                                    | Impact | Likelihood | Solution                                                                                              |
-| --- | ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ---------- | ----------------------------------------------------------------------------------------------------- |
-| 1   | Difficulty to understand the existing code. | We may not clearly understand how the existing code works leading to a bad implementation or program issues.                                                                             | High   | Medium     | We should reverse Engineer the program and comment uncommented stuff.                                 |
-| 2   | Hardware issue or code misswriting.         | As a prototype not used very often, the hardware can malfunctionning leading to understandable issue if not detected as soon as possible, and the libraries or API urls can be outdated. | High   | Low        | We will test each hardware module and the existing/fixing if needed before working on it improvement. |
-| 3   |                                             |                                                                                                                                                                                          |        |            |                                                                                                       |
+| ID  | Description                                 | Risks                                                                                                                                                                                    | Impact | Likelihood | Solution                                                                                                                                                                     |
+| --- | ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Difficulty to understand the existing code. | We may not clearly understand how the existing code works leading to a bad implementation or program issues.                                                                             | ![High](https://img.shields.io/badge/High-bb2124)   | ![Medium](https://img.shields.io/badge/Medium-E4A11B)     | We should reverse Engineer the program and comment uncommented stuff.                                                                                                        |
+| 2   | Hardware issue or code misswriting.         | As a prototype not used very often, the hardware can malfunctionning leading to understandable issue if not detected as soon as possible, and the libraries or API urls can be outdated. | ![High](https://img.shields.io/badge/High-bb2124)   | ![Low](https://img.shields.io/badge/Low-3B71CA)        | We will test each hardware module and the existing/fixing if needed before working on it improvement.                                                                        |
+| 3   | Lack of documentation for reference.        | Inadequate documentation may hinder troubleshooting or leading to inefficiencies or delays.                                                                                              | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | ![Medium](https://img.shields.io/badge/Medium-E4A11B)     | Implement a documentation strategy to comprehensively capture, components, and usage instructions.                                                                           |
+| 4   | Inadequate security measures                | Inadequate security measures could make the device vulnerable to unauthorized access or data breaches, compromising user privacy and system integrity.                                   | ![High](https://img.shields.io/badge/High-bb2124)   | ![Low](https://img.shields.io/badge/Low-3B71CA)        | Implement robust encryption protocols, secure authentication mechanisms, and regular security audits.                                                                        |
+| 5   | Environmental factors affecting performance | Environmental factors such as temperature, humidity, or physical shocks may impact the device's performance or durability, affecting its reliability in various conditions.              | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | ![Medium](https://img.shields.io/badge/Medium-E4A11B)     | Conduct rigorous environmental testing to assess the device's performance under different conditions.                                                                        |
+| 6   | Lack of user acceptance                     | If users do not find the device easy to use, intuitive, or beneficial, adoption rates may be low, leading to reduced market penetration and revenue generation.                          | ![High](https://img.shields.io/badge/High-bb2124)   | ![Medium](https://img.shields.io/badge/Medium-E4A11B)     | Conduct user research and usability testing to understand user needs and preferences, incorporate feedback into the design process, and provide comprehensive user training. |
 
 ## Future improvements
+
+<!-- TODO: After we choose what we will get or not -->
 
 ## Glossary
