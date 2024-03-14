@@ -101,7 +101,7 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 
 | Ashley Ricks                                                                                  | 22 years old                                                                                                                                                                                                                         |
 | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <img alt="Ashley Picture" src="./Img/functional/ashley_ricks.png" style="max-height: 200px;"> | **Description:**<br>A vibrant young woman, revels in the exhilarating rush of vacationing amidst the clouds. She finds herself gliding gracefully down a majestic snow-capped mountain, her skis carving elegant trails in the pristine white snowscape. |
+| <img alt="Ashley Picture" src="./Img/functional/ashley_ricks.png" style="max-width: 200px;"> | **Description:**<br>A vibrant young woman, revels in the exhilarating rush of vacationing amidst the clouds. She finds herself gliding gracefully down a majestic snow-capped mountain, her skis carving elegant trails in the pristine white snowscape. |
 
 #### Goals
   - Ashley wants to secure her skies with the SportShield.
@@ -118,7 +118,7 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 
 | William Greener                                                                                | 37 years old                                                                                                                                                                                                                                   |
 | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <img alt="Bill Picture" src="./Img/functional/william_greener.png" style="max-height: 200px;"> | **Description:**<br>A seasoned adventurer, embodies the spirit of freedom and adventure as he stands tall on the golden sands of the Canary Islands. He eagerly awaits the beckoning waves, ready to embrace the thrill of surfing beneath the warm, tropical sun. |
+| <img alt="Bill Picture" src="./Img/functional/william_greener.png" style="max-width: 200px;"> | **Description:**<br>A seasoned adventurer, embodies the spirit of freedom and adventure as he stands tall on the golden sands of the Canary Islands. He eagerly awaits the beckoning waves, ready to embrace the thrill of surfing beneath the warm, tropical sun. |
 
 #### Goals
   - He wants to get used to use the project.
@@ -137,7 +137,7 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 
 | Steve Sinclair                                              | 63 years old                                                                                                                      |
 | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| <img alt="Steve Picture" src="./Img/functional/steve_sinclair.png" style="max-height: 200px;"> | **Description:**<br>An old man with a white and gray beard, he is traveling around the world with his wife in a camping-car, to enjoy his retirement. |
+| <img alt="Steve Picture" src="./Img/functional/steve_sinclair.png" style="max-width: 200px;"> | **Description:**<br>An old man with a white and gray beard, he is traveling around the world with his wife in a camping-car, to enjoy his retirement. |
 
 #### Goals
   - He wants to protect his stuff will he is not in his camping-car.
