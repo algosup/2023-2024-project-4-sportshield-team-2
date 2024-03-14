@@ -2,7 +2,7 @@
 
 This project was requested by [Coris Innovation](https://www.corisinnovation.com/), a French IT company.
 
-The goal of the project is to optimize the battery consumption to keep it alive from 3 days to 7 days or more, adding NFC component, improve the security and the user experience based on the existing prototype.
+The goal of the project is to optimize the consumption to make it last longer, from 3 days to 7 days or more, adding NFC component, improve the security and the user experience based on the existing prototype.
 
 <details>
 <summary>Table of Contents</summary>
@@ -203,6 +203,7 @@ We can update the internal program by plugin on the charging port, it can lead t
 | --- | ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ---------- | ----------------------------------------------------------------------------------------------------- |
 | 1   | Difficulty to understand the existing code. | We may not clearly understand how the existing code works leading to a bad implementation or program issues.                                                                             | High   | Medium     | We should reverse Engineer the program and comment uncommented stuff.                                 |
 | 2   | Hardware issue or code misswriting.         | As a prototype not used very often, the hardware can malfunctionning leading to understandable issue if not detected as soon as possible, and the libraries or API urls can be outdated. | High   | Low        | We will test each hardware module and the existing/fixing if needed before working on it improvement. |
+| 3   |                                             |                                                                                                                                                                                          |        |            |                                                                                                       |
 
 ## Future improvements
 
