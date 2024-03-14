@@ -26,6 +26,11 @@ The goal of the project is to optimize the consumption to make it last longer, f
       - [Challenges](#challenges-2)
   - [Acceptance criteria](#acceptance-criteria)
   - [Solution overview](#solution-overview)
+    - [Movement Detection Improvement](#movement-detection-improvement)
+    - [Battery Management Improvement](#battery-management-improvement)
+    - [Security Improvement](#security-improvement)
+    - [Alarm Management](#alarm-management)
+    - [NFC Reader](#nfc-reader)
     - [Errors](#errors)
     - [Usage](#usage)
   - [Non-functional requirements](#non-functional-requirements)
@@ -94,7 +99,9 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 
 ### Persona 1 - Ashley Ricks
 
-Ashley Ricks is a 22 years old student in vacation to the mountain.
+| Ashley Ricks                                                                                  | 22 years old                                                                                                                                                                                                                         |
+| --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| <img alt="Ashley Picture" src="./Img/functional/ashley_ricks.png" style="max-height: 200px;"> | **Description:**<br>A vibrant young woman, revels in the exhilarating rush of vacationing amidst the clouds. She finds herself gliding gracefully down a majestic snow-capped mountain, her skis carving elegant trails in the pristine white snowscape. |
 
 #### Goals
   - Ashley wants to secure her skies with the SportShield.
@@ -105,9 +112,13 @@ Ashley Ricks is a 22 years old student in vacation to the mountain.
   - She needs to be able to use it during the entire week without running out of battery.
   - She needs to be notice if someone touch to her skies.
 
+<hr>
+
 ### Persona 2 - William Greener
 
-William is a 37 years old fan of surfing, where he goes every month.
+| William Greener                                                                                | 37 years old                                                                                                                                                                                                                                   |
+| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img alt="Bill Picture" src="./Img/functional/william_greener.png" style="max-height: 200px;"> | **Description:**<br>A seasoned adventurer, embodies the spirit of freedom and adventure as he stands tall on the golden sands of the Canary Islands. He eagerly awaits the beckoning waves, ready to embrace the thrill of surfing beneath the warm, tropical sun. |
 
 #### Goals
   - He wants to get used to use the project.
@@ -119,9 +130,14 @@ William is a 37 years old fan of surfing, where he goes every month.
   - He needs a product which won't often run out of battery.
   - He needs a durable and weatherproof device to withstand outdoor conditions (Water & Sand).
 
+<hr>
+
 ### Persona 3 - Steve Sinclair
 
-Steve Sinclair is a 63 years old retired. He is in road trip around the world with his wife, to enjoy his retirement.
+
+| Steve Sinclair                                              | 63 years old                                                                                                                      |
+| ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| <img alt="Steve Picture" src="./Img/functional/steve_sinclair.png" style="max-height: 200px;"> | **Description:**<br>An old man with a white and gray beard, he is traveling around the world with his wife in a camping-car, to enjoy his retirement. |
 
 #### Goals
   - He wants to protect his stuff will he is not in his camping-car.
@@ -131,6 +147,8 @@ Steve Sinclair is a 63 years old retired. He is in road trip around the world wi
   - He needs to be able to use another way to unlock than his smartphone.
   - He wants a hardware which will resist to different climates he may encounter.
   - It should have a connectivity around the world.
+
+<hr>
 
 ## Acceptance criteria
 
@@ -146,7 +164,38 @@ To ensure that the project is viable, all the specifications must be approved by
 
 ## Solution overview
 
-<!-- TODO: List all our solutions -->
+### Movement Detection Improvement
+The actual movement detection trigger the alarm only on rotation.
+
+| Problem Occurs | Solution |
+| ---- | ---- |
+| We can move the device on until we don't rotate it, it doesn't ring. | We add a detection on axis x, y. |
+
+### Battery Management Improvement
+
+| Problem Occurs | Solution |
+| --- | --- |
+| A full battery will be empty in 3 days. | - We must check each component one by one to reduce the using consumption.<br>- Turn all component in sleep mode when we don't need them. |
+| The electromagnet consume a lot of energy | We will active it less than 1 second when we need it. |
+
+### Security Improvement
+
+By default the device is accessible to everyone.
+
+| Problem Occurs | Solution |
+| --- | --- |
+| Everyone can lock or unlock the SportShield | We will restreint the authentication to the owner or trust people |
+
+### Alarm Management
+
+| Problem Occurs | Solution |
+| --- | --- |
+| While the alarm is ringing, all others actions are unavailable | We will modify alarm to make it ringing while others action are executed (possibility for the user to disable the alarm at any moment) |
+| The alarm is too loud. | We want to reduced the decible from 135dB to 80dB, to readuce damage on the hearing. |
+
+### NFC Reader
+
+Currently, the NFC reader isn't implemented yet, we should include it for an easier usage of the product, make user able to unlock/lock the Sport with a NFC card or badge (without their smartphone), or by contact with their smartphone (depending of brand and phone's model).
 
 ### Errors
 
@@ -199,20 +248,18 @@ We can update the internal program by plugin on the charging port, it can lead t
 
 
 
-| ID  | Description                                 | Risks                                                                                                                                                                                    | Impact                                                | Likelihood                                            | Solution                                                                                                                                                                     |
-| --- | ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **1**   | Difficulty to understand the existing code. | We may not clearly understand how the existing code works leading to a bad implementation or program issues.                                                                             | ![High](https://img.shields.io/badge/High-bb2124)     | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | We should reverse Engineer the program and comment uncommented stuff.                                                                                                        |
-| **2**   | Hardware issue or code misswriting.         | As a prototype not used very often, the hardware can malfunctionning leading to understandable issue if not detected as soon as possible, and the libraries or API [[2]](#glossary-2) urls can be outdated. | ![High](https://img.shields.io/badge/High-bb2124)     | ![Low](https://img.shields.io/badge/Low-3B71CA)       | We will test each hardware module and the existing/fixing if needed before working on it improvement.                                                                        |
-| **3**   | Lack of documentation for reference.        | Inadequate documentation may hinder troubleshooting or leading to inefficiencies or delays.                                                                                              | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | Implement a documentation strategy to comprehensively capture, components, and usage instructions.                                                                           |
-| **4**   | Inadequate security measures                | Inadequate security measures could make the device vulnerable to unauthorized access or data breaches, compromising user privacy and system integrity.                                   | ![High](https://img.shields.io/badge/High-bb2124)     | ![Low](https://img.shields.io/badge/Low-3B71CA)       | Implement robust encryption protocols, secure authentication mechanisms, and regular security audits.                                                                        |
-| **5**   | Environmental factors affecting performance | Environmental factors such as temperature, humidity, or physical shocks may impact the device's performance or durability, affecting its reliability in various conditions.              | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | Conduct rigorous environmental testing to assess the device's performance under different conditions.                                                                        |
-| **6**   | Lack of user acceptance                     | If users do not find the device easy to use, intuitive, or beneficial, adoption rates may be low, leading to reduced market penetration and revenue generation.                          | ![High](https://img.shields.io/badge/High-bb2124)     | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | Conduct user research and usability testing to understand user needs and preferences, incorporate feedback into the design process, and provide comprehensive user training. |
+| ID    | Description                                 | Risks                                                                                                                                                                                                       | Impact                                                | Likelihood                                            | Solution                                                                                                                                                                     |
+| ----- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1** | Difficulty to understand the existing code. | We may not clearly understand how the existing code works leading to a bad implementation or program issues.                                                                                                | ![High](https://img.shields.io/badge/High-bb2124)     | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | We should reverse Engineer the program and comment uncommented stuff.                                                                                                        |
+| **2** | Hardware issue or code misswriting.         | As a prototype not used very often, the hardware can malfunctionning leading to understandable issue if not detected as soon as possible, and the libraries or API [[2]](#glossary-2) urls can be outdated. | ![High](https://img.shields.io/badge/High-bb2124)     | ![Low](https://img.shields.io/badge/Low-3B71CA)       | We will test each hardware module and the existing/fixing if needed before working on it improvement.                                                                        |
+| **3** | Lack of documentation for reference.        | Inadequate documentation may hinder troubleshooting or leading to inefficiencies or delays.                                                                                                                 | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | Implement a documentation strategy to comprehensively capture, components, and usage instructions.                                                                           |
+| **4** | Inadequate security measures                | Inadequate security measures could make the device vulnerable to unauthorized access or data breaches, compromising user privacy and system integrity.                                                      | ![High](https://img.shields.io/badge/High-bb2124)     | ![Low](https://img.shields.io/badge/Low-3B71CA)       | Implement robust encryption protocols, secure authentication mechanisms, and regular security audits.                                                                        |
+| **5** | Environmental factors affecting performance | Environmental factors such as temperature, humidity, or physical shocks may impact the device's performance or durability, affecting its reliability in various conditions.                                 | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | Conduct rigorous environmental testing to assess the device's performance under different conditions.                                                                        |
+| **6** | Lack of user acceptance                     | If users do not find the device easy to use, intuitive, or beneficial, adoption rates may be low, leading to reduced market penetration and revenue generation.                                             | ![High](https://img.shields.io/badge/High-bb2124)     | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | Conduct user research and usability testing to understand user needs and preferences, incorporate feedback into the design process, and provide comprehensive user training. |
 
 ## Future improvements
 
 <!-- TODO: After we choose what we will do or not -->
-
-[test](#glossary-1)
 
 ## Glossary
 
