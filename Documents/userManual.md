@@ -15,7 +15,14 @@
    - [What's in the box](#whats-in-the-box)
    - [Charge your SportShield](#charge-your-sportshield)
    - [Set up SportShield](#set-up-sportshield)
- - [How to place SportShield](#how-to-place-sportshield)
+ - [How to lock SportShield](#how-to-lock-sportshield)
+ - [How to unlock SportShield](#how-to-unlock-sportshield)
+ - [Alarm](#alarm)
+ - [App](#app)
+   - [Set up](#app-set-up)
+   - [App Settings](#app-settings)
+ - [Robustness Assurance](#robustness-assurance)
+ - [Security](#security)
 </details>
 
 <div style="page-break-after: always;"></div>
@@ -28,8 +35,11 @@ SportShield is an innovative anti-theft device designed for sports equipment, eq
 ## What's in the box
 
 Your SportShield includes:
-<!--images of the included stuff-->
+- Anti-theft SportShield device
+- A charger
+- This user manual
 
+<!--images of the included stuff-->
 <!-- <div align="center">
 ![device](device.png)
 ![charger](charger.png)
@@ -49,12 +59,67 @@ To charge SportShield:
 
 <!--images of the steps-->
 
+<br>
+
 The SportShield is now charging. Try to not use SportShield during its charging.
 
 <div style="page-break-after: always;"></div>
 
 
 ## Set up SportShield
+
+To fully use the SportShield device, you'd need to set up few things with your smartphone. <br>
+You can either set up by Bluetooth or with the SportShield app.
+By Bluetooth:
+- Enable your Bluetooth connection on your phone.
+- You'd find a device named "SportShield".
+- Connect your smartphone with the device.
+With the SportShield app, see the [dedicated manual part](#app-set-up).
+<br>
+
+For more information, see 
+
+<br>
+
+The SportShield is now set up, you can use whenever and wherever you want.
+
+<div style="page-break-after: always;"></div>
+
+# How to lock SportShield 
+
+The SportShield prevents your sport belongings from thiefs. Its installation deals with few steps:
+1. Wind the cable.
+2. Surround your belongings with the cable.
+3. Attach the other end of the cable to the plug.
+
+<!--images of the steps-->
+
+<br>
+The SportShield is now locked, and you won't be able to pull the cable.
+
+<br>
+
+# How to unlock SportShield 
+
+SportShield's uninstallation is quite simple. You can unlock it either by Bluetooth or with the app. 
+By Bluetooth:
+1. When you're connected to the device, go on the device's settings.
+2. Click on the "Unlock" button to unlock SportShield.
+With the app:
+<!--steps with the app-->
+
+<br>
+The SportShield is now unlocked. You can take it back.
+
+<br>
+
+# Alarm
+
+When the SportShield is locked, each detected shock will ring an alarm. <br>The alarm's intensity depends on the shock intensity.
+
+# App
+
+## App Set up
 
 Set up SportShield with the SportShield app <!--for IPhone? Android?-->. 
 
@@ -65,20 +130,16 @@ To get started:
 2. Open the app.
 3. Sign in, and follow the on-screen instructions to set up your device. 
 
-When you're done with setup, read through the guide to learn more about your new SportShield device and then explore the SportShield app.
+<br>
 
-<!--For more information, see the [related help article]().-->
+When you're done with setup, read through the next part of this guide to learn more about your new SportShield app.
+
+## App Settings 
 
 
-<div style="page-break-after: always;"></div>
 
-# How to place SportShield
+# Robustness Assurance
 
-The SportShield prevents your sport belongings from thiefs. Its installation deals with few steps:
-1. Unroll the cable.
-2. Surround your belongings with the cable.
-3. Attach the other end of the cable to the plug.
 
-<!--images of the steps-->
 
-The SportShield is now locked, and each detected shock will ring an alarm. The alarm's intensifty depends on the shock intensity.
+# Security
