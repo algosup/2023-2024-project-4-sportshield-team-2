@@ -67,7 +67,7 @@ We have multiple objectives for this project:
 
 ## Functional requirements
 
-The sportShield must allow for the following actions:
+The SportShield must allow for the following actions:
 - Send device information to the API
   - Battery level
   - Position (latitude, longitude)
@@ -95,11 +95,11 @@ No libraries outside of the ones already use in the existing software.
 
 ### Persona 1 - Ashley Ricks
 
-Ashley Ricks is a 22-year-old student in vacation to the mountain.
+Ashley Ricks is a 22 year old student in vacation to the mountain.
 
 #### Goals
-  - Ashley want to secure her skies with the SportShield.
-  - She hope the system is secured and she will not receive false positive.
+  - Ashley wants to secure her skies with the SportShield.
+  - She hopes the system is secured and she will not receive false positive.
 
 #### Challenges
   - Ashley needs to be able to let her skies in outdoor lockers without the sportshield freeze.
@@ -108,24 +108,24 @@ Ashley Ricks is a 22-year-old student in vacation to the mountain.
 
 ### Persona 2 - William Greener
 
-William is a 37-year-old fan of surfs where I goes everymonth.
+William is a 37 year old fan of surfs where I goes everymonth.
 
 #### Goals
   - He aims to use the product for a while.
-  - He want to secure is surf board.
-  - He want to be able to use it during an entire week-end or during is vacation in the Canary Islands.
+  - He wants to secure is surf board.
+  - He wants to be able to use it during an entire week-end or during is vacation in the Canary Islands.
 
 #### Challenges
   - Bill needs a product which will not burn in the heat sun of Canary islandes.
   - He needs a production wich will not run out of battery.
-  - He need a device that is durable and weatherproof to withstand outdoor conditions (Water & Sand).
+  - He needs a device that is durable and weatherproof to withstand outdoor conditions (Water & Sand).
 
 ### Persona 3 - Steve Sinclair
 
-Steve Sinclair is a 63-year-old retreated. He is in road trip around the world with his wife, to enjoy his retreat.
+Steve Sinclair is a 63 year old retreated. He is in road trip around the world with his wife, to enjoy his retreat.
 
 #### Goals
-  - He want to protect is stuff will he is not in his camping-car.
+  - He wants to protect is stuff will he is not in his camping-car.
   - He intends to stay alert if someone touch to his stuff but he is not very good with smartphones.
 
 #### Challenges
@@ -135,23 +135,68 @@ Steve Sinclair is a 63-year-old retreated. He is in road trip around the world w
 
 ## Acceptance criteria
 
+The electromagnet mustn't stay locked if the user want to take back his stuff.
+
+The Alarm must to be able to be disabled without waiting if the user made a misstake.
+
+The Battery must stay alive for 7 days or more.
+
+It must run without any issues, If this event happen it need to catch them and alert the user of the error.
+
+To ensure that the project is viable, all the specifications must be approved by the client and the the programs must be tested in intern by our Quality Assurance and potentially others teams members.
 
 ## Solution overview
 
+<!-- TODO: List all our solutions -->
 
 ### Errors
 
+The program will must never be stuck on an issue, and continue without this features in the following case:
+- **Impossible to reach the API server**
+  - Retrying in few minutes
+- **Impossible to find a signal**
+  -  Retrying in few minutes
+- **Buzzer not working**
+  - Inform client about the issue and continue to send device data in case of movement
+
+The program will stop working if:
+- **An hardware issue is encounter**
+- **The SportShield is run out of battery**
+
 ### Usage
+
+<!-- TODO: Write it based on user manual -->
 
 ## Non-functional requirements
 
 ### Performance
 
+The program must be able to set each module in sleep mode will no movement has been detected to economize battery and wake them up only when it need them. The code must be exectuted almost fast less than 1s.
+
 ### Maintainability
+
+In the event the client decides to change their requirements, we must be able to easily update the program to fit to the new requirements. Also, if the client want to update it in intern or with another developpement team the code must commented and documented to help to it understanding.
 
 ### Usability
 
+
+
+Although we used a selfmade API to test efficently the program the client can easily replace it by is own API.
+
+This API will receive JSON array cointaing device informations like:
+```json
+{
+    "latitude":"{currentLatitude}", 
+    "longitude":"{currentLatitude}", 
+    "batterie":"{batteryVoltage}"
+}
+```
+
+but we will probably add some usefull information like batterie level (in percent), which you can use or not in your API
+
 ### Security
+
+We can update the internal program by plugin on the charging port, it can lead to invalid data target, wrong inform or even more, the disabling of the device or the installation of a malware.
 
 ## Risks and assumptions
 
