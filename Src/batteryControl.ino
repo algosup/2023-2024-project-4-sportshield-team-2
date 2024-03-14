@@ -172,6 +172,7 @@ void loop() {
   static String inputBuffer = ""; 
   static unsigned long lastInputTime = 0; 
 
+  // Function made by Elone DELILLE
   if (Serial.available() > 0) {
     char incomingChar = Serial.read();
 
@@ -214,6 +215,7 @@ void loop() {
 
     inputBuffer = "";
   }
+  // End of the function made by Elone DELILLE
 
   if (Config.isActivate) {  //alarm enalbled
     activateGPS();
@@ -452,6 +454,7 @@ float getBatteryVoltage() {
   return adcVoltage;
 }
 
+// Function made by Mathias GAGNEPAIN
 float getBatteryLevel() {
   const float minTension = 3.7;
   const float maxTension = 4.2;
