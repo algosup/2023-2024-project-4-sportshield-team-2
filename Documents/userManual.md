@@ -44,8 +44,8 @@ A fully-charged SportShield has a battery life of 6+ days.
 
 To charge SportShield:
 
-    1. Plug the charging cable into the USB port blabla.
-    2. Hold the other end of the charging cable near the port on the back of the SportShield blabla.
+1. Plug the charging cable into the USB port blabla.
+2. Hold the other end of the charging cable near the port on the back of the SportShield blabla.
 
 <!--images of the steps-->
 
@@ -59,10 +59,9 @@ Set up SportShield with the SportShield app <!--for IPhone? Android?-->.
 
 To get started:
 
-    1. Download the SportShield app.
-<!--Apple App Store? Google Play Store?-->
-    2. Open the app.
-    3. Sign in, and follow the on-screen instructions to set up your device. 
+1. Download the SportShield app.<!--Apple App Store? Google Play Store?-->
+2. Open the app.
+3. Sign in, and follow the on-screen instructions to set up your device. 
 
 When you're done with setup, read through the guide to learn more about your new SportShield device and then explore the SportShield app.
 
@@ -73,3 +72,11 @@ When you're done with setup, read through the guide to learn more about your new
 
 # How to place SportShield
 
+The SportShield prevents your sport belongings from thiefs. Its installation deals with few steps:
+1. Unroll the cable.
+2. Surround your belongings with the cable.
+3. Attach the other end of the cable to the plug.
+
+<!--images of the steps-->
+
+The SportShield is now locked, and each detected shock will ring an alarm. The alarm's intensifty depends on the shock intensity.
