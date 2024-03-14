@@ -9,6 +9,7 @@ The students will be using C++ programming languages, as well as C, to maintain 
 ## Components
 
 The company CORIS Innovation therefore provides students with hardware allowing them to work on a physical prototype. The components supplied are as follows:
+
 - Xiao BLE Sense nrf52840
 - GNSS PA1010D
 - GSM/2G SIM800L Module
@@ -22,6 +23,7 @@ All components are assumed to work, and to have no physical or software defects 
 ## Deliverables
 
 Throughout the six weeks of work, all of the following documents must be made public so that the company can check the progress of the project in real time. The milestones are therefore:
+
 - Final Product Delivery
 - Functional Specifications Document
 - Technical Specifications Document
@@ -46,6 +48,7 @@ The final project must therefore be submitted by the 10th of April 2024 at 5PM.
 ## Scopes
 
 By following the requests of the client company, the students will focus on the following points of the project:
+
 - Manage the battery: The objective here is to be able to properly manage the battery so that it lasts as long as possible without recharging.
 - Manage security issues: Several security problems are present within the current software, the objective is to resolve as many basic errors as possible to prevent the end user from having access to the software.
 - Have an NFC: One of the client company's requests is to be able to activate/deactivate the locking mechanism without using the phone.
