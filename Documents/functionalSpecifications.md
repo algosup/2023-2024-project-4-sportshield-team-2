@@ -102,7 +102,7 @@ Ashley Ricks is a 22 year old student in vacation to the mountain.
   - She hopes the system is secured and she will not receive false positive.
 
 #### Challenges
-  - Ashley needs to be able to let her skies in outdoor lockers without the sportshield freeze.
+  - Ashley needs to be able to let her skies in outdoor lockers without the SportShield freeze.
   - She needs to be able to use it during the entire week without running out of battery.
   - She needs to by notice if someone touch to her skies.
 
@@ -179,8 +179,6 @@ In the event the client decides to change their requirements, we must be able to
 
 ### Usability
 
-
-
 Although we used a selfmade API to test efficently the program the client can easily replace it by is own API.
 
 This API will receive JSON array cointaing device informations like:
@@ -199,6 +197,13 @@ but we will probably add some usefull information like batterie level (in percen
 We can update the internal program by plugin on the charging port, it can lead to invalid data target, wrong inform or even more, the disabling of the device or the installation of a malware.
 
 ## Risks and assumptions
+
+
+
+| ID  | Description                                 | Risks                                                                                                                                                                                    | Impact | Likelihood | Solution                                                                                              |
+| --- | ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ---------- | ----------------------------------------------------------------------------------------------------- |
+| 1   | Difficulty to understand the existing code. | We may not clearly understand how the existing code works leading to a bad implementation or program issues.                                                                             | High   | Medium     | We should reverse Engineer the program and comment uncommented stuff.                                 |
+| 2   | Hardware issue or code misswriting.         | As a prototype not used very often, the hardware can malfunctionning leading to understandable issue if not detected as soon as possible, and the libraries or API urls can be outdated. | High   | Low        | We will test each hardware module and the existing/fixing if needed before working on it improvement. |
 
 ## Future improvements
 
