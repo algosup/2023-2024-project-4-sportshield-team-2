@@ -42,6 +42,7 @@ The first week was dedicated to initiating the project and planning. The team di
 1. Hardware part
     - The team had some trouble with the hardware, as the components were not working as expected.
     - The team decided to take other components that were working properly.
+    - Also certain functions in the code were not working as expected.
 2. Reverse engineering
     - The team had some trouble with the reverse engineering of the existing software mainly because of the hardware components.
 3. Working for a real company
@@ -57,7 +58,7 @@ The first week was dedicated to initiating the project and planning. The team di
     - Begin the statement of work.
 
 2. Hardware components
-    - Solve the problems with the hardware components.
+    - Solve the problems with the SIM card.
 3. Client meeting
     - Have a meeting with the client to clarify some points.
 

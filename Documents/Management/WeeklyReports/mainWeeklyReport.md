@@ -1,15 +1,10 @@
-
-# mainWeeklyReport
-
-<details>
-<summary>Table of contents</summary>
-
-- [Week 1](#weeklyreportfirstweek)
-
 # WeeklyReportFirstWeek
 
-[Week 1](weeklyReportFirstWeek.md)
+<details>
+<summary>table of contents</summary>
 
+- [Week 1 (11-15 March 2024)](#week-1-11-15-march-2024)
+  
 </details>
 
 ## Week 1 (11-15 March 2024)
@@ -32,12 +27,12 @@ The first week was dedicated to initiating the project and planning. The team di
     - Analyse the call for tender
 
 2. Documents
-    - Functional specifications are well advanced.
-    - The Project charter is done.
-    - The Test plan is started.
-    - The Technical specifications document is started.
-    - The User manual is started.
-    - The RACI matrix is created.
+    - The functional specifications are well advanced.
+    - The project charter is complete.
+    - The test plan has been started.
+    - The user manual has been started.
+    - The RACI matrix has been created.
+    - The technical specifications document has been started.
 
 3. Hardware components
     - The team has received all the hardware components.
@@ -52,6 +47,7 @@ The first week was dedicated to initiating the project and planning. The team di
 1. Hardware part
     - The team had some trouble with the hardware, as the components were not working as expected.
     - The team decided to take other components that were working properly.
+    - Also certain functions in the code were not working as expected.
 2. Reverse engineering
     - The team had some trouble with the reverse engineering of the existing software mainly because of the hardware components.
 3. Working for a real company
@@ -67,7 +63,7 @@ The first week was dedicated to initiating the project and planning. The team di
     - Begin the statement of work.
 
 2. Hardware components
-    - Solve the problems with the hardware components.
+    - Solve the problems with the SIM card.
 3. Client meeting
     - Have a meeting with the client to clarify some points.
 
