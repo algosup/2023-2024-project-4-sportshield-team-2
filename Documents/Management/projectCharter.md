@@ -57,7 +57,7 @@ By following the requests of the client company, the students will focus on the 
 
 ## Time Management
 
-The team is made up of 6 students, who between them share a total of X hours over the total duration of the 6 weeks of the project.
+The team is made up of 6 students, who between them share a total of 504 hours over the total duration of the 6 weeks of the project.
 
 ## Budget
 
