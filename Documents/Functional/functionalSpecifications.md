@@ -33,6 +33,8 @@ The goal of the project is to optimize the consumption to make it last longer, f
     - [NFC \[1\] Reader](#nfc-1-reader)
     - [Errors](#errors)
     - [Usage](#usage)
+      - [Charge your SportShield](#charge-your-sportshield)
+      - [How to use it?](#how-to-use-it)
   - [Non-functional requirements](#non-functional-requirements)
     - [Performance](#performance)
     - [Maintainability](#maintainability)
@@ -215,8 +217,19 @@ The program will stop working if:
 
 ### Usage
 
+#### Charge your SportShield
+A fully-charged SportShield can last over 6 days.
+
+To charge SportShield:
+
+Plug the charger into the USB port on the SportShield.
+Plug the other end of the charger into an outlet.
+
+The SportShield is now charging. Try to not use SportShield during its charging.
+
 To use the device correctly please follow these steps:
 
+#### How to use it?
 - **To Protect your stuff:**
   1. Pull the rope and enclose your stuff.
   2. Insert the rope into the hole.
