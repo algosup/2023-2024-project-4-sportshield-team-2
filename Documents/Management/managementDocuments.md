@@ -55,6 +55,6 @@ Legend:
 | Shock notification | The device must be able to send a notification when a shock is detected | 95% |
 | GNSS position acquisition | The device must be able to acquire the GNSS position | 80% |
 
-This target KPIs are based on the client's requirements.
+These target KPIs are based on the client's requirements.
 
 ## Statement of work
