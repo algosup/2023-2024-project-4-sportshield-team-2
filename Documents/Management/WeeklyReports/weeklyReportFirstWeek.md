@@ -4,12 +4,12 @@
 
 ## Week 1 (11-15 March 2024)
 
-The first week was dedicated to initiating the project and planning. The team discuss about project and the tasks to be done. The functional specifications document was started. The team also began to reverse engineer the existing software to understand how it works.
+The first week was dedicated to initiating the project and planning. The team discuss about project and the tasks to be done. The functional specifications document was started. The team also began to reverse-engineer the existing software to understand how it works.
 
 ## Topics of the week
 
 1. Read and analyse the call for tender.
-2. Meeting with the group to discuss about the project.
+2. Meeting with the group to discuss the project.
 3. Begin to write the functional specifications document.
 4. Reverse engineering of the existing software.
 5. Gather questions we have about the project
@@ -17,7 +17,7 @@ The first week was dedicated to initiating the project and planning. The team di
 
 ## Achievements
 
-1. Kick off presentation by the client.
+1. Kick-off presentation by the client.
     - The client presented the project to the team.
     - Analyse the call for tender
 
@@ -25,8 +25,8 @@ The first week was dedicated to initiating the project and planning. The team di
     - Functional specifications are well advanced.
     - Project charter is done.
     - Test plan is started.
-    - user manual is started.
-    - create the RACI matrix.
+    - User manual is started.
+    - Create the RACI matrix.
 
 3. Hardware components
     - The team has received all the hardware components.
@@ -40,16 +40,16 @@ The first week was dedicated to initiating the project and planning. The team di
 
 1. Hardware part
     - The team had some trouble with the hardware, as the components were not working as expected.
-    - The team decided to take other components who were working properly.
+    - The team decided to take other components that were working properly.
 2. Reverse engineering
     - The team had some trouble with the reverse engineering of the existing software mainly because of the hardware components.
 3. Working for a real company
-    - For some of the team members, it was the first time working for a real company, so it's different for them but they are adapting.
+    - For some of the team members, it was their first time working for a real company, so it's different for them but they are adapting.
 
 ## Next week's plan
 
 1. Documents
-    - Finish the functional specifications document on monday.
+    - Finish the functional specifications document on Monday.
     - Add the KPIs to the management documents.
     - Begin the technical specifications document.
     - Continue the test plan.
@@ -63,4 +63,4 @@ The first week was dedicated to initiating the project and planning. The team di
 
 ## Conclusion
 
-The first week was a good start for the project. The team has started to work on the documents and the hardware components. The team has also started to reverse engineer the existing software. The team is looking forward to the next week to continue the work.
+The first week was a good start for the project. The team has started to work on the documents and the hardware components. The team has also started to reverse-engineer the existing software. The team is looking forward to the next week to continue the work.
