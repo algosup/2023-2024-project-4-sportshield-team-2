@@ -103,7 +103,7 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 
 | Ashley Ricks                                                                                  | 22 years old                                                                                                                                                                                                                         |
 | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <img alt="Ashley Picture" src="./Img/functional/ashley_ricks.png" style="max-width: 200px;"> | **Description:**<br>A vibrant young woman, revels in the exhilarating rush of vacationing amidst the clouds. She finds herself gliding gracefully down a majestic snow-capped mountain, her skis carving elegant trails in the pristine white snowscape.<br><br>**Frequence of use:** <br>- Rare |
+| <img alt="Ashley Picture" src="./Img/ashley_ricks.png" style="max-width: 200px;"> | **Description:**<br>A vibrant young woman, revels in the exhilarating rush of vacationing amidst the clouds. She finds herself gliding gracefully down a majestic snow-capped mountain, her skis carving elegant trails in the pristine white snowscape.<br><br>**Frequence of use:** <br>- Rare |
 
 #### Goals
   - Ashley wants to secure her skies with the SportShield.
@@ -120,7 +120,7 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 
 | William Greener                                                                                | 37 years old                                                                                                                                                                                                                                   |
 | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <img alt="Bill Picture" src="./Img/functional/william_greener.png" style="max-width: 200px;"> | **Description:**<br>A seasoned adventurer, embodies the spirit of freedom and adventure as he stands tall on the golden sands of the Canary Islands. He eagerly awaits the beckoning waves, ready to embrace the thrill of surfing beneath the warm, tropical sun.<br><br>**Frequence of use:** <br>- Often |
+| <img alt="Bill Picture" src="Img/william_greener.png" style="max-width: 200px;"> | **Description:**<br>A seasoned adventurer, embodies the spirit of freedom and adventure as he stands tall on the golden sands of the Canary Islands. He eagerly awaits the beckoning waves, ready to embrace the thrill of surfing beneath the warm, tropical sun.<br><br>**Frequence of use:** <br>- Often |
 
 #### Goals
   - He wants to get used to use the project.
@@ -139,7 +139,7 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 
 | Steve Sinclair                                              | 63 years old                                                                                                                      |
 | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| <img alt="Steve Picture" src="./Img/functional/steve_sinclair.png" style="max-width: 200px;"> | **Description:**<br>An old man with a white and gray beard, he is traveling around the world with his wife in a camping-car, to enjoy his retirement. With each new destination, they discover the beauty of nature and the richness of different cultures, cherishing every moment of their shared journey together.<br><br>**Frequence of use:** <br>- Almost Everyday |
+| <img alt="Steve Picture" src="./Img/steve_sinclair.png" style="max-width: 200px;"> | **Description:**<br>An old man with a white and gray beard, he is traveling around the world with his wife in a camping-car, to enjoy his retirement. With each new destination, they discover the beauty of nature and the richness of different cultures, cherishing every moment of their shared journey together.<br><br>**Frequence of use:** <br>- Almost Everyday |
 
 #### Goals
   - He wants to protect his stuff will he is not in his camping-car.
@@ -235,7 +235,7 @@ To use the device correctly please follow these steps:
        1. Make contact between the NFC [[1]](#glossary-1) device and the SportShield
   2. Pull the rope from the hole.
 
-You can refer to the user manual for detailed usage, which you can found: [HERE](./userManual.pdf)
+You can refer to the user manual for detailed usage, which you can found: [HERE](../userManual.pdf)
 
 ## Non-functional requirements
 
