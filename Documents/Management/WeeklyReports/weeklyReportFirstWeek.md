@@ -22,11 +22,11 @@ The first week was dedicated to initiating the project and planning. The team di
     - Analyse the call for tender
 
 2. Documents
-    - Functional specifications are well advanced.
-    - Project charter is done.
-    - Test plan is started.
-    - User manual is started.
-    - The RACI matrix is created.
+    - The functional specifications are well advanced.
+    - The project charter is complete.
+    - The test plan has been started.
+    - The user manual has been started.
+    - The RACI matrix has been created.
 
 3. Hardware components
     - The team has received all the hardware components.
