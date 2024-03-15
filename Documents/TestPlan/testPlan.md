@@ -95,7 +95,7 @@ End-to-end testing replicates a user behavior with the software in a complete ap
 
 **Smoke tests**
 
-Smoke tests are basic tests that check the basic functionality of an application. They are meant to be quick to execute, and their goal is to assure you that the major features of your system are working as expected.
+Smoke tests are basic tests that check the basic functionality of a device. They are meant to be quick to execute, and their goal is to assure you that the major features of your system are working as expected.
 
 *source: [Atlsassian - types of software testing](https://www.atlassian.com/continuous-delivery/software-testing/types-of-software-testing)*
 
@@ -131,15 +131,18 @@ The lifespan of the battery is 7 days with 6 hours of operation and 18h in stand
 
 Test 05:
 The battery reaches 20% level and turn off.
-- <span style="color:red">to be defined</span>
 
 Test 06:
 The battery reaches 80% level and stops charging.
-- <span style="color:red">to be defined</span>
+- charge the battery
+- wait 80% level
+- send message
+- wait a few minutes for the level to remain unchanged
 
 **Security issue**
 
 allowed to all users by default |-> increase access to alarm
+device ask password to phone and phone ask to device
 Test 0.:
 <span style="color:red">to be defined</span>
 
@@ -164,7 +167,7 @@ Test 1.:
 
 **Shock notification**
 
-Test 1.:
+Test 2.:
 <span style="color:red">to be defined</span>
 
 **GNSS position acquisition**
@@ -188,16 +191,18 @@ Test 2.:
 
 | ID | Document | Writer | Reviewers | Deadline | Completion date |
 | - | - | - | - | - | - |
-| a | Project Charter | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance), Mathias GAGNEPAIN (Program Manager), Elone DELILLE (Technical Leader), Enzo GUILLOUCHE (Technical Writer)  | 14/03/2024 | 14/03/2024 |
+| a | Project Charter | Elone DELILLE (Technical Leader) | Grégory PAGNOUX (Quality Assurance), Mathias GAGNEPAIN (Program Manager), Robin DEBRY (Project Manager), Enzo GUILLOUCHE (Technical Writer)  | 14/03/2024 | 14/03/2024 |
 | b | 1st Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance), Mathias GAGNEPAIN (Program Manager) | 15/03/2024 | 15/03/2024 |
 | c | Functional Specifications | Mathias GAGNEPAIN (Program Manager) | Grégory PAGNOUX (Quality Assurance), Enzo GUILLOUCHE (Technical Writer), Robin DEBRY (Project Manager) | 18/03/2024 | XX/0X/2024 |
-| d | 2nd Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance)  | 22/03/2024 | XX/03/2024 |
-| e | Technical Specifications | Elone DELILLE (Technical Leader) | Grégory PAGNOUX (Quality Assurance), | 26/03/2024 | XX/0X/2024 |
-| f | 3rd Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance)  | 29/03/2024 | XX/03/2024 |
-| g | 4th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance)  | 05/04/2024 | XX/03/2024 |
-| h | 5th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance)  | 12/04/2024 | XX/03/2024 |
-| i | User Manual | Enzo GUILLOUCHE (Technical Writer) | Grégory PAGNOUX (Quality Assurance), | 10/04/2024 | XX/0X/2024 |
-| j | 6th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance)  | 19/04/2024 | XX/03/2024 |
+| d | 2nd Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 22/03/2024 | XX/0X/2024 |
+| e | Technical Specifications | Elone DELILLE (Technical Leader) | Grégory PAGNOUX (Quality Assurance) | 26/03/2024 | XX/0X/2024 |
+| f | 3rd Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 29/03/2024 | XX/03/2024 |
+| g | 4th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 05/04/2024 | XX/0X/2024 |
+| h | 5th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 12/04/2024 | XX/0X/2024 |
+| i | User Manual | Enzo GUILLOUCHE (Technical Writer) | Grégory PAGNOUX (Quality Assurance) | 10/04/2024 | XX/0X/2024 |
+| j | Test Plan | Grégory Pagnoux (Quality Assurance) | Grégory PAGNOUX (Quality Assurance), Enzo GUILLOUCHE (Technical Writer) | 10/04/2024 | XX/0X/2024 |
+| k | 6th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 19/04/2024 | XX/0X/2024 |
+| l | Readme | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 19/04/2024 | XX/0X/2024 |
 
 ## VI. Code test
 
