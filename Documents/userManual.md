@@ -11,19 +11,27 @@
 <details open>
 <summary>Table of Contents</summary>
 
- - [Get Started](#get-started)
-   - [What's in the box](#whats-in-the-box)
-   - [Charge your SportShield](#charge-your-sportshield)
-   - [Set up SportShield](#set-up-sportshield)
- - [How to lock SportShield](#how-to-lock-sportshield)
- - [How to unlock SportShield](#how-to-unlock-sportshield)
- - [Alarm](#alarm)
- - [App](#app)
-   - [Set up](#app-set-up)
-   - [App Settings](#app-settings)
- - [Robustness Assurance](#robustness-assurance)
- - [Security](#security)
+- [ User manual ](#-user-manual-)
+- [ Version 0.1 ](#-version-01-)
+- [Get Started](#get-started)
+  - [What's in the box](#whats-in-the-box)
+  - [Charge your SportShield](#charge-your-sportshield)
+  - [Set up SportShield](#set-up-sportshield)
+- [How to lock SportShield](#how-to-lock-sportshield)
+- [How to unlock SportShield](#how-to-unlock-sportshield)
+- [Alarm](#alarm)
+- [App](#app)
+  - [App Set up](#app-set-up)
+  - [App Settings](#app-settings)
+- [Notifications](#notifications)
+- [General Info and Specifications](#general-info-and-specifications)
+  - [Components](#components)
+  - [Robustness Assurance](#robustness-assurance)
+    - [Anti-theft Cable](#anti-theft-cable)
+  - [Security](#security)
 </details>
+
+<br>
 
 <div style="page-break-after: always;"></div>
 
@@ -36,7 +44,7 @@ SportShield is an innovative anti-theft device designed for sports equipment, eq
 
 Your SportShield includes:
 - Anti-theft SportShield device
-- A charger
+- A charger 
 - This user manual
 
 <!--images of the included stuff-->
@@ -54,8 +62,8 @@ A fully-charged SportShield has a battery life of 6+ days.
 
 To charge SportShield:
 
-1. Plug the charging cable into the USB port.
-2. Hold the other end of the charging cable near the port on the back of the SportShield.
+1. Plug the charger into the USB port.
+2. Hold the other end of the charger near the port on the back of the SportShield.
 
 <!--images of the steps-->
 
@@ -136,10 +144,29 @@ When you're done with setup, read through the next part of this guide to learn m
 
 ## App Settings 
 
+<!--some settings-->
+
+# Notifications
+
+Whenever the alarm rings, a notification is sent to the smartphone.
+The nofication contains some information about the device, such as the GPS coordinates (longitude lagitude) and the remaining battery percentage. 
+
+# General Info and Specifications
+
+## Components
+<!--List of components-->
+
+## Robustness Assurance
+
+Since the SportShield is an anti-theft device, it has to be resistant enough, meeting some resistance criteria.
+<!-- Waterproofness, cold-resistance, and robustness against break-in attempts. -->
+
+### Anti-theft Cable
+
+The cable in itself got some adjustments to meet the resistance criteria. <br><br>
+For physical security, we implemented a multi-layered cable and electromagnetic lock.<br>
+Moreover, the cable automatically retracts into the housing and prevents unwinding when locked.
 
 
-# Robustness Assurance
+## Security
 
-
-
-# Security
