@@ -29,6 +29,7 @@
   - [Robustness Assurance](#robustness-assurance)
     - [Anti-theft Cable](#anti-theft-cable)
       - [The cable in itself got some adjustments to meet the resistance criteria.](#the-cable-in-itself-got-some-adjustments-to-meet-the-resistance-criteria)
+  - [Environmental conditions](#environmental-conditions)
   - [Security](#security)
 </details>
 
@@ -105,8 +106,19 @@ The SportShield prevents your sport belongings from thiefs. Its installation dea
 
 <!--images of the steps-->
 
+Once the SportShield is put in place, you'd need to connect your smartphone with the SportShield.<br>
+By Bluetooth:
+1. Make sure the Bluetooth is enabled on your smartphone.
+2. Connect your SportShield with your smartphone.
+
+<!-- steps with the app -->
+
 <br>
-The SportShield is now locked and you won't be able to pull the cable anymore, if you don't unlock it.
+The SportShield is now locked and you won't be able to pull the cable anymore, if you don't unlock it. 
+<br><br>
+You'll receive a notification if the SportShield detects a shock. 
+
+For more information about notifications, refer to the [dedicated manual part](#notifications).
 
 <br>
 
@@ -114,9 +126,9 @@ The SportShield is now locked and you won't be able to pull the cable anymore, i
 
 SportShield's uninstallation is quite simple. You can unlock it either by Bluetooth or with the app. 
 By Bluetooth:
-1. When you're connected to the device, go on the device's settings.
+1. Go on the device's Bluetooth settings.
 2. Click on the "Unlock" button to unlock SportShield.
-With the app:
+
 <!--steps with the app-->
 
 <br>
@@ -178,6 +190,13 @@ Since the SportShield is an anti-theft device, it has to be resistant enough, me
 For physical security, a multi-layered cable and electromagnetic lock have been implemented.<br>
 Moreover, the cable automatically retracts into the housing and prevents unwinding when locked.
 
+## Environmental conditions
+
+<!-- 3 days autonomy in ambient environment (60% more consumption in cold environment) -->
 
 ## Security
 
+
+
+
+©2015-2024 Coris Innovation. All rights reserved. Coris Innovation and the Coris Innovation logo are trademarks or registered trademarks of Coris Innovation
