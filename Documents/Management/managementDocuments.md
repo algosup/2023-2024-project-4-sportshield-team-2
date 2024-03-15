@@ -8,7 +8,7 @@ this document contains the main documentation for the management of the project 
 
 ## Project charter
 
-The project charter is a document that formally authorizes a project. The project charter provides a high-level overview of the project and is a critical document for getting the project started. Our project charter is [here](../projectCharter.md).
+The project charter is a document that formally authorizes a project. The project charter provides a high-level overview of the project and is a critical document for getting the project started. Our project charter is [here](projectCharter.md).
 
 ## Task schedule
 
