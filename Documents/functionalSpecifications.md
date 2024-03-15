@@ -213,7 +213,27 @@ The program will stop working if:
 
 ### Usage
 
-<!-- TODO: Write it based on user manual -->
+To use the device correctly please follow these steps:
+
+- **To Protect you stuff:**
+  1. Pull the rope and enclose your stuff.
+  2. Insert the rope into the hole.
+  3. Enable the lock:
+     - **With Bluetooth:**
+       1. Authenticate yourself.
+       2. Enable locking.
+     - **With a NFC device:**
+       1. Make contact between the NFC device and the SportShield
+- **To open release your stuff.**
+  1. Release the rope:
+     - **With Bluetooth:**
+       1. Authenticate yourself.
+       2. Disable locking.
+      - **With a NFC device:**
+       1. Make contact between the NFC device and the SportShield
+  2. Pull the rope from the hole.
+
+You can refer to the user manual for detailed usage, which you can found: [HERE](./userManual.pdf)
 
 ## Non-functional requirements
 
