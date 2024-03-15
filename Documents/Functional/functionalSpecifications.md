@@ -35,6 +35,8 @@ The goal of the project is to optimize the consumption to make it last longer, f
     - [Usage](#usage)
       - [Charge your SportShield](#charge-your-sportshield)
       - [How to use it?](#how-to-use-it)
+        - [**To Protect your stuff:**](#to-protect-your-stuff)
+        - [**To open release your stuff.**](#to-open-release-your-stuff)
   - [Non-functional requirements](#non-functional-requirements)
     - [Performance](#performance)
     - [Maintainability](#maintainability)
@@ -230,23 +232,25 @@ The SportShield is now charging. Try to not use SportShield during its charging.
 To use the device correctly please follow these steps:
 
 #### How to use it?
-- **To Protect your stuff:**
-  1. Pull the rope and enclose your stuff.
-  2. Insert the rope into the hole.
-  3. Enable the lock:
+##### **To Protect your stuff:**
+1. Pull the rope and enclose your stuff.
+2. Insert the rope into the hole.
+3. Enable the lock:
      - **With Bluetooth:**
        1. Authenticate yourself.
        2. Enable locking.
      - **With a NFC [[1]](#glossary-1) device:**
        1. Make contact between the NFC [[1]](#glossary-1) device and the SportShield
-- **To open release your stuff.**
-  1. Release the rope:
-     - **With Bluetooth:**
-       1. Authenticate yourself.
-       2. Disable locking.
-      - **With a NFC [[1]](#glossary-1) device:**
-       1. Make contact between the NFC [[1]](#glossary-1) device and the SportShield
-  2. Pull the rope from the hole.
+<hr>
+
+##### **To open release your stuff.**
+1. Release the rope:
+   - **With Bluetooth:**
+     1. Authenticate yourself.
+     2. Disable locking.
+    - **With a NFC [[1]](#glossary-1) device:**
+      1. Make contact between the NFC [[1]](#glossary-1) device and the SportShield
+2. Pull the rope from the hole.
 
 You can refer to the user manual for detailed usage, which you can find: [HERE](../userManual.pdf)
 
@@ -258,11 +262,11 @@ The program must be able to set each module in sleep mode will no movement has b
 
 ### Maintainability
 
-In the event the client decides to change their requirements, we must be able to easily update the program to fit the new requirements. Also, if the client wants to update it with an intern or with another developpement team the code must be commented and documented to help its understanding.
+In the event the client decides to change their requirements, we must be able to easily update the program to fit the new requirements. Also, if the client wants to update it with an intern or with another developpement team the code must be commented on and documented to help its understanding.
 
 ### Usability
 
-Although we used a self-made API [[2]](#glossary-2) to test efficently the program the client can easily replace it with his own API [[2]](#glossary-2).
+Although we used a self-made API [[2]](#glossary-2) to test efficiently the program the client can easily replace it with his own API [[2]](#glossary-2).
 
 This API [[2]](#glossary-2) will receive a JSON [[5]](#glossary-5) array containing device information like:
 ```json
@@ -273,11 +277,11 @@ This API [[2]](#glossary-2) will receive a JSON [[5]](#glossary-5) array contain
 }
 ```
 
-We will probably add some usefull information like batterie level (in percent), which you can use or not in your API [[2]](#glossary-2)
+We will probably add some useful information like battery level (in percent), which you can use or not in your API [[2]](#glossary-2)
 
 ### Security
 
-We can update the internal program by pluging in on the charging port, which can lead to invalid data targets, wrong informations or even more, the disabling of the device or the installation of a malware.
+We can update the internal program by plugging it into the charging port, which can lead to invalid data targets, wrong information or even more, the disabling of the device or the installation of malware.
 
 ## Risks and assumptions
 
@@ -314,7 +318,7 @@ These future improvements aim to enhance the functionality, usability, and secur
 | <p id="glossary-1">1</p> | **NFC**     | Near Field Communication (NFC) is a set of short-range wireless technologies, typically requiring a distance of 4 cm or less to initiate a connection.                                                                         | The SportShield will be able to be lock or unlock with a card or a badge.                                  | [Wikipedia](https://en.wikipedia.org/wiki/Near-field_communication) |
 | <p id="glossary-2">2</p> | **API**     | API stands for Application Programming Interface. In the context of APIs, the word Application refers to any software with a distinct function. Interface can be thought of as a contract of service between two applications. | The device must send data from the application through the API to keep the user informed of the device status. | [Wikipedia](https://en.wikipedia.org/wiki/API)                      |
 | <p id="glossary-3">3</p> | **Arduino** | Arduino is an Italian open-source hardware and software company, project, and user community that designs and manufactures single-board microcontrollers and microcontroller kits for building digital devices.                | We will use Arduino IDE and a variant of C++ made for Arduino during this project.                        | [Wikipedia](https://en.wikipedia.org/wiki/Arduino)                  |
-| <p id="glossary-4">4</p> | **C++**     | C++ is a high-level, general-purpose programming language created by Danish computer scientist Bjarne Stroustrup.                                                                                                              | Arduino's Language is a variant for C++ specialized to manage their microcontrollers.                     | [Wikipedia](https://en.wikipedia.org/wiki/C%2B%2B)                  |
+| <p id="glossary-4">4</p> | **C++**     | C++ is a high-level, general-purpose programming language created by Danish computer scientist Bjarne Stroustrup.                                                                                                              | Arduino's Language is a variant of C++ specialized to manage their microcontrollers.                     | [Wikipedia](https://en.wikipedia.org/wiki/C%2B%2B)                  |
 | <p id="glossary-5">5</p> | **JSON**    | JSON is a text format that is completely language independent but uses conventions that are familiar to programmers of the C-family of languages, including C, C++.                                                            | Information about the device (position, battery, etc...) will be sent to the API in JSON format.           | [Wikipedia](https://en.wikipedia.org/wiki/JSON)                     |
 
 ## Appendix
