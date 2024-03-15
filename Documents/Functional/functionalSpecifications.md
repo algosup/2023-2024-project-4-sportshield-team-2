@@ -112,7 +112,7 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 #### Challenges
   - Ashley needs to be able to let her skies in outdoor lockers without the SportShield freezing.
   - She needs to be able to use it during the entire week without running out of battery.
-  - She needs to be notice if someone touch to her skies.
+  - She needs to be noticed if someone touches to her skies.
 
 <hr>
 
@@ -123,12 +123,12 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 | <img alt="Bill Picture" src="Img/william_greener.png" style="max-width: 200px;"> | **Description:**<br>A seasoned adventurer, embodies the spirit of freedom and adventure as he stands tall on the golden sands of the Canary Islands. He eagerly awaits the beckoning waves, ready to embrace the thrill of surfing beneath the warm, tropical sun.<br><br>**Frequence of use:** <br>- Often |
 
 #### Goals
-  - He wants to get used to use the project.
+  - He wants to get used to use the product.
   - He wants to secure his surf board.
   - He wants to be able to use it during an entire week-end or during his vacation in the Canary Islands.
 
 #### Challenges
-  - William needs a product which won't burn under the sun's heat of Canary islandes.
+  - William needs a product which won't burn under the sun's heat of Canary Islands.
   - He needs a product which won't often run out of battery.
   - He needs a durable and weatherproof device to withstand outdoor conditions (Water & Sand).
 
@@ -142,7 +142,7 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 | <img alt="Steve Picture" src="./Img/steve_sinclair.png" style="max-width: 200px;"> | **Description:**<br>An old man with a white and gray beard, he is traveling around the world with his wife in a camping-car, to enjoy his retirement. With each new destination, they discover the beauty of nature and the richness of different cultures, cherishing every moment of their shared journey together.<br><br>**Frequence of use:** <br>- Almost Everyday |
 
 #### Goals
-  - He wants to protect his stuff will he is not in his camping-car.
+  - He wants to protect his stuff while he is not in his camping-car.
   - He wants to stay alerted if someone touches his stuff but he is not that confident with smartphones.
 
 #### Challenges
@@ -154,15 +154,15 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 
 ## Acceptance criteria
 
-The electromagnet mustn't stay locked if the user want to take back his stuff.
+The electromagnet mustn't stay locked if the user wants to take back his stuff.
 
-The Alarm must to be able to be disabled without waiting if the user made a misstake.
+The Alarm must be deactivatable without waiting if the user made a misstake.
 
-The Battery must stay alive for 7 days or more.
+The Battery must last for 7 days or more.
 
-It must run without any issues, If this event happen it need to catch them and alert the user of the error.
+It must run without any issues, If not, it need to catch them and alert the user of the error.
 
-To ensure that the project is viable, all the specifications must be approved by the client and the the programs must be tested in intern by our Quality Assurance and potentially others teams members.
+To ensure that the project is viable, all the specifications must be approved by the client and the programs must be tested in intern by our Quality Assurance and potentially other team members.
 
 ## Solution overview
 
