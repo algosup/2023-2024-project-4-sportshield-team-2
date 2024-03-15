@@ -45,7 +45,7 @@ SportShield is an innovative anti-theft device designed for sports equipment, eq
 ## What's in the box
 
 Your SportShield includes:
-- Anti-theft SportShield device
+- An anti-theft SportShield device
 - A charger 
 - This user manual
 
@@ -87,7 +87,6 @@ By Bluetooth:
 <br><br>
   
 With the SportShield app, see the [dedicated manual part](#app-set-up).
-<br>
 
 <!-- For more information, see  -->
 
@@ -106,10 +105,8 @@ The SportShield prevents your sport belongings from thiefs. Its installation dea
 
 <!--images of the steps-->
 
-Once the SportShield is put in place, you'd need to connect your smartphone with the SportShield.<br>
-By Bluetooth:
-1. Make sure the Bluetooth is enabled on your smartphone.
-2. Connect your SportShield with your smartphone.
+If SportShield is not connected to your smartphone, refer to the [set up part](#set-up-sportshield).<br>
+
 
 <!-- steps with the app -->
 
@@ -126,19 +123,26 @@ For more information about notifications, refer to the [dedicated manual part](#
 
 SportShield's uninstallation is quite simple. You can unlock it either by Bluetooth or with the app. 
 By Bluetooth:
-1. Go on the device's Bluetooth settings.
+1. Go on your Bluetooth settings.
 2. Click on the "Unlock" button to unlock SportShield.
 
 <!--steps with the app-->
 
 <br>
-The SportShield is now unlocked. You can take it back.
+The SportShield is now unlocked. The alarm won't ring and you can take your device back.
 
 <br>
 
 # Alarm
 
-When the SportShield is locked, each detected shock will ring an alarm. <br>The alarm's intensity depends on the shock intensity.
+When the SportShield is locked, each detected shock will ring an alarm. <br>The alarm intensity depends on the shock intensity: <br>
+- 3 light sounds when a light shock is detected.
+- 5 long high sounds when a strong shock is detected.
+<br>
+
+Whenever the alarm rings, a notification is sent to the smartphone.<br>
+For more information about notifications, refer to the [dedicated manual part](#notifications).
+<br>
 
 # App
 
@@ -163,8 +167,7 @@ When you're done with setup, read through the next parts of this guide to learn 
 
 # Notifications
 
-Whenever the alarm rings, a notification is sent to the smartphone.
-The nofication contains some information about the device, such as the GPS coordinates (longitude lagitude) and the remaining battery percentage. 
+The nofications contain some information about the device, such as the GPS coordinates (longitude lagitude) and the remaining battery percentage. 
 
 # General Info and Specifications
 
