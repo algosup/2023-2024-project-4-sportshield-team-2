@@ -48,7 +48,10 @@ Legend:
 | --- | ----------- | ------ |
 | Battery lifespan | The battery must last at least 7 days | 7 days |
 | Security | The device must be able to manage all security issues | 99% |
-| Unlock the device with NFC | The device must be able to unlock with NFC | 100% |
-| Shock notification | The device must be able to send a notification when a shock is detected | 99% |
+| Unlock the device with NFC | The device must be able to unlock with NFC | 99% |
+| Shock notification | The device must be able to send a notification when a shock is detected | 95% |
+| GNSS position acquisition | The device must be able to acquire the GNSS position | 80% |
+
+This target KPIs are based on the client's requirements.
 
 ## Statement of work
