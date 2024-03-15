@@ -28,6 +28,7 @@
   - [Components](#components)
   - [Robustness Assurance](#robustness-assurance)
     - [Anti-theft Cable](#anti-theft-cable)
+      - [The cable in itself got some adjustments to meet the resistance criteria.](#the-cable-in-itself-got-some-adjustments-to-meet-the-resistance-criteria)
   - [Security](#security)
 </details>
 
@@ -57,13 +58,13 @@ Your SportShield includes:
 
 ## Charge your SportShield
 
-A fully-charged SportShield has a battery life of 6+ days.
+A fully-charged SportShield can last over 6 days.
 
 
 To charge SportShield:
 
-1. Plug the charger into the USB port.
-2. Hold the other end of the charger near the port on the back of the SportShield.
+1. Plug the charger into the USB port on the SportShield.
+2. Plug the other end of the charger into an outlet.
 
 <!--images of the steps-->
 
@@ -77,33 +78,35 @@ The SportShield is now charging. Try to not use SportShield during its charging.
 ## Set up SportShield
 
 To fully use the SportShield device, you'd need to set up few things with your smartphone. <br>
-You can either set up by Bluetooth or with the SportShield app.
+You can either set up by Bluetooth or with the SportShield app. <br><br>
 By Bluetooth:
 - Enable your Bluetooth connection on your phone.
 - You'd find a device named "SportShield".
-- Connect your smartphone with the device.
+- Connect your smartphone with the device. 
+<br><br>
+  
 With the SportShield app, see the [dedicated manual part](#app-set-up).
 <br>
 
-For more information, see 
+<!-- For more information, see  -->
 
 <br>
 
-The SportShield is now set up, you can use whenever and wherever you want.
+The SportShield is now set up, you can use it whenever and wherever you want.
 
 <div style="page-break-after: always;"></div>
 
 # How to lock SportShield 
 
 The SportShield prevents your sport belongings from thiefs. Its installation deals with few steps:
-1. Wind the cable.
+1. Wind the cable of the SportShield device.
 2. Surround your belongings with the cable.
-3. Attach the other end of the cable to the plug.
+3. Attach the other end of the cable to the plug, on the other side of the SportShield device.
 
 <!--images of the steps-->
 
 <br>
-The SportShield is now locked, and you won't be able to pull the cable.
+The SportShield is now locked and you won't be able to pull the cable anymore, if you don't unlock it.
 
 <br>
 
@@ -140,7 +143,7 @@ To get started:
 
 <br>
 
-When you're done with setup, read through the next part of this guide to learn more about your new SportShield app.
+When you're done with setup, read through the next parts of this guide to learn more about your new SportShield app.
 
 ## App Settings 
 
@@ -154,7 +157,15 @@ The nofication contains some information about the device, such as the GPS coord
 # General Info and Specifications
 
 ## Components
-<!--List of components-->
+
+Here's a list of the components a SportShield device contains:
+- Xiao BLE Sense nrf52840
+- GNSS PA1010D
+- GSM/2G SIM800L Module
+- Electromagnet
+- Piezoelectric Buzzer
+- Lithium-Polymer Battery
+- NFC Antenna
 
 ## Robustness Assurance
 
@@ -163,8 +174,8 @@ Since the SportShield is an anti-theft device, it has to be resistant enough, me
 
 ### Anti-theft Cable
 
-The cable in itself got some adjustments to meet the resistance criteria. <br><br>
-For physical security, we implemented a multi-layered cable and electromagnetic lock.<br>
+#### The cable in itself got some adjustments to meet the resistance criteria. 
+For physical security, a multi-layered cable and electromagnetic lock have been implemented.<br>
 Moreover, the cable automatically retracts into the housing and prevents unwinding when locked.
 
 
