@@ -30,7 +30,7 @@ The goal of the project is to optimize the consumption to make it last longer, f
     - [Battery Management Improvement](#battery-management-improvement)
     - [Security Improvement](#security-improvement)
     - [Alarm Management](#alarm-management)
-    - [NFC Reader](#nfc-reader)
+    - [NFC \[1\] Reader](#nfc-1-reader)
     - [Errors](#errors)
     - [Usage](#usage)
   - [Non-functional requirements](#non-functional-requirements)
@@ -41,6 +41,8 @@ The goal of the project is to optimize the consumption to make it last longer, f
   - [Risks and assumptions](#risks-and-assumptions)
   - [Future improvements](#future-improvements)
   - [Glossary](#glossary)
+  - [Appendix](#appendix)
+    - [SportShield Scheme](#sportshield-scheme)
 </summary></details>
 
 ## Stakeholders
@@ -101,7 +103,7 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 
 | Ashley Ricks                                                                                  | 22 years old                                                                                                                                                                                                                         |
 | --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <img alt="Ashley Picture" src="./Img/functional/ashley_ricks.png" style="max-width: 200px;"> | **Description:**<br>A vibrant young woman, revels in the exhilarating rush of vacationing amidst the clouds. She finds herself gliding gracefully down a majestic snow-capped mountain, her skis carving elegant trails in the pristine white snowscape. |
+| <img alt="Ashley Picture" src="./Img/functional/ashley_ricks.png" style="max-width: 200px;"> | **Description:**<br>A vibrant young woman, revels in the exhilarating rush of vacationing amidst the clouds. She finds herself gliding gracefully down a majestic snow-capped mountain, her skis carving elegant trails in the pristine white snowscape.<br><br>**Frequence of use:** <br>- Rare |
 
 #### Goals
   - Ashley wants to secure her skies with the SportShield.
@@ -118,7 +120,7 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 
 | William Greener                                                                                | 37 years old                                                                                                                                                                                                                                   |
 | ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <img alt="Bill Picture" src="./Img/functional/william_greener.png" style="max-width: 200px;"> | **Description:**<br>A seasoned adventurer, embodies the spirit of freedom and adventure as he stands tall on the golden sands of the Canary Islands. He eagerly awaits the beckoning waves, ready to embrace the thrill of surfing beneath the warm, tropical sun. |
+| <img alt="Bill Picture" src="./Img/functional/william_greener.png" style="max-width: 200px;"> | **Description:**<br>A seasoned adventurer, embodies the spirit of freedom and adventure as he stands tall on the golden sands of the Canary Islands. He eagerly awaits the beckoning waves, ready to embrace the thrill of surfing beneath the warm, tropical sun.<br><br>**Frequence of use:** <br>- Often |
 
 #### Goals
   - He wants to get used to use the project.
@@ -137,7 +139,7 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 
 | Steve Sinclair                                              | 63 years old                                                                                                                      |
 | ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| <img alt="Steve Picture" src="./Img/functional/steve_sinclair.png" style="max-width: 200px;"> | **Description:**<br>An old man with a white and gray beard, he is traveling around the world with his wife in a camping-car, to enjoy his retirement. |
+| <img alt="Steve Picture" src="./Img/functional/steve_sinclair.png" style="max-width: 200px;"> | **Description:**<br>An old man with a white and gray beard, he is traveling around the world with his wife in a camping-car, to enjoy his retirement. With each new destination, they discover the beauty of nature and the richness of different cultures, cherishing every moment of their shared journey together.<br><br>**Frequence of use:** <br>- Almost Everyday |
 
 #### Goals
   - He wants to protect his stuff will he is not in his camping-car.
@@ -193,9 +195,9 @@ By default the device is accessible to everyone.
 | While the alarm is ringing, all others actions are unavailable | We will modify alarm to make it ringing while others action are executed (possibility for the user to disable the alarm at any moment) |
 | The alarm is too loud. | We want to reduced the decible from 135dB to 80dB, to readuce damage on the hearing. |
 
-### NFC Reader
+### NFC [[1]](#glossary-1) Reader
 
-Currently, the NFC reader isn't implemented yet, we should include it for an easier usage of the product, make user able to unlock/lock the Sport with a NFC card or badge (without their smartphone), or by contact with their smartphone (depending of brand and phone's model).
+Currently, the NFC [[1]](#glossary-1) reader isn't implemented yet, we should include it for an easier usage of the product, make user able to unlock/lock the Sport with a NFC [[1]](#glossary-1) card or badge (without their smartphone), or by contact with their smartphone (depending of brand and phone's model).
 
 ### Errors
 
@@ -222,15 +224,15 @@ To use the device correctly please follow these steps:
      - **With Bluetooth:**
        1. Authenticate yourself.
        2. Enable locking.
-     - **With a NFC device:**
-       1. Make contact between the NFC device and the SportShield
+     - **With a NFC [[1]](#glossary-1) device:**
+       1. Make contact between the NFC [[1]](#glossary-1) device and the SportShield
 - **To open release your stuff.**
   1. Release the rope:
      - **With Bluetooth:**
        1. Authenticate yourself.
        2. Disable locking.
-      - **With a NFC device:**
-       1. Make contact between the NFC device and the SportShield
+      - **With a NFC [[1]](#glossary-1) device:**
+       1. Make contact between the NFC [[1]](#glossary-1) device and the SportShield
   2. Pull the rope from the hole.
 
 You can refer to the user manual for detailed usage, which you can found: [HERE](./userManual.pdf)
@@ -279,7 +281,18 @@ We can update the internal program by plugin on the charging port, it can lead t
 
 ## Future improvements
 
-<!-- TODO: After we choose what we will do or not -->
+
+1. **Remote Locking and Unlocking**: Enable users to remotely lock or unlock the device via a secure online portal or mobile app, providing convenience and peace of mind, especially in situations where physical access to the device is not possible.
+
+2. **Customizable Alarm Settings**: Allow users to customize alarm settings based on their preferences and environment, such as adjusting alarm volume, duration, and sensitivity to better suit their needs.
+
+3. **Data Encryption and Privacy**: Implement robust data encryption protocols to ensure the confidentiality and integrity of user data transmitted between the device and external servers, safeguarding sensitive information from unauthorized interception or tampering.
+
+4. **Enhanced Durability and Weather Resistance**: Develop ruggedized hardware components and weatherproof enclosures to withstand harsh environmental conditions, including extreme temperatures, moisture, and physical impacts, ensuring reliable operation in various outdoor settings.
+
+5. **Extended Battery Life**: Continuously optimize power management algorithms and hardware components to further extend the device's battery life, allowing for prolonged usage between recharges and minimizing downtime.
+
+These future improvements aim to enhance the functionality, usability, and security of the SportShield device, providing users with a comprehensive and reliable solution for protecting their sports equipment and ensuring peace of mind during outdoor activities. These Improvements way are just theorical and will not be implemented without Coris Innovation Approval.
 
 ## Glossary
 
@@ -290,3 +303,9 @@ We can update the internal program by plugin on the charging port, it can lead t
 | <p id="glossary-3">3</p> | **Arduino** | Arduino is an Italian open-source hardware and software company, project, and user community that designs and manufactures single-board microcontrollers and microcontroller kits for building digital devices.                | We will used Arduino IDE and a variant of C++ made for arduino during this project.                        | [Wikipedia](https://en.wikipedia.org/wiki/Arduino)                  |
 | <p id="glossary-4">4</p> | **C++**     | C++ is a high-level, general-purpose programming language created by Danish computer scientist Bjarne Stroustrup.                                                                                                              | Arduino's Language is a variant for C++ specialized to managed their microcontrollers.                     | [Wikipedia](https://en.wikipedia.org/wiki/C%2B%2B)                  |
 | <p id="glossary-5">5</p> | **JSON**    | JSON is a text format that is completely language independent but uses conventions that are familiar to programmers of the C-family of languages, including C, C++.                                                            | Information about the device (position, battery, etc...) will be sent to the API in JSON format.           | [Wikipedia](https://en.wikipedia.org/wiki/JSON)                     |
+
+## Appendix
+
+### SportShield Scheme
+
+<!-- TODO: Add SportShield Scheme to easily visualize the postion of each important part (Awaiting to receive it from Coris) -->
