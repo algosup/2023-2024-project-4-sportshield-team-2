@@ -167,7 +167,7 @@ To ensure that the project is viable, all the specifications must be approved by
 ## Solution overview
 
 ### Movement Detection Improvement
-The actual movement detection trigger the alarm only on rotation.
+The actual movement detection triggers the alarm only on rotation.
 
 | Problem Occurs | Solution |
 | ---- | ---- |
@@ -177,47 +177,47 @@ The actual movement detection trigger the alarm only on rotation.
 
 | Problem Occurs | Solution |
 | --- | --- |
-| A full battery will be empty in 3 days. | - We must check each component one by one to reduce the using consumption.<br>- Turn all component in sleep mode when we don't need them. |
-| The electromagnet consume a lot of energy | We will active it less than 1 second when we need it. |
+| A full battery will be empty in 3 days. | - We must check each component one by one to reduce the usage consumption.<br>- Turn all components in sleep mode when we don't need them. |
+| The electromagnet consumes a lot of energy | We will activate it less than 1 second when we need it. |
 
 ### Security Improvement
 
-By default the device is accessible to everyone.
+By default, the device is accessible to everyone.
 
 | Problem Occurs | Solution |
 | --- | --- |
-| Everyone can lock or unlock the SportShield | We will restreint the authentication to the owner or trust people |
+| Everyone can lock or unlock the SportShield | We will restrict the authentication to the owner or trust people |
 
 ### Alarm Management
 
 | Problem Occurs | Solution |
 | --- | --- |
-| While the alarm is ringing, all others actions are unavailable | We will modify alarm to make it ringing while others action are executed (possibility for the user to disable the alarm at any moment) |
-| The alarm is too loud. | We want to reduced the decible from 135dB to 80dB, to readuce damage on the hearing. |
+| While the alarm is ringing, all other actions are unavailable | We will modify the alarm to make it ring while other actions are executed (possibility for the user to disable the alarm at any moment) |
+| The alarm is too loud. | We want to reduce the decibel from 135dB to 80dB, to reduce damage to the hearing. |
 
 ### NFC [[1]](#glossary-1) Reader
 
-Currently, the NFC [[1]](#glossary-1) reader isn't implemented yet, we should include it for an easier usage of the product, make user able to unlock/lock the Sport with a NFC [[1]](#glossary-1) card or badge (without their smartphone), or by contact with their smartphone (depending of brand and phone's model).
+Currently, the NFC [[1]](#glossary-1) reader isn't been implemented yet, we should include it for easier usage of the product, making user able to unlock/lock the SportShield with a NFC [[1]](#glossary-1) card or badge (without their smartphone), or by contact with their smartphone (depending of brand and phone's model).
 
 ### Errors
 
-The program will must never be stuck on an issue, and continue without this features in the following case:
+The program must never be stuck on an issue, and continue without these features in the following case:
 - **Impossible to reach the API [[2]](#glossary-2) server**
-  - Retrying in few minutes
+  - Retrying in a few minutes
 - **Impossible to find a signal**
-  -  Retrying in few minutes
+  -  Retrying in a few minutes
 - **Buzzer not working**
-  - Inform client about the issue and continue to send device data in case of movement
+  - Inform the client about the issue and continue to send device data in case of movement
 
 The program will stop working if:
-- **An hardware issue is encounter**
-- **The SportShield is run out of battery**
+- **A hardware issue is encountered**
+- **The SportShield has run out of battery**
 
 ### Usage
 
 To use the device correctly please follow these steps:
 
-- **To Protect you stuff:**
+- **To Protect your stuff:**
   1. Pull the rope and enclose your stuff.
   2. Insert the rope into the hole.
   3. Enable the lock:
@@ -235,23 +235,23 @@ To use the device correctly please follow these steps:
        1. Make contact between the NFC [[1]](#glossary-1) device and the SportShield
   2. Pull the rope from the hole.
 
-You can refer to the user manual for detailed usage, which you can found: [HERE](../userManual.pdf)
+You can refer to the user manual for detailed usage, which you can find: [HERE](../userManual.pdf)
 
 ## Non-functional requirements
 
 ### Performance
 
-The program must be able to set each module in sleep mode will no movement has been detected to economize battery and wake them up only when it need them. The code must be exectuted almost fast less than 1s.
+The program must be able to set each module in sleep mode will no movement has been detected to economize the battery and wake them up only when it needs them. The code must be executed almost fast, less than 1s.
 
 ### Maintainability
 
-In the event the client decides to change their requirements, we must be able to easily update the program to fit to the new requirements. Also, if the client want to update it in intern or with another developpement team the code must commented and documented to help to it understanding.
+In the event the client decides to change their requirements, we must be able to easily update the program to fit the new requirements. Also, if the client wants to update it with an intern or with another developpement team the code must be commented and documented to help its understanding.
 
 ### Usability
 
-Although we used a selfmade API [[2]](#glossary-2) to test efficently the program the client can easily replace it by is own API [[2]](#glossary-2).
+Although we used a self-made API [[2]](#glossary-2) to test efficently the program the client can easily replace it with his own API [[2]](#glossary-2).
 
-This API [[2]](#glossary-2) will receive JSON [[5]](#glossary-5) array cointaing device informations like:
+This API [[2]](#glossary-2) will receive a JSON [[5]](#glossary-5) array containing device information like:
 ```json
 {
     "latitude":"{currentLatitude}", 
@@ -260,11 +260,11 @@ This API [[2]](#glossary-2) will receive JSON [[5]](#glossary-5) array cointaing
 }
 ```
 
-but we will probably add some usefull information like batterie level (in percent), which you can use or not in your API [[2]](#glossary-2)
+We will probably add some usefull information like batterie level (in percent), which you can use or not in your API [[2]](#glossary-2)
 
 ### Security
 
-We can update the internal program by plugin on the charging port, it can lead to invalid data target, wrong inform or even more, the disabling of the device or the installation of a malware.
+We can update the internal program by pluging in on the charging port, which can lead to invalid data targets, wrong informations or even more, the disabling of the device or the installation of a malware.
 
 ## Risks and assumptions
 
@@ -299,9 +299,9 @@ These future improvements aim to enhance the functionality, usability, and secur
 | Id                       | Term        | Definition                                                                                                                                                                                                                     | What it means in this project                                                                              | Additional Content                                                  |
 | :----------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
 | <p id="glossary-1">1</p> | **NFC**     | Near Field Communication (NFC) is a set of short-range wireless technologies, typically requiring a distance of 4 cm or less to initiate a connection.                                                                         | The SportShield will be able to be lock or unlock with a card or a badge.                                  | [Wikipedia](https://en.wikipedia.org/wiki/Near-field_communication) |
-| <p id="glossary-2">2</p> | **API**     | API stands for Application Programming Interface. In the context of APIs, the word Application refers to any software with a distinct function. Interface can be thought of as a contract of service between two applications. | The device must send data from the application through the API to keep the user informed of device status. | [Wikipedia](https://en.wikipedia.org/wiki/API)                      |
-| <p id="glossary-3">3</p> | **Arduino** | Arduino is an Italian open-source hardware and software company, project, and user community that designs and manufactures single-board microcontrollers and microcontroller kits for building digital devices.                | We will used Arduino IDE and a variant of C++ made for arduino during this project.                        | [Wikipedia](https://en.wikipedia.org/wiki/Arduino)                  |
-| <p id="glossary-4">4</p> | **C++**     | C++ is a high-level, general-purpose programming language created by Danish computer scientist Bjarne Stroustrup.                                                                                                              | Arduino's Language is a variant for C++ specialized to managed their microcontrollers.                     | [Wikipedia](https://en.wikipedia.org/wiki/C%2B%2B)                  |
+| <p id="glossary-2">2</p> | **API**     | API stands for Application Programming Interface. In the context of APIs, the word Application refers to any software with a distinct function. Interface can be thought of as a contract of service between two applications. | The device must send data from the application through the API to keep the user informed of the device status. | [Wikipedia](https://en.wikipedia.org/wiki/API)                      |
+| <p id="glossary-3">3</p> | **Arduino** | Arduino is an Italian open-source hardware and software company, project, and user community that designs and manufactures single-board microcontrollers and microcontroller kits for building digital devices.                | We will use Arduino IDE and a variant of C++ made for Arduino during this project.                        | [Wikipedia](https://en.wikipedia.org/wiki/Arduino)                  |
+| <p id="glossary-4">4</p> | **C++**     | C++ is a high-level, general-purpose programming language created by Danish computer scientist Bjarne Stroustrup.                                                                                                              | Arduino's Language is a variant for C++ specialized to manage their microcontrollers.                     | [Wikipedia](https://en.wikipedia.org/wiki/C%2B%2B)                  |
 | <p id="glossary-5">5</p> | **JSON**    | JSON is a text format that is completely language independent but uses conventions that are familiar to programmers of the C-family of languages, including C, C++.                                                            | Information about the device (position, battery, etc...) will be sent to the API in JSON format.           | [Wikipedia](https://en.wikipedia.org/wiki/JSON)                     |
 
 ## Appendix
