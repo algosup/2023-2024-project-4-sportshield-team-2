@@ -26,7 +26,7 @@ The first week was dedicated to initiating the project and planning. The team di
     - Project charter is done.
     - Test plan is started.
     - User manual is started.
-    - Create the RACI matrix.
+    - The RACI matrix is created.
 
 3. Hardware components
     - The team has received all the hardware components.
