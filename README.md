@@ -9,6 +9,7 @@ Coming soon...
 ## Documents
 
 [Project Charter](Documents/Management/projectCharter.md)<br>
+
 <!-- [Functional Specifications]()<br>
 [Technical Specifications](https://github.com/algosup/2023-2024-project-4-sportshield-team-2/Documents/technicalSpecifications.md)<br>
 [User Manual](https://github.com/algosup/2023-2024-project-4-sportshield-team-2/Documents/userManual.md)<br>

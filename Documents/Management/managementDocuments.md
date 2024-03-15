@@ -1,4 +1,4 @@
-this document contains the main documentation for the management of the project like :
+This document contains the main documentation for the management of the project like :
 
 - [Project charter](#project-charter)
 - [Task schedule](#task-schedule)

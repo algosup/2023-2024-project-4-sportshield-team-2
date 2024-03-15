@@ -33,9 +33,10 @@ The first week was dedicated to initiating the project and planning. The team di
 
 2. Documents
     - Functional specifications are well advanced.
-    - Project charter is done.
-    - Test plan is started.
-    - User manual is started.
+    - The Project charter is done.
+    - The Test plan is started.
+    - The Technical specifications document is started.
+    - The User manual is started.
     - The RACI matrix is created.
 
 3. Hardware components
@@ -61,7 +62,6 @@ The first week was dedicated to initiating the project and planning. The team di
 1. Documents
     - Finish the functional specifications document on Monday.
     - Add the KPIs to the management documents.
-    - Begin the technical specifications document.
     - Continue the test plan.
     - Continue the user manual.
     - Begin the statement of work.

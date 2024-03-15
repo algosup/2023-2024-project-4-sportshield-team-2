@@ -27,6 +27,7 @@ The first week was dedicated to initiating the project and planning. The team di
     - The test plan has been started.
     - The user manual has been started.
     - The RACI matrix has been created.
+    - The technical specifications document has been started.
 
 3. Hardware components
     - The team has received all the hardware components.
@@ -51,7 +52,6 @@ The first week was dedicated to initiating the project and planning. The team di
 1. Documents
     - Finish the functional specifications document on Monday.
     - Add the KPIs to the management documents.
-    - Begin the technical specifications document.
     - Continue the test plan.
     - Continue the user manual.
     - Begin the statement of work.
