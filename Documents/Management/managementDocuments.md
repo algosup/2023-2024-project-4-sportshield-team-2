@@ -3,6 +3,7 @@ this document contains the main documentation for the management of the project 
 - [Project charter](#project-charter)
 - [Task schedule](#task-schedule)
 - [RACI matrix](#raci-matrix)
+- [MoSCoW](#moscow)
 - [Target Key Performace Indicators](#target-key-performace-indicators)
 - [Statement of work](#statement-of-work)
 
@@ -37,6 +38,8 @@ Legend:
 |C|Consulted|The people who provide information for the project.|
 |I|Informed|The people who are kept informed of the project's progress.|
 |X|Not applicable|The task is not applicable to the person or role.|
+
+## MoSCoW
 
 | Must Have| Should Have | Could Have | Won't Have |
 | -------- | ----------- | ---------- | ---------- |
