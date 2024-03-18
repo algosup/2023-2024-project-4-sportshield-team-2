@@ -2,7 +2,7 @@
 
 This project was requested by [Coris Innovation](https://www.corisinnovation.com/), a French IT company.
 
-The goal of the project is to optimize the consumption to make it last longer, from 3 days to 7 days or more, adding NFC [[1]](#glossary-1) component, improve the security and the user experience based on the existing prototype.
+The goal of the project is to optimize the battery consumption to make it last longer, from 3 days to 7 days or more, adding NFC [[1]](#glossary-1) component, improve the security and the user experience based on the existing prototype.
 
 <details>
 <summary>Table of Contents</summary>
@@ -44,7 +44,7 @@ The goal of the project is to optimize the consumption to make it last longer, f
       - [Charge your SportShield](#charge-your-sportshield)
       - [How to use it?](#how-to-use-it)
         - [**To Protect your stuff:**](#to-protect-your-stuff)
-        - [**To open release your stuff.**](#to-open-release-your-stuff)
+        - [**To open it and release your stuff.**](#to-open-it-and-release-your-stuff)
   - [Non-functional requirements](#non-functional-requirements)
     - [Performance](#performance)
     - [Maintainability](#maintainability)
@@ -88,7 +88,7 @@ We have multiple objectives for this project:
 
 ## Functional requirements
 
-The SportShield must allow for the following actions:
+The SportShield must allow the following actions:
 - Send device information to the API [[2]](#glossary-2)
   - Battery level
   - Position (latitude, longitude)
@@ -174,12 +174,12 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 | Use Case Name      | Movements & Shocks Detection                                                                                                                                                             |
 | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Actors             | SportShield Device, User, Mobile App                                                                                                                                                     |
-| Description        | The user should be notified on his mobile phone and SportShield must ring if the device is movement or rotating.                                                                         |
+| Description        | The user should be notified on his mobile phone and SportShield must ring if the device is moving or rotating.                                                                         |
 | Pre-conditions     | The device is activated, and checking the position and shocks.                                                                                                                           |
-| Post-conditions    | The device send a notification to the user through the API.                                                                                                                              |
-| Normal Flow        | 1. The user activate the device in the application.<br>2. Someone try to stole the user's stuff.<br>3. The device ring and send a notification.<br>4. The user receive the notification. |
-| Alternative Flows  | 1. If the device is't connected to the network, the status can't be communicated to the app.<br>2. The device can be moved for multiple reason else than a steal.                        |
-| Exception Handling | 1. The device will send the notification when the signal will be found.<br>2. The device will send a false positive making the user worry.                                               |
+| Post-conditions    | The device sends a notification to the user through the API.                                                                                                                              |
+| Normal Flow        | 1. The user activates the device in the application.<br>2. Someone tries to steal the user's stuff.<br>3. The device rings and sends a notification.<br>4. The user receives the notification. |
+| Alternative Flows  | 1. If the device isn't connected to the network, the status can't be communicated to the app.<br>2. The device can be moved for multiple reason else than a steal.                        |
+| Exception Handling | 1. The device will send the notification when the signal will be found.<br>2. The device will send a false positive making the user worries.                                               |
 
 #### Battery Status
 | Use Case Name      | Battery Status                                                                           |
@@ -188,8 +188,8 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 | Description        | The user must know the battery status.                                                   |
 | Pre-conditions     | The device is powered and connected to the network.                                       |
 | Post-conditions    | The battery level is updated in the application.                                         |
-| Normal Flow        | Every X time the device send the battery state to the App.                               |
-| Alternative Flows  | 1. If the device is't connected to the network, the battery status can't be communicated. |
+| Normal Flow        | Every X time the device sends the battery state to the App.                               |
+| Alternative Flows  | 1. If the device isn't connected to the network, the battery status can't be communicated. |
 | Exception Handling | 1. The device will send the notification when it will be connected.                      |
 
 #### Battery is running out
@@ -199,8 +199,8 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 | Description        | The user must be informed when the device is running out of battery. If the device is too low, release the cable and turn it off.                                                                                             |
 | Pre-conditions     | The device is running out of battery.                                                                                                                                                                                         |
 | Post-conditions    | A notification is sent to inform the user.                                                                                                                                                                                    |
-| Normal Flow        | 1. When the battery is low the device send a notification to the user.<br>2. When the battery is very too low the device release the cable and turn it-self off to prevent irreversible damage on the battery.                |
-| Alternative Flows  | 1. If the device is't connected to the network, the notification can't be sent.<br>2. The battery level is too low and the device isn't connected to the network, it will turn it-self off without sending any notification. |
+| Normal Flow        | 1. When the battery is depleted the device sends a notification to the user.<br>2. When SportShield has quite depleted its battery the device release the cable and turn itself off to prevent irreversible damage on the battery.                |
+| Alternative Flows  | 1. If the device isn't connected to the network, the notification can't be sent.<br>2. The battery level is too low and the device isn't connected to the network, it will turn it-self off without sending any notification. |
 | Exception Handling | 1. The device will send the notification when it will be connected.<br>2. The user will not be informed.                                                                                                                     |
 
 #### Battery is fully charged
@@ -210,8 +210,8 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 | Description        | The user must be informed when the battery is fully charged. When the device is charged, it stopped charging to prevent irreversible battery damage. |
 | Pre-conditions     | The battery is fully charged.                                                                                                                         |
 | Post-conditions    | A notification is sent to inform the user.                                                                                                            |
-| Normal Flow        | 1. When the battery is fully charge the device stop charging and send a notification to the user.                                                     |
-| Alternative Flows  | 1. If the device is't connected to the network, the battery status can't be communicated but it will stop charging.                                   |
+| Normal Flow        | 1. When the battery is fully charged the device stops charging and sends a notification to the user.                                                     |
+| Alternative Flows  | 1. If the device isn't connected to the network, the battery status can't be communicated but it will stop charging.                                   |
 | Exception Handling | 1. The device will send the notification when it will be connected.<br>2. The user will not received the notification.                               |
 
 
@@ -222,9 +222,9 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 | Description        | The user can lock or unlock the device at any moment with the app on his smartphone.                                                                                                                    |
 | Pre-conditions     | The device must be powered, the device and the smartphone are connected to the network.                                                                                                                 |
 | Post-conditions    | The device will be locked or unlocked.                                                                                                                                                                   |
-| Normal Flow        | 1. The user can lock the SportShield through the App, which will enable the movement detection.<br>2. The user can unlock the sport shield through the App, which will disable the movements detection. |
+| Normal Flow        | 1. The user can lock the SportShield through the App, which will enable the movement detection.<br>2. The user can unlock the SportShield through the App, which will disable the movements detection. |
 | Alternative Flows  | 1. SportShield or user's mobile isn't connected to the network, the user can't interact with the SportShield.                                                                                           |
-| Exception Handling | 1. The device will wait until it receive a user interaction.<br>2. If it's locked the user ins't able to move it without making ring and he can't get back his stuffs.                                  |
+| Exception Handling | 1. The device will wait until it receives a user interaction.<br>2. If it's locked the user ins't able to move it without making it ring and he can't get his stuff back.                                  |
 
 #### Locking/Unlocking with NFC device
 | Use Case Name      | Unlock/Unlock the device with NFC [[1]](#glossary-1)                                                                                                                              |
@@ -232,21 +232,21 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 | Actors             | User, SportShield, Mobile App                                                                                                                                  |
 | Description        | The user can lock or unlock the SportShield without his smartphone by using a NFC [[1]](#glossary-1) device.                                                                      |
 | Pre-conditions     | The device must be powered and the user should have a NFC [[1]](#glossary-1) device.                                                                                              |
-| Post-conditions    | The device is now lock or unlock.                                                                                                                              |
-| Normal Flow        | By making contact between the NFC [[1]](#glossary-1) device and the SportShield it will lock or unlock like by using the mobile app.                                              |
+| Post-conditions    | The device is now locked or unlocked.                                                                                                                              |
+| Normal Flow        | By making contact between the NFC [[1]](#glossary-1) device and the SportShield it will lock or unlock as well as on the mobile app.                                              |
 | Alternative Flows  | 1. The NFC [[1]](#glossary-1) card in the device isn't working, the interaction can't be detected.<br>2. The NFC [[1]](#glossary-1) device hasn't the right to access to the SportShield.            |
-| Exception Handling | 1. If the NFC [[1]](#glossary-1) card isn't working nothing will happend.<br>2. If access right are invalid, the user will be inform of a unsuccessful locking/unlocking attempt. |
+| Exception Handling | 1. If the NFC [[1]](#glossary-1) card isn't working nothing will happen.<br>2. If access rights are invalid, the user will be informed of a unsuccessful locking/unlocking attempt. |
 
 
 ## Acceptance criteria
 
 The electromagnet mustn't stay locked if the user wants to take back his stuff.
 
-The Alarm must be deactivatable without waiting if the user made a misstake.
+The Alarm must be deactivatated without waiting if the user made a misstake.
 
 The Battery must last for 7 days or more.
 
-It must run without any issues, If not, it need to catch them and alert the user of the error.
+It must run without any issues, If not, it needs to catch them and alert the user of the error.
 
 To ensure that the project is viable, all the specifications must be approved by the client and the programs must be tested in intern by our Quality Assurance and potentially other team members.
 
@@ -264,7 +264,7 @@ The actual movement detection triggers the alarm only on rotation.
 | Problem Occurs                             | Solution                                                                                                                                   |
 | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | A full battery will be empty in 3 days.    | - We must check each component one by one to reduce the usage consumption.<br>- Turn all components in sleep mode when we don't need them. |
-| The electromagnet consumes a lot of energy | We will activate it less than 1 second when we need it.                                                                                    |
+| The electromagnet consumes a lot of energy | We will activate it less than 1 second and only when we need it.                                                                                    |
 
 ### Security Improvement
 
@@ -283,7 +283,7 @@ By default, the device is accessible to everyone.
 
 ### NFC Reader
 
-Currently, the NFC [[1]](#glossary-1) reader isn't been implemented yet, we should include it for easier usage of the product, making user able to unlock/lock the SportShield with a NFC [[1]](#glossary-1) card or badge (without their smartphone), or by contact with their smartphone (depending of brand and phone's model).
+Currently, the NFC [[1]](#glossary-1) reader isn't been implemented yet, we should include it for easier usage of the product, making the user able to unlock/lock the SportShield with a NFC [[1]](#glossary-1) card or badge (without their smartphone), or by contact with their smartphone (depending of brand and phone's model).
 
 ### Errors
 
@@ -325,7 +325,7 @@ To use the device correctly please follow these steps:
        1. Make contact between the NFC [[1]](#glossary-1) device and the SportShield
 <hr>
 
-##### **To open release your stuff.**
+##### **To open it and release your stuff.**
 1. Release the cable:
    - **With Bluetooth:**
      1. Authenticate yourself.
@@ -344,7 +344,7 @@ The program must be able to set each module in sleep mode will no movement has b
 
 ### Maintainability
 
-In the event the client decides to change their requirements, we must be able to easily update the program to fit the new requirements. Also, if the client wants to update it with an intern or with another developpement team the code must be commented on and documented to help its understanding.
+In the event the client decides to change their requirements, we must be able to easily update the program to fit the new requirements. Also, if the client wants to update it with an intern or with another developement team the code must be commented on and documented to help its understanding.
 
 ### Usability
 
@@ -363,15 +363,15 @@ We will probably add some useful information like battery level (in percent), wh
 
 ### Security
 
-We can update the internal program by plugging it into the charging port, which can lead to invalid data targets, wrong information or even more, the disabling of the device or the installation of malware.
+We can update the internal program by plugging it into the charging port, which can lead to invalid data targets, wrong information, or even more, the disabling of the device or the installation of malware.
 
 ## Risks and assumptions
 
 | ID    | Description                                 | Risks                                                                                                                                                                                                       | Impact                                                | Likelihood                                            | Solution                                                                                                                                                                                              |
 | ----- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **1** | Difficulty to understand the existing code. | We may not clearly understand how the existing code works leading to a bad implementation or program issues.                                                                                                | ![High](https://img.shields.io/badge/High-bb2124)     | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | We should reverse Engineer the program and comment uncommented stuff.                                                                                                                                 |
-| **2** | Hardware issue or code misswriting.         | As a prototype not used very often, the hardware can malfunctionning leading to understandable issue if not detected as soon as possible, and the libraries or API [[2]](#glossary-2) urls can be outdated. | ![High](https://img.shields.io/badge/High-bb2124)     | ![Low](https://img.shields.io/badge/Low-3B71CA)       | We will test each hardware module and the existing/fixing if needed before working on it improvement.                                                                                                 |
-| **3** | Lack of documentation for reference.        | Inadequate documentation may hinder troubleshooting or leading to inefficiencies or delays.                                                                                                                 | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | Implement a documentation strategy to comprehensively capture, components, and usage instructions.                                                                                                    |
+| **1** | Difficulty to understand the existing code. | We may not clearly understand how the existing code works leading to a bad implementation or program issues.                                                                                                | ![High](https://img.shields.io/badge/High-bb2124)     | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | We should reverse Engineer the program and comment on uncommented stuff.                                                                                                                                 |
+| **2** | Hardware issues or code miswriting.         | As a prototype is not used very often, the hardware can malfunction leading to understandable issue if not detected as soon as possible, and the libraries or API [[2]](#glossary-2) URLs can be outdated. | ![High](https://img.shields.io/badge/High-bb2124)     | ![Low](https://img.shields.io/badge/Low-3B71CA)       | We will test each hardware module and the existing/fixing if needed before working on its improvement.                                                                                                 |
+| **3** | Lack of documentation for reference.        | Inadequate documentation may hinder troubleshooting or lead to inefficiencies or delays.                                                                                                                 | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | Implement a documentation strategy to comprehensively capture, components, and usage instructions.                                                                                                    |
 | **4** | Inadequate security measures                | Inadequate security measures could make the device vulnerable to unauthorized access or data breaches, compromising user privacy and system integrity.                                                      | ![High](https://img.shields.io/badge/High-bb2124)     | ![Low](https://img.shields.io/badge/Low-3B71CA)       | Implement robust encryption protocols, secure authentication mechanisms, and regular security audits.                                                                                                 |
 | **5** | Environmental factors affecting performance | Environmental factors such as temperature, humidity, or physical shocks may impact the device's performance or durability, affecting its reliability in various conditions.                                 | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | Conduct rigorous environmental testing to assess the device's performance under different conditions.                                                                                                 |
 | **6** | Lack of user acceptance                     | If users do not find the device easy to use, intuitive, or beneficial, adoption rates may be low, leading to reduced market penetration and revenue generation.                                             | ![High](https://img.shields.io/badge/High-bb2124)     | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | Conduct user research and usability testing to understand user needs and preferences, incorporate feedback into the design process, and provide comprehensive user training.                          |
@@ -389,13 +389,13 @@ We can update the internal program by plugging it into the charging port, which 
 
 5. **Extended Battery Life**: Continuously optimize power management algorithms and hardware components to further extend the device's battery life, allowing for prolonged usage between recharges and minimizing downtime.
 
-These future improvements aim to enhance the functionality, usability, and security of the SportShield device, providing users with a comprehensive and reliable solution for protecting their sports equipment and ensuring peace of mind during outdoor activities. These Improvements way are just theorical and will not be implemented without Coris Innovation Approval.
+These future improvements aim to enhance the functionality, usability, and security of the SportShield device, providing users with a comprehensive and reliable solution for protecting their sports equipment and ensuring peace of mind during outdoor activities. These Improvements way is just theorical and will not be implemented without Coris Innovation Approval.
 
 ## Glossary
 
 | Id                       | Term        | Definition                                                                                                                                                                                                                     | What it means in this project                                                                                  | Additional Content                                                  |
 | :----------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| <p id="glossary-1">1</p> | **NFC**     | Near Field Communication (NFC) is a set of short-range wireless technologies, typically requiring a distance of 4 cm or less to initiate a connection.                                                                         | The SportShield will be able to be lock or unlock with a card or a badge.                                      | [Wikipedia](https://en.wikipedia.org/wiki/Near-field_communication) |
+| <p id="glossary-1">1</p> | **NFC**     | Near Field Communication (NFC) is a set of short-range wireless technologies, typically requiring a distance of 4 cm or less to initiate a connection.                                                                         | The SportShield will be able to lock or unlock with a card or a badge.                                      | [Wikipedia](https://en.wikipedia.org/wiki/Near-field_communication) |
 | <p id="glossary-2">2</p> | **API**     | API stands for Application Programming Interface. In the context of APIs, the word Application refers to any software with a distinct function. Interface can be thought of as a contract of service between two applications. | The device must send data from the application through the API to keep the user informed of the device status. | [Wikipedia](https://en.wikipedia.org/wiki/API)                      |
 | <p id="glossary-3">3</p> | **Arduino** | Arduino is an Italian open-source hardware and software company, project, and user community that designs and manufactures single-board microcontrollers and microcontroller kits for building digital devices.                | We will use Arduino IDE and a variant of C++ made for Arduino during this project.                             | [Wikipedia](https://en.wikipedia.org/wiki/Arduino)                  |
 | <p id="glossary-4">4</p> | **C++**     | C++ is a high-level, general-purpose programming language created by Danish computer scientist Bjarne Stroustrup.                                                                                                              | Arduino's Language is a variant of C++ specialized to manage their microcontrollers.                           | [Wikipedia](https://en.wikipedia.org/wiki/C%2B%2B)                  |
@@ -412,11 +412,11 @@ These future improvements aim to enhance the functionality, usability, and secur
 
 | name | description |
 | --- | --- |
-| **Charging Port** | The only one port to charge the device, it actually can be use also to update the internal software (this action is reserved to Coris). |
+| **Charging Port** | The only port to charge the device, it actually can be used also to update the internal software (this action is reserved to Coris). |
 | **Cable exit** | The cable comes out of this hole. |
 | **Cable holder** | This is a place where you can attach the cable. |
-| **Cable lock** | Insert the cable here to attache your stuff and protect them. |
-| **NFC reader** | Make a contact with a NFC device at this place to lock/unlock the SportShield. |
+| **Cable lock** | Insert the cable here to attach your stuff and protect them. |
+| **NFC reader** | Make contact with an NFC device at this place to lock/unlock the SportShield. |
 
 <hr>
 
