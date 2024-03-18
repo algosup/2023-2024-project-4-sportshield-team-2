@@ -109,7 +109,7 @@ For more information about notifications, refer to the [dedicated manual part](#
 
 # How to unlock SportShield 
 
-SportShield's uninstallation is quite simple. You can unlock it either by Bluetooth or with the app. 
+SportShield's uninstallation is quite simple. You can unlock it either by Bluetooth or with the app. <br>
 By Bluetooth:
 1. Go on your Bluetooth settings.<br>
 <img src="./Img/BluetoothSettingsFunctionnalities.png" width="200"/>
@@ -167,7 +167,7 @@ Since the SportShield is an anti-theft device, it has to be resistant enough, me
 
 ### Anti-theft Cable
 
-**The cable in itself got some adjustments to meet the resistance criteria.** 
+**The cable in itself got some adjustments to meet the resistance criteria.** <br>
 For physical security, a multi-layered cable and electromagnetic lock have been implemented.<br>
 Moreover, the cable automatically retracts into the housing and prevents unwinding when locked.
 
@@ -177,13 +177,12 @@ Moreover, the cable automatically retracts into the housing and prevents unwindi
 
 ## Security
 
-SportShield prioritizes the fundamental principles encapsulated within the AIC triad: Confidentiality, Integrity, and Availability.
+SportShield prioritizes the fundamental principles that are Confidentiality, Integrity, and Availability.
 
-Confidentiality, akin to the notion of privacy, serves as the bedrock of SportShield's approach to safeguarding sensitive information. By meticulously categorizing data based on its potential impact if compromised, SportShield enforces stringent measures to thwart unauthorized access attempts, ensuring that confidential data remains secure and inaccessible to unauthorized entities.
+By meticulously categorizing data based on its potential impact if compromised, SportShield enforces stringent measures to thwart unauthorized access attempts, ensuring that confidential data remains secure and inaccessible to unauthorized entities.
 
-Integrity stands as a pillar of trustworthiness within SportShield's framework. Throughout the lifecycle of data, from creation to dissemination, SportShield employs robust mechanisms to uphold the consistency and accuracy of information. By fortifying data against unauthorized alterations, such as those that might occur during data breaches or in transit, SportShield guarantees the integrity of critical information.
+By fortifying data against unauthorized alterations, such as when a thief would want to corrupt your SportShield device, SportShield guarantees the integrity of critical information.
 
-Availability, the third facet of the AIC triad, underscores SportShield's commitment to ensuring that authorized parties can access information promptly and consistently. Through diligent maintenance of hardware, technical infrastructure, and systems, SportShield endeavors to eliminate downtime and disruptions, thereby enabling seamless access to vital data whenever and wherever it is needed.
 
 <div style="page-break-after: always;"></div>
 
