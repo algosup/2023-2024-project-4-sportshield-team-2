@@ -7,14 +7,14 @@
 
 - [Sportshield - Test Plan](#sportshield---test-plan)
   - [I. Introduction](#i-introduction)
-      - [A. Overview](#a-overview)
-      - [B. Requirements](#b-requirements)
+    - [A. Overview](#a-overview)
+    - [B. Requirements](#b-requirements)
   - [II. Ressources Requirements](#ii-ressources-requirements)
-      - [A. Testing Environment](#a-testing-environment)
-      - [B. Testing Tool Requirements](#b-testing-tool-requirements)
+    - [A. Testing Environment](#a-testing-environment)
+    - [B. Testing Tool Requirements](#b-testing-tool-requirements)
   - [III. Strategy](#iii-strategy)
-      - [A. Testing Type](#a-testing-type)
-      - [B. Test Strategy](#b-test-strategy)
+    - [A. Testing Type](#a-testing-type)
+    - [B. Test Strategy](#b-test-strategy)
   - [IV. Documentation test](#iv-documentation-test)
   - [V. Code test](#v-code-test)
   - [Glossary](#glossary)
@@ -27,16 +27,17 @@
 
 ## I. Introduction
 
-#### A. Overview
+### A. Overview
 
 The project was commissioned by [CORIS Innovation](https://www.corisinnovation.com)[^1] from [ALGOSUP](https://algosup.com/en.html) students, and involved software maintenance.
 The software is an application for securing sports equipment, which is implemented on hardware supplied by the company.
 
 The goal of the project is to optimize the consumption to make it last longer, from 3 days to 7 days or more, add an NFC[^2] component, and improve the security and the user experience based on the existing prototype.
 
-#### B. Requirements
+### B. Requirements
 
 By following the requests of the client company, the students will focus on the following points of the project:
+
 - Send device information to the API[^3]
   - Battery level
   - Position (latitude, longitude)
@@ -55,12 +56,13 @@ All the code must be written in Arduino's[^4] language (a variant of the C++[^5]
 
 ## II. Ressources Requirements
 
-#### A. Testing Environment
+### A. Testing Environment
 
 Operating system: MacOS, Windows
 language: C++, Arduino
 IDE[^6]: [VisualStudioCode](https://code.visualstudio.com/download), [Arduino IDE](https://www.arduino.cc/en/software)
 Libraries:
+
 - [NRF52_MBED_TimerInterrupt](https://github.com/khoih-prog/NRF52_MBED_TimerInterrupt) V1.4.1
 - [ArduinoBLE](https://www.arduino.cc/reference/en/libraries/arduinoble/) V1.3.6
 - [Adafruit GPS Library](https://www.arduino.cc/reference/en/libraries/adafruit-gps-library/) V1.7.4 (install all)
@@ -68,13 +70,13 @@ Libraries:
 - [Seeed Arduino LSM6DS3](https://www.arduino.cc/reference/en/libraries/seeed-arduino-lsm6ds3/) V2.0.3
 - [OneWire](https://github.com/PaulStoffregen/OneWire) V2.3.7
 
-#### B. Testing Tool Requirements
+### B. Testing Tool Requirements
 
 [W3C - Testing/Requirements](https://www.w3.org/wiki/Testing/Requirements)
 
 ## III. Strategy
 
-#### A. Testing Type
+### A. Testing Type
 
 **Unit tests**
 
@@ -98,41 +100,54 @@ Smoke tests are basic tests that check the basic functionality of a device. They
 
 *source: [Atlsassian - types of software testing](https://www.atlassian.com/continuous-delivery/software-testing/types-of-software-testing)*
 
-#### B. Test Strategy
+### B. Test Strategy
+
+
 
 **battery management tests**
 
 Test ID 01: (functional test)
+
 For 5 minutes with the same position, the battery give the minimum of powerful to the bluetooth, in an ambient environment.
+
 - modify code to wait 5 secondes
 - wait 5 secondes
 - see the message send
 
 Test ID 02: (functional test)
+
 For 5 minutes with the same position, the battery give the minimum of powerful to the bluetooth, in a cold environment.
+
 - modify code to wait 5 secondes
 - put in the freezer (-10°C)
 - wait 5 secondes
 - see the message send
 
 Test ID 03: (end-to-end test)
+
 The lifespan of the battery is 7 days with 6 hours of operation and 18h in stand-by, in an ambient environment.
+
 - write program to power on and power off at good time
 - unplug the the device
 - wait
 
 Test ID 04: (end-to-end test)
+
 The lifespan of the battery is 7 days with 6 hours of operation and 18h in stand-by, in a cold environment.
+
 - write program to power on and power off at good time
 - unplug the the device
 - put in the freezer (-10°C)
 - wait
 
 Test ID 05: (smoke test)
+
 The battery reaches 20% level and turn off.
 
 Test ID 06: (integration test)
+
 The battery reaches 80% level and stops charging.
+
 - charge the battery
 - wait 80% level
 - send message
@@ -141,28 +156,38 @@ The battery reaches 80% level and stops charging.
 **Security issue**
 
 Test ID 07: (integreation test)
+
 The phone send request to the device to give them password
+
 - write program which send "I need password" to the device when the we press "give a password" button
 
 Test ID 08: (functional test)
+
 The device send an email with the password
+
 - write program which send "password given" to an e-mail
 - check receipt of the e-mail
 
 Test ID 09: (integration test)
+
 The device send request which open in the phone a window to put the password given
+
 - write program to open the windows
 - send information to the phone
 - the window is open on the screen phone
 
 Test ID 10: (unit test)
+
 When the wrong password is enter, print a message
+
 - write the password on the window
 - press "validate" button
 - "Wrong password" message print
 
 Test ID 11: (unit test)
+
 When the good password is enter, print a message and close the password window
+
 - write the password on the window
 - press "validate" button
 - "Good password" message print
@@ -171,44 +196,60 @@ When the good password is enter, print a message and close the password window
 **Lock / unlock**
 
 Test ID 12: (unit test)
+
 We can unlock the device, with the device, in an ambient environment
+
 - test the code to unlock the electromagnet
 
 Test ID 13: (unit test)
+
 We can unlock the device, with the device, in a cold environment
+
 - put in the freezer (-10°C)
 - test the code to unlock the electromagnet
 
 Test ID 14: (unit test)
+
 We can lock the device, with the device, in an ambient environment
+
 - test the code to lock the electromagnet
 
 Test ID 15: (unit test)
+
 We can lock the device, with the device, in a cold environment
+
 - put in the freezer (-10°C)
 - test the code to lock the electromagnet
 
 Test ID 16: (integration test)
+
 We can unlock the device, with the phone, in an ambient environment
+
 - press unlock button on the phone
 - request send to the device by the phone
 - unlock the electromagnet
 
 Test ID 17: (integration test)
+
 We can unlock the device, with the phone, in a cold environment
+
 - put in the freezer (-10°C)
 - press unlock button on the phone
 - request send to the device by the phone
 - unlock the electromagnet
 
 Test ID 18: (integration test)
+
 We can lock the device, with the phone, in an ambient environment
+
 - press lock button on the phone
 - request send to the device by the phone
 - lock the electromagnet
 
 Test ID 19: (integration test)
+
 We can lock the device, with the phone, in a cold environment
+
 - put in the freezer (-10°C)
 - press lock button on the phone
 - request send to the device by the phone
@@ -217,38 +258,47 @@ We can lock the device, with the phone, in a cold environment
 **NFC**
 
 Test ID 20:
+
 <span style="color:red">to be defined</span>
 
 Test ID 21:
+
 <span style="color:red">to be defined</span>
 
 **Alarm management**
 
-Test ID 22:
+Test ID 22: (unit test)
+
 move the device slowly to have 3 light sounds
 
-Test ID 23:
+Test ID 23: (unit test)
+
 move the device quikly to have 5 high sounds
 
-Test ID 24:
+Test ID 24: (unit test)
+
 shock the device to have 5 hiht sounds
 
 **Shock notification**
 
-Test ID 2.:
+Test ID 25:
+
 <span style="color:red">to be defined</span>
 
 **GNSS position acquisition**
 
 Test ID 2.:
+
 <span style="color:red">to be defined</span>
 
 **Activate / desactivate by app**
 
 Test ID 2.:
+
 <span style="color:red">to be defined</span>
 
 Test ID 2.:
+
 <span style="color:red">to be defined</span>
 
 ## IV. Documentation test
@@ -264,7 +314,7 @@ Test ID 2.:
 | g | 4th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 05/04/2024 | XX/0X/2024 |
 | h | 5th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 12/04/2024 | XX/0X/2024 |
 | i | User Manual | Enzo GUILLOUCHE (Technical Writer) | Grégory PAGNOUX (Quality Assurance) | 10/04/2024 | XX/0X/2024 |
-| j | Test Plan | Grégory Pagnoux (Quality Assurance) | Grégory PAGNOUX (Quality Assurance), Enzo GUILLOUCHE (Technical Writer) | 10/04/2024 | XX/0X/2024 |
+| j | Test Plan | Grégory Pagnoux (Quality Assurance) | Grégory PAGNOUX (Quality Assurance), Enzo GUILLOUCHE (Technical Writer), Robin DEBRY (Project Manager) | 10/04/2024 | XX/0X/2024 |
 | k | 6th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 19/04/2024 | XX/0X/2024 |
 | l | Readme | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 19/04/2024 | XX/0X/2024 |
 
@@ -273,8 +323,10 @@ Test ID 2.:
 **Test convention**
 
 - explicitly state the purpose of the test
+
+*ex:*
+
 ```C++
-[Fact]
 public void Add_SingleNumber_ReturnsSameNumber()
 {
     var stringCalculator = new StringCalculator();
@@ -286,8 +338,10 @@ public void Add_SingleNumber_ReturnsSameNumber()
 ```
 
 - separate each of these actions
+
+*ex:*
+
 ```C++
-[Fact]
 public void Add_EmptyString_ReturnsZero()
 {
     // Arrange
@@ -302,8 +356,10 @@ public void Add_EmptyString_ReturnsZero()
 ```
 
 - naming variables (without magic chains[^7])
+
+*ex:*
+
 ```C++
-[Fact]
 void Add_MaximumSumResult_ThrowsOverflowException()
 {
     var stringCalculator = new StringCalculator();
@@ -316,8 +372,10 @@ void Add_MaximumSumResult_ThrowsOverflowException()
 ```
 
 - No logic in the tests
+
+*ex:*
+
 ```C++
-[Theory]
 [InlineData("0,0,0", 0)]
 [InlineData("0,1,2", 3)]
 [InlineData("1,2,3", 6)]
