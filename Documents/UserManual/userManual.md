@@ -101,11 +101,8 @@ The SportShield prevents your sport belongings from thiefs. Its installation dea
 If SportShield is not connected to your smartphone, refer to the [set up part](#set-up-sportshield).<br><br>
 The SportShield is now locked and you won't be able to pull the cable anymore, if you don't unlock it. 
 <br><br>
-You'll receive a notification if the SportShield detects a shock. 
-
+You'll receive a notification if the SportShield detects a shock. <br>
 For more information about notifications, refer to the [dedicated manual part](#notifications).
-
-<!-- add a locked SportShield image -->
 
 <div style="page-break-after: always;"></div>
 
@@ -118,12 +115,12 @@ By Bluetooth:
 2. Click on the "Unlock" button to unlock SportShield.<br>
 <img src="./Img/BluetoothUnlock.png" width="200"/>
 
+Regarding the SportShield app, see the [dedicated manual part](#app).
+
 <br>
 The SportShield is now unlocked. The alarm won't ring and you can take your device back.
 
 <br>
-
-<!-- add an ublocked SportShield image -->
 
 <div style="page-break-after: always;"></div>
 
@@ -132,13 +129,18 @@ The SportShield is now unlocked. The alarm won't ring and you can take your devi
 When the SportShield is locked, each detected shock will ring an alarm. <br>The alarm intensity depends on the shock intensity: <br>
 - 3 light sounds when a light shock is detected.
 - 5 long high sounds when a strong shock is detected.
-<br>
+<br><br>
 
-Whenever the alarm rings, a notification is sent to the smartphone.<br>
+Moreover, you can stop the alarm whenever you want. To do so, you can use either the Bluetooth or the app. <br>
+
+<!-- By Bluetooth:<br> are they the same steps as the "unlock"? -->
+
+Regarding the SportShield app, see the [dedicated manual part](#app).
+
+When the alarm rings, a notification is sent to the linked smartphone.<br>
 For more information about notifications, refer to the [dedicated manual part](#notifications).
 <br>
 
-<!-- need to add details -->
 
 # App
 
