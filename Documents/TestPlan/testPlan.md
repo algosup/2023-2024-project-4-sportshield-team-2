@@ -15,9 +15,8 @@
   - [III. Strategy](#iii-strategy)
       - [A. Testing Type](#a-testing-type)
       - [B. Test Strategy](#b-test-strategy)
-  - [IV. Installation Qualification](#iv-installation-qualification)
-  - [V. Documentation test](#v-documentation-test)
-  - [VI. Code test](#vi-code-test)
+  - [IV. Documentation test](#iv-documentation-test)
+  - [V. Code test](#v-code-test)
   - [Glossary](#glossary)
 
 </details>
@@ -103,36 +102,36 @@ Smoke tests are basic tests that check the basic functionality of a device. They
 
 **battery management tests**
 
-Test 01:
+Test ID 01: (functional test)
 For 5 minutes with the same position, the battery give the minimum of powerful to the bluetooth, in an ambient environment.
 - modify code to wait 5 secondes
 - wait 5 secondes
 - see the message send
 
-Test 02:
+Test ID 02: (functional test)
 For 5 minutes with the same position, the battery give the minimum of powerful to the bluetooth, in a cold environment.
 - modify code to wait 5 secondes
-- put in the freezer
+- put in the freezer (-10°C)
 - wait 5 secondes
 - see the message send
 
-Test 03:
+Test ID 03: (end-to-end test)
 The lifespan of the battery is 7 days with 6 hours of operation and 18h in stand-by, in an ambient environment.
 - write program to power on and power off at good time
 - unplug the the device
 - wait
 
-Test 04:
+Test ID 04: (end-to-end test)
 The lifespan of the battery is 7 days with 6 hours of operation and 18h in stand-by, in a cold environment.
 - write program to power on and power off at good time
 - unplug the the device
-- put in the freezer
+- put in the freezer (-10°C)
 - wait
 
-Test 05:
+Test ID 05: (smoke test)
 The battery reaches 20% level and turn off.
 
-Test 06:
+Test ID 06: (integration test)
 The battery reaches 80% level and stops charging.
 - charge the battery
 - wait 80% level
@@ -141,53 +140,118 @@ The battery reaches 80% level and stops charging.
 
 **Security issue**
 
-allowed to all users by default |-> increase access to alarm
-device ask password to phone and phone ask to device
-Test 0.:
-<span style="color:red">to be defined</span>
+Test ID 07: (integreation test)
+The phone send request to the device to give them password
+- write program which send "I need password" to the device when the we press "give a password" button
+
+Test ID 08: (functional test)
+The device send an email with the password
+- write program which send "password given" to an e-mail
+- check receipt of the e-mail
+
+Test ID 09: (integration test)
+The device send request which open in the phone a window to put the password given
+- write program to open the windows
+- send information to the phone
+- the window is open on the screen phone
+
+Test ID 10: (unit test)
+When the wrong password is enter, print a message
+- write the password on the window
+- press "validate" button
+- "Wrong password" message print
+
+Test ID 11: (unit test)
+When the good password is enter, print a message and close the password window
+- write the password on the window
+- press "validate" button
+- "Good password" message print
+- the window closes
 
 **Lock / unlock**
 
-Test 1.:
-<span style="color:red">to be defined</span>
+Test ID 12: (unit test)
+We can unlock the device, with the device, in an ambient environment
+- test the code to unlock the electromagnet
 
-Test 1.:
-<span style="color:red">to be defined</span>
+Test ID 13: (unit test)
+We can unlock the device, with the device, in a cold environment
+- put in the freezer (-10°C)
+- test the code to unlock the electromagnet
+
+Test ID 14: (unit test)
+We can lock the device, with the device, in an ambient environment
+- test the code to lock the electromagnet
+
+Test ID 15: (unit test)
+We can lock the device, with the device, in a cold environment
+- put in the freezer (-10°C)
+- test the code to lock the electromagnet
+
+Test ID 16: (integration test)
+We can unlock the device, with the phone, in an ambient environment
+- press unlock button on the phone
+- request send to the device by the phone
+- unlock the electromagnet
+
+Test ID 17: (integration test)
+We can unlock the device, with the phone, in a cold environment
+- put in the freezer (-10°C)
+- press unlock button on the phone
+- request send to the device by the phone
+- unlock the electromagnet
+
+Test ID 18: (integration test)
+We can lock the device, with the phone, in an ambient environment
+- press lock button on the phone
+- request send to the device by the phone
+- lock the electromagnet
+
+Test ID 19: (integration test)
+We can lock the device, with the phone, in a cold environment
+- put in the freezer (-10°C)
+- press lock button on the phone
+- request send to the device by the phone
+- lock the electromagnet
 
 **NFC**
 
-Test 1.:
+Test ID 20:
+<span style="color:red">to be defined</span>
+
+Test ID 21:
 <span style="color:red">to be defined</span>
 
 **Alarm management**
 
-3 light sounds -> little movement / 5 long high sounds -> big movement, shock
-Test 1.:
-<span style="color:red">to be defined</span>
+Test ID 22:
+move the device slowly to have 3 light sounds
+
+Test ID 23:
+move the device quikly to have 5 high sounds
+
+Test ID 24:
+shock the device to have 5 hiht sounds
 
 **Shock notification**
 
-Test 2.:
+Test ID 2.:
 <span style="color:red">to be defined</span>
 
 **GNSS position acquisition**
 
-Test 2.:
+Test ID 2.:
 <span style="color:red">to be defined</span>
 
 **Activate / desactivate by app**
 
-Test 2.:
+Test ID 2.:
 <span style="color:red">to be defined</span>
 
-Test 2.:
+Test ID 2.:
 <span style="color:red">to be defined</span>
 
-## IV. Installation Qualification
-
-<span style="color:red">to be defined</span>
-
-## V. Documentation test
+## IV. Documentation test
 
 | ID | Document | Writer | Reviewers | Deadline | Completion date |
 | - | - | - | - | - | - |
@@ -204,7 +268,7 @@ Test 2.:
 | k | 6th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 19/04/2024 | XX/0X/2024 |
 | l | Readme | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 19/04/2024 | XX/0X/2024 |
 
-## VI. Code test
+## V. Code test
 
 **Test convention**
 
@@ -283,13 +347,13 @@ public void Add_MultipleNumbers_ReturnsSumOfNumbers(string input, int expected)
 
 **Testing Schedule**
 
-| ID | Deadline | Completion date | Result |
-| - | - | - | - |
-|  | XX/0X/2024 | XX/0X/2024 | None |
-|  | XX/0X/2024 | XX/0X/2024 | None |
-|  | XX/0X/2024 | XX/0X/2024 | None |
-|  | XX/0X/2024 | XX/0X/2024 | None |
-|  | XX/0X/2024 | XX/0X/2024 | None |
+| ID | Type | Deadline | Completion date | Result |
+| - | - | - | - | - |
+|  |  | XX/0X/2024 | XX/0X/2024 | None |
+|  |  | XX/0X/2024 | XX/0X/2024 | None |
+|  |  | XX/0X/2024 | XX/0X/2024 | None |
+|  |  | XX/0X/2024 | XX/0X/2024 | None |
+|  |  | XX/0X/2024 | XX/0X/2024 | None |
 
 [Test cases](https://github.com/algosup/2023-2024-project-4-sportshield-team-2/issues) are done on GitHub issues.
 
