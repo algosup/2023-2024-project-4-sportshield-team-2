@@ -1,8 +1,9 @@
-this document contains the main documentation for the management of the project like :
+This document contains the main documentation for the management of the project like :
 
 - [Project charter](#project-charter)
 - [Task schedule](#task-schedule)
 - [RACI matrix](#raci-matrix)
+- [MoSCoW](#moscow)
 - [Target Key Performace Indicators](#target-key-performace-indicators)
 - [Statement of work](#statement-of-work)
 
@@ -38,6 +39,8 @@ Legend:
 |I|Informed|The people who are kept informed of the project's progress.|
 |X|Not applicable|The task is not applicable to the person or role.|
 
+## MoSCoW
+
 | Must Have| Should Have | Could Have | Won't Have |
 | -------- | ----------- | ---------- | ---------- |
 | - Battery lifespan of seven days <br> - Manage all security issues <br> - Shock detection <br> - Unlock the device | - Unlock the device with NFC <br> - Shock notification|X| - GNSS position acquisition <br> - Activate/Desactivate by app|
@@ -52,6 +55,6 @@ Legend:
 | Shock notification | The device must be able to send a notification when a shock is detected | 95% |
 | GNSS position acquisition | The device must be able to acquire the GNSS position | 80% |
 
-This target KPIs are based on the client's requirements.
+These target KPIs are based on the client's requirements.
 
 ## Statement of work

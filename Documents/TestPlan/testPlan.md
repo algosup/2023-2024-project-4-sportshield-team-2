@@ -1,12 +1,13 @@
-# Sportshield - Test Plan
+# Sportshield Project Test Plan
 
 ---
 
 <details>
 <summary>Table of Contents</summary>
 
-- [Sportshield - Test Plan](#sportshield---test-plan)
+- [Sportshield Project Test Plan](#sportshield-project-test-plan)
   - [I. Introduction](#i-introduction)
+<<<<<<< HEAD:Documents/TestPlan/testPlan.md
     - [A. Overview](#a-overview)
     - [B. Requirements](#b-requirements)
   - [II. Ressources Requirements](#ii-ressources-requirements)
@@ -17,6 +18,20 @@
     - [B. Test Strategy](#b-test-strategy)
   - [IV. Documentation test](#iv-documentation-test)
   - [V. Code test](#v-code-test)
+=======
+      - [A. Overview](#a-overview)
+      - [B. Requirements](#b-requirements)
+      - [C. Roles and Responsabilities](#c-roles-and-responsabilities)
+  - [II. Ressources Requirements](#ii-ressources-requirements)
+      - [A. Testing Environment](#a-testing-environment)
+      - [B. Testing Tool Requirements](#b-testing-tool-requirements)
+      - [C. Additional Ressource Requirements](#c-additional-ressource-requirements)
+  - [III. Strategy](#iii-strategy)
+      - [A. Test Strategy](#a-test-strategy)
+      - [B. Testing Type](#b-testing-type)
+  - [IV. Installation Qualification](#iv-installation-qualification)
+  - [V. Test Documentation](#v-test-documentation)
+>>>>>>> 9546b5fa72fd5bd5ed0b9e4bed90cba1bd3c09c8:Documents/testPlan.md
   - [Glossary](#glossary)
 
 </details>
@@ -29,13 +44,11 @@
 
 ### A. Overview
 
-The project was commissioned by [CORIS Innovation](https://www.corisinnovation.com)[^1] from [ALGOSUP](https://algosup.com/en.html) students, and involved software maintenance.
-The software is an application for securing sports equipment, which is implemented on hardware supplied by the company.
-
-The goal of the project is to optimize the consumption to make it last longer, from 3 days to 7 days or more, add an NFC[^2] component, and improve the security and the user experience based on the existing prototype.
+<span style="color:red">to be defined</span>
 
 ### B. Requirements
 
+<<<<<<< HEAD:Documents/TestPlan/testPlan.md
 By following the requests of the client company, the students will focus on the following points of the project:
 
 - Send device information to the API[^3]
@@ -51,18 +64,37 @@ By following the requests of the client company, the students will focus on the 
 - Have an NFC: be able to activate/deactivate the locking mechanism without using the phone
 - Manage multiple events in real-time
 - Send notification to the phone
+=======
+<span style="color:red">to be defined</span>
+>>>>>>> 9546b5fa72fd5bd5ed0b9e4bed90cba1bd3c09c8:Documents/testPlan.md
 
-All the code must be written in Arduino's[^4] language (a variant of the C++[^5] programming language), following the existing code convention. No libraries except the ones that have already been given are allowed.
+#### C. Roles and Responsabilities
+
+| Name | Role | Responsability | GitHub |
+|---|---|---|---|
+| <img src="https://ca.slack-edge.com/T06NA42V4FN-U06MT3ZEBP1-g8dddf3c594e-64"> DEBRY Robin | Project Manager |  | [GitHub](https://github.com/robin-debry) |
+| <img src="https://ca.slack-edge.com/T06NA42V4FN-U06NA4GBKTN-g7986289d5c2-64"> GAGNEPAIN Mathias | Program Manager |  | [GitHub](https://github.com/MathiasGagnepain) |
+| <img src="https://ca.slack-edge.com/T06NA42V4FN-U06NWDSQ38Q-gd0f64565afd-64"> DELILLE Elone | Technical Leader |  | [GitHub](https://github.com/HiNett) |
+| <img src="https://ca.slack-edge.com/T06NA42V4FN-U06N7LH3KB4-g20f42d2a13d-64"> GUILLOUCHE Enzo | Technical Writer |  | [GitHub](https://github.com/EnzoGuillouche) |
+| <img src="https://ca.slack-edge.com/T06NA42V4FN-U06N7H57DA7-g10c7c642461-64"> DESCAMPS Raphaël | Software Engineer |  | [GitHub](https://github.com/Raphaeldcp) |
+| <img src="https://ca.slack-edge.com/T06NA42V4FN-U06N11QLUDU-g83dc41ed93a-64"> PAGNOUX Grégory | Quality Assurance |  | [GitHub](https://github.com/Gregory-Pagnoux) |
 
 ## II. Ressources Requirements
 
 ### A. Testing Environment
 
+<<<<<<< HEAD:Documents/TestPlan/testPlan.md
 Operating system: MacOS, Windows
 language: C++, Arduino
 IDE[^6]: [VisualStudioCode](https://code.visualstudio.com/download), [Arduino IDE](https://www.arduino.cc/en/software)
 Libraries:
 
+=======
+Operating system : MacOS, Windows, Arduino
+language : C, Arduino
+Integrated Development Environment : VisualStudioCode
+Libraries :
+>>>>>>> 9546b5fa72fd5bd5ed0b9e4bed90cba1bd3c09c8:Documents/testPlan.md
 - [NRF52_MBED_TimerInterrupt](https://github.com/khoih-prog/NRF52_MBED_TimerInterrupt) V1.4.1
 - [ArduinoBLE](https://www.arduino.cc/reference/en/libraries/arduinoble/) V1.3.6
 - [Adafruit GPS Library](https://www.arduino.cc/reference/en/libraries/adafruit-gps-library/) V1.7.4 (install all)
@@ -72,15 +104,27 @@ Libraries:
 
 ### B. Testing Tool Requirements
 
-[W3C - Testing/Requirements](https://www.w3.org/wiki/Testing/Requirements)
+<span style="color:red">to be defined</span>
+
+#### C. Additional Ressource Requirements
+
+<span style="color:red">to be defined</span>
 
 ## III. Strategy
 
+<<<<<<< HEAD:Documents/TestPlan/testPlan.md
 ### A. Testing Type
+=======
+#### A. Test Strategy
+
+<span style="color:red">to be defined</span>
+
+#### B. Testing Type
+>>>>>>> 9546b5fa72fd5bd5ed0b9e4bed90cba1bd3c09c8:Documents/testPlan.md
 
 **Unit tests**
 
-Unit tests are very low-level and close to the source of an application. They consist of testing individual methods and functions of the classes, components, or modules used by your software. Unit tests are generally quite cheap to automate and can run very quickly by a continuous integration server.
+Unit tests are very low level and close to the source of an application. They consist in testing individual methods and functions of the classes, components, or modules used by your software. Unit tests are generally quite cheap to automate and can run very quickly by a continuous integration server.
 
 **Integration tests**
 
@@ -96,6 +140,7 @@ End-to-end testing replicates a user behavior with the software in a complete ap
 
 **Smoke tests**
 
+<<<<<<< HEAD:Documents/TestPlan/testPlan.md
 Smoke tests are basic tests that check the basic functionality of a device. They are meant to be quick to execute, and their goal is to assure you that the major features of your system are working as expected.
 
 *source: [Atlsassian - types of software testing](https://www.atlassian.com/continuous-delivery/software-testing/types-of-software-testing)*
@@ -412,15 +457,45 @@ public void Add_MultipleNumbers_ReturnsSumOfNumbers(string input, int expected)
 |  |  | XX/0X/2024 | XX/0X/2024 | None |
 |  |  | XX/0X/2024 | XX/0X/2024 | None |
 |  |  | XX/0X/2024 | XX/0X/2024 | None |
+=======
+Smoke tests are basic tests that check the basic functionality of an application. They are meant to be quick to execute, and their goal is to give you the assurance that the major features of your system are working as expected.
 
-[Test cases](https://github.com/algosup/2023-2024-project-4-sportshield-team-2/issues) are done on GitHub issues.
+*source : [Atlsassian - types of software testing](https://www.atlassian.com/continuous-delivery/software-testing/types-of-software-testing)*
+
+## IV. Installation Qualification
+
+<span style="color:red">to be defined</span>
+
+## V. Test Documentation
+
+<span style="color:red">to be defined</span>
+
+**Criterias**
+
+<span style="color:red">to be defined</span>
+
+**Testing Schedule**
+
+| ID | Function | Developer | Description | Deadline | Completion date |
+| - | - | - | - | - | - |
+| 01 |  |  |  | XX/0X/2024 | XX/0X/2024 |
+| 02 |  |  |  | XX/0X/2024 | XX/0X/2024 |
+| 03 |  |  |  | XX/0X/2024 | XX/0X/2024 |
+| 04 |  |  |  | XX/0X/2024 | XX/0X/2024 |
+| 05 |  |  |  | XX/0X/2024 | XX/0X/2024 |
+>>>>>>> 9546b5fa72fd5bd5ed0b9e4bed90cba1bd3c09c8:Documents/testPlan.md
+
+**Test convention**
+
+<span style="color:red">to be defined</span>
+
+[Test case](https://github.com/algosup/2023-2024-project-4-sportshield-team-2/issues) is done on GitHub issues category.
 
 ## Glossary
 
-[^1]: CORIS Innovation
-The company's main activities are engineering and engineering consultancy, recruitment and headhunting, business management consultancy, and strategic operations. The head office is not far from Lyon and has been in existence since 2015 thanks to Thibault Peltier and Stéphane Maite.
-*source: [CORIS Innonvation](https://www.corisinnovation.com)*
+<span style="color:red">to be defined</span>
 
+<<<<<<< HEAD:Documents/TestPlan/testPlan.md
 [^2]: NFC (Near Field Communication)
 Wireless transmission technology that simplifies the exchange of data. The technology is used in particular for Bluetooth on mobile phones.
 *source: [Phonandroïd](https://www.phonandroid.com/nfc-android-comment-marche-pour-quels-usages.html#:~:text=Le%20NFC%20)*
@@ -456,3 +531,6 @@ A value that is not defined and for which we do not know what it represents.
 [^9]: Sevrity
 The severity is the impact of the issues on the project/program. Is measure thanks level system which the 1 is critical, 2 is Major, 3 is Minor, and 4 is Low. It's the role of the QA to define the severity of the issue.
 *source: [TestSigma](https://testsigma.com/blog/difference-between-priority-and-severity/)*
+=======
+*source : [link]()*
+>>>>>>> 9546b5fa72fd5bd5ed0b9e4bed90cba1bd3c09c8:Documents/testPlan.md

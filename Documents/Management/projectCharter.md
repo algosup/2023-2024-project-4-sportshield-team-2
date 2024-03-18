@@ -1,5 +1,20 @@
 # Project Charter
 
+<details>
+
+<summary>Table of contents</summary>
+
+- [Project Charter](#project-charter)
+  - [Overview of the project](#overview-of-the-project)
+  - [Components](#components)
+  - [Deliverables](#deliverables)
+  - [Milestones](#milestones)
+  - [Scopes](#scopes)
+  - [Time Management](#time-management)
+  - [Budget](#budget)
+
+</details>
+
 ## Overview of the project
 
 The project was commissioned by [CORIS Innovation](https://www.corisinnovation.com) from [ALGOSUP](https://algosup.com/en.html) students, and involved software maintenance. The software is an application for securing sports equipment, which is implemented on hardware supplied by the company.
@@ -38,7 +53,7 @@ The final project must therefore be submitted by the 10th of April 2024 at 5PM.
 ## Milestones
 
 | Name | Delivery Time |
-|---|---|
+|------|---------------|
 | Functional Specifications (Markdown Document) | 18th of March 2024, 5pm |
 | Technical Specifications (Markdown Document) | 26th of March 2024, 5pm |
 | Test plan (Markdown Document) | 10th of April 2024, 5pm |

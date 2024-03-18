@@ -1,0 +1,34 @@
+name: "Document Issue"
+description: "Create an issue to solve document problem"
+title: "XXXXX"
+labels: ["Document Issue"]
+body:
+  - type: dropdown
+    id: severity
+    attributes:
+      label: "Severity"
+      options:
+        - 1 - Critical
+        - 2 - High
+        - 3 - Medium
+        - 4 - Low
+        - 5 - None
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Issue seen"
+      description: "What are the issues that need be corrected with the lines"
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected result"
+      description: "What's the correction with the line "
+  - type: dropdown
+    id: status
+    attributes:
+      label: "Status"
+      options:
+        - Pass
+        - Fail

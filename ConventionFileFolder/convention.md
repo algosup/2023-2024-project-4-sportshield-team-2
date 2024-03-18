@@ -6,4 +6,4 @@ The file name should be in the camel case format. The file name should be in the
 
 ## Convention of the folder name
 
-The folder name should be in the pascal case format. The folder name should be in the format of `FolderName`. For example, `Document`, `Convention`, `Naming`, etc.
+The folder name should be in the pascal case format. The folder name should be in the format of `FolderName`. For example, `Document`, `FunctionalSpecification`, `TechnicalSpecification`, etc.
