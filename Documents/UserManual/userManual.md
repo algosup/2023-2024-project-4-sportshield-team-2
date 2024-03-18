@@ -1,4 +1,3 @@
-@ -0,0 +1,211 @@
 <p align="center">
     <img src="https://assets-global.website-files.com/656097f111c9c42578f4fa01/65648d5d98f6814022b9474a_6e5ca96fcf317623caec20ca96892327.png">
 </p>
@@ -22,8 +21,6 @@
 - [How to unlock SportShield](#how-to-unlock-sportshield)
 - [Alarm](#alarm)
 - [App](#app)
-  - [App Set up](#app-set-up)
-  - [App Settings](#app-settings)
 - [Notifications](#notifications)
 - [General Info and Specifications](#general-info-and-specifications)
   - [Components](#components)
@@ -41,6 +38,9 @@
 # Get Started
 
 SportShield is an innovative anti-theft device designed for sports equipment, equipped with sensors and actuators to detect movement, activate an alarm, and notify the owner.
+<br><br>
+**SportShield is still in development. This prototype doesn't include yet all the features that we are planning to implement.**
+
 
 ## What's in the box
 
@@ -50,10 +50,6 @@ Your SportShield includes:
 <img src="./Img/deviceBottom.png" width="200"/>
 - This user manual
 
-
-
-<div style="page-break-after: always;"></div>
-
 ## Charge your SportShield
 
 A fully-charged SportShield can last over 6 days.
@@ -61,7 +57,7 @@ A fully-charged SportShield can last over 6 days.
 
 To charge SportShield:
 
-1. Plug the charger into the USB port on the SportShield.
+1. Plug the charger into the USB port on the SportShield.<br>
 <img src="./Img/chargingPort.png" width="200"/>
 2. Plug the other end of the charger into an outlet.
 
@@ -79,13 +75,13 @@ To fully use the SportShield device, you'd need to set up few things with your s
 You can either set up by Bluetooth or with the SportShield app. <br><br>
 By Bluetooth:
 - Enable your Bluetooth connection on your phone.
-- You'd find a device named "SportShield".
-- Connect your smartphone with the device. 
+- You should find a device named "SportShield".<br>
+<img src="./Img/findBluetooth.jpg" width="200"/>
+- Connect your smartphone with the device. <br>
+<img src="./Img/BluetoothSettings.png" width="200"/>
 <br><br>
   
-With the SportShield app, see the [dedicated manual part](#app-set-up).
-
-<!-- For more information, see  -->
+Regarding the SportShield app, see the [dedicated manual part](#app).
 
 <br>
 
@@ -130,6 +126,8 @@ The SportShield is now unlocked. The alarm won't ring and you can take your devi
 
 <br>
 
+<div style="page-break-after: always;"></div>
+
 # Alarm
 
 When the SportShield is locked, each detected shock will ring an alarm. <br>The alarm intensity depends on the shock intensity: <br>
@@ -143,28 +141,15 @@ For more information about notifications, refer to the [dedicated manual part](#
 
 # App
 
-## App Set up
+The SportShield app would be available either on the Apple App Store and the Google Play Store.<br>
+Even though, the app has not been synchronized with the SportShield device. In this user manual, you won't be able to find any useful information about this application.
 
-Set up SportShield with the SportShield app.
-
-
-To get started:
-
-1. Download the SportShield app. (Available on the Apple App Store and the Google Play Store?)
-2. Open the app.
-3. Follow the on-screen instructions to set up your device. 
-
-<br>
-
-When you're done with setup, read through the next parts of this guide to learn more about your new SportShield app.
-
-## App Settings 
-
-<!--some settings-->
 
 # Notifications
 
 The nofications contain some information about the device, such as the GPS coordinates (longitude lagitude) and the remaining battery percentage. 
+
+<div style="page-break-after: always;"></div>
 
 # General Info and Specifications
 
@@ -205,5 +190,6 @@ Integrity stands as a pillar of trustworthiness within SportShield's framework. 
 
 Availability, the third facet of the AIC triad, underscores SportShield's commitment to ensuring that authorized parties can access information promptly and consistently. Through diligent maintenance of hardware, technical infrastructure, and systems, SportShield endeavors to eliminate downtime and disruptions, thereby enabling seamless access to vital data whenever and wherever it is needed.
 
+<div style="page-break-after: always;"></div>
 
 ©2015-2024 Coris Innovation. All rights reserved. Coris Innovation and the Coris Innovation logo are trademarks or registered trademarks of Coris Innovation
