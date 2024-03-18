@@ -108,152 +108,152 @@ Smoke tests are basic tests that check the basic functionality of a device. They
 
 Test ID 01: (functional test)
 
-For 5 minutes with the same position, the battery give the minimum of powerful to the bluetooth, in an ambient environment.
+For 5 minutes in the same position, the battery gives the minimum of power to the bluetooth, in an ambient environment.
 
-- modify code to wait 5 secondes
-- wait 5 secondes
-- see the message send
+- Modify code to wait 5 seconds.
+- Wait 5 secondes.
+- See the message send.
 
 Test ID 02: (functional test)
 
-For 5 minutes with the same position, the battery give the minimum of powerful to the bluetooth, in a cold environment.
+For 5 minutes in the same position, the battery gives the minimum of power to the bluetooth, in a cold environment.
 
-- modify code to wait 5 secondes
-- put in the freezer (-10°C)
-- wait 5 secondes
-- see the message send
+- Modify code to wait 5 seconds.
+- Put in the freezer (-10°C).
+- Wait 5 secondes.
+- See the message send.
 
 Test ID 03: (end-to-end test)
 
-The lifespan of the battery is 7 days with 6 hours of operation and 18h in stand-by, in an ambient environment.
+The lifespan of the battery is 7 days with 6 hours of operation and 18 hours on stand-by, in an ambient environment.
 
-- write program to power on and power off at good time
-- unplug the the device
-- wait
+- Write program to power on and power off at a good time.
+- Unplug the device.
+- Wait.
 
 Test ID 04: (end-to-end test)
 
-The lifespan of the battery is 7 days with 6 hours of operation and 18h in stand-by, in a cold environment.
+The lifespan of the battery is 7 days with 6 hours of operation and 18 hours on stand-by, in a cold environment.
 
-- write program to power on and power off at good time
-- unplug the the device
-- put in the freezer (-10°C)
-- wait
+- Write program to power on and power off at a good time.
+- Unplug the device.
+- Put in the freezer (-10°C).
+- Wait.
 
 Test ID 05: (smoke test)
 
-The battery reaches 20% level and turn off.
+The battery reaches a 20% level and turns off.
 
 Test ID 06: (integration test)
 
-The battery reaches 80% level and stops charging.
+The battery reaches a 80% level and stops charging.
 
-- charge the battery
-- wait 80% level
-- send message
-- wait a few minutes for the level to remain unchanged
+- Charge the battery.
+- Wait 80% level.
+- Send message.
+- Wait a few minutes for the level to remain unchanged.
 
-**Security issue**
+**Security issues**
 
-Test ID 07: (integreation test)
+Test ID 07: (integration test)
 
-The phone send request to the device to give them password
+The phone sendsa request to the device to give the password
 
-- write program which send "I need password" to the device when the we press "give a password" button
+- Write a program which sends "I need a password" to the device when we press "give a password" button.
 
 Test ID 08: (functional test)
 
-The device send an email with the password
+The device sends an e-mail with the password
 
-- write program which send "password given" to an e-mail
-- check receipt of the e-mail
+- Write a program which sends "password given" to an e-mail.
+- Check receipt of the e-mail.
 
 Test ID 09: (integration test)
 
-The device send request which open in the phone a window to put the password given
+The device sends a request which opens the application to put the password given
 
-- write program to open the windows
-- send information to the phone
-- the window is open on the screen phone
+- Write a program to open the application.
+- Send information to the phone.
+- The window is open on the screen phone.
 
 Test ID 10: (unit test)
 
-When the wrong password is enter, print a message
+When the wrong password is entered, print a message
 
-- write the password on the window
-- press "validate" button
-- "Wrong password" message print
+- Write the password on the smartphone.
+- Press "validate" button.
+- "Wrong password" message print.
 
 Test ID 11: (unit test)
 
-When the good password is enter, print a message and close the password window
+When the good password is entered, print a message and close the password screen
 
-- write the password on the window
-- press "validate" button
-- "Good password" message print
-- the window closes
+- Write the password on the smartphone.
+- Press the "validate" button.
+- "Good password" message print.
+- The window closes.
 
-**Lock / unlock**
+**Lock/unlock**
 
 Test ID 12: (unit test)
 
 We can unlock the device, with the device, in an ambient environment
 
-- test the code to unlock the electromagnet
+- Test the code to unlock the electromagnet.
 
 Test ID 13: (unit test)
 
-We can unlock the device, with the device, in a cold environment
+We can unlock the device, with device, in a cold environment
 
-- put in the freezer (-10°C)
-- test the code to unlock the electromagnet
+- Put in the freezer (-10°C)
+- Test the code to unlock the electromagnet.
 
 Test ID 14: (unit test)
 
-We can lock the device, with the device, in an ambient environment
+We can lock the device, with device, in an ambient environment
 
-- test the code to lock the electromagnet
+- Test the code to lock the electromagnet.
 
 Test ID 15: (unit test)
 
-We can lock the device, with the device, in a cold environment
+We can lock the device, with device, in a cold environment
 
-- put in the freezer (-10°C)
-- test the code to lock the electromagnet
+- Put in the freezer (-10°C).
+- Test the code to lock the electromagnet.
 
 Test ID 16: (integration test)
 
 We can unlock the device, with the phone, in an ambient environment
 
-- press unlock button on the phone
-- request send to the device by the phone
-- unlock the electromagnet
+- Press the unlock button on the phone.
+- Request sent to the device by the phone.
+- Unlock the electromagnet.
 
 Test ID 17: (integration test)
 
 We can unlock the device, with the phone, in a cold environment
 
-- put in the freezer (-10°C)
-- press unlock button on the phone
-- request send to the device by the phone
-- unlock the electromagnet
+- Put in the freezer (-10°C).
+- Press the unlock button on the phone.
+- Request sent to the device by the phone.
+- Unlock the electromagnet.
 
 Test ID 18: (integration test)
 
 We can lock the device, with the phone, in an ambient environment
 
-- press lock button on the phone
-- request send to the device by the phone
-- lock the electromagnet
+- Press the lock button on the phone.
+- Request sent to the device by the phone.
+- Lock the electromagnet.
 
 Test ID 19: (integration test)
 
 We can lock the device, with the phone, in a cold environment
 
-- put in the freezer (-10°C)
-- press lock button on the phone
-- request send to the device by the phone
-- lock the electromagnet
+- Put in the freezer (-10°C).
+- Press the lock button on the phone.
+- Request sent to the device by the phone.
+- Lock the electromagnet.
 
 **NFC**
 
@@ -269,15 +269,15 @@ Test ID 21:
 
 Test ID 22: (unit test)
 
-move the device slowly to have 3 light sounds
+Move the device slowly to have 3 light sounds.
 
 Test ID 23: (unit test)
 
-move the device quikly to have 5 high sounds
+Move the device quickly to have 5 high sounds.
 
 Test ID 24: (unit test)
 
-shock the device to have 5 hiht sounds
+Shock the device to have 5 high sounds.
 
 **Shock notification**
 
@@ -314,7 +314,7 @@ Test ID 2.:
 | g | 4th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 05/04/2024 | XX/0X/2024 |
 | h | 5th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 12/04/2024 | XX/0X/2024 |
 | i | User Manual | Enzo GUILLOUCHE (Technical Writer) | Grégory PAGNOUX (Quality Assurance) | 10/04/2024 | XX/0X/2024 |
-| j | Test Plan | Grégory Pagnoux (Quality Assurance) | Grégory PAGNOUX (Quality Assurance), Enzo GUILLOUCHE (Technical Writer), Robin DEBRY (Project Manager) | 10/04/2024 | XX/0X/2024 |
+| j | Test Plan | Grégory Pagnoux (Quality Assurance) | Grégory PAGNOUX (Quality Assurance), Robin DEBRY (Project Manager) | 10/04/2024 | XX/0X/2024 |
 | k | 6th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 19/04/2024 | XX/0X/2024 |
 | l | Readme | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 19/04/2024 | XX/0X/2024 |
 
@@ -355,7 +355,7 @@ public void Add_EmptyString_ReturnsZero()
 }
 ```
 
-- naming variables (without magic chains[^7])
+- naming variables (without magic chains[^8])
 
 *ex:*
 
@@ -395,13 +395,13 @@ public void Add_MultipleNumbers_ReturnsSumOfNumbers(string input, int expected)
 
 **Criterias**
 
-| ID | Function | Developer | Description criteria |
-| - | - | - | - |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+| ID | Function | Developer | Description criteria | Severity[^9] |
+| - | - | - | - | - |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
+|  |  |  |  |  |
 
 **Testing Schedule**
 
@@ -426,7 +426,7 @@ Wireless transmission technology that simplifies the exchange of data. The techn
 *source: [Phonandroïd](https://www.phonandroid.com/nfc-android-comment-marche-pour-quels-usages.html#:~:text=Le%20NFC%20)*
 
 [^3]: API (Application Programming Interface)
-A software interface that allows one piece of software or service to be "connected" to another piece of software or service in order to exchange data and functions.
+A software interface that allows one piece of software or service to be "connected" to another piece of software or service to exchange data and functions.
 *source: [CNIL](https://www.cnil.fr/fr/definition/interface-de-programmation-dapplication-api#:~:text=Une%20API%20)*
 
 [^4]: Arduino
@@ -442,9 +442,17 @@ It is one of the most widely used languages, particularly in software developmen
 Software application combining all the tools needed for a software development project in one place. It provides an interface for writing code, organising text groups, and automating redundant programming tasks.
 *source: [DataScientest](https://datascientest.com/ide)*
 
-[^7]: Magic Chains
+[^7]: Code convention
+Coding conventions are a set of guidelines for a specific programming language that recommend programming style, practices, and methods for each aspect of a program written in that language.
+*source: [Wikipedia](https://en.wikipedia.org/wiki/Coding_conventions#:~:text=Coding%20conventions%20are%20a%20set,program%20written%20in%20that%20language.)*
+
+[^8]: Magic Chains
 A value that is not defined and for which we do not know what it represents.
 (e.g: ```Action actual = () => stringCalculator.Add("1001");```
-"1001" is a magic chains and must be defined using a constant such as:
+"1001" is a magic chain and must be defined using a constant such as:
 ```const string MAXIMUM_RESULT = "1001";```
 ```Action actual = () => stringCalculator.Add(MAXIMUM_RESULT);```)
+
+[^9]: Sevrity
+The severity is the impact of the issues on the project/program. Is measure thanks level system which the 1 is critical, 2 is Major, 3 is Minor, and 4 is Low. It's the role of the QA to define the severity of the issue.
+*source: [TestSigma](https://testsigma.com/blog/difference-between-priority-and-severity/)*
