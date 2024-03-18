@@ -55,6 +55,8 @@ The goal of the project is to optimize the consumption to make it last longer, f
   - [Glossary](#glossary)
   - [Appendix](#appendix)
     - [SportShield Scheme](#sportshield-scheme)
+      - [top view transparent](#top-view-transparent)
+      - [bottom view closed](#bottom-view-closed)
 </summary></details>
 
 ## Stakeholders
@@ -169,71 +171,71 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 ### Use Cases
 
 #### Movements & Shocks detection
-| Use Case Name      | Movements & Shocks Detection                                                                                                                                                                        |
-| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Actors             | SportShield Device, User, Mobile App                                                                                                                                                      |
-| Description        | The user should be notified on his mobile phone and SportShield must ring if the device is movement or rotating.                                                                          |
-| Pre-conditions     | The device is activated, and checking the position and shocks.                                                                                                                            |
-| Post-conditions    | The device send a notification to the user through the API.                                                                                                                               |
+| Use Case Name      | Movements & Shocks Detection                                                                                                                                                             |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Actors             | SportShield Device, User, Mobile App                                                                                                                                                     |
+| Description        | The user should be notified on his mobile phone and SportShield must ring if the device is movement or rotating.                                                                         |
+| Pre-conditions     | The device is activated, and checking the position and shocks.                                                                                                                           |
+| Post-conditions    | The device send a notification to the user through the API.                                                                                                                              |
 | Normal Flow        | 1. The user activate the device in the application.<br>2. Someone try to stole the user's stuff.<br>3. The device ring and send a notification.<br>4. The user receive the notification. |
-| Alternative Flows  | 1. If the device is't connected to the network, the status can't be communicated to the app.<br>2. The device can be moved for multiple reason else than a steal.                                         |
-| Exception Handling | 1. The device will send the notification when the signal will be found.<br>2. The device will send a false positive making the user worry.                                                |
+| Alternative Flows  | 1. If the device is't connected to the network, the status can't be communicated to the app.<br>2. The device can be moved for multiple reason else than a steal.                        |
+| Exception Handling | 1. The device will send the notification when the signal will be found.<br>2. The device will send a false positive making the user worry.                                               |
 
 #### Battery Status
-| Use Case Name      |  Battery Status   |
-| ------------------ | --- |
-| Actors             | SportShield, Mobile App    |
-| Description        | The user must know the battery status.    |
-| Pre-conditions     | The device is powered and connected to the network    |
-| Post-conditions    | The battery level is updated in the application.    |
-| Normal Flow        | Every X time the device send the battery state to the App.    |
+| Use Case Name      | Battery Status                                                                           |
+| ------------------ | ---------------------------------------------------------------------------------------- |
+| Actors             | SportShield, Mobile App                                                                  |
+| Description        | The user must know the battery status.                                                   |
+| Pre-conditions     | The device is powered and connected to the network                                       |
+| Post-conditions    | The battery level is updated in the application.                                         |
+| Normal Flow        | Every X time the device send the battery state to the App.                               |
 | Alternative Flows  | 1. If the device is't connected to the network, the battery status can't be communicated |
-| Exception Handling | 1. The device will send the notification when it will be connected.    |
+| Exception Handling | 1. The device will send the notification when it will be connected.                      |
 
 #### Battery is running out
-| Use Case Name      |  Battery is running out   |
-| ------------------ | --- |
-| Actors             | SportShield, Mobile App    |
-| Description        | The user must be informed when the device is running out of battery. If the device is too low, release the rope and turn it off.    |
-| Pre-conditions     | The device is running out of battery    |
-| Post-conditions    | A notification is sent to inform the user    |
-| Normal Flow        | 1. When the battery is low the device send a notification to the user<br>3. when the battery is very too low the device release the cable and turn it-self off to prevent irreversible damage on the battery.   |
+| Use Case Name      | Battery is running out                                                                                                                                                                                                       |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Actors             | SportShield, Mobile App                                                                                                                                                                                                      |
+| Description        | The user must be informed when the device is running out of battery. If the device is too low, release the rope and turn it off.                                                                                             |
+| Pre-conditions     | The device is running out of battery                                                                                                                                                                                         |
+| Post-conditions    | A notification is sent to inform the user                                                                                                                                                                                    |
+| Normal Flow        | 1. When the battery is low the device send a notification to the user<br>3. when the battery is very too low the device release the cable and turn it-self off to prevent irreversible damage on the battery.                |
 | Alternative Flows  | 1. If the device is't connected to the network, the notification can't be sent.<br>2. The battery level is too low and the device isn't connected to the network, it will turn it-self off without sending any notification. |
-| Exception Handling | 1. The device will send the notification when it will be connected.<br>2. The user will not be informed.    |
+| Exception Handling | 1. The device will send the notification when it will be connected.<br>2. The user will not be informed.                                                                                                                     |
 
 #### Battery is fully charged
-| Use Case Name      |  Battery is fully charged   |
-| ------------------ | --- |
-| Actors             | SportShield, Mobile App    |
-| Description        | The user must be informed when the battery is fully charged. When the device is charged, it stopped charging to prevent irreversible battery damage.    |
-| Pre-conditions     | The battery is fully charged    |
-| Post-conditions    | A notification is sent to inform the user    |
-| Normal Flow        | 1. When the battery is fully charge the device stop charging and send a notification to the user    |
-| Alternative Flows  | 1. If the device is't connected to the network, the battery status can't be communicated but it will stop charging |
-| Exception Handling | 1. The device will send the notification when it will be connected.<br>2. The user will not received the notification.    |
+| Use Case Name      | Battery is fully charged                                                                                                                             |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Actors             | SportShield, Mobile App                                                                                                                              |
+| Description        | The user must be informed when the battery is fully charged. When the device is charged, it stopped charging to prevent irreversible battery damage. |
+| Pre-conditions     | The battery is fully charged                                                                                                                         |
+| Post-conditions    | A notification is sent to inform the user                                                                                                            |
+| Normal Flow        | 1. When the battery is fully charge the device stop charging and send a notification to the user                                                     |
+| Alternative Flows  | 1. If the device is't connected to the network, the battery status can't be communicated but it will stop charging                                   |
+| Exception Handling | 1. The device will send the notification when it will be connected.<br>2. The user will not received the notification.                               |
 
 
 #### Locking/Unlocking with the mobile app
-| Use Case Name      |  Locking/Unlocking with the mobile app  |
-| ------------------ | --- |
-| Actors             |  User, SportShield, Mobile App   |
-| Description        | The user can lock or unlock the device at any moment with the app on his smartphone.    |
-| Pre-conditions     | The device must be powered, the device and the smartphone are connected to the network.    |
-| Post-conditions    | The device will be locked or unlocked    |
-| Normal Flow        | 1. The user can lock the SportShield through the App, which will enable the movement detection.<br>2. The user can unlock the sport shield through the App, which will disable the movements detection.    |
-| Alternative Flows  | 1. SportShield or user's mobile isn't connected to the network, the user can't interact with the SportShield.    |
-| Exception Handling | 1. The device will wait until it receive a user interaction.<br>2. if it's locked the user ins't able to move it without making ring and he can't get back his stuffs.    |
+| Use Case Name      | Locking/Unlocking with the mobile app                                                                                                                                                                   |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Actors             | User, SportShield, Mobile App                                                                                                                                                                           |
+| Description        | The user can lock or unlock the device at any moment with the app on his smartphone.                                                                                                                    |
+| Pre-conditions     | The device must be powered, the device and the smartphone are connected to the network.                                                                                                                 |
+| Post-conditions    | The device will be locked or unlocked                                                                                                                                                                   |
+| Normal Flow        | 1. The user can lock the SportShield through the App, which will enable the movement detection.<br>2. The user can unlock the sport shield through the App, which will disable the movements detection. |
+| Alternative Flows  | 1. SportShield or user's mobile isn't connected to the network, the user can't interact with the SportShield.                                                                                           |
+| Exception Handling | 1. The device will wait until it receive a user interaction.<br>2. if it's locked the user ins't able to move it without making ring and he can't get back his stuffs.                                  |
 
 #### Locking/Unlocking with NFC device
-| Use Case Name      | Unlock/Unlock the device with NFC    |
-| ------------------ | --- |
-| Actors             | User, SportShield, Mobile App    |
-| Description        | The user can lock or unlock the SportShield without his smartphone by using a NFC device.    |
-| Pre-conditions     | The device must be powered and the user should have a NFC device.    |
-| Post-conditions    | The device is now lock or unlock.    |
-| Normal Flow        | By making contact between the NFC device and the SportShield it will lock or unlock like by using the mobile app.    |
-| Alternative Flows  | 1. The NFC card in the device isn't working, the interaction can't be detected.<br>2. The NFC device hasn't the right to access to the SportShield.    |
-| Exception Handling | 1. If the NFC card isn't working nothing will happend.<br>2. If access right are invalid, the user will be inform of a unsuccessful locking/unlocking attempt.  |
+| Use Case Name      | Unlock/Unlock the device with NFC                                                                                                                              |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Actors             | User, SportShield, Mobile App                                                                                                                                  |
+| Description        | The user can lock or unlock the SportShield without his smartphone by using a NFC device.                                                                      |
+| Pre-conditions     | The device must be powered and the user should have a NFC device.                                                                                              |
+| Post-conditions    | The device is now lock or unlock.                                                                                                                              |
+| Normal Flow        | By making contact between the NFC device and the SportShield it will lock or unlock like by using the mobile app.                                              |
+| Alternative Flows  | 1. The NFC card in the device isn't working, the interaction can't be detected.<br>2. The NFC device hasn't the right to access to the SportShield.            |
+| Exception Handling | 1. If the NFC card isn't working nothing will happend.<br>2. If access right are invalid, the user will be inform of a unsuccessful locking/unlocking attempt. |
 
 
 ## Acceptance criteria
@@ -365,19 +367,17 @@ We can update the internal program by plugging it into the charging port, which 
 
 ## Risks and assumptions
 
-
-
-| ID    | Description                                 | Risks                                                                                                                                                                                                       | Impact                                                | Likelihood                                            | Solution                                                                                                                                                                     |
-| ----- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **1** | Difficulty to understand the existing code. | We may not clearly understand how the existing code works leading to a bad implementation or program issues.                                                                                                | ![High](https://img.shields.io/badge/High-bb2124)     | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | We should reverse Engineer the program and comment uncommented stuff.                                                                                                        |
-| **2** | Hardware issue or code misswriting.         | As a prototype not used very often, the hardware can malfunctionning leading to understandable issue if not detected as soon as possible, and the libraries or API [[2]](#glossary-2) urls can be outdated. | ![High](https://img.shields.io/badge/High-bb2124)     | ![Low](https://img.shields.io/badge/Low-3B71CA)       | We will test each hardware module and the existing/fixing if needed before working on it improvement.                                                                        |
-| **3** | Lack of documentation for reference.        | Inadequate documentation may hinder troubleshooting or leading to inefficiencies or delays.                                                                                                                 | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | Implement a documentation strategy to comprehensively capture, components, and usage instructions.                                                                           |
-| **4** | Inadequate security measures                | Inadequate security measures could make the device vulnerable to unauthorized access or data breaches, compromising user privacy and system integrity.                                                      | ![High](https://img.shields.io/badge/High-bb2124)     | ![Low](https://img.shields.io/badge/Low-3B71CA)       | Implement robust encryption protocols, secure authentication mechanisms, and regular security audits.                                                                        |
-| **5** | Environmental factors affecting performance | Environmental factors such as temperature, humidity, or physical shocks may impact the device's performance or durability, affecting its reliability in various conditions.                                 | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | Conduct rigorous environmental testing to assess the device's performance under different conditions.                                                                        |
-| **6** | Lack of user acceptance                     | If users do not find the device easy to use, intuitive, or beneficial, adoption rates may be low, leading to reduced market penetration and revenue generation.                                             | ![High](https://img.shields.io/badge/High-bb2124)     | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | Conduct user research and usability testing to understand user needs and preferences, incorporate feedback into the design process, and provide comprehensive user training. |
+| ID    | Description                                 | Risks                                                                                                                                                                                                       | Impact                                                | Likelihood                                            | Solution                                                                                                                                                                                              |
+| ----- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **1** | Difficulty to understand the existing code. | We may not clearly understand how the existing code works leading to a bad implementation or program issues.                                                                                                | ![High](https://img.shields.io/badge/High-bb2124)     | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | We should reverse Engineer the program and comment uncommented stuff.                                                                                                                                 |
+| **2** | Hardware issue or code misswriting.         | As a prototype not used very often, the hardware can malfunctionning leading to understandable issue if not detected as soon as possible, and the libraries or API [[2]](#glossary-2) urls can be outdated. | ![High](https://img.shields.io/badge/High-bb2124)     | ![Low](https://img.shields.io/badge/Low-3B71CA)       | We will test each hardware module and the existing/fixing if needed before working on it improvement.                                                                                                 |
+| **3** | Lack of documentation for reference.        | Inadequate documentation may hinder troubleshooting or leading to inefficiencies or delays.                                                                                                                 | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | Implement a documentation strategy to comprehensively capture, components, and usage instructions.                                                                                                    |
+| **4** | Inadequate security measures                | Inadequate security measures could make the device vulnerable to unauthorized access or data breaches, compromising user privacy and system integrity.                                                      | ![High](https://img.shields.io/badge/High-bb2124)     | ![Low](https://img.shields.io/badge/Low-3B71CA)       | Implement robust encryption protocols, secure authentication mechanisms, and regular security audits.                                                                                                 |
+| **5** | Environmental factors affecting performance | Environmental factors such as temperature, humidity, or physical shocks may impact the device's performance or durability, affecting its reliability in various conditions.                                 | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | Conduct rigorous environmental testing to assess the device's performance under different conditions.                                                                                                 |
+| **6** | Lack of user acceptance                     | If users do not find the device easy to use, intuitive, or beneficial, adoption rates may be low, leading to reduced market penetration and revenue generation.                                             | ![High](https://img.shields.io/badge/High-bb2124)     | ![Medium](https://img.shields.io/badge/Medium-E4A11B) | Conduct user research and usability testing to understand user needs and preferences, incorporate feedback into the design process, and provide comprehensive user training.                          |
+| **7** | 2G network shutdown                         | A shutdown of 2G networks could render the device unable to communicate with external servers or mobile devices, impacting its functionality.                                                               | ![High](https://img.shields.io/badge/High-bb2124)     | ![Low](https://img.shields.io/badge/Low-3B71CA)       | Develop contingency plans to migrate to alternative network technologies (3G, 4G) and ensure compatibility with future network standards. Regularly monitor network status for potential disruptions. |
 
 ## Future improvements
-
 
 1. **Remote Locking and Unlocking**: Enable users to remotely lock or unlock the device via a secure online portal or mobile app, providing convenience and peace of mind, especially in situations where physical access to the device is not possible.
 
@@ -405,4 +405,21 @@ These future improvements aim to enhance the functionality, usability, and secur
 
 ### SportShield Scheme
 
-<!-- TODO: Add SportShield Scheme to easily visualize the postion of each important part (Awaiting to receive it from Coris) -->
+#### top view transparent
+![](./Img/proto_scheme.png)
+
+**Legend:**
+
+| name | description |
+| --- | --- |
+| **Charging Port** | The only one port to charge the device, it actually can be use also to update the internal software (this action is reserved to Coris). |
+| **Cable exit** | The cable comes out of this hole. |
+| **Cable holder** | This is a place where you can attach the cable. |
+| **Cable lock** | Insert the cable here to attache your stuff and protect them. |
+| **NFC reader** | Make a contact with a NFC device at this place to lock/unlock the SportShield. 
+
+<hr>
+
+#### bottom view closed
+
+![](./Img/proto_scheme_bottom.png)
