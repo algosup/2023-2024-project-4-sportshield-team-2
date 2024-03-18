@@ -105,7 +105,9 @@ You'll receive a notification if the SportShield detects a shock.
 
 For more information about notifications, refer to the [dedicated manual part](#notifications).
 
-<br>
+<!-- add a locked SportShield image -->
+
+<div style="page-break-after: always;"></div>
 
 # How to unlock SportShield 
 
@@ -113,13 +115,15 @@ SportShield's uninstallation is quite simple. You can unlock it either by Blueto
 By Bluetooth:
 1. Go on your Bluetooth settings.<br>
 <img src="./Img/BluetoothSettingsFunctionnalities.png" width="200"/>
-2. Click on the "Unlock" button to unlock SportShield.
+2. Click on the "Unlock" button to unlock SportShield.<br>
 <img src="./Img/BluetoothUnlock.png" width="200"/>
 
 <br>
 The SportShield is now unlocked. The alarm won't ring and you can take your device back.
 
 <br>
+
+<!-- add an ublocked SportShield image -->
 
 <div style="page-break-after: always;"></div>
 
@@ -134,15 +138,23 @@ Whenever the alarm rings, a notification is sent to the smartphone.<br>
 For more information about notifications, refer to the [dedicated manual part](#notifications).
 <br>
 
+<!-- need to add details -->
+
 # App
 
 The SportShield app would be available either on the Apple App Store and the Google Play Store.<br>
-Even though, the app has not been synchronized with the SportShield device. In this user manual, you won't be able to find any useful information about this application.
+Even though, the app has not been synchronized with the SportShield device. In this user manual, you won't be able to find any useful information about this application yet.
 
 
 # Notifications
 
-The nofications contain some information about the device, such as the GPS coordinates (longitude lagitude) and the remaining battery percentage. 
+Since no application has been synchronized with the SportShield device, the implemented simulation reproduces perfectly how it would work. <br><br>
+The notifications contain some information about the device, such as the GPS coordinates (longitude lagitude) and the remaining battery percentage. <br>
+
+<!-- need to add details -->
+
+<!-- add a notification image -->
+
 
 <div style="page-break-after: always;"></div>
 
