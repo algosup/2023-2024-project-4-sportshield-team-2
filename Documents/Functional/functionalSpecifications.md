@@ -15,15 +15,23 @@ The goal of the project is to optimize the consumption to make it last longer, f
   - [Functional requirements](#functional-requirements)
   - [Deliverables and milestones](#deliverables-and-milestones)
   - [Personas and use cases](#personas-and-use-cases)
-    - [Persona 1 - Ashley Ricks](#persona-1---ashley-ricks)
-      - [Goals](#goals)
-      - [Challenges](#challenges)
-    - [Persona 2 - William Greener](#persona-2---william-greener)
-      - [Goals](#goals-1)
-      - [Challenges](#challenges-1)
-    - [Persona 3 - Steve Sinclair](#persona-3---steve-sinclair)
-      - [Goals](#goals-2)
-      - [Challenges](#challenges-2)
+    - [Personas](#personas)
+      - [Persona 1 - Ashley Ricks](#persona-1---ashley-ricks)
+        - [Goals](#goals)
+        - [Challenges](#challenges)
+      - [Persona 2 - William Greener](#persona-2---william-greener)
+        - [Goals](#goals-1)
+        - [Challenges](#challenges-1)
+      - [Persona 3 - Steve Sinclair](#persona-3---steve-sinclair)
+        - [Goals](#goals-2)
+        - [Challenges](#challenges-2)
+    - [Use Cases](#use-cases)
+      - [Movements \& Shocks detection](#movements--shocks-detection)
+      - [Battery Status](#battery-status)
+      - [Battery is running out](#battery-is-running-out)
+      - [Battery is fully charged](#battery-is-fully-charged)
+      - [Locking/Unlocking with the mobile app](#lockingunlocking-with-the-mobile-app)
+      - [Locking/Unlocking with NFC device](#lockingunlocking-with-nfc-device)
   - [Acceptance criteria](#acceptance-criteria)
   - [Solution overview](#solution-overview)
     - [Movement Detection Improvement](#movement-detection-improvement)
@@ -103,58 +111,130 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 
 ## Personas and use cases
 
-### Persona 1 - Ashley Ricks
+### Personas
 
-| Ashley Ricks                                                                                  | 22 years old                                                                                                                                                                                                                         |
-| --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+#### Persona 1 - Ashley Ricks
+
+| Ashley Ricks                                                                      | 22 years old                                                                                                                                                                                                                                                                                     |
+| --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | <img alt="Ashley Picture" src="./Img/ashley_ricks.png" style="max-width: 200px;"> | **Description:**<br>A vibrant young woman, revels in the exhilarating rush of vacationing amidst the clouds. She finds herself gliding gracefully down a majestic snow-capped mountain, her skis carving elegant trails in the pristine white snowscape.<br><br>**Frequence of use:** <br>- Rare |
 
-#### Goals
+##### Goals
   - Ashley wants to secure her skies with the SportShield.
   - She hopes the system is secured and she will not receive false positive.
 
-#### Challenges
+##### Challenges
   - Ashley needs to be able to let her skies in outdoor lockers without the SportShield freezing.
   - She needs to be able to use it during the entire week without running out of battery.
   - She needs to be noticed if someone touches to her skies.
 
 <hr>
 
-### Persona 2 - William Greener
+#### Persona 2 - William Greener
 
-| William Greener                                                                                | 37 years old                                                                                                                                                                                                                                   |
-| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| William Greener                                                                  | 37 years old                                                                                                                                                                                                                                                                                                |
+| -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <img alt="Bill Picture" src="Img/william_greener.png" style="max-width: 200px;"> | **Description:**<br>A seasoned adventurer, embodies the spirit of freedom and adventure as he stands tall on the golden sands of the Canary Islands. He eagerly awaits the beckoning waves, ready to embrace the thrill of surfing beneath the warm, tropical sun.<br><br>**Frequence of use:** <br>- Often |
 
-#### Goals
+##### Goals
   - He wants to get used to use the product.
   - He wants to secure his surf board.
   - He wants to be able to use it during an entire week-end or during his vacation in the Canary Islands.
 
-#### Challenges
+##### Challenges
   - William needs a product which won't burn under the sun's heat of Canary Islands.
   - He needs a product which won't often run out of battery.
   - He needs a durable and weatherproof device to withstand outdoor conditions (Water & Sand).
 
 <hr>
 
-### Persona 3 - Steve Sinclair
+#### Persona 3 - Steve Sinclair
 
 
-| Steve Sinclair                                              | 63 years old                                                                                                                      |
-| ----------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Steve Sinclair                                                                     | 63 years old                                                                                                                                                                                                                                                                                                                                                             |
+| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | <img alt="Steve Picture" src="./Img/steve_sinclair.png" style="max-width: 200px;"> | **Description:**<br>An old man with a white and gray beard, he is traveling around the world with his wife in a camping-car, to enjoy his retirement. With each new destination, they discover the beauty of nature and the richness of different cultures, cherishing every moment of their shared journey together.<br><br>**Frequence of use:** <br>- Almost Everyday |
 
-#### Goals
+##### Goals
   - He wants to protect his stuff while he is not in his camping-car.
   - He wants to stay alerted if someone touches his stuff but he is not that confident with smartphones.
 
-#### Challenges
+##### Challenges
   - He needs to be able to use another way to unlock than his smartphone.
   - He wants a hardware which will resist to different climates he may encounter.
   - It should have a connectivity around the world.
 
 <hr>
+
+### Use Cases
+
+#### Movements & Shocks detection
+| Use Case Name      | Movements & Shocks Detection                                                                                                                                                                        |
+| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Actors             | SportShield Device, User, Mobile App                                                                                                                                                      |
+| Description        | The user should be notified on his mobile phone and SportShield must ring if the device is movement or rotating.                                                                          |
+| Pre-conditions     | The device is activated, and checking the position and shocks.                                                                                                                            |
+| Post-conditions    | The device send a notification to the user through the API.                                                                                                                               |
+| Normal Flow        | 1. The user activate the device in the application.<br>2. Someone try to stole the user's stuff.<br>3. The device ring and send a notification.<br>4. The user receive the notification. |
+| Alternative Flows  | 1. If the device is't connected to the network, the status can't be communicated to the app.<br>2. The device can be moved for multiple reason else than a steal.                                         |
+| Exception Handling | 1. The device will send the notification when the signal will be found.<br>2. The device will send a false positive making the user worry.                                                |
+
+#### Battery Status
+| Use Case Name      |  Battery Status   |
+| ------------------ | --- |
+| Actors             | SportShield, Mobile App    |
+| Description        | The user must know the battery status.    |
+| Pre-conditions     | The device is powered and connected to the network    |
+| Post-conditions    | The battery level is updated in the application.    |
+| Normal Flow        | Every X time the device send the battery state to the App.    |
+| Alternative Flows  | 1. If the device is't connected to the network, the battery status can't be communicated |
+| Exception Handling | 1. The device will send the notification when it will be connected.    |
+
+#### Battery is running out
+| Use Case Name      |  Battery is running out   |
+| ------------------ | --- |
+| Actors             | SportShield, Mobile App    |
+| Description        | The user must be informed when the device is running out of battery. If the device is too low, release the rope and turn it off.    |
+| Pre-conditions     | The device is running out of battery    |
+| Post-conditions    | A notification is sent to inform the user    |
+| Normal Flow        | 1. When the battery is low the device send a notification to the user<br>3. when the battery is very too low the device release the cable and turn it-self off to prevent irreversible damage on the battery.   |
+| Alternative Flows  | 1. If the device is't connected to the network, the notification can't be sent.<br>2. The battery level is too low and the device isn't connected to the network, it will turn it-self off without sending any notification. |
+| Exception Handling | 1. The device will send the notification when it will be connected.<br>2. The user will not be informed.    |
+
+#### Battery is fully charged
+| Use Case Name      |  Battery is fully charged   |
+| ------------------ | --- |
+| Actors             | SportShield, Mobile App    |
+| Description        | The user must be informed when the battery is fully charged. When the device is charged, it stopped charging to prevent irreversible battery damage.    |
+| Pre-conditions     | The battery is fully charged    |
+| Post-conditions    | A notification is sent to inform the user    |
+| Normal Flow        | 1. When the battery is fully charge the device stop charging and send a notification to the user    |
+| Alternative Flows  | 1. If the device is't connected to the network, the battery status can't be communicated but it will stop charging |
+| Exception Handling | 1. The device will send the notification when it will be connected.<br>2. The user will not received the notification.    |
+
+
+#### Locking/Unlocking with the mobile app
+| Use Case Name      |  Locking/Unlocking with the mobile app  |
+| ------------------ | --- |
+| Actors             |  User, SportShield, Mobile App   |
+| Description        | The user can lock or unlock the device at any moment with the app on his smartphone.    |
+| Pre-conditions     | The device must be powered, the device and the smartphone are connected to the network.    |
+| Post-conditions    | The device will be locked or unlocked    |
+| Normal Flow        | 1. The user can lock the SportShield through the App, which will enable the movement detection.<br>2. The user can unlock the sport shield through the App, which will disable the movements detection.    |
+| Alternative Flows  | 1. SportShield or user's mobile isn't connected to the network, the user can't interact with the SportShield.    |
+| Exception Handling | 1. The device will wait until it receive a user interaction.<br>2. if it's locked the user ins't able to move it without making ring and he can't get back his stuffs.    |
+
+#### Locking/Unlocking with NFC device
+| Use Case Name      | Unlock/Unlock the device with NFC    |
+| ------------------ | --- |
+| Actors             | User, SportShield, Mobile App    |
+| Description        | The user can lock or unlock the SportShield without his smartphone by using a NFC device.    |
+| Pre-conditions     | The device must be powered and the user should have a NFC device.    |
+| Post-conditions    | The device is now lock or unlock.    |
+| Normal Flow        | By making contact between the NFC device and the SportShield it will lock or unlock like by using the mobile app.    |
+| Alternative Flows  | 1. The NFC card in the device isn't working, the interaction can't be detected.<br>2. The NFC device hasn't the right to access to the SportShield.    |
+| Exception Handling | 1. If the NFC card isn't working nothing will happend.<br>2. If access right are invalid, the user will be inform of a unsuccessful locking/unlocking attempt.  |
+
 
 ## Acceptance criteria
 
@@ -173,31 +253,31 @@ To ensure that the project is viable, all the specifications must be approved by
 ### Movement Detection Improvement
 The actual movement detection triggers the alarm only on rotation.
 
-| Problem Occurs | Solution |
-| ---- | ---- |
+| Problem Occurs                                                       | Solution                         |
+| -------------------------------------------------------------------- | -------------------------------- |
 | We can move the device on until we don't rotate it, it doesn't ring. | We add a detection on axis x, y. |
 
 ### Battery Management Improvement
 
-| Problem Occurs | Solution |
-| --- | --- |
-| A full battery will be empty in 3 days. | - We must check each component one by one to reduce the usage consumption.<br>- Turn all components in sleep mode when we don't need them. |
-| The electromagnet consumes a lot of energy | We will activate it less than 1 second when we need it. |
+| Problem Occurs                             | Solution                                                                                                                                   |
+| ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| A full battery will be empty in 3 days.    | - We must check each component one by one to reduce the usage consumption.<br>- Turn all components in sleep mode when we don't need them. |
+| The electromagnet consumes a lot of energy | We will activate it less than 1 second when we need it.                                                                                    |
 
 ### Security Improvement
 
 By default, the device is accessible to everyone.
 
-| Problem Occurs | Solution |
-| --- | --- |
+| Problem Occurs                              | Solution                                                         |
+| ------------------------------------------- | ---------------------------------------------------------------- |
 | Everyone can lock or unlock the SportShield | We will restrict the authentication to the owner or trust people |
 
 ### Alarm Management
 
-| Problem Occurs | Solution |
-| --- | --- |
+| Problem Occurs                                                | Solution                                                                                                                                |
+| ------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | While the alarm is ringing, all other actions are unavailable | We will modify the alarm to make it ring while other actions are executed (possibility for the user to disable the alarm at any moment) |
-| The alarm is too loud. | We want to reduce the decibel from 135dB to 80dB, to reduce damage to the hearing. |
+| The alarm is too loud.                                        | We want to reduce the decibel from 135dB to 80dB, to reduce damage to the hearing.                                                      |
 
 ### NFC [[1]](#glossary-1) Reader
 
@@ -313,13 +393,13 @@ These future improvements aim to enhance the functionality, usability, and secur
 
 ## Glossary
 
-| Id                       | Term        | Definition                                                                                                                                                                                                                     | What it means in this project                                                                              | Additional Content                                                  |
-| :----------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| <p id="glossary-1">1</p> | **NFC**     | Near Field Communication (NFC) is a set of short-range wireless technologies, typically requiring a distance of 4 cm or less to initiate a connection.                                                                         | The SportShield will be able to be lock or unlock with a card or a badge.                                  | [Wikipedia](https://en.wikipedia.org/wiki/Near-field_communication) |
+| Id                       | Term        | Definition                                                                                                                                                                                                                     | What it means in this project                                                                                  | Additional Content                                                  |
+| :----------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| <p id="glossary-1">1</p> | **NFC**     | Near Field Communication (NFC) is a set of short-range wireless technologies, typically requiring a distance of 4 cm or less to initiate a connection.                                                                         | The SportShield will be able to be lock or unlock with a card or a badge.                                      | [Wikipedia](https://en.wikipedia.org/wiki/Near-field_communication) |
 | <p id="glossary-2">2</p> | **API**     | API stands for Application Programming Interface. In the context of APIs, the word Application refers to any software with a distinct function. Interface can be thought of as a contract of service between two applications. | The device must send data from the application through the API to keep the user informed of the device status. | [Wikipedia](https://en.wikipedia.org/wiki/API)                      |
-| <p id="glossary-3">3</p> | **Arduino** | Arduino is an Italian open-source hardware and software company, project, and user community that designs and manufactures single-board microcontrollers and microcontroller kits for building digital devices.                | We will use Arduino IDE and a variant of C++ made for Arduino during this project.                        | [Wikipedia](https://en.wikipedia.org/wiki/Arduino)                  |
-| <p id="glossary-4">4</p> | **C++**     | C++ is a high-level, general-purpose programming language created by Danish computer scientist Bjarne Stroustrup.                                                                                                              | Arduino's Language is a variant of C++ specialized to manage their microcontrollers.                     | [Wikipedia](https://en.wikipedia.org/wiki/C%2B%2B)                  |
-| <p id="glossary-5">5</p> | **JSON**    | JSON is a text format that is completely language independent but uses conventions that are familiar to programmers of the C-family of languages, including C, C++.                                                            | Information about the device (position, battery, etc...) will be sent to the API in JSON format.           | [Wikipedia](https://en.wikipedia.org/wiki/JSON)                     |
+| <p id="glossary-3">3</p> | **Arduino** | Arduino is an Italian open-source hardware and software company, project, and user community that designs and manufactures single-board microcontrollers and microcontroller kits for building digital devices.                | We will use Arduino IDE and a variant of C++ made for Arduino during this project.                             | [Wikipedia](https://en.wikipedia.org/wiki/Arduino)                  |
+| <p id="glossary-4">4</p> | **C++**     | C++ is a high-level, general-purpose programming language created by Danish computer scientist Bjarne Stroustrup.                                                                                                              | Arduino's Language is a variant of C++ specialized to manage their microcontrollers.                           | [Wikipedia](https://en.wikipedia.org/wiki/C%2B%2B)                  |
+| <p id="glossary-5">5</p> | **JSON**    | JSON is a text format that is completely language independent but uses conventions that are familiar to programmers of the C-family of languages, including C, C++.                                                            | Information about the device (position, battery, etc...) will be sent to the API in JSON format.               | [Wikipedia](https://en.wikipedia.org/wiki/JSON)                     |
 
 ## Appendix
 
