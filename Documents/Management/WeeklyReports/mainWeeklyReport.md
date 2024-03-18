@@ -70,3 +70,9 @@ The first week was dedicated to initiating the project and planning. The team di
 ## Conclusion
 
 The first week was a good start for the project. The team has started to work on the documents and the hardware components. The team has also started to reverse-engineer the existing software. The team is looking forward to the next week to continue the work.
+
+## Key Performance Indicators
+
+To follow the progress of the project you can check the [KPIs](https://docs.google.com/spreadsheets/d/1Py72_1mZQ5l20KM0fd6HdSRnmj49YibWoImaeFKPc8U/edit?usp=sharing).
+
+[Back to top](#weeklyreportfirstweek)
