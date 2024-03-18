@@ -196,7 +196,7 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 | Use Case Name      | Battery is running out                                                                                                                                                                                                       |
 | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Actors             | SportShield, Mobile App                                                                                                                                                                                                      |
-| Description        | The user must be informed when the device is running out of battery. If the device is too low, release the rope and turn it off.                                                                                             |
+| Description        | The user must be informed when the device is running out of battery. If the device is too low, release the cable and turn it off.                                                                                             |
 | Pre-conditions     | The device is running out of battery                                                                                                                                                                                         |
 | Post-conditions    | A notification is sent to inform the user                                                                                                                                                                                    |
 | Normal Flow        | 1. When the battery is low the device send a notification to the user<br>3. when the battery is very too low the device release the cable and turn it-self off to prevent irreversible damage on the battery.                |
@@ -315,8 +315,8 @@ To use the device correctly please follow these steps:
 
 #### How to use it?
 ##### **To Protect your stuff:**
-1. Pull the rope and enclose your stuff.
-2. Insert the rope into the hole.
+1. Pull the cable and enclose your stuff.
+2. Insert the cable into the hole.
 3. Enable the lock:
      - **With Bluetooth:**
        1. Authenticate yourself.
@@ -326,13 +326,13 @@ To use the device correctly please follow these steps:
 <hr>
 
 ##### **To open release your stuff.**
-1. Release the rope:
+1. Release the cable:
    - **With Bluetooth:**
      1. Authenticate yourself.
      2. Disable locking.
     - **With a NFC [[1]](#glossary-1) device:**
       1. Make contact between the NFC [[1]](#glossary-1) device and the SportShield
-2. Pull the rope from the hole.
+2. Pull the cable from the hole.
 
 You can refer to the user manual for detailed usage, which you can find: [HERE](../userManual.pdf)
 
