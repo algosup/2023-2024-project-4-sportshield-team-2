@@ -38,7 +38,7 @@ The goal of the project is to optimize the consumption to make it last longer, f
     - [Battery Management Improvement](#battery-management-improvement)
     - [Security Improvement](#security-improvement)
     - [Alarm Management](#alarm-management)
-    - [NFC \[1\] Reader](#nfc-1-reader)
+    - [NFC Reader](#nfc-reader)
     - [Errors](#errors)
     - [Usage](#usage)
       - [Charge your SportShield](#charge-your-sportshield)
@@ -186,10 +186,10 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 | ------------------ | ---------------------------------------------------------------------------------------- |
 | Actors             | SportShield, Mobile App                                                                  |
 | Description        | The user must know the battery status.                                                   |
-| Pre-conditions     | The device is powered and connected to the network                                       |
+| Pre-conditions     | The device is powered and connected to the network.                                       |
 | Post-conditions    | The battery level is updated in the application.                                         |
 | Normal Flow        | Every X time the device send the battery state to the App.                               |
-| Alternative Flows  | 1. If the device is't connected to the network, the battery status can't be communicated |
+| Alternative Flows  | 1. If the device is't connected to the network, the battery status can't be communicated. |
 | Exception Handling | 1. The device will send the notification when it will be connected.                      |
 
 #### Battery is running out
@@ -197,9 +197,9 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Actors             | SportShield, Mobile App                                                                                                                                                                                                      |
 | Description        | The user must be informed when the device is running out of battery. If the device is too low, release the cable and turn it off.                                                                                             |
-| Pre-conditions     | The device is running out of battery                                                                                                                                                                                         |
-| Post-conditions    | A notification is sent to inform the user                                                                                                                                                                                    |
-| Normal Flow        | 1. When the battery is low the device send a notification to the user<br>3. when the battery is very too low the device release the cable and turn it-self off to prevent irreversible damage on the battery.                |
+| Pre-conditions     | The device is running out of battery.                                                                                                                                                                                         |
+| Post-conditions    | A notification is sent to inform the user.                                                                                                                                                                                    |
+| Normal Flow        | 1. When the battery is low the device send a notification to the user.<br>2. When the battery is very too low the device release the cable and turn it-self off to prevent irreversible damage on the battery.                |
 | Alternative Flows  | 1. If the device is't connected to the network, the notification can't be sent.<br>2. The battery level is too low and the device isn't connected to the network, it will turn it-self off without sending any notification. |
 | Exception Handling | 1. The device will send the notification when it will be connected.<br>2. The user will not be informed.                                                                                                                     |
 
@@ -208,10 +208,10 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Actors             | SportShield, Mobile App                                                                                                                              |
 | Description        | The user must be informed when the battery is fully charged. When the device is charged, it stopped charging to prevent irreversible battery damage. |
-| Pre-conditions     | The battery is fully charged                                                                                                                         |
-| Post-conditions    | A notification is sent to inform the user                                                                                                            |
-| Normal Flow        | 1. When the battery is fully charge the device stop charging and send a notification to the user                                                     |
-| Alternative Flows  | 1. If the device is't connected to the network, the battery status can't be communicated but it will stop charging                                   |
+| Pre-conditions     | The battery is fully charged.                                                                                                                         |
+| Post-conditions    | A notification is sent to inform the user.                                                                                                            |
+| Normal Flow        | 1. When the battery is fully charge the device stop charging and send a notification to the user.                                                     |
+| Alternative Flows  | 1. If the device is't connected to the network, the battery status can't be communicated but it will stop charging.                                   |
 | Exception Handling | 1. The device will send the notification when it will be connected.<br>2. The user will not received the notification.                               |
 
 
@@ -221,21 +221,21 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 | Actors             | User, SportShield, Mobile App                                                                                                                                                                           |
 | Description        | The user can lock or unlock the device at any moment with the app on his smartphone.                                                                                                                    |
 | Pre-conditions     | The device must be powered, the device and the smartphone are connected to the network.                                                                                                                 |
-| Post-conditions    | The device will be locked or unlocked                                                                                                                                                                   |
+| Post-conditions    | The device will be locked or unlocked.                                                                                                                                                                   |
 | Normal Flow        | 1. The user can lock the SportShield through the App, which will enable the movement detection.<br>2. The user can unlock the sport shield through the App, which will disable the movements detection. |
 | Alternative Flows  | 1. SportShield or user's mobile isn't connected to the network, the user can't interact with the SportShield.                                                                                           |
-| Exception Handling | 1. The device will wait until it receive a user interaction.<br>2. if it's locked the user ins't able to move it without making ring and he can't get back his stuffs.                                  |
+| Exception Handling | 1. The device will wait until it receive a user interaction.<br>2. If it's locked the user ins't able to move it without making ring and he can't get back his stuffs.                                  |
 
 #### Locking/Unlocking with NFC device
-| Use Case Name      | Unlock/Unlock the device with NFC                                                                                                                              |
+| Use Case Name      | Unlock/Unlock the device with NFC [[1]](#glossary-1)                                                                                                                              |
 | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Actors             | User, SportShield, Mobile App                                                                                                                                  |
-| Description        | The user can lock or unlock the SportShield without his smartphone by using a NFC device.                                                                      |
-| Pre-conditions     | The device must be powered and the user should have a NFC device.                                                                                              |
+| Description        | The user can lock or unlock the SportShield without his smartphone by using a NFC [[1]](#glossary-1) device.                                                                      |
+| Pre-conditions     | The device must be powered and the user should have a NFC [[1]](#glossary-1) device.                                                                                              |
 | Post-conditions    | The device is now lock or unlock.                                                                                                                              |
-| Normal Flow        | By making contact between the NFC device and the SportShield it will lock or unlock like by using the mobile app.                                              |
-| Alternative Flows  | 1. The NFC card in the device isn't working, the interaction can't be detected.<br>2. The NFC device hasn't the right to access to the SportShield.            |
-| Exception Handling | 1. If the NFC card isn't working nothing will happend.<br>2. If access right are invalid, the user will be inform of a unsuccessful locking/unlocking attempt. |
+| Normal Flow        | By making contact between the NFC [[1]](#glossary-1) device and the SportShield it will lock or unlock like by using the mobile app.                                              |
+| Alternative Flows  | 1. The NFC [[1]](#glossary-1) card in the device isn't working, the interaction can't be detected.<br>2. The NFC [[1]](#glossary-1) device hasn't the right to access to the SportShield.            |
+| Exception Handling | 1. If the NFC [[1]](#glossary-1) card isn't working nothing will happend.<br>2. If access right are invalid, the user will be inform of a unsuccessful locking/unlocking attempt. |
 
 
 ## Acceptance criteria
@@ -281,7 +281,7 @@ By default, the device is accessible to everyone.
 | While the alarm is ringing, all other actions are unavailable | We will modify the alarm to make it ring while other actions are executed (possibility for the user to disable the alarm at any moment) |
 | The alarm is too loud.                                        | We want to reduce the decibel from 135dB to 80dB, to reduce damage to the hearing.                                                      |
 
-### NFC [[1]](#glossary-1) Reader
+### NFC Reader
 
 Currently, the NFC [[1]](#glossary-1) reader isn't been implemented yet, we should include it for easier usage of the product, making user able to unlock/lock the SportShield with a NFC [[1]](#glossary-1) card or badge (without their smartphone), or by contact with their smartphone (depending of brand and phone's model).
 
@@ -416,7 +416,7 @@ These future improvements aim to enhance the functionality, usability, and secur
 | **Cable exit** | The cable comes out of this hole. |
 | **Cable holder** | This is a place where you can attach the cable. |
 | **Cable lock** | Insert the cable here to attache your stuff and protect them. |
-| **NFC reader** | Make a contact with a NFC device at this place to lock/unlock the SportShield. 
+| **NFC reader** | Make a contact with a NFC device at this place to lock/unlock the SportShield. |
 
 <hr>
 
