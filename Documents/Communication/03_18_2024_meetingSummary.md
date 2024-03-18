@@ -49,6 +49,8 @@
 
 ##### What happen if data can't be sent? 
 - At this stage nothing is implemented yet.
+- Try to resend 3 to 5 times.
+- After 5 minutes abandon data and continue the process.
 
 ##### Do you have something to ping the device?
 - No, the idea is to keep the device the simpliest has possible.
@@ -91,3 +93,8 @@
 
 ##### Do you have a mail or phone number for technical support? For example if my device isn't working, who can I email/call?
 - Yes, but not for now, it's too early to have a real plan of technical and client support.
+
+<div align="center">
+  <a href="https://algosup.com"><img alt="ALGOSUP Logo" src="../Functional/Img/ALGOSUP-logo.png" style="max-height:200px"></a>
+  <a href="https://www.corisinnovation.com/"><img alt="Coris Innovation Logo" src="../Functional/Img/Coris-innovation-logo.png" style="max-height:200px"></a>
+</div>
