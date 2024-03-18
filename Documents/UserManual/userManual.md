@@ -4,7 +4,7 @@
 </p>
 
 # <div style="text-align: right; text-align: down"> User manual </div>
-# <div style="text-align: right; text-align: down"> Version 0.2 </div>
+# <div style="text-align: right; text-align: down"> Version 0.4 </div>
 
 
 <div style="page-break-after: always;"></div>
@@ -13,7 +13,7 @@
 <summary>Table of Contents</summary>
 
 - [ User manual ](#-user-manual-)
-- [ Version 0.2 ](#-version-02-)
+- [ Version 0.4 ](#-version-04-)
 - [Get Started](#get-started)
   - [What's in the box](#whats-in-the-box)
   - [Charge your SportShield](#charge-your-sportshield)
@@ -45,15 +45,12 @@ SportShield is an innovative anti-theft device designed for sports equipment, eq
 ## What's in the box
 
 Your SportShield includes:
-- An anti-theft SportShield device
-- A charger 
+- An anti-theft SportShield device<br>
+<img src="./Img/device.png" width="225"/>
+<img src="./Img/deviceBottom.png" width="200"/>
 - This user manual
 
-<!--images of the included stuff-->
-<!-- <div align="center">
-![device](device.png)
-![charger](charger.png)
-</div> -->
+
 
 <div style="page-break-after: always;"></div>
 
@@ -65,9 +62,9 @@ A fully-charged SportShield can last over 6 days.
 To charge SportShield:
 
 1. Plug the charger into the USB port on the SportShield.
+<img src="./Img/chargingPort.png" width="200"/>
 2. Plug the other end of the charger into an outlet.
 
-<!--images of the steps-->
 
 <br>
 
@@ -148,14 +145,14 @@ For more information about notifications, refer to the [dedicated manual part](#
 
 ## App Set up
 
-Set up SportShield with the SportShield app <!--for IPhone? Android?-->. 
+Set up SportShield with the SportShield app.
 
 
 To get started:
 
-1. Download the SportShield app.<!--Apple App Store? Google Play Store?-->
+1. Download the SportShield app. (Available on the Apple App Store and the Google Play Store?)
 2. Open the app.
-3. Sign in, and follow the on-screen instructions to set up your device. 
+3. Follow the on-screen instructions to set up your device. 
 
 <br>
 
