@@ -3,8 +3,7 @@
 </p>
 
 # <div style="text-align: right; text-align: down"> User manual </div>
-# <div style="text-align: right; text-align: down"> Version 0.4 </div>
-
+# <div style="text-align: right; text-align: down"> Version 0.5 </div>
 
 <div style="page-break-after: always;"></div>
 
@@ -12,7 +11,7 @@
 <summary>Table of Contents</summary>
 
 - [ User manual ](#-user-manual-)
-- [ Version 0.4 ](#-version-04-)
+- [ Version 0.5 ](#-version-05-)
 - [Get Started](#get-started)
   - [What's in the box](#whats-in-the-box)
   - [Charge your SportShield](#charge-your-sportshield)
@@ -34,7 +33,6 @@
 
 <div style="page-break-after: always;"></div>
 
-
 # Get Started
 
 SportShield is an innovative anti-theft device designed for sports equipment, equipped with sensors and actuators to detect movement, activate an alarm, and notify the owner.
@@ -45,6 +43,7 @@ SportShield is an innovative anti-theft device designed for sports equipment, eq
 ## What's in the box
 
 Your SportShield includes:
+
 - An anti-theft SportShield device<br>
 <img src="./Img/device.png" width="225"/>
 <img src="./Img/deviceBottom.png" width="200"/>
@@ -72,8 +71,9 @@ The SportShield is now charging. Try to not use SportShield during its charging.
 ## Set up SportShield
 
 To fully use the SportShield device, you'd need to set up few things with your smartphone. <br>
-You can either set up by Bluetooth or with the SportShield app. <br><br>
+You can either set up by Bluetooth, with a NFC card or with the SportShield app. <br><br>
 By Bluetooth:
+
 - Enable your Bluetooth connection on your phone.
 - You should find a device named "SportShield".<br>
 <img src="./Img/findBluetooth.jpg" width="200"/>
@@ -81,6 +81,10 @@ By Bluetooth:
 <img src="./Img/BluetoothSettings.png" width="200"/>
 <br><br>
   
+With a NFC card:
+
+- Make contact between the NFC device and the SportShield.
+
 Regarding the SportShield app, see the [dedicated manual part](#app).
 
 <br>
@@ -92,15 +96,14 @@ The SportShield is now set up, you can use it whenever and wherever you want.
 # How to lock SportShield 
 
 The SportShield prevents your sport belongings from thiefs. Its installation deals with few steps:
+
 1. Wind the cable from the cable exit of the SportShield device.
 2. Surround your belongings with the cable.
-3. Attach the cable to the cable holder.
-<br>
+3. Attach the cable to the cable holder.<br>
 <img src="./Img/cableHolderAndExit.png" width="200"/>
 
-If SportShield is not connected to your smartphone, refer to the [set up part](#set-up-sportshield).<br><br>
-The SportShield is now locked and you won't be able to pull the cable anymore, if you don't unlock it. 
-<br><br>
+If SportShield is not connected to your smartphone or with a NFC card, refer to the [set up part](#set-up-sportshield).<br><br>
+The SportShield is now locked and you won't be able to pull the cable anymore, if you don't unlock it. <br><br>
 You'll receive a notification if the SportShield detects a shock. <br>
 For more information about notifications, refer to the [dedicated manual part](#notifications).
 
@@ -110,10 +113,15 @@ For more information about notifications, refer to the [dedicated manual part](#
 
 SportShield's uninstallation is quite simple. You can unlock it either by Bluetooth or with the app. <br>
 By Bluetooth:
+
 1. Go on your Bluetooth settings.<br>
 <img src="./Img/BluetoothSettingsFunctionnalities.png" width="200"/>
 2. Click on the "Unlock" button to unlock SportShield.<br>
 <img src="./Img/BluetoothUnlock.png" width="200"/>
+
+With a NFC card:
+
+- Make contact between the NFC device and the SportShield.
 
 Regarding the SportShield app, see the [dedicated manual part](#app).
 
@@ -127,7 +135,9 @@ The SportShield is now unlocked. The alarm won't ring and you can take your devi
 # Alarm
 
 When the SportShield is locked, each detected shock will ring an alarm. <br>The alarm intensity depends on the shock intensity: <br>
+
 - 3 light sounds when a light shock is detected.
+  
 - 5 long high sounds when a strong shock is detected.
 <br><br>
 
@@ -157,15 +167,14 @@ The notifications contain some information about the device, such as the GPS coo
 
 <!-- add a notification image -->
 
-
 <div style="page-break-after: always;"></div>
 
 # General Info and Specifications
 
 ## Components
 
-
 Here's a list of the components a SportShield device contains:
+
 - Xiao BLE Sense nrf52840
 - GNSS PA1010D
 - GSM/2G SIM800L Module
@@ -197,7 +206,6 @@ By meticulously categorizing data based on its potential impact if compromised, 
 
 By fortifying data against unauthorized alterations, such as when a thief would want to corrupt your SportShield device, SportShield guarantees the integrity of critical information.
 
-
 <div style="page-break-after: always;"></div>
 
-©2015-2024 Coris Innovation. All rights reserved. Coris Innovation and the Coris Innovation logo are trademarks or registered trademarks of Coris Innovation
+©2015-2024 Coris Innovation. All rights reserved. Coris Innovation and the Coris Innovation logo are trademarks or registered trademarks of Coris Innovation.
