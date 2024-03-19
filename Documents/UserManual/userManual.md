@@ -53,20 +53,17 @@ Your SportShield includes:
 
 A fully-charged SportShield can last over 6 days.
 
-
 To charge SportShield:
 
 1. Plug the charger into the USB port on the SportShield.<br>
 <img src="./Img/chargingPort.png" width="200"/>
 2. Plug the other end of the charger into an outlet.
 
-
 <br>
 
 The SportShield is now charging. Try to not use SportShield during its charging.
 
 <div style="page-break-after: always;"></div>
-
 
 ## Set up SportShield
 
@@ -109,7 +106,7 @@ For more information about notifications, refer to the [dedicated manual part](#
 
 <div style="page-break-after: always;"></div>
 
-# How to unlock SportShield 
+# How to unlock SportShield
 
 SportShield's uninstallation is quite simple. You can unlock it either by Bluetooth or with the app. <br>
 By Bluetooth:
@@ -143,7 +140,9 @@ When the SportShield is locked, each detected shock will ring an alarm. <br>The 
 
 Moreover, you can stop the alarm whenever you want. To do so, you can use either the Bluetooth or the app. <br>
 
-<!-- By Bluetooth:<br> are they the same steps as the "unlock"? -->
+By Bluetooth: these are the same steps as [to unlock SportShield](#how-to-unlock-sportshield).
+
+With the NFC card, these are the same steps as [to unlock SportShield](#how-to-unlock-sportshield).
 
 Regarding the SportShield app, see the [dedicated manual part](#app).
 
