@@ -1,13 +1,12 @@
-# Sportshield Project Test Plan
+# Sportshield - Test Plan
 
 ---
 
 <details>
 <summary>Table of Contents</summary>
 
-- [Sportshield Project Test Plan](#sportshield-project-test-plan)
+- [Sportshield - Test Plan](#sportshield---test-plan)
   - [I. Introduction](#i-introduction)
-<<<<<<< HEAD:Documents/TestPlan/testPlan.md
     - [A. Overview](#a-overview)
     - [B. Requirements](#b-requirements)
   - [II. Ressources Requirements](#ii-ressources-requirements)
@@ -18,20 +17,7 @@
     - [B. Test Strategy](#b-test-strategy)
   - [IV. Documentation test](#iv-documentation-test)
   - [V. Code test](#v-code-test)
-=======
-      - [A. Overview](#a-overview)
-      - [B. Requirements](#b-requirements)
-      - [C. Roles and Responsabilities](#c-roles-and-responsabilities)
-  - [II. Ressources Requirements](#ii-ressources-requirements)
-      - [A. Testing Environment](#a-testing-environment)
-      - [B. Testing Tool Requirements](#b-testing-tool-requirements)
-      - [C. Additional Ressource Requirements](#c-additional-ressource-requirements)
-  - [III. Strategy](#iii-strategy)
-      - [A. Test Strategy](#a-test-strategy)
-      - [B. Testing Type](#b-testing-type)
-  - [IV. Installation Qualification](#iv-installation-qualification)
-  - [V. Test Documentation](#v-test-documentation)
->>>>>>> 9546b5fa72fd5bd5ed0b9e4bed90cba1bd3c09c8:Documents/testPlan.md
+  - [VI. Test cases](#vi-test-cases)
   - [Glossary](#glossary)
 
 </details>
@@ -44,11 +30,13 @@
 
 ### A. Overview
 
-<span style="color:red">to be defined</span>
+The project was commissioned by [CORIS Innovation](https://www.corisinnovation.com)[^1] from [ALGOSUP](https://algosup.com/en.html) students, and involved software maintenance.
+The software is an application for securing sports equipment, which is implemented on hardware supplied by the company.
+
+The goal of the project is to optimize the consumption to make it last longer, from 3 days to 7 days or more, add an NFC[^2] component, and improve the security and the user experience based on the existing prototype.
 
 ### B. Requirements
 
-<<<<<<< HEAD:Documents/TestPlan/testPlan.md
 By following the requests of the client company, the students will focus on the following points of the project:
 
 - Send device information to the API[^3]
@@ -64,37 +52,18 @@ By following the requests of the client company, the students will focus on the 
 - Have an NFC: be able to activate/deactivate the locking mechanism without using the phone
 - Manage multiple events in real-time
 - Send notification to the phone
-=======
-<span style="color:red">to be defined</span>
->>>>>>> 9546b5fa72fd5bd5ed0b9e4bed90cba1bd3c09c8:Documents/testPlan.md
 
-#### C. Roles and Responsabilities
-
-| Name | Role | Responsability | GitHub |
-|---|---|---|---|
-| <img src="https://ca.slack-edge.com/T06NA42V4FN-U06MT3ZEBP1-g8dddf3c594e-64"> DEBRY Robin | Project Manager |  | [GitHub](https://github.com/robin-debry) |
-| <img src="https://ca.slack-edge.com/T06NA42V4FN-U06NA4GBKTN-g7986289d5c2-64"> GAGNEPAIN Mathias | Program Manager |  | [GitHub](https://github.com/MathiasGagnepain) |
-| <img src="https://ca.slack-edge.com/T06NA42V4FN-U06NWDSQ38Q-gd0f64565afd-64"> DELILLE Elone | Technical Leader |  | [GitHub](https://github.com/HiNett) |
-| <img src="https://ca.slack-edge.com/T06NA42V4FN-U06N7LH3KB4-g20f42d2a13d-64"> GUILLOUCHE Enzo | Technical Writer |  | [GitHub](https://github.com/EnzoGuillouche) |
-| <img src="https://ca.slack-edge.com/T06NA42V4FN-U06N7H57DA7-g10c7c642461-64"> DESCAMPS Raphaël | Software Engineer |  | [GitHub](https://github.com/Raphaeldcp) |
-| <img src="https://ca.slack-edge.com/T06NA42V4FN-U06N11QLUDU-g83dc41ed93a-64"> PAGNOUX Grégory | Quality Assurance |  | [GitHub](https://github.com/Gregory-Pagnoux) |
+All the code must be written in Arduino's[^4] language (a variant of the C++[^5] programming language), following the existing code convention. No libraries except the ones that have already been given are allowed.
 
 ## II. Ressources Requirements
 
 ### A. Testing Environment
 
-<<<<<<< HEAD:Documents/TestPlan/testPlan.md
 Operating system: MacOS, Windows
 language: C++, Arduino
 IDE[^6]: [VisualStudioCode](https://code.visualstudio.com/download), [Arduino IDE](https://www.arduino.cc/en/software)
 Libraries:
 
-=======
-Operating system : MacOS, Windows, Arduino
-language : C, Arduino
-Integrated Development Environment : VisualStudioCode
-Libraries :
->>>>>>> 9546b5fa72fd5bd5ed0b9e4bed90cba1bd3c09c8:Documents/testPlan.md
 - [NRF52_MBED_TimerInterrupt](https://github.com/khoih-prog/NRF52_MBED_TimerInterrupt) V1.4.1
 - [ArduinoBLE](https://www.arduino.cc/reference/en/libraries/arduinoble/) V1.3.6
 - [Adafruit GPS Library](https://www.arduino.cc/reference/en/libraries/adafruit-gps-library/) V1.7.4 (install all)
@@ -104,27 +73,15 @@ Libraries :
 
 ### B. Testing Tool Requirements
 
-<span style="color:red">to be defined</span>
-
-#### C. Additional Ressource Requirements
-
-<span style="color:red">to be defined</span>
+[W3C - Testing/Requirements](https://www.w3.org/wiki/Testing/Requirements)
 
 ## III. Strategy
 
-<<<<<<< HEAD:Documents/TestPlan/testPlan.md
 ### A. Testing Type
-=======
-#### A. Test Strategy
-
-<span style="color:red">to be defined</span>
-
-#### B. Testing Type
->>>>>>> 9546b5fa72fd5bd5ed0b9e4bed90cba1bd3c09c8:Documents/testPlan.md
 
 **Unit tests**
 
-Unit tests are very low level and close to the source of an application. They consist in testing individual methods and functions of the classes, components, or modules used by your software. Unit tests are generally quite cheap to automate and can run very quickly by a continuous integration server.
+Unit tests are very low-level and close to the source of an application. They consist of testing individual methods and functions of the classes, components, or modules used by your software. Unit tests are generally quite cheap to automate and can run very quickly by a continuous integration server.
 
 **Integration tests**
 
@@ -140,211 +97,31 @@ End-to-end testing replicates a user behavior with the software in a complete ap
 
 **Smoke tests**
 
-<<<<<<< HEAD:Documents/TestPlan/testPlan.md
 Smoke tests are basic tests that check the basic functionality of a device. They are meant to be quick to execute, and their goal is to assure you that the major features of your system are working as expected.
 
 *source: [Atlsassian - types of software testing](https://www.atlassian.com/continuous-delivery/software-testing/types-of-software-testing)*
 
 ### B. Test Strategy
 
-
-
-**battery management tests**
-
-Test ID 01: (functional test)
-
-For 5 minutes in the same position, the battery gives the minimum of power to the bluetooth, in an ambient environment.
-
-- Modify code to wait 5 seconds.
-- Wait 5 secondes.
-- See the message send.
-
-Test ID 02: (functional test)
-
-For 5 minutes in the same position, the battery gives the minimum of power to the bluetooth, in a cold environment.
-
-- Modify code to wait 5 seconds.
-- Put in the freezer (-10°C).
-- Wait 5 secondes.
-- See the message send.
-
-Test ID 03: (end-to-end test)
-
-The lifespan of the battery is 7 days with 6 hours of operation and 18 hours on stand-by, in an ambient environment.
-
-- Write program to power on and power off at a good time.
-- Unplug the device.
-- Wait.
-
-Test ID 04: (end-to-end test)
-
-The lifespan of the battery is 7 days with 6 hours of operation and 18 hours on stand-by, in a cold environment.
-
-- Write program to power on and power off at a good time.
-- Unplug the device.
-- Put in the freezer (-10°C).
-- Wait.
-
-Test ID 05: (smoke test)
-
-The battery reaches a 20% level and turns off.
-
-Test ID 06: (integration test)
-
-The battery reaches a 80% level and stops charging.
-
-- Charge the battery.
-- Wait 80% level.
-- Send message.
-- Wait a few minutes for the level to remain unchanged.
-
-**Security issues**
-
-Test ID 07: (integration test)
-
-The phone sendsa request to the device to give the password
-
-- Write a program which sends "I need a password" to the device when we press "give a password" button.
-
-Test ID 08: (functional test)
-
-The device sends an e-mail with the password
-
-- Write a program which sends "password given" to an e-mail.
-- Check receipt of the e-mail.
-
-Test ID 09: (integration test)
-
-The device sends a request which opens the application to put the password given
-
-- Write a program to open the application.
-- Send information to the phone.
-- The window is open on the screen phone.
-
-Test ID 10: (unit test)
-
-When the wrong password is entered, print a message
-
-- Write the password on the smartphone.
-- Press "validate" button.
-- "Wrong password" message print.
-
-Test ID 11: (unit test)
-
-When the good password is entered, print a message and close the password screen
-
-- Write the password on the smartphone.
-- Press the "validate" button.
-- "Good password" message print.
-- The window closes.
-
-**Lock/unlock**
-
-Test ID 12: (unit test)
-
-We can unlock the device, with the device, in an ambient environment
-
-- Test the code to unlock the electromagnet.
-
-Test ID 13: (unit test)
-
-We can unlock the device, with device, in a cold environment
-
-- Put in the freezer (-10°C)
-- Test the code to unlock the electromagnet.
-
-Test ID 14: (unit test)
-
-We can lock the device, with device, in an ambient environment
-
-- Test the code to lock the electromagnet.
-
-Test ID 15: (unit test)
-
-We can lock the device, with device, in a cold environment
-
-- Put in the freezer (-10°C).
-- Test the code to lock the electromagnet.
-
-Test ID 16: (integration test)
-
-We can unlock the device, with the phone, in an ambient environment
-
-- Press the unlock button on the phone.
-- Request sent to the device by the phone.
-- Unlock the electromagnet.
-
-Test ID 17: (integration test)
-
-We can unlock the device, with the phone, in a cold environment
-
-- Put in the freezer (-10°C).
-- Press the unlock button on the phone.
-- Request sent to the device by the phone.
-- Unlock the electromagnet.
-
-Test ID 18: (integration test)
-
-We can lock the device, with the phone, in an ambient environment
-
-- Press the lock button on the phone.
-- Request sent to the device by the phone.
-- Lock the electromagnet.
-
-Test ID 19: (integration test)
-
-We can lock the device, with the phone, in a cold environment
-
-- Put in the freezer (-10°C).
-- Press the lock button on the phone.
-- Request sent to the device by the phone.
-- Lock the electromagnet.
-
-**NFC**
-
-Test ID 20:
-
-<span style="color:red">to be defined</span>
-
-Test ID 21:
-
-<span style="color:red">to be defined</span>
-
-**Alarm management**
-
-Test ID 22: (unit test)
-
-Move the device slowly to have 3 light sounds.
-
-Test ID 23: (unit test)
-
-Move the device quickly to have 5 high sounds.
-
-Test ID 24: (unit test)
-
-Shock the device to have 5 high sounds.
-
-**Shock notification**
-
-Test ID 25:
-
-<span style="color:red">to be defined</span>
-
-**GNSS position acquisition**
-
-Test ID 2.:
-
-<span style="color:red">to be defined</span>
-
-**Activate / desactivate by app**
-
-Test ID 2.:
-
-<span style="color:red">to be defined</span>
-
-Test ID 2.:
-
-<span style="color:red">to be defined</span>
+There are 8 categories of tests that are carried out independently, from the most important to the least important:
+
+- battery management
+- security issues
+- locking/unlocking
+- NFC
+- alarm management
+- alarm notification
+- GNSS position acquisition
+- activation/deactivation by application
+
+To test the product, we must use a code convention[^7] and each test must be run 3 times correctly to be validated.
+
+Level 1 - Critical (system shutdown, complete system failure)
+Level 2 - Major (significant degradation of service)
+Level 3 - Minor (most of the system is operational)
+Level 4 - Low (informative)
+
+*Source: [TestSigma] (https://testsigma.com/blog/difference-between-priority-and-severity/)
 
 ## IV. Documentation test
 
@@ -352,7 +129,7 @@ Test ID 2.:
 | - | - | - | - | - | - |
 | a | Project Charter | Elone DELILLE (Technical Leader) | Grégory PAGNOUX (Quality Assurance), Mathias GAGNEPAIN (Program Manager), Robin DEBRY (Project Manager), Enzo GUILLOUCHE (Technical Writer)  | 14/03/2024 | 14/03/2024 |
 | b | 1st Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance), Mathias GAGNEPAIN (Program Manager) | 15/03/2024 | 15/03/2024 |
-| c | Functional Specifications | Mathias GAGNEPAIN (Program Manager) | Grégory PAGNOUX (Quality Assurance), Enzo GUILLOUCHE (Technical Writer), Robin DEBRY (Project Manager) | 18/03/2024 | XX/0X/2024 |
+| c | Functional Specifications | Mathias GAGNEPAIN (Program Manager) | Grégory PAGNOUX (Quality Assurance), Enzo GUILLOUCHE (Technical Writer), Robin DEBRY (Project Manager) | 18/03/2024 | 18/03/2024 |
 | d | 2nd Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 22/03/2024 | XX/0X/2024 |
 | e | Technical Specifications | Elone DELILLE (Technical Leader) | Grégory PAGNOUX (Quality Assurance) | 26/03/2024 | XX/0X/2024 |
 | f | 3rd Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 29/03/2024 | XX/03/2024 |
@@ -457,45 +234,247 @@ public void Add_MultipleNumbers_ReturnsSumOfNumbers(string input, int expected)
 |  |  | XX/0X/2024 | XX/0X/2024 | None |
 |  |  | XX/0X/2024 | XX/0X/2024 | None |
 |  |  | XX/0X/2024 | XX/0X/2024 | None |
-=======
-Smoke tests are basic tests that check the basic functionality of an application. They are meant to be quick to execute, and their goal is to give you the assurance that the major features of your system are working as expected.
 
-*source : [Atlsassian - types of software testing](https://www.atlassian.com/continuous-delivery/software-testing/types-of-software-testing)*
+## VI. Test cases
 
-## IV. Installation Qualification
+**battery management tests**
 
-<span style="color:red">to be defined</span>
+Test ID 01: (functional test)
 
-## V. Test Documentation
+For 5 minutes in the same position, the battery gives the minimum of power to the bluetooth, in an ambient environment.
 
-<span style="color:red">to be defined</span>
+- Modify code to wait 5 seconds.
+- Wait 5 secondes.
+- See the message send.
 
-**Criterias**
+Test ID 02: (functional test)
 
-<span style="color:red">to be defined</span>
+For 5 minutes in the same position, the battery gives the minimum of power to the bluetooth, in a cold environment.
 
-**Testing Schedule**
+- Modify code to wait 5 seconds.
+- Put in the freezer (-10°C).
+- Wait 5 secondes.
+- See the message send.
 
-| ID | Function | Developer | Description | Deadline | Completion date |
-| - | - | - | - | - | - |
-| 01 |  |  |  | XX/0X/2024 | XX/0X/2024 |
-| 02 |  |  |  | XX/0X/2024 | XX/0X/2024 |
-| 03 |  |  |  | XX/0X/2024 | XX/0X/2024 |
-| 04 |  |  |  | XX/0X/2024 | XX/0X/2024 |
-| 05 |  |  |  | XX/0X/2024 | XX/0X/2024 |
->>>>>>> 9546b5fa72fd5bd5ed0b9e4bed90cba1bd3c09c8:Documents/testPlan.md
+Test ID 03: (end-to-end test)
 
-**Test convention**
+The lifespan of the battery is 7 days with 6 hours of operation and 18 hours on stand-by, in an ambient environment.
 
-<span style="color:red">to be defined</span>
+- Write program to power on and power off at a good time.
+- Unplug the device.
+- Wait.
 
-[Test case](https://github.com/algosup/2023-2024-project-4-sportshield-team-2/issues) is done on GitHub issues category.
+Test ID 04: (end-to-end test)
+
+The lifespan of the battery is 7 days with 6 hours of operation and 18 hours on stand-by, in a cold environment.
+
+- Write program to power on and power off at a good time.
+- Unplug the device.
+- Put in the freezer (-10°C).
+- Wait.
+
+Test ID 05: (smoke test)
+
+The battery reaches a 20% level and turns off.
+
+Test ID 06: (integration test)
+
+The battery reaches a 80% level and stops charging.
+
+- Charge the battery.
+- Wait 80% level.
+- Send message.
+- Wait a few minutes for the level to remain unchanged.
+
+**Security issues**
+
+Test ID 07: (integration test)
+
+The phone sends a request to the device to give the password.
+
+- Write a program which sends "I need a password" to the device when we press "give a password" button.
+
+Test ID 08: (functional test)
+
+The device sends an e-mail with the password.
+
+- Write a program which sends "password given" to an e-mail.
+- Check receipt of the e-mail.
+
+Test ID 09: (integration test)
+
+The device sends a request which opens the application to put the password given;
+
+- Write a program to open the application.
+- Send information to the phone.
+- The window is open on the screen phone.
+
+Test ID 10: (unit test)
+
+When the wrong password is entered, print a message.
+
+- Write the password on the smartphone.
+- Press "validate" button.
+- "Wrong password" message print.
+
+Test ID 11: (unit test)
+
+When the good password is entered, print a message and close the password screen.
+
+- Write the password on the smartphone.
+- Press the "validate" button.
+- "Good password" message print.
+- The window closes.
+
+**Lock/unlock**
+
+Test ID 12: (unit test)
+
+We can unlock the device, with the device, in an ambient environment.
+
+- Test the code to unlock the electromagnet.
+
+Test ID 13: (unit test)
+
+We can unlock the device, with device, in a cold environment.
+
+- Put in the freezer (-10°C)
+- Test the code to unlock the electromagnet.
+
+Test ID 14: (unit test)
+
+We can lock the device, with device, in an ambient environment.
+
+- Test the code to lock the electromagnet.
+
+Test ID 15: (unit test)
+
+We can lock the device, with device, in a cold environment.
+
+- Put in the freezer (-10°C).
+- Test the code to lock the electromagnet.
+
+Test ID 16: (integration test)
+
+We can unlock the device, with the phone, in an ambient environment.
+
+- Press the unlock button on the phone.
+- Request sent to the device by the phone.
+- Unlock the electromagnet.
+
+Test ID 17: (integration test)
+
+We can unlock the device, with the phone, in a cold environment.
+
+- Put in the freezer (-10°C).
+- Press the unlock button on the phone.
+- Request sent to the device by the phone.
+- Unlock the electromagnet.
+
+Test ID 18: (integration test)
+
+We can lock the device, with the phone, in an ambient environment.
+
+- Press the lock button on the phone.
+- Request sent to the device by the phone.
+- Lock the electromagnet.
+
+Test ID 19: (integration test)
+
+We can lock the device, with the phone, in a cold environment.
+
+- Put in the freezer (-10°C).
+- Press the lock button on the phone.
+- Request sent to the device by the phone.
+- Lock the electromagnet.
+
+**NFC**
+
+Test ID 20:
+
+<!-- TODO -->
+
+Test ID 21:
+
+<!-- TODO -->
+
+**Alarm management**
+
+Test ID 22: (unit test)
+
+Move the device slowly to have 3 light sounds.
+
+Test ID 23: (unit test)
+
+Move the device quickly to have 5 high sounds.
+
+Test ID 24: (unit test)
+
+Shock the device to have 5 high sounds.
+
+**Alarm notification**
+
+Test ID 25: (functional test)
+
+Move the device slowly to have a notification sent to the application by the device.
+
+Test ID 26: (functioanl test)
+
+Move the device quickly to have a notification sent to the application by the device.
+
+Test ID 27: (functional test)
+
+Shock the device to have have a notification sent to the application by the device.
+
+**GNSS position acquisition**
+
+Test ID 28: (integration test)
+
+Move the device and the position is sent to the application by the device.
+
+- take the device
+- move to a different place
+- compare position data with GPS localization of the place
+
+**Activate/deactivate in remote**
+
+Test ID 29: (functional test)
+
+We can activiate light alarm thanks the application
+
+- open the application
+- press the "light" button
+
+Test ID 30: (functional test)
+
+we can deactivate light alarm thanks the application
+
+- open the application
+- press the "light" button
+
+test ID 31: (functional test)
+
+We can activiate high alarm thanks the application
+
+- open the application
+- press the "hight" button
+
+Test ID 32: (functional test)
+
+we can deactivate high alarm thanks the application
+
+- open the application
+- press the "high" button
+
+| [Test cases](https://github.com/algosup/2023-2024-project-4-sportshield-team-2/issues) are done on GitHub issues. |
+| - |
 
 ## Glossary
 
-<span style="color:red">to be defined</span>
+[^1]: CORIS Innovation
+The company's main activities are engineering and engineering consultancy, recruitment and headhunting, business management consultancy, and strategic operations. The head office is not far from Lyon and has been in existence since 2015 thanks to Thibault Peltier and Stéphane Maite.
+*source: [CORIS Innonvation](https://www.corisinnovation.com)*
 
-<<<<<<< HEAD:Documents/TestPlan/testPlan.md
 [^2]: NFC (Near Field Communication)
 Wireless transmission technology that simplifies the exchange of data. The technology is used in particular for Bluetooth on mobile phones.
 *source: [Phonandroïd](https://www.phonandroid.com/nfc-android-comment-marche-pour-quels-usages.html#:~:text=Le%20NFC%20)*
@@ -531,6 +510,3 @@ A value that is not defined and for which we do not know what it represents.
 [^9]: Sevrity
 The severity is the impact of the issues on the project/program. Is measure thanks level system which the 1 is critical, 2 is Major, 3 is Minor, and 4 is Low. It's the role of the QA to define the severity of the issue.
 *source: [TestSigma](https://testsigma.com/blog/difference-between-priority-and-severity/)*
-=======
-*source : [link]()*
->>>>>>> 9546b5fa72fd5bd5ed0b9e4bed90cba1bd3c09c8:Documents/testPlan.md
