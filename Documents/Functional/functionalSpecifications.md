@@ -57,6 +57,7 @@ The goal of the project is to optimize the battery consumption to make it last l
     - [SportShield Scheme](#sportshield-scheme)
       - [top view transparent](#top-view-transparent)
       - [bottom view closed](#bottom-view-closed)
+
 </summary></details>
 
 ## Stakeholders
@@ -103,7 +104,6 @@ The SportShield must allow the following actions:
 All the code must be written in the Arduino's [[3]](#glossary-3) language (a variant of the C++ [[4]](#glossary-4) programming language), following the existing code convention. No libraries except the ones that have already been given are allowed.
 
 ## Deliverables and milestones
-
 
 | Date and time       | Deliverable              |
 | ------------------- | ------------------------ |
@@ -224,7 +224,6 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 | Normal Flow        | 1. When the battery is fully charged the device stops charging and sends a notification to the user.                                                     |
 | Alternative Flows  | 1. If the device isn't connected to the network, the battery status can't be communicated but it will stop charging.                                   |
 | Exception Handling | 1. The device will send the notification when it will be connected.<br>2. The user will not received the notification.                               |
-
 
 #### Locking/Unlocking with the mobile app
 
@@ -350,7 +349,7 @@ To use the device correctly please follow these steps:
    - **With Bluetooth:**
      1. Authenticate yourself.
      2. Disable locking.
-    - **With a NFC [[1]](#glossary-1) device:**
+   - **With a NFC [[1]](#glossary-1) device:**
       1. Make contact between the NFC [[1]](#glossary-1) device and the SportShield
 2. Pull the cable from the hole.
 
