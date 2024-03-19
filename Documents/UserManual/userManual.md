@@ -68,7 +68,7 @@ The SportShield is now charging. Try to not use SportShield during its charging.
 
 ## Set up SportShield
 
-To fully use the SportShield device, you'd need to set up few things with your smartphone. <br>
+To fully use the SportShield device, you'd need to set up a few things with your smartphone. <br>
 You can either set up by Bluetooth, with a NFC card or with the SportShield app. <br><br>
 By Bluetooth:
 
@@ -93,7 +93,7 @@ The SportShield is now set up, you can use it whenever and wherever you want.
 
 # How to lock SportShield 
 
-The SportShield prevents your sport belongings from thiefs. Its installation deals with few steps:
+The SportShield prevents your sports belongings from thieves. Its installation deals with a few steps:
 
 1. Wind the cable from the cable exit of the SportShield device.
 2. Surround your belongings with the cable.
@@ -112,7 +112,7 @@ For more information about notifications, refer to the [dedicated manual part](#
 SportShield's uninstallation is quite simple. You can unlock it either by Bluetooth or with the app. <br>
 By Bluetooth:
 
-1. Go on your Bluetooth settings.<br>
+1. Go to your Bluetooth settings.<br>
 <img src="./Img/BluetoothSettingsFunctionnalities.png" width="200"/>
 2. Click on the "Unlock" button to unlock SportShield.<br>
 <img src="./Img/BluetoothUnlock.png" width="200"/>
@@ -162,7 +162,7 @@ Since no application has been synchronized with the SportShield device, the impl
 
 When the alarm rings, a notification is sent to the linked smartphone.
 
-The notifications contain some information about the device, such as the GPS coordinates (longitude lagitude) and the remaining battery percentage.<br>
+The notifications contain some information about the device, such as the GPS coordinates (longitude latitude) and the remaining battery percentage.<br>
 
 <!-- add a notification image -->
 
@@ -189,7 +189,7 @@ Since the SportShield is an anti-theft device, it has to be resistant enough, me
 
 ### Anti-theft Cable
 
-**The cable in itself got some adjustments to meet the resistance criteria.** <br>
+**The cable in itself has some adjustments to meet the resistance criteria.** <br>
 For physical security, a multi-layered cable and electromagnetic lock have been implemented.<br>
 Moreover, the cable automatically retracts into the housing and prevents unwinding when locked.
 
