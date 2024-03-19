@@ -258,7 +258,7 @@ Test ID 03: (end-to-end test)
 
 The lifespan of the battery is 7 days with 6 hours of operation and 18 hours on stand-by, in an ambient environment.
 
-- Write program to power on and power off at a good time.
+- Write a program to power on and power off at a good time.
 - Unplug the device.
 - Wait.
 
@@ -266,7 +266,7 @@ Test ID 04: (end-to-end test)
 
 The lifespan of the battery is 7 days with 6 hours of operation and 18 hours on stand-by, in a cold environment.
 
-- Write program to power on and power off at a good time.
+- Write a program to power on and power off at a good time.
 - Unplug the device.
 - Put in the freezer (-10°C).
 - Wait.
@@ -281,16 +281,16 @@ The battery reaches a 80% level and stops charging.
 
 - Charge the battery.
 - Wait 80% level.
-- Send message.
+- Send the message.
 - Wait a few minutes for the level to remain unchanged.
 
 **Security issues**
 
-Test ID 07: (integration test)
+Test ID 07: (integration-test)
 
 The phone sends a request to the device to give the password.
 
-- Write a program which sends "I need a password" to the device when we press "give a password" button.
+- Write a program which sends "I need a password" to the device when we press the "give a password" button.
 
 Test ID 08: (functional test)
 
@@ -299,7 +299,7 @@ The device sends an e-mail with the password.
 - Write a program which sends "password given" to an e-mail.
 - Check receipt of the e-mail.
 
-Test ID 09: (integration test)
+Test ID 09: (integration-test)
 
 The device sends a request which opens the application to put the password given;
 
@@ -312,7 +312,7 @@ Test ID 10: (unit test)
 When the wrong password is entered, print a message.
 
 - Write the password on the smartphone.
-- Press "validate" button.
+- Press the "validate" button.
 - "Wrong password" message print.
 
 Test ID 11: (unit test)
@@ -334,25 +334,25 @@ We can unlock the device, with the device, in an ambient environment.
 
 Test ID 13: (unit test)
 
-We can unlock the device, with device, in a cold environment.
+We can unlock the device, with the device, in a cold environment.
 
 - Put in the freezer (-10°C)
 - Test the code to unlock the electromagnet.
 
 Test ID 14: (unit test)
 
-We can lock the device, with device, in an ambient environment.
+We can lock the device, with the device, in an ambient environment.
 
 - Test the code to lock the electromagnet.
 
 Test ID 15: (unit test)
 
-We can lock the device, with device, in a cold environment.
+We can lock the device, with the device, in a cold environment.
 
 - Put in the freezer (-10°C).
 - Test the code to lock the electromagnet.
 
-Test ID 16: (integration test)
+Test ID 16: (integration-test)
 
 We can unlock the device, with the phone, in an ambient environment.
 
@@ -360,7 +360,7 @@ We can unlock the device, with the phone, in an ambient environment.
 - Request sent to the device by the phone.
 - Unlock the electromagnet.
 
-Test ID 17: (integration test)
+Test ID 17: (integration-test)
 
 We can unlock the device, with the phone, in a cold environment.
 
@@ -369,7 +369,7 @@ We can unlock the device, with the phone, in a cold environment.
 - Request sent to the device by the phone.
 - Unlock the electromagnet.
 
-Test ID 18: (integration test)
+Test ID 18: (integration-test)
 
 We can lock the device, with the phone, in an ambient environment.
 
@@ -377,7 +377,7 @@ We can lock the device, with the phone, in an ambient environment.
 - Request sent to the device by the phone.
 - Lock the electromagnet.
 
-Test ID 19: (integration test)
+Test ID 19: (integration-test)
 
 We can lock the device, with the phone, in a cold environment.
 
@@ -426,7 +426,7 @@ Shock the device to have have a notification sent to the application by the devi
 
 **GNSS position acquisition**
 
-Test ID 28: (integration test)
+Test ID 28: (integration-test)
 
 Move the device and the position is sent to the application by the device.
 
