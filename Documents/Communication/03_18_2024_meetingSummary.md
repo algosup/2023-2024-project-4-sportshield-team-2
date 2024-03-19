@@ -8,7 +8,7 @@
       - [Which kind of information do you have in your application?](#which-kind-of-information-do-you-have-in-your-application)
       - [What happens if data can't be sent?](#what-happens-if-data-cant-be-sent)
       - [Do you have something to ping the device?](#do-you-have-something-to-ping-the-device)
-      - [How do we manage in a low battery level situtation?](#how-do-we-manage-in-a-low-battery-level-situtation)
+      - [How do we manage in a low battery level situation?](#how-do-we-manage-in-a-low-battery-level-situation)
       - [What to do if components is malfunctioning?](#what-to-do-if-components-is-malfunctioning)
       - [How does the SIM forfait work?](#how-does-the-sim-forfait-work)
       - [Do we need to search by ourselves for a library that can managed by our board or do you already have a specific library to do that?](#do-we-need-to-search-by-ourselves-for-a-library-that-can-managed-by-our-board-or-do-you-already-have-a-specific-library-to-do-that)
@@ -58,7 +58,7 @@
 
 - No, the idea is to keep the device the simplest as possible.
 
-#### How do we manage in a low battery level situtation?
+#### How do we manage in a low battery level situation?
 
 - Regarding battery in 0% level situation don't give the possiblity to switch on the device.
 - The device needs to inform the user of the critical state before it switched off (under 15%).
