@@ -428,38 +428,38 @@ Shock the device to have have a notification sent to the application by the devi
 
 **GNSS position acquisition**
 
-Test ID 28:
+Test ID 28: (integration test)
 
 Move the device and the position is sent to the application by the device.
 
 - take the device
-- move to different place
+- move to a different place
 - compare position data with GPS localization of the place
 
 **Activate/deactivate in remote**
 
-Test ID 29:
+Test ID 29: (functional test)
 
 We can activiate light alarm thanks the application
 
 - open the application
 - press the "light" button
 
-Test ID 30:
+Test ID 30: (functional test)
 
 we can deactivate light alarm thanks the application
 
 - open the application
 - press the "light" button
 
-test ID 31:
+test ID 31: (functional test)
 
 We can activiate high alarm thanks the application
 
 - open the application
 - press the "hight" button
 
-Test ID 32:
+Test ID 32: (functional test)
 
 we can deactivate high alarm thanks the application
 
