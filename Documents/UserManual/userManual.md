@@ -101,20 +101,21 @@ The SportShield prevents your sport belongings from thiefs. Its installation dea
 If SportShield is not connected to your smartphone, refer to the [set up part](#set-up-sportshield).<br><br>
 The SportShield is now locked and you won't be able to pull the cable anymore, if you don't unlock it. 
 <br><br>
-You'll receive a notification if the SportShield detects a shock. 
-
+You'll receive a notification if the SportShield detects a shock. <br>
 For more information about notifications, refer to the [dedicated manual part](#notifications).
 
-<br>
+<div style="page-break-after: always;"></div>
 
 # How to unlock SportShield 
 
-SportShield's uninstallation is quite simple. You can unlock it either by Bluetooth or with the app. 
+SportShield's uninstallation is quite simple. You can unlock it either by Bluetooth or with the app. <br>
 By Bluetooth:
 1. Go on your Bluetooth settings.<br>
 <img src="./Img/BluetoothSettingsFunctionnalities.png" width="200"/>
-2. Click on the "Unlock" button to unlock SportShield.
+2. Click on the "Unlock" button to unlock SportShield.<br>
 <img src="./Img/BluetoothUnlock.png" width="200"/>
+
+Regarding the SportShield app, see the [dedicated manual part](#app).
 
 <br>
 The SportShield is now unlocked. The alarm won't ring and you can take your device back.
@@ -128,21 +129,34 @@ The SportShield is now unlocked. The alarm won't ring and you can take your devi
 When the SportShield is locked, each detected shock will ring an alarm. <br>The alarm intensity depends on the shock intensity: <br>
 - 3 light sounds when a light shock is detected.
 - 5 long high sounds when a strong shock is detected.
-<br>
+<br><br>
 
-Whenever the alarm rings, a notification is sent to the smartphone.<br>
+Moreover, you can stop the alarm whenever you want. To do so, you can use either the Bluetooth or the app. <br>
+
+<!-- By Bluetooth:<br> are they the same steps as the "unlock"? -->
+
+Regarding the SportShield app, see the [dedicated manual part](#app).
+
+When the alarm rings, a notification is sent to the linked smartphone.<br>
 For more information about notifications, refer to the [dedicated manual part](#notifications).
 <br>
+
 
 # App
 
 The SportShield app would be available either on the Apple App Store and the Google Play Store.<br>
-Even though, the app has not been synchronized with the SportShield device. In this user manual, you won't be able to find any useful information about this application.
+Even though, the app has not been synchronized with the SportShield device. In this user manual, you won't be able to find any useful information about this application yet.
 
 
 # Notifications
 
-The nofications contain some information about the device, such as the GPS coordinates (longitude lagitude) and the remaining battery percentage. 
+Since no application has been synchronized with the SportShield device, the implemented simulation reproduces perfectly how it would work. <br><br>
+The notifications contain some information about the device, such as the GPS coordinates (longitude lagitude) and the remaining battery percentage. <br>
+
+<!-- need to add details -->
+
+<!-- add a notification image -->
+
 
 <div style="page-break-after: always;"></div>
 
@@ -167,7 +181,7 @@ Since the SportShield is an anti-theft device, it has to be resistant enough, me
 
 ### Anti-theft Cable
 
-**The cable in itself got some adjustments to meet the resistance criteria.** 
+**The cable in itself got some adjustments to meet the resistance criteria.** <br>
 For physical security, a multi-layered cable and electromagnetic lock have been implemented.<br>
 Moreover, the cable automatically retracts into the housing and prevents unwinding when locked.
 
@@ -177,13 +191,12 @@ Moreover, the cable automatically retracts into the housing and prevents unwindi
 
 ## Security
 
-SportShield prioritizes the fundamental principles encapsulated within the AIC triad: Confidentiality, Integrity, and Availability.
+SportShield prioritizes the fundamental principles that are Confidentiality, Integrity, and Availability.
 
-Confidentiality, akin to the notion of privacy, serves as the bedrock of SportShield's approach to safeguarding sensitive information. By meticulously categorizing data based on its potential impact if compromised, SportShield enforces stringent measures to thwart unauthorized access attempts, ensuring that confidential data remains secure and inaccessible to unauthorized entities.
+By meticulously categorizing data based on its potential impact if compromised, SportShield enforces stringent measures to thwart unauthorized access attempts, ensuring that confidential data remains secure and inaccessible to unauthorized entities.
 
-Integrity stands as a pillar of trustworthiness within SportShield's framework. Throughout the lifecycle of data, from creation to dissemination, SportShield employs robust mechanisms to uphold the consistency and accuracy of information. By fortifying data against unauthorized alterations, such as those that might occur during data breaches or in transit, SportShield guarantees the integrity of critical information.
+By fortifying data against unauthorized alterations, such as when a thief would want to corrupt your SportShield device, SportShield guarantees the integrity of critical information.
 
-Availability, the third facet of the AIC triad, underscores SportShield's commitment to ensuring that authorized parties can access information promptly and consistently. Through diligent maintenance of hardware, technical infrastructure, and systems, SportShield endeavors to eliminate downtime and disruptions, thereby enabling seamless access to vital data whenever and wherever it is needed.
 
 <div style="page-break-after: always;"></div>
 
