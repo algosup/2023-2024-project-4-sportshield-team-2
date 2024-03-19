@@ -118,7 +118,7 @@ Level 2 - Major (significant degradation of service)
 Level 3 - Minor (most of the system is operational)
 Level 4 - Low (informative)
 
-*Source: [TestSigma] (https://testsigma.com/blog/difference-between-priority-and-severity/)
+*Source: [TestSigma] (https://testsigma.com/blog/difference-between-priority-and-severity/)*
 
 ## IV. Documentation test
 
@@ -174,7 +174,7 @@ public void Add_EmptyString_ReturnsZero()
 }
 ```
 
-- naming variables (without magic chains[^8])
+- naming variables (without magic chain[^8])
 
 *ex:*
 
@@ -265,16 +265,16 @@ Software application combining all the tools needed for a software development p
 *source: [DataScientest](https://datascientest.com/ide)*
 
 [^7]: Code convention
-Coding conventions are a set of guidelines for a specific programming language that recommend programming style, practices, and methods for each aspect of a program written in that language.
+Coding conventions are a set of guidelines for a specific programming language that recommend programming styles, practices, and methods for each aspect of a program written in that language.
 *source: [Wikipedia](https://en.wikipedia.org/wiki/Coding_conventions#:~:text=Coding%20conventions%20are%20a%20set,program%20written%20in%20that%20language.)*
 
-[^8]: Magic Chains
+[^8]: Magic Chain
 A value that is not defined and for which we do not know what it represents.
 (e.g: ```Action actual = () => stringCalculator.Add("1001");```
 "1001" is a magic chain and must be defined using a constant such as:
 ```const string MAXIMUM_RESULT = "1001";```
 ```Action actual = () => stringCalculator.Add(MAXIMUM_RESULT);```)
 
-[^9]: Sevrity
-The severity is the impact of the issues on the project/program. Is measure thanks level system which the 1 is critical, 2 is Major, 3 is Minor, and 4 is Low. It's the role of the QA to define the severity of the issue.
+[^9]: Severity
+The severity is the impact of the issues on the project/program. It measures thanks to a level system where 1 is critical, 2 is Major, 3 is Minor, and 4 is Low. It's the role of the QA to define the severity of the issue.
 *source: [TestSigma](https://testsigma.com/blog/difference-between-priority-and-severity/)*
