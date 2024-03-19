@@ -51,8 +51,8 @@ Your SportShield includes:
 
 ## Charge your SportShield
 
+If the SportShield device runs ou of battery, it won't work anymore until it gets charged.<br>
 A fully-charged SportShield can last over 6 days.
-
 
 To charge SportShield:
 
@@ -60,17 +60,15 @@ To charge SportShield:
 <img src="./Img/chargingPort.png" width="200"/>
 2. Plug the other end of the charger into an outlet.
 
-
 <br>
 
 The SportShield is now charging. Try to not use SportShield during its charging.
 
 <div style="page-break-after: always;"></div>
 
-
 ## Set up SportShield
 
-To fully use the SportShield device, you'd need to set up few things with your smartphone. <br>
+To fully use the SportShield device, you'd need to set up a few things with your smartphone. <br>
 You can either set up by Bluetooth, with a NFC card or with the SportShield app. <br><br>
 By Bluetooth:
 
@@ -95,7 +93,7 @@ The SportShield is now set up, you can use it whenever and wherever you want.
 
 # How to lock SportShield 
 
-The SportShield prevents your sport belongings from thiefs. Its installation deals with few steps:
+The SportShield prevents your sports belongings from thieves. Its installation deals with a few steps:
 
 1. Wind the cable from the cable exit of the SportShield device.
 2. Surround your belongings with the cable.
@@ -109,12 +107,12 @@ For more information about notifications, refer to the [dedicated manual part](#
 
 <div style="page-break-after: always;"></div>
 
-# How to unlock SportShield 
+# How to unlock SportShield
 
 SportShield's uninstallation is quite simple. You can unlock it either by Bluetooth or with the app. <br>
 By Bluetooth:
 
-1. Go on your Bluetooth settings.<br>
+1. Go to your Bluetooth settings.<br>
 <img src="./Img/BluetoothSettingsFunctionnalities.png" width="200"/>
 2. Click on the "Unlock" button to unlock SportShield.<br>
 <img src="./Img/BluetoothUnlock.png" width="200"/>
@@ -143,7 +141,9 @@ When the SportShield is locked, each detected shock will ring an alarm. <br>The 
 
 Moreover, you can stop the alarm whenever you want. To do so, you can use either the Bluetooth or the app. <br>
 
-<!-- By Bluetooth:<br> are they the same steps as the "unlock"? -->
+By Bluetooth: these are the same steps as [to unlock SportShield](#how-to-unlock-sportshield).
+
+With the NFC card, these are the same steps as [to unlock SportShield](#how-to-unlock-sportshield).
 
 Regarding the SportShield app, see the [dedicated manual part](#app).
 
@@ -151,19 +151,18 @@ When the alarm rings, a notification is sent to the linked smartphone.<br>
 For more information about notifications, refer to the [dedicated manual part](#notifications).
 <br>
 
-
 # App
 
 The SportShield app would be available either on the Apple App Store and the Google Play Store.<br>
-Even though, the app has not been synchronized with the SportShield device. In this user manual, you won't be able to find any useful information about this application yet.
-
+Even though, the app has not been synchronized with the SportShield device yet. In this user manual, you won't be able to find any useful information about this application for the moment.
 
 # Notifications
 
 Since no application has been synchronized with the SportShield device, the implemented simulation reproduces perfectly how it would work. <br><br>
-The notifications contain some information about the device, such as the GPS coordinates (longitude lagitude) and the remaining battery percentage. <br>
 
-<!-- need to add details -->
+When the alarm rings, a notification is sent to the linked smartphone.
+
+The notifications contain some information about the device, such as the GPS coordinates (longitude latitude) and the remaining battery percentage.<br>
 
 <!-- add a notification image -->
 
@@ -190,7 +189,7 @@ Since the SportShield is an anti-theft device, it has to be resistant enough, me
 
 ### Anti-theft Cable
 
-**The cable in itself got some adjustments to meet the resistance criteria.** <br>
+**The cable in itself has some adjustments to meet the resistance criteria.** <br>
 For physical security, a multi-layered cable and electromagnetic lock have been implemented.<br>
 Moreover, the cable automatically retracts into the housing and prevents unwinding when locked.
 
