@@ -210,3 +210,5 @@ By fortifying data against unauthorized alterations, such as when a thief would 
 <div style="page-break-after: always;"></div>
 
 ©2015-2024 Coris Innovation. All rights reserved. Coris Innovation and the Coris Innovation logo are trademarks or registered trademarks of Coris Innovation.
+
+This guide is provided for reference only. The actual product, including color, size and screen layout, may differ. The statements, information and recommendations in this guide do not constitute a warranty, express or implied.
