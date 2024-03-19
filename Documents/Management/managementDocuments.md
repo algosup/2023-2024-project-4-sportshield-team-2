@@ -5,6 +5,7 @@ This document contains the main documentation for the management of the project 
 - [RACI matrix](#raci-matrix)
 - [MoSCoW](#moscow)
 - [Target Key Performace Indicators](#target-key-performace-indicators)
+- [Key Performance Indicators](#key-performance-indicators)
 - [Statement of work](#statement-of-work)
 
 ## Project charter
@@ -56,5 +57,9 @@ Legend:
 | GNSS position acquisition | The device must be able to acquire the GNSS position | 80% |
 
 These target KPIs are based on the client's requirements.
+
+## Key Performance Indicators
+
+To follow the progress of the project you can check the [KPIs](https://docs.google.com/spreadsheets/d/1Py72_1mZQ5l20KM0fd6HdSRnmj49YibWoImaeFKPc8U/edit?usp=sharing).
 
 ## Statement of work
