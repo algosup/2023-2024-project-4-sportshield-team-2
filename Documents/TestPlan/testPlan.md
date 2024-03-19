@@ -22,8 +22,6 @@
 
 </details>
 
-[Readme](https://github.com/algosup/2023-2024-project-4-sportshield-team-2/blob/main/README.md)
-
 ---
 
 ## I. Introduction
@@ -241,20 +239,20 @@ public void Add_MultipleNumbers_ReturnsSumOfNumbers(string input, int expected)
 
 Test ID 01: (functional test)
 
-For 5 minutes in the same position, the battery gives the minimum of power to the bluetooth, in an ambient environment.
+For 5 minutes in the same position, the battery gives the minimum of power to the Bluetooth, in an ambient environment.
 
 - Modify code to wait 5 seconds.
-- Wait 5 secondes.
-- See the message send.
+- Wait 5 seconds.
+- See the message sent.
 
 Test ID 02: (functional test)
 
-For 5 minutes in the same position, the battery gives the minimum of power to the bluetooth, in a cold environment.
+For 5 minutes in the same position, the battery gives the minimum of power to the Bluetooth, in a cold environment.
 
 - Modify code to wait 5 seconds.
 - Put in the freezer (-10°C).
-- Wait 5 secondes.
-- See the message send.
+- Wait 5 seconds.
+- See the message sent.
 
 Test ID 03: (end-to-end test)
 
