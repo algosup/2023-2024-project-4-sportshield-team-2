@@ -15,11 +15,11 @@
       - [Can we use other libraries?](#can-we-use-other-libraries)
       - [Is it the updated electronics circuit diagram?](#is-it-the-updated-electronics-circuit-diagram)
     - [Usage](#usage)
-      - [What would a package contain? Like the device, a charger (USB-C?), anything else?](#what-would-a-package-contain-like-the-device-a-charger-usb-c-anything-else)
+      - [What would a package contain? Like the device, a charger (USB-C?), or anything else?](#what-would-a-package-contain-like-the-device-a-charger-usb-c-or-anything-else)
       - [Is the app expected to be available on Google Play Store and Apple App Store?](#is-the-app-expected-to-be-available-on-google-play-store-and-apple-app-store)
-      - [Does it meet specific criteria to test robustness of the SportShield device, such as waterproofness, cold-resistance in these fields such as IP ratings?](#does-it-meet-specific-criteria-to-test-robustness-of-the-sportshield-device-such-as-waterproofness-cold-resistance-in-these-fields-such-as-ip-ratings)
+      - [Does it meet specific criteria to test robustness of the SportShield device, such as waterproofness, or cold-resistance in these fields such as IP ratings?](#does-it-meet-specific-criteria-to-test-robustness-of-the-sportshield-device-such-as-waterproofness-or-cold-resistance-in-these-fields-such-as-ip-ratings)
       - [Are notifications (sent by the SportShield device) only supported by the app? Or should they be also sent by Bluetooth somehow?](#are-notifications-sent-by-the-sportshield-device-only-supported-by-the-app-or-should-they-be-also-sent-by-bluetooth-somehow)
-      - [Do you have a mail or phone number for technical support? For example if my device isn't working, who can I email/call?](#do-you-have-a-mail-or-phone-number-for-technical-support-for-example-if-my-device-isnt-working-who-can-i-emailcall)
+      - [Do you have a mail or phone number for technical support? For example, if my device isn't working, who can I email/call?](#do-you-have-a-mail-or-phone-number-for-technical-support-for-example-if-my-device-isnt-working-who-can-i-emailcall)
 
 ## List of participant
 
@@ -87,24 +87,25 @@
 
 ### Usage
 
-#### What would a package contain? Like the device, a charger (USB-C?), anything else?
+#### What would a package contain? Like the device, a charger (USB-C?), or anything else?
 
-- It's just a prototype they didn't thought about that yet.
+- It's just a prototype they haven't thought about that yet.
 
 #### Is the app expected to be available on Google Play Store and Apple App Store?
 
 - Yes, they expect it will be available on both.
 
-#### Does it meet specific criteria to test robustness of the SportShield device, such as waterproofness, cold-resistance in these fields such as IP ratings?
+#### Does it meet specific criteria to test robustness of the SportShield device, such as waterproofness, or cold-resistance in these fields such as IP ratings?
 
 - No, it's just a prototype and it hasn't been tested in real condition.
-- But it resistant to 2-3 meter height falling.
+- But it's resistant to 2-3 meter height falling.
 
 #### Are notifications (sent by the SportShield device) only supported by the app? Or should they be also sent by Bluetooth somehow?
 
-- We can feel free to add some use cases but Bluetooth isn't relevant cause if the user is near to the device, he doesn't need to receive notifications.
+- We can feel free to add some use cases
+- Bluetooth isn't relevant because if the user is near the device, he doesn't need to receive notifications.
 
-#### Do you have a mail or phone number for technical support? For example if my device isn't working, who can I email/call?
+#### Do you have a mail or phone number for technical support? For example, if my device isn't working, who can I email/call?
 
 - Yes, but not for now, it's too early to have a real plan of technical and client support.
 
