@@ -156,6 +156,8 @@ For more information about notifications, refer to the [dedicated manual part](#
 The SportShield app would be available either on the Apple App Store and the Google Play Store.<br>
 Even though, the app has not been synchronized with the SportShield device yet. In this user manual, you won't be able to find any useful information about this application for the moment.
 
+<div style="page-break-after: always;"></div>
+
 # Notifications
 
 Since no application has been synchronized with the SportShield device, the implemented simulation reproduces perfectly how it would work. <br><br>
