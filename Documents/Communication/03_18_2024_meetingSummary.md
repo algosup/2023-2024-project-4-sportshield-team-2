@@ -65,7 +65,7 @@
 
 #### What to do if components are malfunctioning?
 
-- It's a relevant idea but try to keep the device as simplest as possible.
+- It's a relevant idea but try to keep the device as simple as possible.
 - Possibility to trigger components malfunctioning at the board initialization.
 
 #### How does the SIM contract work?
