@@ -216,7 +216,7 @@ public void Add_MultipleNumbers_ReturnsSumOfNumbers(string input, int expected)
 
 | ID | Function | Developer | Description criteria | Severity[^9] |
 | - | - | - | - | - |
-|  |  |  |  |  |
+| 01 | Hardware | Coris Innovation | - battery supplies the board <br> - LED on board flash <br> - buzzer ring <br> - Electromagnet can be locked <br> - SIM card communicate data <br> - GNSS antenna communicate position <br> - NFC | Critical |
 |  |  |  |  |  |
 |  |  |  |  |  |
 |  |  |  |  |  |
@@ -226,7 +226,7 @@ public void Add_MultipleNumbers_ReturnsSumOfNumbers(string input, int expected)
 
 | ID | Type | Deadline | Completion date | Result |
 | - | - | - | - | - |
-|  |  | XX/0X/2024 | XX/0X/2024 | None |
+| 01 | End-to-End test | Hardware | 20/03/2024 | 19/03/2024 | Fail |
 |  |  | XX/0X/2024 | XX/0X/2024 | None |
 |  |  | XX/0X/2024 | XX/0X/2024 | None |
 |  |  | XX/0X/2024 | XX/0X/2024 | None |
