@@ -8,18 +8,18 @@
       - [Which kind of information do you have in your application?](#which-kind-of-information-do-you-have-in-your-application)
       - [What happens if data can't be sent?](#what-happens-if-data-cant-be-sent)
       - [Do you have something to ping the device?](#do-you-have-something-to-ping-the-device)
-      - [How do we manage in a low battery level situtation?](#how-do-we-manage-in-a-low-battery-level-situtation)
-      - [What to do if components is malfunctioning?](#what-to-do-if-components-is-malfunctioning)
-      - [How does the SIM forfait work?](#how-does-the-sim-forfait-work)
+      - [How do we manage in a low battery level situation?](#how-do-we-manage-in-a-low-battery-level-situation)
+      - [What to do if components are malfunctioning?](#what-to-do-if-components-are-malfunctioning)
+      - [How does the SIM contract work?](#how-does-the-sim-contract-work)
       - [Do we need to search by ourselves for a library that can managed by our board or do you already have a specific library to do that?](#do-we-need-to-search-by-ourselves-for-a-library-that-can-managed-by-our-board-or-do-you-already-have-a-specific-library-to-do-that)
       - [Can we use other libraries?](#can-we-use-other-libraries)
       - [Is it the updated electronics circuit diagram?](#is-it-the-updated-electronics-circuit-diagram)
     - [Usage](#usage)
-      - [What would a package contain? Like the device, a charger (USB-C?), anything else?](#what-would-a-package-contain-like-the-device-a-charger-usb-c-anything-else)
+      - [What would a package contain? Like the device, a charger (USB-C?), or anything else?](#what-would-a-package-contain-like-the-device-a-charger-usb-c-or-anything-else)
       - [Is the app expected to be available on Google Play Store and Apple App Store?](#is-the-app-expected-to-be-available-on-google-play-store-and-apple-app-store)
-      - [Does it meet specific criteria to test robustness of the SportShield device, such as waterproofness, cold-resistance in these fields such as IP ratings?](#does-it-meet-specific-criteria-to-test-robustness-of-the-sportshield-device-such-as-waterproofness-cold-resistance-in-these-fields-such-as-ip-ratings)
+      - [Does it meet specific criteria to test the robustness of the SportShield device, such as waterproofness, or cold-resistance in these fields such as IP ratings?](#does-it-meet-specific-criteria-to-test-the-robustness-of-the-sportshield-device-such-as-waterproofness-or-cold-resistance-in-these-fields-such-as-ip-ratings)
       - [Are notifications (sent by the SportShield device) only supported by the app? Or should they be also sent by Bluetooth somehow?](#are-notifications-sent-by-the-sportshield-device-only-supported-by-the-app-or-should-they-be-also-sent-by-bluetooth-somehow)
-      - [Do you have a mail or phone number for technical support? For example if my device isn't working, who can I email/call?](#do-you-have-a-mail-or-phone-number-for-technical-support-for-example-if-my-device-isnt-working-who-can-i-emailcall)
+      - [Do you have a mail or phone number for technical support? For example, if my device isn't working, who can I email/call?](#do-you-have-a-mail-or-phone-number-for-technical-support-for-example-if-my-device-isnt-working-who-can-i-emailcall)
 
 ## List of participant
 
@@ -37,7 +37,7 @@
 #### How can we manage to work with the SIM card?
 
 - The problem is complex, there are a lot of things to take into consideration like the building isolation.
-- The battery doesn't enough power to supply the SIM module.
+- The battery doesn't have enough power to supply the SIM module.
 - Can be caused by the reset button.
 - The issue can also come from the module itself.
 - Finally, he told us to skip the part about the SIM module assuming that it was working.
@@ -50,27 +50,27 @@
 
 #### What happens if data can't be sent?
 
-- At this stage, nothing is implemented yet.
+- At this stage, nothing has been implemented yet.
 - Try to resend 3 to 5 times.
 - After 5 minutes abandon data and continue the process.
 
 #### Do you have something to ping the device?
 
-- No, the idea is to keep the device the simplest as possible.
+- No, the idea is to keep the device as simple as possible.
 
-#### How do we manage in a low battery level situtation?
+#### How do we manage in a low battery level situation?
 
 - Regarding battery in 0% level situation don't give the possiblity to switch on the device.
-- The device needs to inform the user of the critical state before it switched off (under 15%).
+- The device needs to inform the user of the critical state before it is switched off (under 15%).
 
-#### What to do if components is malfunctioning?
+#### What to do if components are malfunctioning?
 
-- It's a relevant idea but try to keep the device as simplest as possible.
+- It's a relevant idea but try to keep the device as simple as possible.
 - Possibility to trigger components malfunctioning at the board initialization.
 
-#### How does the SIM forfait work?
+#### How does the SIM contract work?
 
-- It's a 10-year forfait without renewal and we have 500MB and 250 SMS.
+- It's a 10-year contract without renewal and we have 500MB and 250 SMS.
 
 #### Do we need to search by ourselves for a library that can managed by our board or do you already have a specific library to do that?
 
@@ -87,24 +87,25 @@
 
 ### Usage
 
-#### What would a package contain? Like the device, a charger (USB-C?), anything else?
+#### What would a package contain? Like the device, a charger (USB-C?), or anything else?
 
-- It's just a prototype they didn't thought about that yet.
+- It's just a prototype they haven't thought about that yet.
 
 #### Is the app expected to be available on Google Play Store and Apple App Store?
 
 - Yes, they expect it will be available on both.
 
-#### Does it meet specific criteria to test robustness of the SportShield device, such as waterproofness, cold-resistance in these fields such as IP ratings?
+#### Does it meet specific criteria to test the robustness of the SportShield device, such as waterproofness, or cold-resistance in these fields such as IP ratings?
 
 - No, it's just a prototype and it hasn't been tested in real condition.
-- But it resistant to 2-3 meter height falling.
+- But it's resistant to 2-3 meter height falling.
 
 #### Are notifications (sent by the SportShield device) only supported by the app? Or should they be also sent by Bluetooth somehow?
 
-- We can feel free to add some use cases but Bluetooth isn't relevant cause if the user is near to the device, he doesn't need to receive notifications.
+- We can feel free to add some use cases
+- Bluetooth isn't relevant because if the user is near the device, he doesn't need to receive notifications.
 
-#### Do you have a mail or phone number for technical support? For example if my device isn't working, who can I email/call?
+#### Do you have a mail or phone number for technical support? For example, if my device isn't working, who can I email/call?
 
 - Yes, but not for now, it's too early to have a real plan of technical and client support.
 
