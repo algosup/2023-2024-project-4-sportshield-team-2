@@ -8,6 +8,9 @@
   - [1. Overview](#1-overview)
   - [2. Requirement](#2-requirement)
     - [2.1 Hardware Requirement](#21-hardware-requirement)
+  - [2.2 Client Requirement](#22-client-requirement)
+    - [2.2.1 Actual Product](#221-actual-product)
+    - [2.2.2 Futur Product](#222-futur-product)
 </details>
 
 ## 1. Overview
@@ -45,3 +48,36 @@ Chacun des composants à donc une utilitée technique au sein du produit final, 
 | Piezoelectric buzzer | With a power level ranging from 90 to 130 dB, the buzzer can make a noise of varying degrees of loudness.<br><br>The frequency is 3790Hz with a decibel peak at 130dB which could damage a human ear at long exposure.<br><br>The buzzer is designed to deter thieves from making off with the product. |
 | Lithium-Polymer battery | The Lithium-Polymer battery has a discharge rate of around 1 to 2% per month without use.<br><br>Its low rate of discharge means that the system can run for more or less a long time without any significant loss of battery. That's what the project is all about, trying to keep this battery active for as long as possible. The data provided by the company indicates an activity time of 3 days at present. |
 | NFC antenna |  The NFC antenna complies with the ISO/IEC 14443 standard, making it compatible with the vast majority of today's devices.<br><br>Within the project, this card will be used to unlock and activate the equipment security system. |
+
+## 2.2 Client Requirement
+
+### 2.2.1 Actual Product
+
+The current software is supposed to take account of hardware movement, thanks to the GNSS sensor located on the hardware. Depending on the intensity of the movement, the buzzer is supposed to make a noise of varying length and loudness.
+
+Also, if a movement is deemed "powerful", then the buzzer is supposed to :
+- Emit a long, powerful sound
+- Send an HTTP Post request to an API (stored on a VPS) and send a notification from the user application indicating significant movement
+
+The aim is not to alert the user to a small shock/movement. However, no motion data is pre-set. In other words, no calculation has been made to define whether a given shock deserves a short and weak alarm triggering, or conversely, a long and strong one.
+
+Currently, the battery in working order lasts around 3 days (no precise calculation has been provided by the company, apart from test assumptions).
+
+The electromagnet is supposed to work, so it should cut off the magnetic force if the user decides to unlock his anti-theft device.
+
+The SIM cards are supposed to work with the 2G GSM module, so you can have a bit of data to send requests and text messages. The company is supplying the SIM cards with 500 MB of internet, as well as an availability of 250 messages.
+
+The device for detecting an NFC card has not been implemented in the code, so it was not functional at the start of the project.
+
+### 2.2.2 Futur Product
+
+The new software is supposed to work perfectly and meet the customer's expectations.
+
+The software must therefore be able to deactivate Bluetooth if no movement has been detected in the last minute. The aim here is to disable Bluetooth quickly to avoid unnecessary battery consumption. Bluetooth is only reactivated after the device has moved.
+
+Motion detection will also be more accurate, and there will be 3 types of alarm:
+- The first type is two signals, of low intensity and short, over a period of 0.5 seconds of sound, 0.5 seconds of rest, to make it clear to anyone that a system is placed on a piece of equipment, to avoid moving the equipment.
+- The second is 4 signals of medium intensity, short and at a fast rate, over a period of 1 second of sound, 0.5 seconds of rest, to give further warning if the system moves a little too much.
+- The third is a high intensity noise, over a period of 5 seconds of sound, 1 second of rest and this for 1 full minute. The purpose of this is to make it clear that the product is being moved strongly and/or is being stolen.
+
+In the event of the last type of movement, a notification is sent to the VPS API via an HTTP Post request containing the Mac Address of the anti-theft device, so that the owner can receive notification as quickly as possible that his product and/or has undergone a strong movement. Requests sent take 119 bits to send, so we can send a maximum of 33,613,445 requests, given that we have 500 MB available.
