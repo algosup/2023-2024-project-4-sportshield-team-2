@@ -4,19 +4,19 @@
 
 ## Week Z (18-22 March 2024)
 
-The second week was dedicated to test all the component of the project. The team discuss about project and how we will succeed to produce the project without the hardware working. The functional specifications document was finished. The team also continue to reverse-engineer the existing software with LEDs to try to implement all functionalities of the project.
+The second week was dedicated to testing all the components of the project. The team discussed the project and how we would succeed in producing the project without the hardware working. The functional specifications document was finished. The team also continue to reverse-engineer the existing software with LEDs to try to implement all the functionalities of the project.
 
 ## Topics of the week
 
-1. Test all the component.
-2. Meeting with the client to discuss about the hardware.
-3. Finishing to write functional specification.
-4. continue to reverse engineering of the existing software with LEDs.
+1. Test all the components.
+2. Meeting with the client to discuss the hardware.
+3. Finishing to write functional specifications.
+4. continue to reverse engineer the existing software with LEDs.
 5. Try to implement functionalities of the project without the hardware working but with LEDs.
 
 ## Achievements
 
-1. Test all the component.
+1. Test all the components.
     - The team has tested all the components.
     - The team has found some problems with the hardware components.
     - The team has decided to use LEDs to test the functionalities of the project.
@@ -32,7 +32,7 @@ The second week was dedicated to test all the component of the project. The team
     - The team has continued to work on the hardware components.
 
 4. Reverse engineering
-    - The team has continued to reverse engineer the existing software with LEDs that permits to test the functionalities of the project.
+    - The team has continued to reverse engineer the existing software with LEDs that permit testing the functionalities of the project.
 
 ## Challenges
 
@@ -58,4 +58,4 @@ The second week was dedicated to test all the component of the project. The team
 
 ## Conclusion
 
-The second week was a bit complicated with the problems of hardware but we tried to solve them with LEDs to simulate each state apart for the battery. The team has continued to work on the documents in particular for the technical and the test plan. The team has also started to reverse-engineer the existing software with LEDs. The team is motivated to continued the next week the work with LEDs and looking for a way to create a library for the NFC software.
+The second week was a bit complicated with the problems of hardware but we tried to solve them with LEDs to simulate each state apart from the battery. The team has continued to work on the documents in particular for the technical and the test plan. The team has also started to reverse-engineer the existing software with LEDs. The team is motivated to continue next week's work with LEDs and looking for a way to create a library for the NFC software.
