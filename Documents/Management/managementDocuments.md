@@ -63,3 +63,5 @@ These target KPIs are based on the client's requirements.
 To follow the progress of the project you can check the [KPIs](https://docs.google.com/spreadsheets/d/1Py72_1mZQ5l20KM0fd6HdSRnmj49YibWoImaeFKPc8U/edit?usp=sharing).
 
 ## Statement of work
+
+The statement of work is a document that defines project-specific activities, deliverables, and timelines. Our statement of work is [here](statementOfWork.md).
