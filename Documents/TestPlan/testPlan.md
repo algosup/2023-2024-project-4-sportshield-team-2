@@ -130,11 +130,11 @@ Due to a problem with the hardware provided, we have to use ancillary equipment.
 | a | Project Charter | Elone DELILLE (Technical Leader) | Grégory PAGNOUX (Quality Assurance), Mathias GAGNEPAIN (Program Manager), Robin DEBRY (Project Manager), Enzo GUILLOUCHE (Technical Writer)  | 14/03/2024 | 14/03/2024 |
 | b | 1st Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance), Mathias GAGNEPAIN (Program Manager) | 15/03/2024 | 15/03/2024 |
 | c | Functional Specifications | Mathias GAGNEPAIN (Program Manager) | Grégory PAGNOUX (Quality Assurance), Enzo GUILLOUCHE (Technical Writer), Robin DEBRY (Project Manager) | 18/03/2024 | 18/03/2024 |
-| d | 2nd Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 22/03/2024 | 22/03/2024 |
+| d | 2nd Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 22/03/2024 | 25/03/2024 |
 | e | Technical Specifications | Elone DELILLE (Technical Leader) | Grégory PAGNOUX (Quality Assurance) | 26/03/2024 | XX/0X/2024 |
-| f | 3rd Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 29/03/2024 | XX/03/2024 |
-| g | 4th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 05/04/2024 | XX/0X/2024 |
-| h | 5th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 12/04/2024 | XX/0X/2024 |
+| f | 3rd Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 02/04/2024 | XX/03/2024 |
+| g | 4th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 08/04/2024 | XX/0X/2024 |
+| h | 5th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 15/04/2024 | XX/0X/2024 |
 | i | User Manual | Enzo GUILLOUCHE (Technical Writer) | Grégory PAGNOUX (Quality Assurance) | 10/04/2024 | XX/0X/2024 |
 | j | Test Plan | Grégory Pagnoux (Quality Assurance) | Grégory PAGNOUX (Quality Assurance), Robin DEBRY (Project Manager) | 10/04/2024 | XX/0X/2024 |
 | k | 6th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 19/04/2024 | XX/0X/2024 |
@@ -219,7 +219,7 @@ public void Add_MultipleNumbers_ReturnsSumOfNumbers(string input, int expected)
 
 | ID | Function | Developer | Description criteria | Severity |
 | - | - | - | - | - |
-| 01 | Hardware | Coris Innovation | - battery supplies the board <br> - LED on board flash <br> - buzzer ring <br> - Electromagnet can be locked <br> - SIM card communicate data <br> - GNSS antenna communicate position <br> - NFC | Critical |
+| 00 | Hardware | Coris Innovation | - battery supplies the board <br> - LED on board flash <br> - buzzer ring <br> - Electromagnet can be locked <br> - SIM card communicate data <br> - GNSS antenna communicate position <br> - NFC can lock/unlock the device | Critical |
 |  |  |  |  |  |
 |  |  |  |  |  |
 |  |  |  |  |  |
@@ -229,7 +229,7 @@ public void Add_MultipleNumbers_ReturnsSumOfNumbers(string input, int expected)
 
 | ID | Test Type | Description | Deadline | Completion date | Result |
 | - | - | - | - | - | - |
-| 01 | End-to-End test | Hardware | 20/03/2024 | 19/03/2024 | Fail |
+| 00 | End-to-End test | Hardware | 20/03/2024 | 19/03/2024 | Fail |
 |  |  |  | XX/0X/2024 | XX/0X/2024 | None |
 |  |  |  | XX/0X/2024 | XX/0X/2024 | None |
 |  |  |  | XX/0X/2024 | XX/0X/2024 | None |
