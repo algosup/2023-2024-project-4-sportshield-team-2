@@ -5,6 +5,7 @@ This document contains the main documentation for the management of the project 
 - [RACI matrix](#raci-matrix)
 - [MoSCoW](#moscow)
 - [Target Key Performace Indicators](#target-key-performace-indicators)
+- [Key Performance Indicators](#key-performance-indicators)
 - [Statement of work](#statement-of-work)
 
 ## Project charter
@@ -23,11 +24,11 @@ The task schedule of this project is on the projects on GitHub [here]( https://g
 |Project charter|R / A|C / I|C/I|C / I|C / I|C / I|C / I|
 |Task schedule|R / A|C|C / I|C / I|C / I|C / I|I|
 |Code|I|I|C|R / A|C|C|X|
-|Code review|C / I|C / I|R / A|R|C / I|C / I|X|
-|Code documentation|C / I|I|C|R / A|C|C|X|
-|Test planning|C / I|I|A|C / I|R / A|C|X|
-|Test execution|C / I|I|I|C / I|R / A|C|X|
-|User manual|C / I|I|C|C|C|R / A|I|
+|Code review|C / I|I|R / A|R|C / I|C / I|X|
+|Code documentation|I|I|C|R / A|C|C|X|
+|Test planning|I|I|A|C / I|R / A|C|X|
+|Test execution|I|I|I|C / I|R / A|C|X|
+|User manual| I|I|C|C|C|R / A|I|
 
 Legend:
 
@@ -43,7 +44,7 @@ Legend:
 
 | Must Have| Should Have | Could Have | Won't Have |
 | -------- | ----------- | ---------- | ---------- |
-| - Battery lifespan of seven days <br> - Manage all security issues <br> - Shock detection <br> - Unlock the device | - Unlock the device with NFC <br> - Shock notification|X| - GNSS position acquisition <br> - Activate/Desactivate by app|
+| - Battery lifespan of seven days <br> - Manage all security issues <br> - Shock detection <br> - Unlock the device | - Unlock the device with NFC <br> - Shock notification|- Activate/Desactivate by app using bluetooth| - GNSS position acquisition|
 
 ## Target Key Performace Indicators
 
@@ -57,4 +58,10 @@ Legend:
 
 These target KPIs are based on the client's requirements.
 
+## Key Performance Indicators
+
+To follow the progress of the project you can check the [KPIs](https://docs.google.com/spreadsheets/d/1Py72_1mZQ5l20KM0fd6HdSRnmj49YibWoImaeFKPc8U/edit?usp=sharing).
+
 ## Statement of work
+
+The statement of work is a document that defines project-specific activities, deliverables, and timelines. Our statement of work is [here](statementOfWork.md).
