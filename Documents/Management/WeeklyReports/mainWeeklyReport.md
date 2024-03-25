@@ -78,12 +78,12 @@ The first week was a good start for the project. The team has started to work on
 
 [week 2](weeklyReportSecondWeek.md)
 
-The second week was devoted to testing all the project components. The team discussed the project and how we would manage to produce the project without the hardware breaking down. The functional specifications document was completed. The team also continued to reverse engineer the existing software with LEDs to try and implement all the functionality of the project.
+The second week was devoted to testing all the project components. The team discussed the project and how we would achieve it without the hardware breaking down. The functional specifications document was completed. The team also continued to reverse engineer the existing software with LEDs to try and implement all the functionality of the project.
 
 ## Topics of the second week
 
 1. Test all components.
-2. Meeting with client to discuss hardware.
+2. Meeting with the client to discuss hardware.
 3. Finish writing technical specifications.
 4. Continue reverse engineering existing software with LEDs.
 5. Attempt to implement project functionality without hardware but with LEDs.
@@ -102,21 +102,21 @@ The second week was devoted to testing all the project components. The team disc
 
 3. Hardware components
 
-   - The team tested all the hardware components for each team to see if they worked.
+   - The team tested all the hardware components of each team to see if they worked.
 
-   - The team tried to solve the problems without success and therefore decided to use LEDS to simulate the functionality of the project.
+   - The team tried to solve the problems without success and decided to use LEDS to simulate the functionality of the project.
 
 4. Reverse engineering
-   - The team went on to reverse-engineer the existing software using LEDs to test the project's functionality.
+   - The team continued to reverse-engineer the existing software using LEDs to test the project's functionality.
 
 ## Challenges of the second week
 
 1. Hardware part
    - The team encountered difficulties with the hardware, as the components did not work as expected.
 2. Reverse engineering
-   - The team had some difficulties with the reverse engineering of the existing software, mainly because of the hardware components.
+   - The team encountered difficulties with the reverse-engineering of the existing software, mainly because of the hardware components.
 3. Working for a real company
-   - For some members of the team, this was the first time they had worked for a real company, so it was different for them, but they were adapting.
+   - For some members of the team, this was the first time they had worked for a real company, so it was different for them, but they adapted.
 
 ## Plan for the third week
 
@@ -130,7 +130,7 @@ The second week was devoted to testing all the project components. The team disc
 
 ## Conclusion of the second week
 
-The second week was a bit complicated with the hardware problems but we tried to solve them with LEDs to simulate each state apart from the battery. The team continued to work on the documents, in particular the technical plan and the test plan. The team has also started to reverse-engineer the existing software with LEDs. The team is motivated to continue next week's work with the LEDs and to look for a way to create a library for the NFC software.
+The second week was a bit complicated with the hardware problems, but we tried to solve them with LEDs to simulate each state, with the exception of the battery. The team continued to work on the documents, in particular the technical plan and the test plan. The team has also started to reverse-engineer the existing software using LEDs. The team is motivated to continue next week's work with the LEDs and to look for a way to create a library for the NFC software.
 
 ## Key Performance Indicators
 
