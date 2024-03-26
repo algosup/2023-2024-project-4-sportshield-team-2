@@ -155,9 +155,9 @@ The new software is supposed to work perfectly and meet the customer's expectati
 The software must therefore be able to deactivate Bluetooth if no movement has been detected at the last minute. The aim here is to disable Bluetooth quickly to avoid unnecessary battery consumption. Bluetooth is only reactivated after the device has moved.
 
 Motion detection will also be more accurate, and there will be 3 types of alarms:
-- The first type is two signals, of low intensity and short, over a period of 0.5 seconds of sound, and 0.5 seconds of rest, to make it clear to anyone that a system is placed on a piece of equipment, to avoid moving the equipment.
-- The second is 4 signals of medium intensity, short and at a fast rate, over a period of 1 second of sound, and 0.5 seconds of rest, to give further warning if the system moves a little too much.
-- The third is a high-intensity noise, over a period of 5 seconds of sound, and 1 second of rest, and this for 1 full minute. The purpose of this is to make it clear that the product is being moved strongly and/or is being stolen.
+- The first type is two signals, of low intensity and short, over 0.5 seconds of sound, and 0.5 seconds of rest, to make it clear to anyone that a system is placed on a piece of equipment, to avoid moving the equipment.
+- The second is 4 signals of medium intensity, short and at a fast rate, over 1 second of sound, and 0.5 seconds of rest, to give further warning if the system moves a little too much.
+- The third is a high-intensity noise, over 5 seconds of sound, and 1 second of rest, and this for 1 full minute. The purpose of this is to make it clear that the product is being moved strongly and/or is being stolen.
 
 In the event of the last type of movement, a notification is sent to the VPS API via an HTTP Post request containing the Mac Address of the anti-theft device, so that the owner can receive notification as quickly as possible that his product and/or has undergone a strong movement. Requests sent take 119 bits to send, so we can send a maximum of 33,613,445 requests, given that we have 500 MB available.
 
