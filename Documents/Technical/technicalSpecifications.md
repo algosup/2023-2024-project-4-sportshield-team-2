@@ -49,13 +49,13 @@
 
 ## 1. Overview
 
-> ⚠️ The Sportshield project was commissioned by CORIS Innovation. All rights reserved to CORIS Innovation.
+> ⚠️ The Sportshield project was commissioned by **CORIS Innovation**[^1]. All rights reserved to CORIS Innovation.
 
-On 11 March 2024, a representative of CORIS Innovation France came to ALGOSUP to ask the students to maintain one of their projects: an anti-theft device for ski equipment.
+On 11 March 2024, a representative of CORIS Innovation France came to **ALGOSUP**[^2] to ask the students to maintain one of their projects: an anti-theft device for ski equipment.
 
 The students were given an existing code by the company, as well as the hardware. The students therefore had to rework the code and implement the customer's requirements.
 
-The languages used by the students will therefore be C++ for the most part, as well as a few implementations in C using the Arduino integrated development environment.
+The languages used by the students will therefore be mainly [C++](https://en.wikipedia.org/wiki/C%2B%2B), with a few implementations in [C](https://en.wikipedia.org/wiki/C_(programming_language)) using the [Arduino integrated development environment](https://www.arduino.cc/en/software).
 
 ### 1.1 Project Folder Overview
 
@@ -105,7 +105,7 @@ Sportshield-Project/
 ## 2. Requirement
 ### 2.1 Hardware Requirement
 
-The students have access to hardware, which is used as a prototype to test all the functions requested by the customer. The hardware consists of :
+The students have access to the hardware, which is used as a prototype to test all the functions requested by the customer. The hardware consists of :
 
 | Hardware Photo | Hardware Name | Technical Specifications |
 |---|---|---|
@@ -121,7 +121,7 @@ Each component therefore has a technical use within the final product, and each 
 | Hardware Name | Technical Characteristics |
 |---|---|
 | Xiao BLE Sense nrf52840 | Based on the Nordic nRF52840 chip, it is equipped with an ARM Cortex-M4 processor with FPU, capable of operating at up to 64 MHz.<br><br>It features Bluetooth 5.0 and BLE with an integrated antenna, as well as NFC connectivity.<br><br>It is designed for ultra-low power consumption, with just 5 μA in deep sleep mode. It also includes lithium battery charge management.<br><br>As part of the project, the XIAO BLE Sense board will contain our software and communicate with all the components on the board. |
-| GNSS PA1010D | Supports GPS, GLONASS, GALILEO and QZSS for global coverage and improved accuracy<br><br>With a sensitivity of -165 dBm, it can perform up to 10 position updates per second for high-speed, high-sensitivity tracking<br><br>Consumes only 30 mA during navigation<br><br>Within the project, the purpose of GNSS is to detect the smallest to the largest movements. |
+| GNSS PA1010D | Supports GPS, GLONASS, GALILEO, and QZSS for global coverage and improved accuracy<br><br>With a sensitivity of -165 dBm, it can perform up to 10 position updates per second for high-speed, high-sensitivity tracking<br><br>Consumes only 30 mA during navigation<br><br>Within the project, the purpose of GNSS is to detect the smallest to the largest movements. |
 | GSM/2G SIM800L Module | The module is designed for low power consumption, with a standby consumption of less than 2.0 mA.<br><br>Supports GPRS class 10 for data transfer rates of up to 85.6 kbps, and incorporates a TCP/IP stack for internet connection<br><br>Within the project, the purpose of the module is to manage notifications by HTTP Post request, or by messaging, the aim being to alert the user in the event of movement of his system. |
 | Electromagnet | The electromagnet is used to unlock the safety lock by modifying the reception power, to a greater or lesser extent, for a fraction of a second.<br><br>With a power rating of 12V, avoid leaving it switched on for too long, as this could lead to system failure.<br><br>Within the project, the electromagnet's objective is to keep the safety lock, as well as to cut the magnetic force to unlock the safety lock. |
 | Piezoelectric buzzer | With a power level ranging from 90 to 130 dB, the buzzer can make a noise of varying degrees of loudness.<br><br>The frequency is 3790Hz with a decibel peak at 130dB which could damage a human ear at long exposure.<br><br>The buzzer is designed to deter thieves from making off with the product. |
@@ -136,7 +136,7 @@ The current software is supposed to take account of hardware movement, thanks to
 
 Also, if a movement is deemed "powerful", then the buzzer is supposed to :
 - Emit a long, powerful sound
-- Send an HTTP Post request to an API (stored on a VPS) and send a notification from the user application indicating significant movement
+- Send an **HTTP Post request**[^3] to an **API**[^4] (stored on a **VPS**[^5]) and send a notification from the user application indicating significant movement
 
 The aim is not to alert the user to a small shock/movement. However, no motion data is pre-set. In other words, no calculation has been made to define whether a given shock deserves a short and weak alarm triggering, or conversely, a long and strong one.
 
@@ -152,12 +152,12 @@ The device for detecting an NFC card has not been implemented in the code, so it
 
 The new software is supposed to work perfectly and meet the customer's expectations.
 
-The software must therefore be able to deactivate Bluetooth if no movement has been detected in the last minute. The aim here is to disable Bluetooth quickly to avoid unnecessary battery consumption. Bluetooth is only reactivated after the device has moved.
+The software must therefore be able to deactivate Bluetooth if no movement has been detected at the last minute. The aim here is to disable Bluetooth quickly to avoid unnecessary battery consumption. Bluetooth is only reactivated after the device has moved.
 
-Motion detection will also be more accurate, and there will be 3 types of alarm:
-- The first type is two signals, of low intensity and short, over a period of 0.5 seconds of sound, 0.5 seconds of rest, to make it clear to anyone that a system is placed on a piece of equipment, to avoid moving the equipment.
-- The second is 4 signals of medium intensity, short and at a fast rate, over a period of 1 second of sound, 0.5 seconds of rest, to give further warning if the system moves a little too much.
-- The third is a high intensity noise, over a period of 5 seconds of sound, 1 second of rest and this for 1 full minute. The purpose of this is to make it clear that the product is being moved strongly and/or is being stolen.
+Motion detection will also be more accurate, and there will be 3 types of alarms:
+- The first type is two signals, of low intensity and short, over a period of 0.5 seconds of sound, and 0.5 seconds of rest, to make it clear to anyone that a system is placed on a piece of equipment, to avoid moving the equipment.
+- The second is 4 signals of medium intensity, short and at a fast rate, over a period of 1 second of sound, and 0.5 seconds of rest, to give further warning if the system moves a little too much.
+- The third is a high-intensity noise, over a period of 5 seconds of sound, and 1 second of rest, and this for 1 full minute. The purpose of this is to make it clear that the product is being moved strongly and/or is being stolen.
 
 In the event of the last type of movement, a notification is sent to the VPS API via an HTTP Post request containing the Mac Address of the anti-theft device, so that the owner can receive notification as quickly as possible that his product and/or has undergone a strong movement. Requests sent take 119 bits to send, so we can send a maximum of 33,613,445 requests, given that we have 500 MB available.
 
@@ -189,7 +189,7 @@ The Arduino platform, renowned for its simplicity and accessibility, offers an i
 The hardware components selected for the Sportshield project, including the Xiao BLE Sense nrf52840, GNSS PA1010D, GSM/2G SIM800L Module, Electromagnet, Piezoelectric Buzzer, Lithium-Polymer Battery, and NFC Antenna, are fully compatible with the Arduino environment. This compatibility allows for seamless integration and communication between the microcontroller and peripheral devices, crucial for detecting theft attempts, triggering alarms, and communicating with the user's mobile device.
 
 **Real-time Responsiveness**<br>
-Real-time operation is a core requirement for the Sportshield anti-theft system, where immediate detection of unauthorized movements and prompt responses (such as triggering alarms or sending notifications) are critical for its effectiveness. The Arduino platform's real-time capabilities, supported by the efficiency of C++ code, ensure that the system can process sensor inputs and execute defined actions with minimal latency.
+Real-time operation is a fundamental requirement for the Sportshield anti-theft system, where immediate detection of unauthorised movement and rapid responses (such as triggering alarms or sending notifications) are essential to its effectiveness. The real-time capabilities of the Arduino platform, supported by the efficiency of the C++ code, ensure that the system can process sensor inputs and execute defined actions with minimal latency (from a few milliseconds for the smallest operations).
 
 **Ease of Development and Maintenance**<br>
 Given the project's context within an academic setting at ALGOSUP, with students responsible for maintaining and enhancing the system, the Arduino platform's user-friendly nature facilitates ongoing development and troubleshooting. The extensive documentation, active forums, and availability of open-source libraries reduce the learning curve and support innovation.
@@ -460,3 +460,8 @@ ISO 9001: Following ISO 9001 standards for quality management systems, ensuring 
 IP Rating: If the device claims any level of water or dust resistance, compliance with the appropriate Ingress Protection (IP) rating standards for environmental sealing.
 
 ## Glossary
+[^1]: **CORIS Innovation** : CORIS Innovation is the parent company and creator of the SportShields device we are developing.
+[^2]: **ALGOSUP** : ALGOSUP is an international developer school based in Vierzon in the B3.
+[^3]: **HTTP Post Request** : In web communication, POST requests are utilized to send data to a server to create or update a resource. The information submitted to the server with POST request method is archived in the request body of the HTTP request.
+[^4]: **API** : An API, or an application programming interface, is a set of code-based instructions that enable different software components to communicate and share data.
+[^5]: **VPS** : A Virtual Private Server (VPS) is a virtual server that runs on a logical partition on a host machine.
