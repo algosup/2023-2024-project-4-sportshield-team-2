@@ -51,7 +51,7 @@ Your SportShield includes:
 
 ## Charge your SportShield
 
-If the SportShield device runs ou of battery, it won't work anymore until it gets charged.<br>
+If the SportShield device runs out of battery, it won't work anymore until it gets charged.<br>
 A fully-charged SportShield can last over 6 days.
 
 To charge SportShield:
@@ -160,9 +160,7 @@ Even though, the app has not been synchronized with the SportShield device yet. 
 
 # Notifications
 
-Since no application has been synchronized with the SportShield device, the implemented simulation reproduces perfectly how it would work. <br><br>
-
-When the alarm rings, a notification is sent to the linked smartphone.
+Since no application has been synchronized with the SportShield device, the implemented simulation reproduces perfectly how it would work. <br>
 
 The notifications contain some information about the device, such as the GPS coordinates (longitude latitude) and the remaining battery percentage.<br>
 

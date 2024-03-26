@@ -113,10 +113,13 @@ There are 8 categories of tests that are carried out independently, from the mos
 
 To test the product, we must use a code convention[^7] and each test must be run 3 times correctly to be validated.
 
+We assess the severity[^8] of the tests using 4 levels of evaluation:
 Level 1 - Critical (system shutdown, complete system failure)
 Level 2 - Major (significant degradation of service)
 Level 3 - Minor (most of the system is operational)
 Level 4 - Low (informative)
+
+Due to a problem with the hardware provided, we have to use ancillary equipment. In order to test whether the features are functional, we use Breadboards with LEDs to simulate the components (buzzer, electromagnet, etc.) and resistors.
 
 *Source: [TestSigma] (https://testsigma.com/blog/difference-between-priority-and-severity/)*
 
@@ -127,11 +130,11 @@ Level 4 - Low (informative)
 | a | Project Charter | Elone DELILLE (Technical Leader) | Grégory PAGNOUX (Quality Assurance), Mathias GAGNEPAIN (Program Manager), Robin DEBRY (Project Manager), Enzo GUILLOUCHE (Technical Writer)  | 14/03/2024 | 14/03/2024 |
 | b | 1st Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance), Mathias GAGNEPAIN (Program Manager) | 15/03/2024 | 15/03/2024 |
 | c | Functional Specifications | Mathias GAGNEPAIN (Program Manager) | Grégory PAGNOUX (Quality Assurance), Enzo GUILLOUCHE (Technical Writer), Robin DEBRY (Project Manager) | 18/03/2024 | 18/03/2024 |
-| d | 2nd Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 22/03/2024 | XX/0X/2024 |
+| d | 2nd Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 22/03/2024 | 25/03/2024 |
 | e | Technical Specifications | Elone DELILLE (Technical Leader) | Grégory PAGNOUX (Quality Assurance) | 26/03/2024 | XX/0X/2024 |
-| f | 3rd Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 29/03/2024 | XX/03/2024 |
-| g | 4th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 05/04/2024 | XX/0X/2024 |
-| h | 5th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 12/04/2024 | XX/0X/2024 |
+| f | 3rd Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 02/04/2024 | XX/03/2024 |
+| g | 4th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 08/04/2024 | XX/0X/2024 |
+| h | 5th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 15/04/2024 | XX/0X/2024 |
 | i | User Manual | Enzo GUILLOUCHE (Technical Writer) | Grégory PAGNOUX (Quality Assurance) | 10/04/2024 | XX/0X/2024 |
 | j | Test Plan | Grégory Pagnoux (Quality Assurance) | Grégory PAGNOUX (Quality Assurance), Robin DEBRY (Project Manager) | 10/04/2024 | XX/0X/2024 |
 | k | 6th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 19/04/2024 | XX/0X/2024 |
@@ -174,7 +177,7 @@ public void Add_EmptyString_ReturnsZero()
 }
 ```
 
-- naming variables (without magic chain[^8])
+- naming variables (without magic chain[^9])
 
 *ex:*
 
@@ -214,9 +217,9 @@ public void Add_MultipleNumbers_ReturnsSumOfNumbers(string input, int expected)
 
 **Criterias**
 
-| ID | Function | Developer | Description criteria | Severity[^9] |
+| ID | Function | Developer | Description criteria | Severity |
 | - | - | - | - | - |
-| 01 | Hardware | Coris Innovation | - battery supplies the board <br> - LED on board flash <br> - buzzer ring <br> - Electromagnet can be locked <br> - SIM card communicate data <br> - GNSS antenna communicate position <br> - NFC | Critical |
+| 00 | Hardware | Coris Innovation | - battery supplies the board <br> - LED on board flash <br> - buzzer ring <br> - Electromagnet can be locked <br> - SIM card communicate data <br> - GNSS antenna communicate position <br> - NFC can lock/unlock the device | Critical |
 |  |  |  |  |  |
 |  |  |  |  |  |
 |  |  |  |  |  |
@@ -224,18 +227,17 @@ public void Add_MultipleNumbers_ReturnsSumOfNumbers(string input, int expected)
 
 **Testing Schedule**
 
-| ID | Type | Deadline | Completion date | Result |
-| - | - | - | - | - |
-| 01 | End-to-End test | Hardware | 20/03/2024 | 19/03/2024 | Fail |
-|  |  | XX/0X/2024 | XX/0X/2024 | None |
-|  |  | XX/0X/2024 | XX/0X/2024 | None |
-|  |  | XX/0X/2024 | XX/0X/2024 | None |
-|  |  | XX/0X/2024 | XX/0X/2024 | None |
+| ID | Test Type | Description | Deadline | Completion date | Result |
+| - | - | - | - | - | - |
+| 00 | End-to-End test | Hardware | 20/03/2024 | 19/03/2024 | Fail |
+|  |  |  | XX/0X/2024 | XX/0X/2024 | None |
+|  |  |  | XX/0X/2024 | XX/0X/2024 | None |
+|  |  |  | XX/0X/2024 | XX/0X/2024 | None |
+|  |  |  | XX/0X/2024 | XX/0X/2024 | None |
 
 **Test cases**
 
-| [Test cases](https://github.com/algosup/2023-2024-project-4-sportshield-team-2/issues) are done on GitHub issues. |
-| - |
+[Test cases](https://github.com/algosup/2023-2024-project-4-sportshield-team-2/issues) are done on GitHub issues.
 
 ## Glossary
 
@@ -268,13 +270,13 @@ Software application combining all the tools needed for a software development p
 Coding conventions are a set of guidelines for a specific programming language that recommend programming styles, practices, and methods for each aspect of a program written in that language.
 *source: [Wikipedia](https://en.wikipedia.org/wiki/Coding_conventions#:~:text=Coding%20conventions%20are%20a%20set,program%20written%20in%20that%20language.)*
 
-[^8]: Magic Chain
+[^8]: Severity
+The severity is the impact of the issues on the project/program. It measures thanks to a level system where 1 is critical, 2 is Major, 3 is Minor, and 4 is Low. It's the role of the QA to define the severity of the issue.
+*source: [TestSigma](https://testsigma.com/blog/difference-between-priority-and-severity/)*
+
+[^9]: Magic Chain
 A value that is not defined and for which we do not know what it represents.
 (e.g: ```Action actual = () => stringCalculator.Add("1001");```
 "1001" is a magic chain and must be defined using a constant such as:
 ```const string MAXIMUM_RESULT = "1001";```
 ```Action actual = () => stringCalculator.Add(MAXIMUM_RESULT);```)
-
-[^9]: Severity
-The severity is the impact of the issues on the project/program. It measures thanks to a level system where 1 is critical, 2 is Major, 3 is Minor, and 4 is Low. It's the role of the QA to define the severity of the issue.
-*source: [TestSigma](https://testsigma.com/blog/difference-between-priority-and-severity/)*
