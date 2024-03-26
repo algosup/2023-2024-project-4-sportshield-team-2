@@ -57,6 +57,7 @@ The goal of the project is to optimize the battery consumption to make it last l
     - [SportShield Scheme](#sportshield-scheme)
       - [top view transparent](#top-view-transparent)
       - [bottom view closed](#bottom-view-closed)
+
 </summary></details>
 
 ## Stakeholders
@@ -81,6 +82,7 @@ The goal of the project is to optimize the battery consumption to make it last l
 ## Project scope
 
 We have multiple objectives for this project:
+
 - Reducing the battery consumption.
 - Increasing the security.
 - Implement the NFC [[1]](#glossary-1) module.
@@ -89,6 +91,7 @@ We have multiple objectives for this project:
 ## Functional requirements
 
 The SportShield must allow the following actions:
+
 - Send device information to the API [[2]](#glossary-2)
   - Battery level
   - Position (latitude, longitude)
@@ -101,7 +104,6 @@ The SportShield must allow the following actions:
 All the code must be written in the Arduino's [[3]](#glossary-3) language (a variant of the C++ [[4]](#glossary-4) programming language), following the existing code convention. No libraries except the ones that have already been given are allowed.
 
 ## Deliverables and milestones
-
 
 | Date and time       | Deliverable              |
 | ------------------- | ------------------------ |
@@ -122,13 +124,15 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 | <img alt="Ashley Picture" src="./Img/ashley_ricks.png" style="max-width: 200px;"> | **Description:**<br>A vibrant young woman, revels in the exhilarating rush of vacationing amidst the clouds. She finds herself gliding gracefully down a majestic snow-capped mountain, her skis carving elegant trails in the pristine white snowscape.<br><br>**Frequence of use:** <br>- Rare |
 
 ##### Goals
-  - Ashley wants to secure her skies with the SportShield.
-  - She hopes the system is secured and she will not receive false positive.
+
+- Ashley wants to secure her skies with the SportShield.
+- She hopes the system is secured and she will not receive false positive.
 
 ##### Challenges
-  - Ashley needs to be able to let her skies in outdoor lockers without the SportShield freezing.
-  - She needs to be able to use it during the entire week without running out of battery.
-  - She needs to be noticed if someone touches to her skies.
+
+- Ashley needs to be able to let her skies in outdoor lockers without the SportShield freezing.
+- She needs to be able to use it during the entire week without running out of battery.
+- She needs to be noticed if someone touches to her skies.
 
 <hr>
 
@@ -139,38 +143,42 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 | <img alt="Bill Picture" src="Img/william_greener.png" style="max-width: 200px;"> | **Description:**<br>A seasoned adventurer, embodies the spirit of freedom and adventure as he stands tall on the golden sands of the Canary Islands. He eagerly awaits the beckoning waves, ready to embrace the thrill of surfing beneath the warm, tropical sun.<br><br>**Frequence of use:** <br>- Often |
 
 ##### Goals
-  - He wants to get used to use the product.
-  - He wants to secure his surf board.
-  - He wants to be able to use it during an entire week-end or during his vacation in the Canary Islands.
+
+- He wants to get used to use the product.
+- He wants to secure his surf board.
+- He wants to be able to use it during an entire week-end or during his vacation in the Canary Islands.
 
 ##### Challenges
-  - William needs a product which won't burn under the sun's heat of Canary Islands.
-  - He needs a product which won't often run out of battery.
-  - He needs a durable and weatherproof device to withstand outdoor conditions (Water & Sand).
+
+- William needs a product which won't burn under the sun's heat of Canary Islands.
+- He needs a product which won't often run out of battery.
+- He needs a durable and weatherproof device to withstand outdoor conditions (Water & Sand).
 
 <hr>
 
 #### Persona 3 - Steve Sinclair
-
 
 | Steve Sinclair                                                                     | 63 years old                                                                                                                                                                                                                                                                                                                                                             |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | <img alt="Steve Picture" src="./Img/steve_sinclair.png" style="max-width: 200px;"> | **Description:**<br>An old man with a white and gray beard, he is traveling around the world with his wife in a camping-car, to enjoy his retirement. With each new destination, they discover the beauty of nature and the richness of different cultures, cherishing every moment of their shared journey together.<br><br>**Frequence of use:** <br>- Almost Everyday |
 
 ##### Goals
-  - He wants to protect his stuff while he is not in his camping-car.
-  - He wants to stay alerted if someone touches his stuff but he is not that confident with smartphones.
+
+- He wants to protect his stuff while he is not in his camping-car.
+- He wants to stay alerted if someone touches his stuff but he is not that confident with smartphones.
 
 ##### Challenges
-  - He needs to be able to use another way to unlock than his smartphone.
-  - He wants a hardware which will resist to different climates he may encounter.
-  - It should have a connectivity around the world.
+
+- He needs to be able to use another way to unlock than his smartphone.
+- He wants a hardware which will resist to different climates he may encounter.
+- It should have a connectivity around the world.
 
 <hr>
 
 ### Use Cases
 
 #### Movements & Shocks detection
+
 | Use Case Name      | Movements & Shocks Detection                                                                                                                                                             |
 | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Actors             | SportShield Device, User, Mobile App                                                                                                                                                     |
@@ -182,6 +190,7 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 | Exception Handling | 1. The device will send the notification when the signal will be found.<br>2. The device will send a false positive making the user worries.                                               |
 
 #### Battery Status
+
 | Use Case Name      | Battery Status                                                                           |
 | ------------------ | ---------------------------------------------------------------------------------------- |
 | Actors             | SportShield, Mobile App                                                                  |
@@ -193,6 +202,7 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 | Exception Handling | 1. The device will send the notification when it will be connected.                      |
 
 #### Battery is running out
+
 | Use Case Name      | Battery is running out                                                                                                                                                                                                       |
 | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Actors             | SportShield, Mobile App                                                                                                                                                                                                      |
@@ -204,6 +214,7 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 | Exception Handling | 1. The device will send the notification when it will be connected.<br>2. The user will not be informed.                                                                                                                     |
 
 #### Battery is fully charged
+
 | Use Case Name      | Battery is fully charged                                                                                                                             |
 | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Actors             | SportShield, Mobile App                                                                                                                              |
@@ -214,8 +225,8 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 | Alternative Flows  | 1. If the device isn't connected to the network, the battery status can't be communicated but it will stop charging.                                   |
 | Exception Handling | 1. The device will send the notification when it will be connected.<br>2. The user will not received the notification.                               |
 
-
 #### Locking/Unlocking with the mobile app
+
 | Use Case Name      | Locking/Unlocking with the mobile app                                                                                                                                                                   |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Actors             | User, SportShield, Mobile App                                                                                                                                                                           |
@@ -227,6 +238,7 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 | Exception Handling | 1. The device will wait until it receives a user interaction.<br>2. If it's locked the user ins't able to move it without making it ring and he can't get his stuff back.                                  |
 
 #### Locking/Unlocking with NFC device
+
 | Use Case Name      | Unlock/Unlock the device with NFC [[1]](#glossary-1)                                                                                                                              |
 | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Actors             | User, SportShield, Mobile App                                                                                                                                  |
@@ -236,7 +248,6 @@ All the code must be written in the Arduino's [[3]](#glossary-3) language (a var
 | Normal Flow        | By making contact between the NFC [[1]](#glossary-1) device and the SportShield it will lock or unlock as well as on the mobile app.                                              |
 | Alternative Flows  | 1. The NFC [[1]](#glossary-1) card in the device isn't working, the interaction can't be detected.<br>2. The NFC [[1]](#glossary-1) device hasn't the right to access to the SportShield.            |
 | Exception Handling | 1. If the NFC [[1]](#glossary-1) card isn't working nothing will happen.<br>2. If access rights are invalid, the user will be informed of a unsuccessful locking/unlocking attempt. |
-
 
 ## Acceptance criteria
 
@@ -253,6 +264,7 @@ To ensure that the project is viable, all the specifications must be approved by
 ## Solution overview
 
 ### Movement Detection Improvement
+
 The actual movement detection triggers the alarm only on rotation.
 
 | Problem Occurs                                                       | Solution                         |
@@ -288,20 +300,23 @@ Currently, the NFC [[1]](#glossary-1) reader isn't been implemented yet, we shou
 ### Errors
 
 The program must never be stuck on an issue, and continue without these features in the following case:
+
 - **Impossible to reach the API [[2]](#glossary-2) server**
   - Retrying in a few minutes
 - **Impossible to find a signal**
-  -  Retrying in a few minutes
+  - Retrying in a few minutes
 - **Buzzer not working**
   - Inform the client about the issue and continue to send device data in case of movement
 
 The program will stop working if:
+
 - **A hardware issue is encountered**
 - **The SportShield has run out of battery**
 
 ### Usage
 
 #### Charge your SportShield
+
 A fully-charged SportShield can last over 6 days.
 
 To charge SportShield:
@@ -314,7 +329,9 @@ The SportShield is now charging. Try to not use SportShield during its charging.
 To use the device correctly please follow these steps:
 
 #### How to use it?
+
 ##### **To Protect your stuff:**
+
 1. Pull the cable and enclose your stuff.
 2. Insert the cable into the hole.
 3. Enable the lock:
@@ -323,14 +340,16 @@ To use the device correctly please follow these steps:
        2. Enable locking.
      - **With a NFC [[1]](#glossary-1) device:**
        1. Make contact between the NFC [[1]](#glossary-1) device and the SportShield
+
 <hr>
 
 ##### **To open it and release your stuff.**
+
 1. Release the cable:
    - **With Bluetooth:**
      1. Authenticate yourself.
      2. Disable locking.
-    - **With a NFC [[1]](#glossary-1) device:**
+   - **With a NFC [[1]](#glossary-1) device:**
       1. Make contact between the NFC [[1]](#glossary-1) device and the SportShield
 2. Pull the cable from the hole.
 
@@ -351,6 +370,7 @@ In the event the client decides to change their requirements, we must be able to
 Although we used a self-made API [[2]](#glossary-2) to test efficiently the program the client can easily replace it with his own API [[2]](#glossary-2).
 
 This API [[2]](#glossary-2) will receive a JSON [[5]](#glossary-5) array containing device information like:
+
 ```json
 {
     "latitude":"{currentLatitude}", 
@@ -406,7 +426,8 @@ These future improvements aim to enhance the functionality, usability, and secur
 ### SportShield Scheme
 
 #### top view transparent
-![](./Img/proto_scheme.png)
+
+![Prototype Scheme](./Img/proto_scheme.png)
 
 **Legend:**
 
@@ -422,4 +443,4 @@ These future improvements aim to enhance the functionality, usability, and secur
 
 #### bottom view closed
 
-![](./Img/proto_scheme_bottom.png)
+![Prototype Scheme](./Img/proto_scheme_bottom.png)
