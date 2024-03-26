@@ -117,7 +117,7 @@ The students have access to hardware, which is used as a prototype to test all t
 | ![Lithium-Polymer Battery - Illustration]() | Lithium-Polymer battery | 5,1 x 3,5 x 0,6 cm<br>3.7V, 1100mAh, 4.1Wh |
 | ![NFC Antenna - Illustration]() | NFC antenna | 5,5 x 4,5 x 0,017 cm<br>13,56MHz frequency |
 
-Chacun des composants à donc une utilitée technique au sein du produit final, chaque utilitée est indiquée dans le tableau ci-dessous :
+Each component therefore has a technical use within the final product, and each use is indicated in the table below:
 | Hardware Name | Technical Characteristics |
 |---|---|
 | Xiao BLE Sense nrf52840 | Based on the Nordic nRF52840 chip, it is equipped with an ARM Cortex-M4 processor with FPU, capable of operating at up to 64 MHz.<br><br>It features Bluetooth 5.0 and BLE with an integrated antenna, as well as NFC connectivity.<br><br>It is designed for ultra-low power consumption, with just 5 μA in deep sleep mode. It also includes lithium battery charge management.<br><br>As part of the project, the XIAO BLE Sense board will contain our software and communicate with all the components on the board. |
@@ -199,9 +199,7 @@ By basing the Sportshield system on the Arduino platform and coding in C++, the 
 
 ### 3.2 Data Flow Diagram
 
-```LOG
-Coming soon...
-```
+![DataFlowDiagram - Illustration]()
 
 ### 3.3 Module Descriptions
 
