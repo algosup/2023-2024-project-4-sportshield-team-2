@@ -49,7 +49,7 @@
 
 ## 1. Overview
 
-> ⚠️ The Sportshield project was commissioned by **CORIS Innovation**[^1]. All rights reserved to CORIS Innovation.
+> ⚠️ The SportShield project was commissioned by **CORIS Innovation**[^1]. All rights reserved to CORIS Innovation.
 
 On 11 March 2024, a representative of CORIS Innovation France came to **ALGOSUP**[^2] to ask the students to maintain one of their projects: an anti-theft device for ski equipment.
 
@@ -60,7 +60,7 @@ The languages used by the students will therefore be mainly [C++](https://en.wik
 ### 1.1 Project Folder Overview
 
 ```log
-Sportshield-Project/
+SportShield-Project/
 │
 ├── ConventionFileFolder/
 │   └── convention.md
@@ -132,11 +132,11 @@ Each component therefore has a technical use within the final product, and each 
 
 #### 2.2.1 Actual Product
 
-The current software is supposed to take account of hardware movement, thanks to the GNSS sensor located on the hardware. Depending on the intensity of the movement, the buzzer is supposed to make a noise of varying length and loudness.
+The current software is supposed to take account of hardware movement, thanks to the **GNSS sensor**[^3] located on the hardware. Depending on the intensity of the movement, the buzzer is supposed to make a noise of varying length and loudness.
 
 Also, if a movement is deemed "powerful", then the buzzer is supposed to :
 - Emit a long, powerful sound
-- Send an **HTTP Post request**[^3] to an **API**[^4] (stored on a **VPS**[^5]) and send a notification from the user application indicating significant movement
+- Send an **HTTP Post request**[^4] to an **API**[^5] (stored on a **VPS**[^6]) and send a notification from the user application indicating significant movement
 
 The aim is not to alert the user to a small shock/movement. However, no motion data is pre-set. In other words, no calculation has been made to define whether a given shock deserves a short and weak alarm triggering, or conversely, a long and strong one.
 
@@ -144,7 +144,7 @@ Currently, the battery in working order lasts around 3 days (no precise calculat
 
 The electromagnet is supposed to work, so it should cut off the magnetic force if the user decides to unlock his anti-theft device.
 
-The SIM cards are supposed to work with the 2G GSM module, so you can have a bit of data to send requests and text messages. The company is supplying the SIM cards with 500 MB of internet, as well as an availability of 250 messages.
+The SIM cards are supposed to work with the 2G **GSM module**[^7], so you can have a bit of data to send requests and text messages. The company is supplying the SIM cards with 500 MB of internet, as well as an availability of 250 messages.
 
 The device for detecting an NFC card has not been implemented in the code, so it was not functional at the start of the project.
 
@@ -180,22 +180,22 @@ There's plenty of other equipment for securing skis, but these don't provide any
 ## 3. Software Architecture
 
 ### 3.1 System Overview
-The Sportshield anti-theft system is engineered around a microcontroller-based architecture, specifically utilizing the Arduino platform. This choice is underpinned by several critical considerations tailored to meet the project's stringent requirements for reliability, ease of development, and real-time responsiveness.
+The SportShield anti-theft system is engineered around a **microcontroller-based architecture**[^8], specifically utilizing the **Arduino**[^9] platform. This choice is underpinned by several critical considerations tailored to meet the project's stringent requirements for reliability, ease of development, and real-time responsiveness.
 
 **Choice of Arduino Platform**<br>
-The Arduino platform, renowned for its simplicity and accessibility, offers an ideal environment for rapid prototyping and development of embedded systems. The Sportshield system leverages Arduino's extensive ecosystem, including its integrated development environment (IDE), libraries, and community support, to streamline the development process. This approach enables the team to focus on implementing robust anti-theft functionalities while ensuring system stability and reliability.
+The Arduino platform, renowned for its simplicity and accessibility, offers an ideal environment for rapid prototyping and development of embedded systems. The SportShield system leverages Arduino's extensive ecosystem, including its integrated development environment (IDE), libraries, and community support, to streamline the development process. This approach enables the team to focus on implementing robust anti-theft functionalities while ensuring system stability and reliability.
 
 **Integration with Specified Hardware**<br>
 The hardware components selected for the Sportshield project, including the Xiao BLE Sense nrf52840, GNSS PA1010D, GSM/2G SIM800L Module, Electromagnet, Piezoelectric Buzzer, Lithium-Polymer Battery, and NFC Antenna, are fully compatible with the Arduino environment. This compatibility allows for seamless integration and communication between the microcontroller and peripheral devices, crucial for detecting theft attempts, triggering alarms, and communicating with the user's mobile device.
 
 **Real-time Responsiveness**<br>
-Real-time operation is a fundamental requirement for the Sportshield anti-theft system, where immediate detection of unauthorised movement and rapid responses (such as triggering alarms or sending notifications) are essential to its effectiveness. The real-time capabilities of the Arduino platform, supported by the efficiency of the C++ code, ensure that the system can process sensor inputs and execute defined actions with minimal latency (from a few milliseconds for the smallest operations).
+Real-time operation is a fundamental requirement for the SportShield anti-theft system, where immediate detection of unauthorised movement and rapid responses (such as triggering alarms or sending notifications) are essential to its effectiveness. The real-time capabilities of the Arduino platform, supported by the efficiency of the C++ code, ensure that the system can process sensor inputs and execute defined actions with minimal latency (from a few milliseconds for the smallest operations).
 
 **Ease of Development and Maintenance**<br>
 Given the project's context within an academic setting at ALGOSUP, with students responsible for maintaining and enhancing the system, the Arduino platform's user-friendly nature facilitates ongoing development and troubleshooting. The extensive documentation, active forums, and availability of open-source libraries reduce the learning curve and support innovation.
 
 **Conclusion**<br>
-By basing the Sportshield system on the Arduino platform and coding in C++, the project strikes a balance between performance, development efficiency, and future scalability. This architecture ensures that the anti-theft device remains responsive, reliable, and adaptable to evolving requirements, all while providing a solid foundation for students to engage in hands-on learning and practical application of embedded system development.
+By basing the SportShield system on the Arduino platform and coding in C++, the project strikes a balance between performance, development efficiency, and future scalability. This architecture ensures that the anti-theft device remains responsive, reliable, and adaptable to evolving requirements, all while providing a solid foundation for students to engage in hands-on learning and practical application of embedded system development.
 
 ### 3.2 Data Flow Diagram
 
@@ -231,7 +231,7 @@ By basing the Sportshield system on the Arduino platform and coding in C++, the 
 
 ### 3.4 Communication Protocols
 
-This section of the Technical Specifications Document describes the communication protocols used by the Sportshield anti-theft system. These protocols enable the system to interact with external devices and services, such as CORIS Innovation's server, to send important data like battery level and GPS position.
+This section of the Technical Specifications Document describes the communication protocols used by the SportShield anti-theft system. These protocols enable the system to interact with external devices and services, such as CORIS Innovation's server, to send important data like battery level and GPS position.
 
 **Bluetooth Low Energy (BLE)**<br>
 The system utilizes Bluetooth Low Energy for wireless communication between the anti-theft device and the user's smartphone. Through BLE, the device can transmit its status, including activation state and battery level, and receive commands, such as unlocking requests or configuration changes. This communication is facilitated by the ArduinoBLE library, which manages the BLE service and characteristics for password management, device configuration, and state updates.
@@ -256,10 +256,10 @@ Motion detection is facilitated by the IMU sensor, interfacing through the LSM6D
 Dynamic Motion Analysis: Based on the detected motion data, the system categorizes movement intensity and decides on the appropriate response, from triggering local alarms to sending alerts and location data via GPRS.
 
 ### 3.5 Technology Stack
-The Sportshield anti-theft system is developed using a combination of hardware-specific programming languages and a suite of libraries tailored to interface with various hardware components and external services. Below is a detailed overview of the technology stack:
+The SportShield anti-theft system is developed using a combination of hardware-specific programming languages and a suite of libraries tailored to interface with various hardware components and external services. Below is a detailed overview of the technology stack:
 
 **Programming Languages**<br>
-C++: The primary programming language used for developing the system, taking advantage of its performance and efficiency in low-level hardware interaction. C++ is particularly suited for developing embedded systems like Sportshield, where direct control over hardware and system resources is critical.
+C++: The primary programming language used for developing the system, taking advantage of its performance and efficiency in low-level hardware interaction. C++ is particularly suited for developing embedded systems like SportShield, where direct control over hardware and system resources is critical.
 
 **Development Frameworks and Platforms**<br>
 Arduino: A key component of the development stack, the Arduino platform provides a comprehensive ecosystem for programming microcontrollers. It includes an Integrated Development Environment (IDE), which simplifies coding, compiling, and uploading code to the hardware. The Arduino framework is chosen for its accessibility, extensive support for various modules and sensors, and a large community contributing to a wide range of libraries.
@@ -278,7 +278,7 @@ CORIS Innovation Server: An external server setup to receive HTTP POST requests 
 The system is built on a variety of hardware components, each interfaced and controlled via specific libraries. These include the Xiao BLE Sense NRF52840 for the microcontroller, GNSS PA1010D for GPS positioning, GSM/2G SIM800L Module for cellular communication, and various sensors and actuators for detecting movement and managing device security features.
 
 ### 3.6 Security Architecture
-The Sportshield anti-theft system incorporates several layers of security to protect against unauthorized access and ensure the privacy and safety of user data. These measures are critical, given the system's reliance on wireless communication and its role in safeguarding valuable equipment.
+The SportShield anti-theft system incorporates several layers of security to protect against unauthorized access and ensure the privacy and safety of user data. These measures are critical, given the system's reliance on wireless communication and its role in safeguarding valuable equipment.
 
 **Authentication Mechanisms**<br>
 BLE Communication: The system uses Bluetooth Low Energy (BLE) for local communication with the user's smartphone. To secure this channel, an authentication mechanism is implemented where a predefined password must be correctly provided before allowing any configuration changes through the BLE interface. This prevents unauthorized users from manipulating the device's settings or disabling its security features.
@@ -286,7 +286,7 @@ SIM800L Module: For cellular communication, the SIM800L module requires authenti
 
 **Encryption**<br>
 Data Transmission: While the system sends data to the CORIS Innovation server, including GPS coordinates and battery levels, employing encryption in this layer is crucial. If not natively supported by the SIM800L library, implementing HTTPS for data transmission or encrypting the payload before sending it over HTTP ensures that sensitive information (e.g., location data) is protected against interception during transmission.
-BLE Encryption: The BLE protocol inherently includes options for encrypting data communication between devices. By enabling encryption at the BLE level, the system ensures that all information exchanged between the anti-theft device and the user's smartphone is secure from eavesdropping.
+BLE Encryption: The BLE protocol inherently includes options for encrypting data communication between devices. By enabling encryption at the BLE level, the system ensures that all information exchanged between the anti-theft device and the user's smartphone is secured from eavesdropping.
 
 **Secure Data Storage**<br>
 On-Device Data Storage: The system minimizes the amount of sensitive data stored on the device itself. Configuration settings, including the user-defined password and device identifiers, are stored in the device's non-volatile memory. Ensuring this data is stored securely involves encrypting the data at rest or using secure storage mechanisms provided by the microcontroller, if available.
@@ -295,12 +295,12 @@ On-Device Data Storage: The system minimizes the amount of sensitive data stored
 Tamper Detection: Considering the physical security of the device is also essential. While not directly related to software architecture, incorporating sensors to detect tampering attempts and triggering alerts or disabling the device can protect against physical attacks aiming to bypass the system's security features.
 
 **Future Considerations**<br>
-Security Updates: The ability to update the device's firmware over the air (OTA) can be a double-edged sword; it allows for the timely patching of security vulnerabilities but introduces potential risks if the update mechanism is not secured. Implementing a secure bootloader and verifying firmware signatures before applying updates can mitigate these risks.
+Security Updates: The ability to update the device's firmware over the air (OTA) can be a double-edged sword; it allows for the timely patching of security vulnerabilities but introduces potential risks if the update mechanism is not secured. Implementing a secured bootloader and verifying firmware signatures before applying updates can mitigate these risks.
 Regular Security Audits: Continuous testing and auditing of the system's security measures are necessary to identify and rectify potential vulnerabilities, ensuring the system remains robust against evolving threats.
 
 ## 4. Detailed Functionality
 
-The Sportshield project, requested by Coris Innovation, focuses on optimizing battery consumption, integrating NFC technology, enhancing security, and improving user experience. This section outlines the technical implementations of the specified functional requirements.
+The SportShield project, requested by Coris Innovation, focuses on optimizing battery consumption, integrating NFC technology, enhancing security, and improving user experience. This section outlines the technical implementations of the specified functional requirements.
 
 ### 4.1 Device Information Transmission
 
@@ -345,11 +345,11 @@ Dynamic Sensor Management: Implement algorithms to dynamically adjust the freque
 
 ## 5. Integration with External Systems
 
-The Sportshield anti-theft device is designed to communicate securely and efficiently with external systems to provide real-time updates and notifications to users. This communication is primarily facilitated through the SIM800L GSM/GPRS module, enabling the device to send data over cellular networks to a designated API endpoint. This section outlines the mechanisms and protocols governing these interactions.
+The SportShield anti-theft device is designed to communicate securely and efficiently with external systems to provide real-time updates and notifications to users. This communication is primarily facilitated through the SIM800L GSM/GPRS module, enabling the device to send data over cellular networks to a designated API endpoint. This section outlines the mechanisms and protocols governing these interactions.
 
 ### 5.1 SIM800L GSM/GPRS Module Integration
 
-Objective: **Enable the Sportshield device to transmit critical data, including GPS location, battery status, and alarm events, to the CORIS Innovation server, ensuring users receive timely updates via the application.**
+Objective: **Enable the SportShield device to transmit critical data, including GPS location, battery status, and alarm events, to the CORIS Innovation server, ensuring users receive timely updates via the application.**
 
 <u>Implementation:</u><br>
 GSM/GPRS Communication: Utilize the SIM800L library for establishing cellular network connectivity. Configure the module with appropriate APN settings for network access and initiate GPRS sessions for data transmission.<br>
@@ -358,26 +358,26 @@ Data Formatting: Structure data payloads as JSON objects for compatibility with 
 
 ### 5.2 Server-Side API
 
-Objective: **Process incoming data from the Sportshield device, updating the system's state and pushing relevant notifications to the user's application in real time.**
+Objective: **Process incoming data from the SportShield device, updating the system's state and pushing relevant notifications to the user's application in real time.**
 
 <u>Implementation:</u><br>
-API Endpoint Configuration: Set up secure RESTful API endpoints to receive and process HTTP POST requests from the Sportshield device. Implement authentication and validation mechanisms to ensure data integrity and security.<br>
+API Endpoint Configuration: Set up secure RESTful API endpoints to receive and process HTTP POST requests from the SportShield device. Implement authentication and validation mechanisms to ensure data integrity and security.<br>
 Real-Time Data Processing: Upon receiving data, the server parses the JSON payload, updates the device's status in the database, and determines whether to trigger notifications based on the reported state (e.g., movement alerts, battery low warnings).<br>
 User Notification System: Integrate with push notification services to relay important alerts to the user's application, ensuring they are promptly informed of any significant events concerning their equipment.
 
 ### 5.3 User Application Integration
 
-Objective: **Present real-time data and notifications received from the server in a user-friendly interface, allowing users to monitor their equipment's status and control the Sportshield device remotely.**
+Objective: **Present real-time data and notifications received from the server in a user-friendly interface, allowing users to monitor their equipment's status and control the SportShield device remotely.**
 
 <u>Implementation:</u><br>
 Data Synchronization: Implement mechanisms within the application to regularly poll the server for updates or utilize web sockets for real-time data streaming, ensuring the application reflects the current state of the user's equipment.<br>
 Interactive Notifications: Design the application to display alerts and notifications in an actionable format, enabling users to respond to events (e.g., disabling an alarm) directly within the app.<br>
-Remote Device Management: Provide features within the app for users to remotely configure the Sportshield device settings, such as changing the sensitivity of movement detection or updating the NFC access list.
+Remote Device Management: Provide features within the app for users to remotely configure the SportShield device settings, such as changing the sensitivity of movement detection or updating the NFC access list.
 
 
 ## 6. Testing Strategies
 
-The testing strategy for the Sportshield anti-theft system is meticulously designed to ensure the application's reliability, functionality, security, and user experience. It encompasses several types of tests, each targeting specific aspects of the system, from basic hardware functionality to complex software interactions and real-world usability.
+The testing strategy for the SportShield anti-theft system is meticulously designed to ensure the application's reliability, functionality, security, and user experience. It encompasses several types of tests, each targeting specific aspects of the system, from basic hardware functionality to complex software interactions and real-world usability.
 
 ### 6.1 Unit Testing
 
@@ -412,15 +412,15 @@ Document the system's performance, noting any failures or significant performanc
 
 ## 7. Maintenance and Support
 
-The ongoing maintenance and support for the Sportshield anti-theft system are critical components to ensure user satisfaction and system reliability post-deployment. This section addresses the framework for delivering firmware updates, troubleshooting common system issues, and providing robust customer support.
+The ongoing maintenance and support for the SportShield anti-theft system are critical components to ensure user satisfaction and system reliability post-deployment. This section addresses the framework for delivering firmware updates, troubleshooting common system issues, and providing robust customer support.
 
 ### 7.1 Firmware Updates
 
-Objective: **To continuously improve and update the Sportshield system, addressing bugs, enhancing features, and ensuring compatibility with evolving technology standards.**
+Objective: **To continuously improve and update the SportShield system, addressing bugs, enhancing features, and ensuring compatibility with evolving technology standards.**
 
 <u>Implementation:</u><br>
 Over-the-Air (OTA) Updates: Implement OTA firmware update capability, allowing users to easily upgrade their device's software without needing physical access. This includes secure authentication and verification processes to prevent unauthorized firmware modifications.<br>
-Version Control: Maintain a versioning system for firmware releases, documenting changes, improvements, and fixes in each version. This helps users understand the benefits of updating their device and ensures backward compatibility.<br>
+Version Control: Maintain a versioning system for firmware releases, documenting changes, improvements, and fixes in each version. This helps users to understand the benefits of updating their device and ensures backward compatibility.<br>
 User Notification: Proactively inform users of available updates through the application, highlighting new features or critical fixes to encourage timely updates.<br>
 
 ### 7.2 Troubleshooting Common Issues
@@ -462,6 +462,11 @@ IP Rating: If the device claims any level of water or dust resistance, complianc
 ## Glossary
 [^1]: **CORIS Innovation** : CORIS Innovation is the parent company and creator of the SportShields device we are developing.
 [^2]: **ALGOSUP** : ALGOSUP is an international developer school based in Vierzon in the B3.
-[^3]: **HTTP Post Request** : In web communication, POST requests are utilized to send data to a server to create or update a resource. The information submitted to the server with POST request method is archived in the request body of the HTTP request.
-[^4]: **API** : An API, or an application programming interface, is a set of code-based instructions that enable different software components to communicate and share data.
-[^5]: **VPS** : A Virtual Private Server (VPS) is a virtual server that runs on a logical partition on a host machine.
+[^3]: **GNSS sensor** : Nowadays, a GNSS (Global Navigation Satellite System) sensor is one of the basic on-board pieces of equipment in an aircraft, enabling it to record many navigational parameters, such as position, speed, time, and rotation angle in real time
+[^4]: **HTTP Post Request** : In web communication, POST requests are utilized to send data to a server to create or update a resource. The information submitted to the server with POST request method is archived in the request body of the HTTP request.
+[^5]: **API** : An API, or an application programming interface, is a set of code-based instructions that enable different software components to communicate and share data.
+[^6]: **VPS** : A Virtual Private Server (VPS) is a virtual server that runs on a logical partition on a host machine.
+[^7]: **GSM module** : A GSM module is a specialized type of device which accepts a SIM card, and operates over a subscription to a mobile operator, just like a cell phone or pager.
+[^8]: **NFC** : The NFC (Near Field Communication) is a form of contactless, close proximity, radio communications based on radio-frequency identification (RFID) technology.
+[^9]: **Microcontroller-based** : A microcontroller is a compact integrated circuit designed to govern a specific operation in an embedded system. A typical microcontroller includes a processor, memory and input/output (I/O) peripherals on a single chip
+[^10]: **Arduino** : Arduino is the name of a popular open electronic learning platform for teaching Physical Computing based around a set of open standards.
