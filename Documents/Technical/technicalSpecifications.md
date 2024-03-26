@@ -1,4 +1,4 @@
-![CORIS Innovation Logo]()
+![CORIS Innovation Logo](https://github.com/algosup/2023-2024-project-4-sportshield-team-2/assets/147847949/cd4ad069-acf2-4dcd-b267-245bf41a36dc)
 # Technical Specifications Document
 
 <details>
@@ -109,13 +109,13 @@ The students have access to hardware, which is used as a prototype to test all t
 
 | Hardware Photo | Hardware Name | Technical Specifications |
 |---|---|---|
-| ![Xiao BLE Sense nrf52840 - Illustration]() | Xiao BLE Sense nrf52840 | 2 x 2 x 0,5 cm<br>BLE 5.0 & 6 DoF IMU<br>11 GPIO (UART, SPI, I2C)|
-| ![GNSS PA1010D - Illustration]() | GNSS PA1010D | 2,5 x 2,5 x 1 cm<br>Integrated antenna<br>UART & I2C|
-| ![GSM/2G SIM800L Module - Illustration]() | GSM/2G SIM800L Module | 2,2 x 1,8 x 0,5 cm<br>GPRS & HTTP, UART<br>SIM Card holder (With 1NCE SIM card)|
-| ![Electromagnet - Illustration]() | Electromagnet | 12V, 500mA<br>2,7 x 1,6 x 1,3 cm |
-| ![Piezoelectric Buzzer - Illustration]() | Piezoelectric buzzer | 12V, with oscillator control circuit<br>~ 90-100 dB|
-| ![Lithium-Polymer Battery - Illustration]() | Lithium-Polymer battery | 5,1 x 3,5 x 0,6 cm<br>3.7V, 1100mAh, 4.1Wh |
-| ![NFC Antenna - Illustration]() | NFC antenna | 5,5 x 4,5 x 0,017 cm<br>13,56MHz frequency |
+| <img src="https://github.com/algosup/2023-2024-project-4-sportshield-team-2/assets/147847949/331341ef-ce17-4ad2-a438-41d5c9c460d5" alt="Xiao BLE Sense nrf52840 - Illustration" style="width:50%;"> | Xiao BLE Sense nrf52840 | 2 x 2 x 0,5 cm<br>BLE 5.0 & 6 DoF IMU<br>11 GPIO (UART, SPI, I2C)|
+| <img src="https://github.com/algosup/2023-2024-project-4-sportshield-team-2/assets/147847949/284e6e05-db2e-43e1-8ab6-fc2e039550d0" alt="GNSS PA1010D - Illustration" style="width:50%;"> | GNSS PA1010D | 2,5 x 2,5 x 1 cm<br>Integrated antenna<br>UART & I2C|
+| <img src="https://github.com/algosup/2023-2024-project-4-sportshield-team-2/assets/147847949/3f43e6d4-aed6-4564-99af-b62defde5221" alt="GSM/2G SIM800L Module - Illustration" style="width:50%"> | GSM/2G SIM800L Module | 2,2 x 1,8 x 0,5 cm<br>GPRS & HTTP, UART<br>SIM Card holder (With 1NCE SIM card)|
+| <img src="https://github.com/algosup/2023-2024-project-4-sportshield-team-2/assets/147847949/93efe614-d13f-4f59-b49d-4ba5be871e40" alt="Electromagnet - Illustration" style="width:50%;"> | Electromagnet | 12V, 500mA<br>2,7 x 1,6 x 1,3 cm |
+| <img src="https://github.com/algosup/2023-2024-project-4-sportshield-team-2/assets/147847949/ce3afbbf-9970-4c02-834e-dfa31e0cefcf" alt="Piezoelectric Buzzer - Illustration" style="width:50%"> | Piezoelectric buzzer | 12V, with oscillator control circuit<br>~ 90-100 dB|
+| <img src="https://github.com/algosup/2023-2024-project-4-sportshield-team-2/assets/147847949/d2cb0b6c-3fc8-4984-b0b6-9e960846ddb6" alt="Lithium-Polymer Battery - Illustration" style="width:50%"> | Lithium-Polymer battery | 5,1 x 3,5 x 0,6 cm<br>3.7V, 1100mAh, 4.1Wh |
+| <img src="https://github.com/algosup/2023-2024-project-4-sportshield-team-2/assets/147847949/b25fcfd6-99ab-4198-8e92-62cb719c86ac" alt="NFC Antenna - Illustration" style="width:50%;"> | NFC antenna | 5,5 x 4,5 x 0,017 cm<br>13,56MHz frequency |
 
 Each component therefore has a technical use within the final product, and each use is indicated in the table below:
 | Hardware Name | Technical Characteristics |
@@ -199,7 +199,7 @@ By basing the Sportshield system on the Arduino platform and coding in C++, the 
 
 ### 3.2 Data Flow Diagram
 
-![DataFlowDiagram - Illustration]()
+![DataFlowDiagram - Illustration](https://github.com/algosup/2023-2024-project-4-sportshield-team-2/assets/147847949/de55330c-4823-46f1-b47c-531706b68d2d)
 
 ### 3.3 Module Descriptions
 
