@@ -38,7 +38,12 @@
     - [7.1 Firmware Updates](#71-firmware-updates)
     - [7.2 Troubleshooting Common Issues](#72-troubleshooting-common-issues)
   - [8. Compliance and Standards](#8-compliance-and-standards)
-  - [9. Future Developments](#9-future-developments)
+    - [8.1 Wireless Communication Compliance](#81-wireless-communication-compliance)
+    - [8.2 Data Protection and Privacy](#82-data-protection-and-privacy)
+    - [8.3 Electronic and Electrical Equipment Standards](#83-electronic-and-electrical-equipment-standards)
+    - [8.4 Battery Safety and Environmental Standards](#84-battery-safety-and-environmental-standards)
+    - [8.5 Quality Management](#85-quality-management)
+    - [8.6 Product Specific Standards](#86-product-specific-standards)
   - [Glossary](#glossary)
 </details>
 
@@ -433,6 +438,27 @@ Resolution Steps:
 
 ## 8. Compliance and Standards
 
-## 9. Future Developments
+### 8.1 Wireless Communication Compliance
+Bluetooth SIG: As the system uses Bluetooth Low Energy (BLE) for communication, it must comply with the Bluetooth Special Interest Group (SIG) standards, ensuring it meets global wireless communication requirements.<br>
+CE Marking (Europe): For sale within the European Economic Area, the device must meet the requirements for CE marking, indicating compliance with EU safety, health, and environmental protection standards.<bR>
+FCC Regulations (USA): If operating in the United States, compliance with the Federal Communications Commission (FCC) rules for wireless devices is necessary to prevent harmful interference.
+
+### 8.2 Data Protection and Privacy
+General Data Protection Regulation (GDPR) (Europe): Must ensure compliance with GDPR for processing personal data of individuals in the EU, including clear consent mechanisms, data minimization, and user rights to access and erase data.<br>
+California Consumer Privacy Act (CCPA) (USA): For users in California, adherence to CCPA requirements for privacy notices, data access requests, and opt-out options for data sale.
+
+### 8.3 Electronic and Electrical Equipment Standards
+WEEE Directive (Europe): Compliance with the Waste Electrical and Electronic Equipment Directive, ensuring proper waste management and recycling of electronic components.<br>
+RoHS Compliance: Adherence to the Restriction of Hazardous Substances Directive, limiting the use of specific hazardous materials found in electrical and electronic products.
+
+### 8.4 Battery Safety and Environmental Standards
+IEC 62133: Compliance with the International Electrotechnical Commission's safety requirements for batteries and battery-operated devices.<br>
+UN38.3: Adherence to the United Nations Manual of Tests and Criteria, Part III, Subsection 38.3 for the safe transport of lithium-ion batteries.
+
+### 8.5 Quality Management
+ISO 9001: Following ISO 9001 standards for quality management systems, ensuring the device is consistently manufactured to meet customer and regulatory requirements.
+
+### 8.6 Product Specific Standards
+IP Rating: If the device claims any level of water or dust resistance, compliance with the appropriate Ingress Protection (IP) rating standards for environmental sealing.
 
 ## Glossary
