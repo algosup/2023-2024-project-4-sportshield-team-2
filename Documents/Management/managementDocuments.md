@@ -10,6 +10,7 @@ This document contains the main documentation for the management of the project 
   - [Target Key Performace Indicators](#target-key-performace-indicators)
   - [Key Performance Indicators](#key-performance-indicators)
   - [Statement of work](#statement-of-work)
+  - [Weekly report](#weekly-report)
 
 ## Project charter
 
@@ -68,3 +69,7 @@ To follow the progress of the project you can check the [KPIs](https://docs.goog
 ## Statement of work
 
 The statement of work is a document that defines project-specific activities, deliverables, and timelines. Our statement of work is [here](statementOfWork.md).
+
+## Weekly report
+
+The weekly report is a document that provides an overview of the project's progress. The weekly report is available [here](WeeklyReports/mainWeeklyReport.md).
