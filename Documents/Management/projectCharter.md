@@ -28,10 +28,10 @@ The company CORIS Innovation therefore provides students with hardware allowing 
 - [Xiao BLE Sense nrf52840](https://wiki.seeedstudio.com/XIAO_BLE/)
 - [GNSS PA1010D](https://cdn-learn.adafruit.com/assets/assets/000/084/295/original/CD_PA1010D_Datasheet_v.03.pdf?1573833002)
 - [GSM/2G SIM800L Module](https://lastminuteengineers.com/sim800l-gsm-module-arduino-tutorial/?utm_content=cmp-true)
-- Electromagnet
-- Piezoelectric Buzzer
+- [Electromagnet](https://www.amazon.com/Atoplee-Electric-Assembly-Solenoid-27X29X18mm/dp/B01FH1JCPU)
+- [Piezoelectric Buzzer](https://www.amazon.com/Buzzer-piezoelectric-Electronic-Audible-Continuous/dp/B09XCYY7C2)
 - [Lithium-Polymer Battery](http://www.fullwat.com/documentos/000497-LNK02811.pdf)
-- NFC Antenna
+- [NFC Antenna](https://www.molex.com/en-us/products/part-detail/1462360031)
 
 All components are assumed to work, and to have no physical or software defects in order to be able to function perfectly during all the tests.
 
