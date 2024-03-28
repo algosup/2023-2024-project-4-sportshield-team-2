@@ -1,7 +1,9 @@
 #include <iostream>
 using namespace std;
 
-// test to check the ledPin
+/* test to check the ledPin
+you just have to change the variables to check multiple cases.
+*/ 
 const int trueLedPin = 11;
 const int falseLedPin = 10;
 
