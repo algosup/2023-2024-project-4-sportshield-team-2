@@ -18,7 +18,7 @@ void allTests() {
     cout << "[----------] Run in Linux server" << endl;  // *** COPY PASTE THE TEMPLATE FROM HERE ***
     cout << "[ RUN      ] Run from ledPinTest" << endl; // name of the test 
     cout << "[          ] " << endl; 
-    cout << "[  Results ] Display the results" << endl; 
+    cout << "[  Results ] Expected: PASSED" << endl; // put your expected result (depending on your function, it could be always passed but specify it)
     if (ledPinTest(ledPin) == true){ // call the test and print the result depending on the expectation
         cout << "[  PASSED  ]" << endl;
     } 
@@ -30,7 +30,7 @@ void allTests() {
     cout << "[----------]" << endl; 
     cout << "[ RUN      ] Run from ledPinTest" << endl; // name of the test 
     cout << "[          ] " << endl; 
-    cout << "[  Results ] Display the results" << endl; 
+    cout << "[  Results ] Expected: FAILED" << endl; 
     if (ledPinTest(incorrectLedPin) == true){ 
         cout << "[  PASSED  ]" << endl;
     } 
