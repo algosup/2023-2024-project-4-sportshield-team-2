@@ -12,6 +12,8 @@
 
 - [ User manual ](#-user-manual-)
 - [ Version 0.5 ](#-version-05-)
+- [Safety precautions](#safety-precautions)
+  - [Warnings](#warnings)
 - [Get Started](#get-started)
   - [What's in the box](#whats-in-the-box)
   - [Charge your SportShield](#charge-your-sportshield)
@@ -32,6 +34,23 @@
 <br>
 
 <div style="page-break-after: always;"></div>
+
+# Safety precautions
+
+> ⚠️ WARNING • Before using, read these user's manuals of this projector to ensure correct usage through understanding. After reading, store them in a safe place for future reference. Incorrect handling of this product could possibly result in personal injury or physical damage. The manufacturer assumes no responsibility for any damage caused by mishandling that is beyond normal usage defined in these manuals of this projector.
+
+## Warnings
+
+- <img src="./Img/warning.png" width="15"/> Never disassemble and modify, modification and/or disassembly of the product could result in electrical shock, or any kind of injury. 
+
+- <img src="./Img/warning.png" width="15"/> Use special caution for children and pets, especially in households where they are present.
+
+- <img src="./Img/warning.png" width="15"/> Be careful in charging the device, it can cause a fire or electrical shock. Do not apply too much heat, pressure or tension to the power cord and cables
+
+- <img src="./Img/warning.png" width="15"/> Do not attach anything other than specified things to the device, neglect could result in an injury or damage.
+
+<div style="page-break-after: always;"></div>
+
 
 # Get Started
 
@@ -151,12 +170,12 @@ When the alarm rings, a notification is sent to the linked smartphone.<br>
 For more information about notifications, refer to the [dedicated manual part](#notifications).
 <br>
 
+<div style="page-break-after: always;"></div>
+
 # App
 
 The SportShield app would be available either on the Apple App Store and the Google Play Store.<br>
 Even though, the app has not been synchronized with the SportShield device yet. In this user manual, you won't be able to find any useful information about this application for the moment.
-
-<div style="page-break-after: always;"></div>
 
 # Notifications
 
