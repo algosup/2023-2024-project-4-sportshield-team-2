@@ -134,7 +134,7 @@ Due to a problem with the hardware provided, we have to use ancillary equipment.
 | c | Functional Specifications | Mathias GAGNEPAIN (Program Manager) | Grégory PAGNOUX (Quality Assurance), Enzo GUILLOUCHE (Technical Writer), Robin DEBRY (Project Manager) | 18/03/2024 | 18/03/2024 |
 | d | 2nd Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 22/03/2024 | 25/03/2024 |
 | e | Technical Specifications | Elone DELILLE (Technical Leader) | Grégory PAGNOUX (Quality Assurance) | 26/03/2024 | 26/03/2024 |
-| f | 3rd Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 02/04/2024 | XX/03/2024 |
+| f | 3rd Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance), Mathias GAGNEPAIN (Program Manager), Elone DELILLE (Technical Leader) | 02/04/2024 | 02/04/2024 |
 | g | 4th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 08/04/2024 | XX/0X/2024 |
 | h | 5th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 15/04/2024 | XX/0X/2024 |
 | i | User Manual | Enzo GUILLOUCHE (Technical Writer) | Grégory PAGNOUX (Quality Assurance) | 10/04/2024 | XX/0X/2024 |
