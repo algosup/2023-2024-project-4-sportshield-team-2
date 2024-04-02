@@ -27,9 +27,7 @@ The second week was devoted to testing all the project components. The team disc
    - The user manual has been continued with the information available to us.
 
 3. Hardware components
-
    - The team tested all the hardware components of each team to see if they worked.
-
    - The team tried to solve the problems without success and decided to use LEDS to simulate the functionality of the project.
 
 4. Reverse engineering

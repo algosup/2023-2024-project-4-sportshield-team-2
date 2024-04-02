@@ -5,6 +5,7 @@
 
 - [Week 1 (11-15 March 2024)](#week-1-11-15-march-2024)
 - [Week 2 (18-22 March 2024)](#week-2-18-22-march-2024)
+- [Week 3 (25-29 March 2024)](#week-3-25-29-march-2024)
   
 </details>
 
@@ -131,6 +132,55 @@ The second week was devoted to testing all the project components. The team disc
 ## Conclusion of the second week
 
 The second week was a bit complicated with the hardware problems, but we tried to solve them with LEDs to simulate each state, with the exception of the battery. The team continued to work on the documents, in particular the technical plan and the test plan. The team has also started to reverse-engineer the existing software using LEDs. The team is motivated to continue next week's work with the LEDs and to look for a way to create a library for the NFC software.
+
+## Week 3 (25-29 March 2024)
+
+[week 3](weeklyReportThirdWeek.md)
+
+The third week was devoted to managing each component with LEDs. The team discussed the project and how we would achieve it without the hardware breaking down. The technical specifications document was completed. The team also continued to reverse engineer the existing software with LEDs to try and implement all the functionality of the project.
+
+## Topics of the third week
+
+1. Manage each component with LEDs.
+2. Finish writing technical specifications.
+3. Continue reverse engineering existing software with LEDs.
+4. Attempt to implement project functionality without hardware but with LEDs.
+
+## Achievements of the third week
+
+1. Manage each component with LEDs
+   - during this week, the team managed to simulate the functionality of each component with LEDs.
+   - The team managed to simulate the functionality of the electromagnet, the buzzer, and the NFC antenna.
+
+2. Documents
+   - The technical specifications were completed.
+   - The test plan is well advanced.
+   - The user manual has been continued with the information available to us.
+
+3. Hardware components
+   - The team didn't manage to solve the hardware problems, so they decided to use LEDs to simulate the functionality of the project.
+
+4. Reverse engineering
+   - The team continued to reverse-engineer the existing software using LEDs to test the project's functionality.
+
+## Challenges of the third week
+
+The difficulties encountered during this week were mainly due to the hardware components. The team had trouble with the hardware components, as the components did not work as expected. The team tried to solve the problems without success and decided to use LEDs to simulate the functionality of the project.
+
+## Plan for the fourth week
+
+1. Documents
+   - Continue the test plan.
+   - Continue the user manual.
+
+2. Hardware components
+   - The team will have a new battery to test the project's functionality.
+3. Code
+    - The team will continue the code to simulate the functionality of the project with LEDs.
+
+## Conclusion of the third week
+
+The third week was a good week, the team managed to simulate the functionality of each component with LEDs. The team also managed to complete the technical specifications document. The team is motivated to continue next week's work with the LEDs. The team is looking forward to the next week to continue the work. The team is also looking forward to receiving the new battery to test the project's functionality.
 
 ## Key Performance Indicators
 
