@@ -41,11 +41,11 @@
 
 ## Warnings
 
-- <img src="./Img/warning.png" width="15"/> Never disassemble and modify, modification and/or disassembly of the product could result in electrical shock, or any kind of injury. 
+- <img src="./Img/warning.png" width="15"/> Never disassemble and modify, modification and/or disassembly of the product could result in electrical shock, or any kind of injury.
 
 - <img src="./Img/warning.png" width="15"/> Use special caution for children and pets, especially in households where they are present.
 
-- <img src="./Img/warning.png" width="15"/> Be careful in charging the device, it can cause a fire or electrical shock. Do not apply too much heat, pressure or tension to the power cord and cables
+- <img src="./Img/warning.png" width="15"/> Be careful in charging the device, it can cause a fire or electrical shock. Do not apply too much heat, pressure or tension to the power cord and cables.
 
 - <img src="./Img/warning.png" width="15"/> Do not attach anything other than specified things to the device, neglect could result in an injury or damage.
 
