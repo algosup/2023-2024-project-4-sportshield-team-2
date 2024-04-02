@@ -16,7 +16,7 @@ The third week was devoted to managing each component with LEDs. The team discus
 ## Achievements
 
 1. Manage each component with LEDs
-   - during this week, the team managed to simulate the functionality of each component with LEDs.
+   - During this week, the team managed to simulate the functionality of each component with LEDs.
    - The team managed to simulate the functionality of the electromagnet, the buzzer, and the NFC antenna.
 
 2. Documents
@@ -41,7 +41,7 @@ The difficulties encountered during this week were mainly due to the hardware co
    - Continue the user manual.
 
 2. Hardware components
-   - The team will have a new battery to test the project's functionality.
+   - The team will have a new battery to test the project's functionality, This new battery was ordered last week by Mathias because we thought the battery was necessary to test the project.
 3. Code
     - The team will continue the code to simulate the functionality of the project with LEDs.
 
