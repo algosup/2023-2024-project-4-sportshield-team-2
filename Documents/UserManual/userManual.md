@@ -41,13 +41,13 @@
 
 ## Warnings
 
-- <img src="./Img/warning.png" width="15"/> Never disassemble and modify, modification and/or disassembly of the product could result in electrical shock, or any kind of injury.
+- <h3><img src="./Img/warning.png" width="20"/> Never disassemble and modify, modification and/or disassembly of the product could result in electrical shock, or any kind of injury.</h3>
 
-- <img src="./Img/warning.png" width="15"/> Use special caution for children and pets, especially in households where they are present.
+- <h3><img src="./Img/warning.png" width="20"/> Use special caution for children and pets, especially in households where they are present.</h3>
 
-- <img src="./Img/warning.png" width="15"/> Be careful in charging the device, it can cause a fire or electrical shock. Do not apply too much heat, pressure or tension to the power cord and cables.
+- <h3><img src="./Img/warning.png" width="20"/> Be careful in charging the device, it can cause a fire or electrical shock. Do not apply too much heat, pressure or tension to the power cord and cables.</h3>
 
-- <img src="./Img/warning.png" width="15"/> Do not attach anything other than specified things to the device, neglect could result in an injury or damage.
+- <h3><img src="./Img/warning.png" width="20"/> Do not attach anything other than specified things to the device, neglect could result in an injury or damage.</h3>
 
 <div style="page-break-after: always;"></div>
 
@@ -66,6 +66,7 @@ Your SportShield includes:
 - An anti-theft SportShield device<br>
 <img src="./Img/device.png" width="225"/>
 <img src="./Img/deviceBottom.png" width="200"/>
+- A charger
 - This user manual
 
 ## Charge your SportShield
@@ -81,7 +82,8 @@ To charge SportShield:
 
 <br>
 
-The SportShield is now charging. Try to not use SportShield during its charging.
+The SportShield is now charging. <br>
+**CAUTION:** Try to not use SportShield during its charging.
 
 <div style="page-break-after: always;"></div>
 
@@ -119,7 +121,8 @@ The SportShield prevents your sports belongings from thieves. Its installation d
 3. Attach the cable to the cable holder.<br>
 <img src="./Img/cableHolderAndExit.png" width="200"/>
 
-If SportShield is not connected to your smartphone or with a NFC card, refer to the [set up part](#set-up-sportshield).<br><br>
+If SportShield is not connected to your smartphone or with a NFC card, it won't work as expected.<br>
+Refer to the [set up part](#set-up-sportshield).<br><br>
 The SportShield is now locked and you won't be able to pull the cable anymore, if you don't unlock it. <br><br>
 You'll receive a notification if the SportShield detects a shock. <br>
 For more information about notifications, refer to the [dedicated manual part](#notifications).
@@ -175,7 +178,9 @@ For more information about notifications, refer to the [dedicated manual part](#
 # App
 
 The SportShield app would be available either on the Apple App Store and the Google Play Store.<br>
-Even though, the app has not been synchronized with the SportShield device yet. In this user manual, you won't be able to find any useful information about this application for the moment.
+Even though, the app has not been synchronized with the SportShield device yet. <br><br>In this user manual, you won't be able to find any useful information about this application for the moment.
+
+<br><br>
 
 # Notifications
 
@@ -183,7 +188,7 @@ Since no application has been synchronized with the SportShield device, the impl
 
 The notifications contain some information about the device, such as the GPS coordinates (longitude latitude) and the remaining battery percentage.<br>
 
-<!-- add a notification image -->
+<img src="Img/notification.png" width="400">
 
 <div style="page-break-after: always;"></div>
 
