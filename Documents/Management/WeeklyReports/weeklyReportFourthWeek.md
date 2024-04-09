@@ -10,13 +10,13 @@ The fourth week was a shorter week due to the 1st of April. The team continued t
 
 1. Continue to Manage each component with LEDs.
 2. Continue to write the test plan.
-3. Continue to write the user manual .
+3. Continue to write the user manual.
 4. Continue to attempt to implement project functionality without hardware but with LEDs.
 
 ## Achievements
 
 1. Manage each component with LEDs
-   - During this week, the team continue to simulate the functionality of each component with LEDs.
+   - During this week, the team continued to simulate the functionality of each component with LEDs.
    - The team managed to simulate the functionality of the electromagnet, the buzzer but not the NFC antenna because it was not possible to simulate the NFC antenna with LEDs.
 
 2. Documents
@@ -24,14 +24,16 @@ The fourth week was a shorter week due to the 1st of April. The team continued t
    - The user manual is nearly finished.
 
 3. Hardware components
-   - As we say in the previous week, the team didn't manage to solve the hardware problems, so they decided to use LEDs to simulate the functionality of the project. So the team continued to work with LEDs.
+   - As we said in the previous week, the team didn't manage to solve the hardware problems, so they decided to use LEDs to simulate the functionality of the project. So the team continued to work with LEDs.
 
 4. Reverse engineering
    - The team continued to reverse-engineer the existing software using LEDs to test the project's functionality.
+5. Github actions and server
+   - The team managed to set up the Github actions and the server to automate the tests and check the code quality.
 
 ## Challenges
 
-The challenges encountered this week still the same as the previous week. The team tried to solve the hardware problems without success. The team continued to work with LEDs to simulate the project's functionality.
+The challenges encountered this week are still the same as the previous week. The team tried to solve the hardware problems without success. The team continued to work with LEDs to simulate the project's functionality.
 
 ## Next week's plan
 
@@ -46,4 +48,4 @@ The challenges encountered this week still the same as the previous week. The te
 
 ## Conclusion
 
-The fourth week was a short week, the team continue to simulate the functionality of each component with LEDs. The team also managed to finish the documentation like the test plan and the User manual. The team is motivated to continue next week's work with the LEDs. The team is looking forward to the next week to finish the work properly despite the hardware problems.
+The fourth week was short, the team continued to simulate the functionality of each component with LEDs. The team also managed to finish the documentation like the test plan and the User manual. The team is motivated to continue next week's work with the LEDs. The team is looking forward to the next week to finish the work properly despite the hardware problems.
