@@ -135,10 +135,10 @@ Due to a problem with the hardware provided, we have to use ancillary equipment.
 | d | 2nd Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 22/03/2024 | 25/03/2024 |
 | e | Technical Specifications | Elone DELILLE (Technical Leader) | Grégory PAGNOUX (Quality Assurance) | 26/03/2024 | 26/03/2024 |
 | f | 3rd Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance), Mathias GAGNEPAIN (Program Manager), Elone DELILLE (Technical Leader) | 02/04/2024 | 02/04/2024 |
-| g | 4th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 08/04/2024 | XX/0X/2024 |
-| h | 5th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 15/04/2024 | XX/0X/2024 |
-| i | User Manual | Enzo GUILLOUCHE (Technical Writer) | Grégory PAGNOUX (Quality Assurance) | 10/04/2024 | XX/0X/2024 |
-| j | Test Plan | Grégory Pagnoux (Quality Assurance) | Grégory PAGNOUX (Quality Assurance), Robin DEBRY (Project Manager) | 10/04/2024 | XX/0X/2024 |
+| g | 4th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 09/04/2024 | 09/04/2024 |
+| h | User Manual | Enzo GUILLOUCHE (Technical Writer) | Grégory PAGNOUX (Quality Assurance) | 10/04/2024 | XX/0X/2024 |
+| i | Test Plan | Grégory Pagnoux (Quality Assurance) | Grégory PAGNOUX (Quality Assurance), Robin DEBRY (Project Manager) | 10/04/2024 | XX/0X/2024 |
+| j | 5th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 15/04/2024 | XX/0X/2024 |
 | k | 6th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 19/04/2024 | XX/0X/2024 |
 | l | Readme | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 19/04/2024 | XX/0X/2024 |
 
@@ -213,13 +213,13 @@ public void Add_MultipleNumbers_ReturnsSumOfNumbers(string input, int expected)
 }
 ```
 
-- Execute 3 times the test (if it's possible)
+- Execute three times the test (when it's possible)
 
 *source: [Microsoft Learn](https://learn.microsoft.com/fr-fr/dotnet/core/testing/unit-testing-best-practices)*
 
 **Criterias**
 
-| ID | Function | Developer | Description criteria | Severity |
+| Test Case ID | Function | Developer | Description criteria | Severity |
 | - | - | - | - | - |
 | 00 | Hardware | Coris Innovation | - battery supplies the board <br> - LED on board flash <br> - buzzer ring <br> - Electromagnet can be locked <br> - SIM card communicate data <br> - GNSS antenna communicate position <br> - NFC can lock/unlock the device | Critical |
 |  |  |  |  |  |
@@ -229,9 +229,9 @@ public void Add_MultipleNumbers_ReturnsSumOfNumbers(string input, int expected)
 
 **Testing Schedule**
 
-| ID | Test Type | Description | Deadline | Completion date | Result |
+| Test Case ID | Test Type | Description | Deadline | Completion date | Result |
 | - | - | - | - | - | - |
-| 00 | End-to-End test | Hardware | 20/03/2024 | 19/03/2024 | Fail |
+| 00 | End-to-End | Hardware | 20/03/2024 | 19/03/2024 | Fail |
 |  |  |  | XX/0X/2024 | XX/0X/2024 | None |
 |  |  |  | XX/0X/2024 | XX/0X/2024 | None |
 |  |  |  | XX/0X/2024 | XX/0X/2024 | None |
@@ -240,6 +240,8 @@ public void Add_MultipleNumbers_ReturnsSumOfNumbers(string input, int expected)
 **Test cases**
 
 [Test cases](https://github.com/algosup/2023-2024-project-4-sportshield-team-2/issues) are done on GitHub issues.
+
+Some tests are done thanks [GitHub Actions](https://github.com/algosup/2023-2024-project-4-sportshield-team-2/actions) (we have the [workflow](https://github.com/algosup/2023-2024-project-4-sportshield-team-2/blob/main/.github/workflows/actions.yml) file and the [test](https://github.com/algosup/2023-2024-project-4-sportshield-team-2/blob/main/test/src/tests.cpp) file).
 
 ## Glossary
 
@@ -277,8 +279,9 @@ The severity is the impact of the issues on the project/program. It measures tha
 *source: [TestSigma](https://testsigma.com/blog/difference-between-priority-and-severity/)*
 
 [^9]: Magic Chain
-A value that is not defined and for which we do not know what it represents.
+A value that is not defined and for which we don't know what it represents.
 (e.g: ```Action actual = () => stringCalculator.Add("1001");```
 "1001" is a magic chain and must be defined using a constant such as:
 ```const string MAXIMUM_RESULT = "1001";```
 ```Action actual = () => stringCalculator.Add(MAXIMUM_RESULT);```)
+*source: [Microsoft Learn](https://learn.microsoft.com/fr-fr/dotnet/core/testing/unit-testing-best-practices)*
