@@ -3,7 +3,7 @@
 </p>
 
 # <div style="text-align: right; text-align: down"> User manual </div>
-# <div style="text-align: right; text-align: down"> Version 0.5 </div>
+# <div style="text-align: right; text-align: down"> Version 1.0 </div>
 
 <div style="page-break-after: always;"></div>
 
@@ -11,7 +11,7 @@
 <summary>Table of Contents</summary>
 
 - [ User manual ](#-user-manual-)
-- [ Version 0.5 ](#-version-05-)
+- [ Version 1.0 ](#-version-10-)
 - [Safety precautions](#safety-precautions)
   - [Warnings](#warnings)
 - [Get Started](#get-started)
@@ -29,6 +29,7 @@
     - [Anti-theft Cable](#anti-theft-cable)
   - [Environmental conditions](#environmental-conditions)
   - [Security](#security)
+  - [Glossary](#glossary)
 </details>
 
 <br>
@@ -41,13 +42,13 @@
 
 ## Warnings
 
-- <img src="./Img/warning.png" width="15"/> Never disassemble and modify, modification and/or disassembly of the product could result in electrical shock, or any kind of injury.
+- <h3><img src="./Img/warning.png" width="20"/> Never disassemble and modify, modification and/or disassembly of the product could result in electrical shock, or any kind of injury.</h3>
 
-- <img src="./Img/warning.png" width="15"/> Use special caution for children and pets, especially in households where they are present.
+- <h3><img src="./Img/warning.png" width="20"/> Use special caution for children and pets, especially in households where they are present.</h3>
 
-- <img src="./Img/warning.png" width="15"/> Be careful in charging the device, it can cause a fire or electrical shock. Do not apply too much heat, pressure or tension to the power cord and cables.
+- <h3><img src="./Img/warning.png" width="20"/> Be careful in charging the device, it can cause a fire or electrical shock. Do not apply too much heat, pressure or tension to the power cord and cables.</h3>
 
-- <img src="./Img/warning.png" width="15"/> Do not attach anything other than specified things to the device, neglect could result in an injury or damage.
+- <h3><img src="./Img/warning.png" width="20"/> Do not attach anything other than specified things to the device, neglect could result in an injury or damage.</h3>
 
 <div style="page-break-after: always;"></div>
 
@@ -66,6 +67,7 @@ Your SportShield includes:
 - An anti-theft SportShield device<br>
 <img src="./Img/device.png" width="225"/>
 <img src="./Img/deviceBottom.png" width="200"/>
+- A charger
 - This user manual
 
 ## Charge your SportShield
@@ -81,7 +83,8 @@ To charge SportShield:
 
 <br>
 
-The SportShield is now charging. Try to not use SportShield during its charging.
+The SportShield is now charging. <br>
+**CAUTION:** Try to not use SportShield during its charging.
 
 <div style="page-break-after: always;"></div>
 
@@ -119,7 +122,8 @@ The SportShield prevents your sports belongings from thieves. Its installation d
 3. Attach the cable to the cable holder.<br>
 <img src="./Img/cableHolderAndExit.png" width="200"/>
 
-If SportShield is not connected to your smartphone or with a NFC card, refer to the [set up part](#set-up-sportshield).<br><br>
+If SportShield is not connected to your smartphone or with a NFC card, it won't work as expected.<br>
+Refer to the [set up part](#set-up-sportshield).<br><br>
 The SportShield is now locked and you won't be able to pull the cable anymore, if you don't unlock it. <br><br>
 You'll receive a notification if the SportShield detects a shock. <br>
 For more information about notifications, refer to the [dedicated manual part](#notifications).
@@ -175,7 +179,9 @@ For more information about notifications, refer to the [dedicated manual part](#
 # App
 
 The SportShield app would be available either on the Apple App Store and the Google Play Store.<br>
-Even though, the app has not been synchronized with the SportShield device yet. In this user manual, you won't be able to find any useful information about this application for the moment.
+Even though, the app has not been synchronized with the SportShield device yet. <br><br>In this user manual, you won't be able to find any useful information about this application for the moment.
+
+<br><br>
 
 # Notifications
 
@@ -183,7 +189,7 @@ Since no application has been synchronized with the SportShield device, the impl
 
 The notifications contain some information about the device, such as the GPS coordinates (longitude latitude) and the remaining battery percentage.<br>
 
-<!-- add a notification image -->
+<img src="Img/notification.png" width="400">
 
 <div style="page-break-after: always;"></div>
 
@@ -204,7 +210,14 @@ Here's a list of the components a SportShield device contains:
 ## Robustness Assurance
 
 Since the SportShield is an anti-theft device, it has to be resistant enough, meeting some resistance criteria.
-<!-- Waterproofness, cold-resistance, and robustness against break-in attempts. -->
+
+**Waterproofness**: SportShield has to be waterproof, meeting IP ratings of IP65, 66 or 67.
+
+**Cold-resistance**: SportShield has to be cold-resistant, meeting TCR ratings from 0 to 50 ppm/°C.
+
+**Hot-resistance**: SportShield has to be hot-resistant, meeting TCR ratings from 100 to 500 ppm/°C.
+
+**Robustness**: SportShield has to be resistant enough against break-in attempts.
 
 ### Anti-theft Cable
 
@@ -214,7 +227,10 @@ Moreover, the cable automatically retracts into the housing and prevents unwindi
 
 ## Environmental conditions
 
-<!-- 3 days autonomy in ambient environment (60% more consumption in cold environment) -->
+SportShield should have a 6 days autonomy in ambient environment. <br>
+Though, in cold environment, the device could consume 60% faster than usual (representing 3 days and 12 hours).
+
+<div style="page-break-after: always;"></div>
 
 ## Security
 
@@ -224,8 +240,28 @@ By meticulously categorizing data based on its potential impact if compromised, 
 
 By fortifying data against unauthorized alterations, such as when a thief would want to corrupt your SportShield device, SportShield guarantees the integrity of critical information.
 
+<br><br>
+
+## Glossary
+
+A **Near Field Communication (NFC) card** is a type of smart card equipped with NFC technology. It contains an embedded NFC chip that allows it to communicate wirelessly with NFC-enabled devices, such as smartphones, identification and payment terminals, over short distances (typically within a few centimeters).
+
+A **multi-layered cable** is a type of electrical cable composed of multiple layers of different materials, each serving a specific purpose. These cables are commonly used in various applications where specific performance characteristics are required.
+
+An **electromagnetic lock**, also known as a maglock, is a type of locking device commonly used in access control systems to secure doors and gates. It consists of an electromagnet and an armature plate. When power is applied to the electromagnet, it generates a magnetic field that attracts and holds the armature plate, thus securely locking the device.
+
+The **Ingress Protection (IP) rating** is a standard classification system used to define the degree of protection provided by an enclosure against intrusion of solid objects like dust and water. The higher the IP rating, the greater the protection against ingress of solids and liquids.
+
+The **Temperature Coefficient of Resistance (TCR)** is a measure of how the electrical resistance of a material changes with temperature. TCR is typically expressed in parts per million per degree Celsius (ppm/°C) or per Kelvin (ppm/K). In the context of cold-resistance, materials with low TCR ratings are desirable. Conversely, in the context of hot-resistance, materials with higher TCR ratings may be more suitable.
+
 <div style="page-break-after: always;"></div>
 
+This guide is provided for reference only. The actual product, including color, size and screen layout, may differ. The statements, information and recommendations in this guide do not constitute a warranty, express or implied.
+<br><br>
 ©2015-2024 Coris Innovation. All rights reserved. Coris Innovation and the Coris Innovation logo are trademarks or registered trademarks of Coris Innovation.
 
-This guide is provided for reference only. The actual product, including color, size and screen layout, may differ. The statements, information and recommendations in this guide do not constitute a warranty, express or implied.
+<br><br>
+
+<p align="center">
+    <img src="https://assets-global.website-files.com/656097f111c9c42578f4fa01/65648d5d98f6814022b9474a_6e5ca96fcf317623caec20ca96892327.png" width="300">
+</p>
