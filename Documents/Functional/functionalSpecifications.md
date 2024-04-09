@@ -353,7 +353,7 @@ To use the device correctly please follow these steps:
       1. Make contact between the NFC [[1]](#glossary-1) device and the SportShield
 2. Pull the cable from the hole.
 
-You can refer to the user manual for detailed usage, which you can find: [HERE](../UserManual/userManual.pdf)
+You can refer to the user manual for detailed usage, which you can find in 2 languages here: [English](../UserManual/userManualEnglish.pdf) | [French](../UserManual/userManualFrench.pdf)
 
 ## Non-functional requirements
 
