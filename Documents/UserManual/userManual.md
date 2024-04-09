@@ -3,7 +3,7 @@
 </p>
 
 # <div style="text-align: right; text-align: down"> User manual </div>
-# <div style="text-align: right; text-align: down"> Version 0.5 </div>
+# <div style="text-align: right; text-align: down"> Version 1.0 </div>
 
 <div style="page-break-after: always;"></div>
 
@@ -11,7 +11,7 @@
 <summary>Table of Contents</summary>
 
 - [ User manual ](#-user-manual-)
-- [ Version 0.5 ](#-version-05-)
+- [ Version 1.0 ](#-version-10-)
 - [Safety precautions](#safety-precautions)
   - [Warnings](#warnings)
 - [Get Started](#get-started)
@@ -244,9 +244,19 @@ By meticulously categorizing data based on its potential impact if compromised, 
 
 By fortifying data against unauthorized alterations, such as when a thief would want to corrupt your SportShield device, SportShield guarantees the integrity of critical information.
 
+<br><br>
+
 ## Glossary
 
+A **Near Field Communication (NFC) card** is a type of smart card equipped with NFC technology. It contains an embedded NFC chip that allows it to communicate wirelessly with NFC-enabled devices, such as smartphones, identification and payment terminals, over short distances (typically within a few centimeters).
 
+A **multi-layered cable** is a type of electrical cable composed of multiple layers of different materials, each serving a specific purpose. These cables are commonly used in various applications where specific performance characteristics are required.
+
+An **electromagnetic lock**, also known as a maglock, is a type of locking device commonly used in access control systems to secure doors and gates. It consists of an electromagnet and an armature plate. When power is applied to the electromagnet, it generates a magnetic field that attracts and holds the armature plate, thus securely locking the device.
+
+The **Ingress Protection (IP) rating** is a standard classification system used to define the degree of protection provided by an enclosure against intrusion of solid objects like dust and water. The higher the IP rating, the greater the protection against ingress of solids and liquids.
+
+The **Temperature Coefficient of Resistance (TCR)** is a measure of how the electrical resistance of a material changes with temperature. TCR is typically expressed in parts per million per degree Celsius (ppm/°C) or per Kelvin (ppm/K). In the context of cold-resistance, materials with low TCR ratings are desirable. Conversely, in the context of hot-resistance, materials with higher TCR ratings may be more suitable.
 
 <div style="page-break-after: always;"></div>
 
