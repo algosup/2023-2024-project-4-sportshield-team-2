@@ -2,8 +2,8 @@
 
 ## Overview
 
-This project is provide by the company [CORIS Innovation](https://www.corisinnovation.com).
-SportShield is a anti-theft device that can be used to secure sports equipment.
+This project is provided by the company [CORIS Innovation](https://www.corisinnovation.com).
+SportShield is an anti-theft device that can be used to secure sports equipment.
 
 ## Documents
 
