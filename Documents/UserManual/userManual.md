@@ -26,9 +26,14 @@
 - [General Info and Specifications](#general-info-and-specifications)
   - [Components](#components)
   - [Robustness Assurance](#robustness-assurance)
+    - [**Waterproofness**: SportShield has to be waterproof, meeting IP ratings of IP65, 66 or 67](#waterproofness-sportshield-has-to-be-waterproof-meeting-ip-ratings-of-ip65-66-or-67)
+    - [**Cold-resistance**: SportShield has to be cold-resistant, meeting TCR ratings from 0 to 50 ppm/°C](#cold-resistance-sportshield-has-to-be-cold-resistant-meeting-tcr-ratings-from-0-to-50-ppmc)
+    - [**Hot-resistance**: SportShield has to be hot-resistant, meeting TCR ratings from 100 to 500 ppm/°C](#hot-resistance-sportshield-has-to-be-hot-resistant-meeting-tcr-ratings-from-100-to-500-ppmc)
+    - [**Robustness**: SportShield has to be resistant enough against break-in attempts](#robustness-sportshield-has-to-be-resistant-enough-against-break-in-attempts)
     - [Anti-theft Cable](#anti-theft-cable)
   - [Environmental conditions](#environmental-conditions)
   - [Security](#security)
+  - [Glossary](#glossary)
 </details>
 
 <br>
@@ -209,7 +214,14 @@ Here's a list of the components a SportShield device contains:
 ## Robustness Assurance
 
 Since the SportShield is an anti-theft device, it has to be resistant enough, meeting some resistance criteria.
-<!-- Waterproofness, cold-resistance, and robustness against break-in attempts. -->
+
+### **Waterproofness**: SportShield has to be waterproof, meeting IP ratings of IP65, 66 or 67
+
+### **Cold-resistance**: SportShield has to be cold-resistant, meeting TCR ratings from 0 to 50 ppm/°C
+
+### **Hot-resistance**: SportShield has to be hot-resistant, meeting TCR ratings from 100 to 500 ppm/°C
+
+### **Robustness**: SportShield has to be resistant enough against break-in attempts
 
 ### Anti-theft Cable
 
@@ -222,6 +234,8 @@ Moreover, the cable automatically retracts into the housing and prevents unwindi
 SportShield should have a 6 days autonomy in ambient environment. <br>
 Though, in cold environment, the device could consume 60% faster than usual (representing 3 days and 12 hours).
 
+<div style="page-break-after: always;"></div>
+
 ## Security
 
 SportShield prioritizes the fundamental principles that are Confidentiality, Integrity, and Availability.
@@ -229,6 +243,10 @@ SportShield prioritizes the fundamental principles that are Confidentiality, Int
 By meticulously categorizing data based on its potential impact if compromised, SportShield enforces stringent measures to thwart unauthorized access attempts, ensuring that confidential data remains secure and inaccessible to unauthorized entities.
 
 By fortifying data against unauthorized alterations, such as when a thief would want to corrupt your SportShield device, SportShield guarantees the integrity of critical information.
+
+## Glossary
+
+
 
 <div style="page-break-after: always;"></div>
 
