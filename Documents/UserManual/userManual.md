@@ -26,10 +26,6 @@
 - [General Info and Specifications](#general-info-and-specifications)
   - [Components](#components)
   - [Robustness Assurance](#robustness-assurance)
-    - [**Waterproofness**: SportShield has to be waterproof, meeting IP ratings of IP65, 66 or 67](#waterproofness-sportshield-has-to-be-waterproof-meeting-ip-ratings-of-ip65-66-or-67)
-    - [**Cold-resistance**: SportShield has to be cold-resistant, meeting TCR ratings from 0 to 50 ppm/°C](#cold-resistance-sportshield-has-to-be-cold-resistant-meeting-tcr-ratings-from-0-to-50-ppmc)
-    - [**Hot-resistance**: SportShield has to be hot-resistant, meeting TCR ratings from 100 to 500 ppm/°C](#hot-resistance-sportshield-has-to-be-hot-resistant-meeting-tcr-ratings-from-100-to-500-ppmc)
-    - [**Robustness**: SportShield has to be resistant enough against break-in attempts](#robustness-sportshield-has-to-be-resistant-enough-against-break-in-attempts)
     - [Anti-theft Cable](#anti-theft-cable)
   - [Environmental conditions](#environmental-conditions)
   - [Security](#security)
@@ -215,13 +211,13 @@ Here's a list of the components a SportShield device contains:
 
 Since the SportShield is an anti-theft device, it has to be resistant enough, meeting some resistance criteria.
 
-### **Waterproofness**: SportShield has to be waterproof, meeting IP ratings of IP65, 66 or 67
+**Waterproofness**: SportShield has to be waterproof, meeting IP ratings of IP65, 66 or 67.
 
-### **Cold-resistance**: SportShield has to be cold-resistant, meeting TCR ratings from 0 to 50 ppm/°C
+**Cold-resistance**: SportShield has to be cold-resistant, meeting TCR ratings from 0 to 50 ppm/°C.
 
-### **Hot-resistance**: SportShield has to be hot-resistant, meeting TCR ratings from 100 to 500 ppm/°C
+**Hot-resistance**: SportShield has to be hot-resistant, meeting TCR ratings from 100 to 500 ppm/°C.
 
-### **Robustness**: SportShield has to be resistant enough against break-in attempts
+**Robustness**: SportShield has to be resistant enough against break-in attempts.
 
 ### Anti-theft Cable
 
@@ -260,6 +256,12 @@ The **Temperature Coefficient of Resistance (TCR)** is a measure of how the elec
 
 <div style="page-break-after: always;"></div>
 
+This guide is provided for reference only. The actual product, including color, size and screen layout, may differ. The statements, information and recommendations in this guide do not constitute a warranty, express or implied.
+<br><br>
 ©2015-2024 Coris Innovation. All rights reserved. Coris Innovation and the Coris Innovation logo are trademarks or registered trademarks of Coris Innovation.
 
-This guide is provided for reference only. The actual product, including color, size and screen layout, may differ. The statements, information and recommendations in this guide do not constitute a warranty, express or implied.
+<br><br>
+
+<p align="center">
+    <img src="https://assets-global.website-files.com/656097f111c9c42578f4fa01/65648d5d98f6814022b9474a_6e5ca96fcf317623caec20ca96892327.png" width="300">
+</p>
