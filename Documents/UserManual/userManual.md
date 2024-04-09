@@ -219,7 +219,8 @@ Moreover, the cable automatically retracts into the housing and prevents unwindi
 
 ## Environmental conditions
 
-<!-- 3 days autonomy in ambient environment (60% more consumption in cold environment) -->
+SportShield should have a 6 days autonomy in ambient environment. <br>
+Though, in cold environment, the device could consume 60% faster than usual (representing 3 days and 12 hours).
 
 ## Security
 
