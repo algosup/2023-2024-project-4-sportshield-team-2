@@ -182,6 +182,55 @@ The difficulties encountered during this week were mainly due to the hardware co
 
 The third week was a good week, the team managed to simulate the functionality of each component with LEDs. The team also managed to complete the technical specifications document. The team is motivated to continue next week's work with the LEDs. The team is looking forward to the next week to continue the work. The team is also looking forward to receiving the new battery to test the project's functionality.
 
+## Week 4 (2-5 April 2024)
+
+[week 4](weeklyReportFourthWeek.md)
+
+The fourth week was a shorter week due to the 1st of April. The team continued to work with LEDs to simulate the project's functionality. The team also continued to work on the test plan and the user manual.
+
+## Topics of the fourth week
+
+1. Continue to Manage each component with LEDs.
+2. Continue to write the test plan.
+3. Continue to write the user manual .
+4. Continue to attempt to implement project functionality without hardware but with LEDs.
+
+## Achievements of the fourth week
+
+1. Manage each component with LEDs
+   - During this week, the team continue to simulate the functionality of each component with LEDs.
+   - The team managed to simulate the functionality of the electromagnet, the buzzer but not the NFC antenna because it was not possible to simulate the NFC antenna with LEDs.
+
+2. Documents
+   - The test plan is nearly finished.
+   - The user manual is nearly finished.
+
+3. Hardware components
+   - As we say in the previous week, the team didn't manage to solve the hardware problems, so they decided to use LEDs to simulate the functionality of the project. So the team continued to work with LEDs.
+
+4. Reverse engineering
+   - The team continued to reverse-engineer the existing software using LEDs to test the project's functionality.
+
+## Challenges of the fourth week
+
+The challenges encountered this week still the same as the previous week. The team tried to solve the hardware problems without success. The team continued to work with LEDs to simulate the project's functionality.
+
+## Plan for the fifth week
+
+1. Documents
+   - Finish the test plan on Wednesday.
+   - Finish the user manual on Wednesday.
+
+2. Hardware components
+   - We decide to not use hardware components so the team will continue to work with LEDs to simulate the project's functionality.
+3. Code
+    - Finish the code to simulate the functionality of the project with LEDs.
+
+## Conclusion of the fourth week
+
+The fourth week was a short week, the team continue to simulate the functionality of each component with LEDs. The team also managed to finish the documentation like the test plan and the User manual. The team is motivated to continue next week's work with the LEDs. The team is looking forward to the next week to finish the work properly despite the hardware problems.
+
+
 ## Key Performance Indicators
 
 To follow the progress of the project you can check the [KPIs](https://docs.google.com/spreadsheets/d/1Py72_1mZQ5l20KM0fd6HdSRnmj49YibWoImaeFKPc8U/edit?usp=sharing).
