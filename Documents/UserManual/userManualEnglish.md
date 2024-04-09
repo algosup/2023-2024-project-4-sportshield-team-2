@@ -3,7 +3,7 @@
 </p>
 
 # <div style="text-align: right; text-align: down"> User manual </div>
-# <div style="text-align: right; text-align: down"> Version 1.0 </div>
+# <div style="text-align: right; text-align: down"> Version 1.1 </div>
 
 <div style="page-break-after: always;"></div>
 
@@ -11,7 +11,7 @@
 <summary>Table of Contents</summary>
 
 - [ User manual ](#-user-manual-)
-- [ Version 1.0 ](#-version-10-)
+- [ Version 1.1 ](#-version-11-)
 - [Safety precautions](#safety-precautions)
   - [Warnings](#warnings)
 - [Get Started](#get-started)
