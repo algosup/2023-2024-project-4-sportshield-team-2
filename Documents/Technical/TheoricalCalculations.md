@@ -1,6 +1,6 @@
 # Theorical Calculation
 
-This document aim to find the best west to optimize the battery by the theorical way based on component specifications and without any test due to defaulter components.
+This document aimS to find the best way to optimize the battery by the theoretical way based on component specifications and without any test due to defaulter components.
 
 <details>
 <summary>Table of content</summary>
@@ -62,7 +62,7 @@ SIM 800L consume ~350mA/hour for data sending.
 Based on a 3s data sending.
 97µA x 3 = 291µA
 
-In work time we send a data every 15 minutes.
+During work time we send data every 15 minutes.
 
 1 hour = 60 minutes
 60 / 15 = 4
@@ -76,7 +76,7 @@ SIM 800L consume 2mA/hour
 2/60 = 0,033 mA = 33µA/minute
 33 / 60 = 0,55µA
 
-In sleep mode we only send a data 1 time per hour.
+During sleep mode we only send data 1 time per hour.
 
 #### Sleep mode minus data sending
 
@@ -96,9 +96,9 @@ In sleep mode we only send a data 1 time per hour.
 **calm work time** => Xiao BLE + GNSS + SIM Module (sleeping) + SIM module (activated - 3s/sending - 12s in total) => 5µA + 28mA + 1,9934mA + 1,16mA = 31,1584mA/h
 **sleep mode** => Xiao BLE + GNSS + SIM module (sleeping) + SIM Module (activated - 3s/sending) => 5µA + 18µA + 1,99835mA + 291µA = 2,31235mA/h
 
-The electromagnet and alarms hasn't been taken in consideration, cause their consumption depends of how many times you will trigger them by default their consumption is 0 if you don't trigger them.
+The electromagnet and alarms haven't been taken into consideration, cause their consumption depends on how many times you will trigger them by default their consumption is 0 if you don't trigger them.
 
-Based on 6 hours of works and 18 hours of sleep.
+Based on 6 hours of work and 18 hours of sleep.
 
 6 x 31,1584 = 186,9504mA
 18 x 2,31235 = 41,6223mA
@@ -107,8 +107,8 @@ Based on 6 hours of works and 18 hours of sleep.
 
 We have a total consumption of 228,5727mA per day.
 
-With the provided battery of 1100mA the device can be used for approximatly 4,8 days.
-With our own battery of 3700mA the device can be used for approximatly 16,1 days.
+With the provided battery of 1100mA the device can be used for approximately 4,8 days.
+With our own battery of 3700mA the device can be used for approximately 16,1 days.
 
 ## Online Documentation
 
@@ -173,9 +173,7 @@ With our own battery of 3700mA the device can be used for approximatly 16,1 days
 **Support networks**: China Mobile, China Unicom and global quad-band network
 **Module size**: 2.5cmx2.3cm
 
-TTL serial port for serial port, you can link directly to the microcontroller. No need MAX232
-Power module automatically boot, homing network
-Onboard signal lights all the way . It flashes slowly when there is a signal, it flashes quickly when there is no signal NOTE: The pins has golden or grey one, we send it by ramdonly
+TTL serial port for serial port, you can link directly to the microcontroller. No need MAX232 Power module automatically boot, homing network Onboard signal lights all the way. It flashes slowly when there is a signal, it flashes quickly when there is no signal NOTE: The pins are golden or grey one, we send them by ramdonly
 
 **Source:** [Kuongshun](https://www.kuongshun-ks.com/uno/uno-board-shield/smallest-sim800l-gprs-gsm-module-microsim-card-cor.html)
 
@@ -203,7 +201,7 @@ Onboard signal lights all the way . It flashes slowly when there is a signal, it
 
 ### Electromagnet
 
-No real information found due to an unknow brand and make.
+No real information was found due to an unknown brand and make.
 But I found some sources of similar items.
 
 **Source:**
@@ -231,5 +229,5 @@ But I found some sources of similar items.
 
 ### Molex 1462360031
 
-It's not consume any ampere by itself it's depend of the connected device.
+It doesn't consume any ampere by itself it depends on the connected device.
 The connector typically operates with a voltage range of around 3 to 12 volts. (no documentation to confirm)
