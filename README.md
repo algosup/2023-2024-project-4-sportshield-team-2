@@ -1,19 +1,17 @@
-# Sportshield - Team 2 - Project 4 - 2023-2024
+# SportShield - Team 2 - Project 4 - 2023-2024
 
 ## Overview
 
-```log
-Coming soon...
-```
+This project is provide by the company [CORIS Innovation](https://www.corisinnovation.com).
+SportShield is a anti-theft device that can be used to secure sports equipment.
 
 ## Documents
 
 [Project Charter](Documents/Management/projectCharter.md)<br>
-
-<!-- [Functional Specifications]()<br>
-[Technical Specifications](https://github.com/algosup/2023-2024-project-4-sportshield-team-2/Documents/technicalSpecifications.md)<br>
-[User Manual](https://github.com/algosup/2023-2024-project-4-sportshield-team-2/Documents/userManual.md)<br>
-[Test Plan](https://github.com/algosup/2023-2024-project-4-sportshield-team-2/Documents/testPlan.md)<br> -->
+[Functional Specifications](Documents/Functional/functionalSpecifications.md)<br>
+[Technical Specifications](Documents/Technical/technicalSpecifications.md)<br>
+[User Manual](Documents/UserManual/userManualEnglish.pdf)<br>
+[Test Plan](Documents/TestPlan/testPlan.md)<br> 
 [Weekly Reports](Documents/Management/WeeklyReports/mainWeeklyReport.md)<br>
 
 ## Team Members
