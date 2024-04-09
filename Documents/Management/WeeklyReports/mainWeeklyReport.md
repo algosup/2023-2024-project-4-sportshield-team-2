@@ -208,8 +208,8 @@ The fourth week was a shorter week due to the 1st of April. The team continued t
 
 4. Reverse engineering
    - The team continued to reverse-engineer the existing software using LEDs to test the project's functionality.
-5. Github actions and server
-   - The team managed to set up the Github actions and the server to automate the tests and check the code quality.
+5. GitHub actions and server
+   - The team managed to set up the GitHub actions and the server to automate the tests and check the code quality.
 
 ## Challenges of the fourth week
 
