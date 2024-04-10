@@ -6,44 +6,55 @@
 #include "sim.h"
 #include "timer.h"
 #include "buzzer.h"
+#include "struct.h"
 #include "battery.h"
 
-//---------------- GLOBAL VARIABLES -----------------------------
+// ---------------- GLOBAL VARIABLES -----------------------------
 //Electroaimant
 const int aimantPin = D3;
 
+const float percentage = getBatteryPercentage();
+
+const float voltage = getBatteryVoltage();
+
+int greenLed = 13;
+int blueLed = 11;
+int redLed = 12;
+
+int ledDelay = 1000;
+
+
 
 //-------------------------------- SETUP ----------------------------------------
-void setup() {
-  pinMode(buzzerPin, OUTPUT);  // setup for buzzer
-  digitalWrite(buzzerPin, HIGH);
-  delay(1000);
-  digitalWrite(buzzerPin, LOW);
-  Serial.println(" buzzer");
-
-  pinMode(aimantPin, OUTPUT);  //setup electro-aimant
-  digitalWrite(aimantPin, HIGH);
-  delay(1000);
-  digitalWrite(aimantPin, LOW);
-  Serial.println("electro");
+ void setup() {
+    pinMode(buzzerPin, OUTPUT);  // setup for buzzer
+    digitalWrite(buzzerPin, HIGH);
+    delay(1000);
+    digitalWrite(buzzerPin, LOW);
+    Serial.println(" buzzer");
+    pinMode(aimantPin, OUTPUT);  //setup electro-aimant
+    digitalWrite(aimantPin, HIGH);
+    delay(1000);
+    digitalWrite(aimantPin, LOW);
+    Serial.println("electro");
 
   //debug led initialization
-  pinMode(LED_BUILTIN, OUTPUT);
-  digitalWrite(LEDR, LOW);
+    pinMode(LED_BUILTIN, OUTPUT);
+    digitalWrite(LEDR, LOW);
 
-  // power bridge control
-  pinMode(D4, OUTPUT);
-  digitalWrite(D4, HIGH);
+// power bridge control
+    pinMode(D4, OUTPUT);
+    digitalWrite(D4, HIGH);
 
   // power battery control with the transistor
-  pinMode(D9, OUTPUT);
-  digitalWrite(D9, HIGH);
+    pinMode(D9, OUTPUT);
+    digitalWrite(D9, HIGH);
 
-  // battery charging enable with high current 100mA > 50mA
-  pinMode(P0_13, OUTPUT);
-  digitalWrite(P0_13, LOW);
+   battery charging enable with high current 100mA > 50mA
+    pinMode(P0_13, OUTPUT);
+    digitalWrite(P0_13, LOW);
 
-  Serial.begin(115200);
+     Serial.begin(9600);
   if (!Serial) delay(1000);
   Serial.println("BLE Antivol Peripheral");
 
@@ -69,23 +80,24 @@ void setup() {
   sim_setup();
   Serial.println("SIM SETUP");
 
-  analogReadResolution(ADC_RESOLUTION);  //setup battery reading
-  pinMode(PIN_VBAT, INPUT);
-  pinMode(VBAT_ENABLE, OUTPUT);
-  digitalWrite(VBAT_ENABLE, LOW);
-
-  Serial.println("fin setup ");
+    analogReadResolution(ADC_RESOLUTION);  //setup battery reading
+    pinMode(PIN_A9, INPUT);
+    pinMode(VBAT_ENABLE, OUTPUT);
+    digitalWrite(VBAT_ENABLE, LOW);
   digitalWrite(LEDR, HIGH);
   digitalWrite(LEDG, LOW);
   Temps();
 
-  Serial.print("V Bat: ");
-  Serial.println(getBatteryVoltage());
+
+   Serial.print("V Bat: ");
+   Serial.println(getBatteryVoltage());
+
+   Serial.print("Percentage :");
+   Serial.println(getBatteryPercentage());
 }
 
-//-------------------------------- LOOP ----------------------------------------
+// //-------------------------------- LOOP ----------------------------------------
 void loop() {
-
   MotionData = getMotionData();
   RotationData = getRotationData();
 
@@ -136,7 +148,7 @@ void loop() {
     }
   }
 
-  //if a mvt is detected and bluetooth is disabled bluetooth activation
+//   //if a mvt is detected and bluetooth is disabled bluetooth activation
   if (MotionDetect == true) {
     tim_connec = millis();
     MotionDetect = false;
@@ -179,7 +191,7 @@ void loop() {
   }
 
   if (send_move) {  //sending of positions via SIM module
-    Serial.println("Envoi detection mouvement");
+    Serial.println("send mouvement detection");
     sim800l->setupGPRS("iot.1nce.net");
     sim800l->connectGPRS();
     String Route = "http://141.94.244.11:2000/sendNotfication/" + BLE.address();
@@ -218,6 +230,7 @@ void loop() {
     sim800l->disconnectGPRS();
     send_position = false;
   }
+
 }
 
 
