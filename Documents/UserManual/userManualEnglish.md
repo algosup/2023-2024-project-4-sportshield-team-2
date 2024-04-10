@@ -1,23 +1,25 @@
 <p align="center">
-    <img src="https://assets-global.website-files.com/656097f111c9c42578f4fa01/65648d5d98f6814022b9474a_6e5ca96fcf317623caec20ca96892327.png">
+    <img src="./Img/corisLogo.png">
 </p>
 
-# <div style="text-align: right; text-align: down"> User manual </div>
-# <div style="text-align: right; text-align: down"> Version 0.5 </div>
+# <div style="text-align: right; text-align: down"> User Manual </div>
+# <div style="text-align: right; text-align: down"> Version 1.1 </div>
 
 <div style="page-break-after: always;"></div>
 
 <details open>
 <summary>Table of Contents</summary>
 
-- [ User manual ](#-user-manual-)
-- [ Version 0.5 ](#-version-05-)
+- [ User Manual ](#-user-manual-)
+- [ Version 1.1 ](#-version-11-)
+- [Safety Precautions](#safety-precautions)
+  - [Warnings](#warnings)
 - [Get Started](#get-started)
-  - [What's in the box](#whats-in-the-box)
-  - [Charge your SportShield](#charge-your-sportshield)
-  - [Set up SportShield](#set-up-sportshield)
-- [How to lock SportShield](#how-to-lock-sportshield)
-- [How to unlock SportShield](#how-to-unlock-sportshield)
+  - [What's In The Box](#whats-in-the-box)
+  - [Charge Your SportShield](#charge-your-sportshield)
+  - [Set Up SportShield](#set-up-sportshield)
+- [How To Lock SportShield](#how-to-lock-sportshield)
+- [How To Unlock SportShield](#how-to-unlock-sportshield)
 - [Alarm](#alarm)
 - [App](#app)
 - [Notifications](#notifications)
@@ -25,13 +27,33 @@
   - [Components](#components)
   - [Robustness Assurance](#robustness-assurance)
     - [Anti-theft Cable](#anti-theft-cable)
-  - [Environmental conditions](#environmental-conditions)
+  - [Environmental Conditions](#environmental-conditions)
   - [Security](#security)
+  - [Glossary](#glossary)
 </details>
 
 <br>
 
 <div style="page-break-after: always;"></div>
+
+# Safety Precautions
+
+> ⚠️ WARNING • Before using the anti-theft device, read the user manual to ensure that it is used correctly and that you fully understand how it works. Once you have read the user manual, keep it in a safe place for future reference. Incorrect handling of this product could possibly result in personal injury or physical damage. The manufacturer assumes no responsibility for any damage caused by mishandling that is beyond normal usage defined in the manual for this product.
+
+## Warnings
+
+- <h3><img src="./Img/warning.png" width="20"/> Never disassemble and modify, modification and/or disassembly of the product could result in electrical shock, or any kind of injury.</h3>
+
+- <h3><img src="./Img/warning.png" width="20"/> Use special caution for children and pets, especially in households where they are present.</h3>
+
+- <h3><img src="./Img/warning.png" width="20"/> Be careful in charging the device, it can cause a fire or electrical shock.</h3>
+
+- <h3><img src="./Img/warning.png" width="20"/> Do not apply too much heat, pressure or tension to the power cord.</h3>
+
+- <h3><img src="./Img/warning.png" width="20"/> Do not attach anything other than specified things to the device, neglect could result in an injury or damage.</h3>
+
+<div style="page-break-after: always;"></div>
+
 
 # Get Started
 
@@ -40,16 +62,17 @@ SportShield is an innovative anti-theft device designed for sports equipment, eq
 **SportShield is still in development. This prototype doesn't include yet all the features that we are planning to implement.**
 
 
-## What's in the box
+## What's In The Box
 
 Your SportShield includes:
 
 - An anti-theft SportShield device<br>
 <img src="./Img/device.png" width="225"/>
 <img src="./Img/deviceBottom.png" width="200"/>
+- A charger
 - This user manual
 
-## Charge your SportShield
+## Charge Your SportShield
 
 If the SportShield device runs out of battery, it won't work anymore until it gets charged.<br>
 A fully-charged SportShield can last over 6 days.
@@ -62,11 +85,12 @@ To charge SportShield:
 
 <br>
 
-The SportShield is now charging. Try to not use SportShield during its charging.
+The SportShield is now charging. <br>
+**CAUTION:** Do not use SportShield during its charging.
 
 <div style="page-break-after: always;"></div>
 
-## Set up SportShield
+## Set Up SportShield
 
 To fully use the SportShield device, you'd need to set up a few things with your smartphone. <br>
 You can either set up by Bluetooth, with a NFC card or with the SportShield app. <br><br>
@@ -91,7 +115,7 @@ The SportShield is now set up, you can use it whenever and wherever you want.
 
 <div style="page-break-after: always;"></div>
 
-# How to lock SportShield 
+# How To Lock SportShield
 
 The SportShield prevents your sports belongings from thieves. Its installation deals with a few steps:
 
@@ -100,14 +124,15 @@ The SportShield prevents your sports belongings from thieves. Its installation d
 3. Attach the cable to the cable holder.<br>
 <img src="./Img/cableHolderAndExit.png" width="200"/>
 
-If SportShield is not connected to your smartphone or with a NFC card, refer to the [set up part](#set-up-sportshield).<br><br>
+If SportShield is not connected to your smartphone or with a NFC card, it won't work as expected.<br>
+Refer to the [set up part](#set-up-sportshield).<br><br>
 The SportShield is now locked and you won't be able to pull the cable anymore, if you don't unlock it. <br><br>
 You'll receive a notification if the SportShield detects a shock. <br>
 For more information about notifications, refer to the [dedicated manual part](#notifications).
 
 <div style="page-break-after: always;"></div>
 
-# How to unlock SportShield
+# How To Unlock SportShield
 
 SportShield's uninstallation is quite simple. You can unlock it either by Bluetooth or with the app. <br>
 By Bluetooth:
@@ -151,12 +176,14 @@ When the alarm rings, a notification is sent to the linked smartphone.<br>
 For more information about notifications, refer to the [dedicated manual part](#notifications).
 <br>
 
+<div style="page-break-after: always;"></div>
+
 # App
 
 The SportShield app would be available either on the Apple App Store and the Google Play Store.<br>
-Even though, the app has not been synchronized with the SportShield device yet. In this user manual, you won't be able to find any useful information about this application for the moment.
+Even though, the app has not been synchronized with the SportShield device yet. <br><br>In this user manual, you won't be able to find any useful information about this application for the moment.
 
-<div style="page-break-after: always;"></div>
+<br><br>
 
 # Notifications
 
@@ -164,7 +191,7 @@ Since no application has been synchronized with the SportShield device, the impl
 
 The notifications contain some information about the device, such as the GPS coordinates (longitude latitude) and the remaining battery percentage.<br>
 
-<!-- add a notification image -->
+<img src="Img/notification.png" width="400">
 
 <div style="page-break-after: always;"></div>
 
@@ -185,7 +212,14 @@ Here's a list of the components a SportShield device contains:
 ## Robustness Assurance
 
 Since the SportShield is an anti-theft device, it has to be resistant enough, meeting some resistance criteria.
-<!-- Waterproofness, cold-resistance, and robustness against break-in attempts. -->
+
+**Waterproofness**: SportShield is supposed to be waterproof, meeting IP ratings of IP65, 66 or 67.
+
+**Cold-resistance**: SportShield is supposed to be cold-resistant, meeting TCR ratings from 0 to 50 ppm/°C.
+
+**Hot-resistance**: SportShield is supposed to be hot-resistant, meeting TCR ratings from 100 to 500 ppm/°C.
+
+**Robustness**: SportShield is suppoed to be resistant enough against break-in attempts.
 
 ### Anti-theft Cable
 
@@ -193,9 +227,12 @@ Since the SportShield is an anti-theft device, it has to be resistant enough, me
 For physical security, a multi-layered cable and electromagnetic lock have been implemented.<br>
 Moreover, the cable automatically retracts into the housing and prevents unwinding when locked.
 
-## Environmental conditions
+## Environmental Conditions
 
-<!-- 3 days autonomy in ambient environment (60% more consumption in cold environment) -->
+SportShield should have a 6 days autonomy in ambient environment. <br>
+Though, in cold environment, the device could consume 60% faster than usual (representing 3 days and 12 hours).
+
+<div style="page-break-after: always;"></div>
 
 ## Security
 
@@ -205,8 +242,28 @@ By meticulously categorizing data based on its potential impact if compromised, 
 
 By fortifying data against unauthorized alterations, such as when a thief would want to corrupt your SportShield device, SportShield guarantees the integrity of critical information.
 
+<br><br>
+
+## Glossary
+
+A **Near Field Communication (NFC) card** is a type of smart card equipped with NFC technology. It contains an embedded NFC chip that allows it to communicate wirelessly with NFC-enabled devices, such as smartphones, identification and payment terminals, over short distances (typically within a few centimeters).
+
+A **multi-layered cable** is a type of electrical cable composed of multiple layers of different materials, each serving a specific purpose. These cables are commonly used in various applications where specific performance characteristics are required.
+
+An **electromagnetic lock**, also known as a maglock, is a type of locking device commonly used in access control systems to secure doors and gates. It consists of an electromagnet and an armature plate. When power is applied to the electromagnet, it generates a magnetic field that attracts and holds the armature plate, thus securely locking the device.
+
+The **Ingress Protection (IP) rating** is a standard classification system used to define the degree of protection provided by an enclosure against intrusion of solid objects like dust and water. The higher the IP rating, the greater the protection against ingress of solids and liquids.
+
+The **Temperature Coefficient of Resistance (TCR)** is a measure of how the electrical resistance of a material changes with temperature. TCR is typically expressed in parts per million per degree Celsius (ppm/°C) or per Kelvin (ppm/K). In the context of cold-resistance, materials with low TCR ratings are desirable. Conversely, in the context of hot-resistance, materials with higher TCR ratings may be more suitable.
+
 <div style="page-break-after: always;"></div>
 
+This guide is provided for reference only. The actual product, including color, size and screen layout, may differ. The statements, information and recommendations in this guide do not constitute a warranty, express or implied.
+<br><br>
 ©2015-2024 Coris Innovation. All rights reserved. Coris Innovation and the Coris Innovation logo are trademarks or registered trademarks of Coris Innovation.
 
-This guide is provided for reference only. The actual product, including color, size and screen layout, may differ. The statements, information and recommendations in this guide do not constitute a warranty, express or implied.
+<br><br>
+
+<p align="center">
+    <img src="./Img/corisLogo.png" width="300">
+</p>

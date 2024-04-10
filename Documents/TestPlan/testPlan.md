@@ -68,6 +68,8 @@ Libraries:
 - [Seeed Arduino LSM6DS3](https://www.arduino.cc/reference/en/libraries/seeed-arduino-lsm6ds3/) V2.0.3
 - [OneWire](https://github.com/PaulStoffregen/OneWire) V2.3.7
 
+To automate and facilitate tests, we created some [GitHub actions](https://github.com/algosup/2023-2024-project-4-sportshield-team-2/actions).
+
 ### B. Testing Tool Requirements
 
 [W3C - Testing/Requirements](https://www.w3.org/wiki/Testing/Requirements)
@@ -121,7 +123,7 @@ Level 4 - Low (informative)
 
 Due to a problem with the hardware provided, we have to use ancillary equipment. In order to test whether the features are functional, we use Breadboards with LEDs to simulate the components (buzzer, electromagnet, etc.) and resistors.
 
-*Source: [TestSigma] (https://testsigma.com/blog/difference-between-priority-and-severity/)*
+*Source: [TestSigma](https://testsigma.com/blog/difference-between-priority-and-severity/)*
 
 ## IV. Documentation test
 
@@ -131,14 +133,15 @@ Due to a problem with the hardware provided, we have to use ancillary equipment.
 | b | 1st Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance), Mathias GAGNEPAIN (Program Manager) | 15/03/2024 | 15/03/2024 |
 | c | Functional Specifications | Mathias GAGNEPAIN (Program Manager) | Grégory PAGNOUX (Quality Assurance), Enzo GUILLOUCHE (Technical Writer), Robin DEBRY (Project Manager) | 18/03/2024 | 18/03/2024 |
 | d | 2nd Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 22/03/2024 | 25/03/2024 |
-| e | Technical Specifications | Elone DELILLE (Technical Leader) | Grégory PAGNOUX (Quality Assurance) | 26/03/2024 | XX/0X/2024 |
-| f | 3rd Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 02/04/2024 | XX/03/2024 |
-| g | 4th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 08/04/2024 | XX/0X/2024 |
-| h | 5th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 15/04/2024 | XX/0X/2024 |
-| i | User Manual | Enzo GUILLOUCHE (Technical Writer) | Grégory PAGNOUX (Quality Assurance) | 10/04/2024 | XX/0X/2024 |
-| j | Test Plan | Grégory Pagnoux (Quality Assurance) | Grégory PAGNOUX (Quality Assurance), Robin DEBRY (Project Manager) | 10/04/2024 | XX/0X/2024 |
-| k | 6th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 19/04/2024 | XX/0X/2024 |
-| l | Readme | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 19/04/2024 | XX/0X/2024 |
+| e | Technical Specifications | Elone DELILLE (Technical Leader) | Grégory PAGNOUX (Quality Assurance) | 26/03/2024 | 26/03/2024 |
+| f | 3rd Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance), Mathias GAGNEPAIN (Program Manager), Elone DELILLE (Technical Leader) | 02/04/2024 | 02/04/2024 |
+| g | 4th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 09/04/2024 | 09/04/2024 |
+| h | User Manual | Enzo GUILLOUCHE (Technical Writer) | Grégory PAGNOUX (Quality Assurance), Elone DELILLE (Technical Leader), Mathias GAGNEPAIN (Program Manager) | 10/04/2024 | 10/04/2024 |
+| i | Theoretical calculation | Mathias GAGNEPAIN (Program Manager) | Grégory PAGNOUX (Quality Assurance) | 10/04/2024 | 10/04/2024 |
+| i | Test Plan | Grégory PAGNOUX (Quality Assurance) | Grégory PAGNOUX (Quality Assurance), Robin DEBRY (Project Manager) | 10/04/2024 | 10/04/2024 |
+| j | 5th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 15/04/2024 |  |
+| k | 6th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 19/04/2024 |  |
+| l | README | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 19/04/2024 | 10/04/2024 |
 
 ## V. Code test
 
@@ -211,13 +214,13 @@ public void Add_MultipleNumbers_ReturnsSumOfNumbers(string input, int expected)
 }
 ```
 
-- Execute 3 times the test (if it's possible)
+- Execute three times the test (when it's possible)
 
 *source: [Microsoft Learn](https://learn.microsoft.com/fr-fr/dotnet/core/testing/unit-testing-best-practices)*
 
 **Criterias**
 
-| ID | Function | Developer | Description criteria | Severity |
+| Test Case ID | Function | Developer | Description criteria | Severity |
 | - | - | - | - | - |
 | 00 | Hardware | Coris Innovation | - battery supplies the board <br> - LED on board flash <br> - buzzer ring <br> - Electromagnet can be locked <br> - SIM card communicate data <br> - GNSS antenna communicate position <br> - NFC can lock/unlock the device | Critical |
 |  |  |  |  |  |
@@ -227,9 +230,9 @@ public void Add_MultipleNumbers_ReturnsSumOfNumbers(string input, int expected)
 
 **Testing Schedule**
 
-| ID | Test Type | Description | Deadline | Completion date | Result |
+| Test Case ID | Test Type | Description | Deadline | Completion date | Result |
 | - | - | - | - | - | - |
-| 00 | End-to-End test | Hardware | 20/03/2024 | 19/03/2024 | Fail |
+| 00 | End-to-End | Hardware | 20/03/2024 | 19/03/2024 | Fail |
 |  |  |  | XX/0X/2024 | XX/0X/2024 | None |
 |  |  |  | XX/0X/2024 | XX/0X/2024 | None |
 |  |  |  | XX/0X/2024 | XX/0X/2024 | None |
@@ -239,19 +242,21 @@ public void Add_MultipleNumbers_ReturnsSumOfNumbers(string input, int expected)
 
 [Test cases](https://github.com/algosup/2023-2024-project-4-sportshield-team-2/issues) are done on GitHub issues.
 
+Some tests are done thanks [GitHub Actions](https://github.com/algosup/2023-2024-project-4-sportshield-team-2/actions) (we have the [workflow](https://github.com/algosup/2023-2024-project-4-sportshield-team-2/blob/main/.github/workflows/actions.yml) file and the [test](https://github.com/algosup/2023-2024-project-4-sportshield-team-2/blob/main/test/src/tests.cpp) file).
+
 ## Glossary
 
 [^1]: CORIS Innovation
 The company's main activities are engineering and engineering consultancy, recruitment and headhunting, business management consultancy, and strategic operations. The head office is not far from Lyon and has been in existence since 2015 thanks to Thibault Peltier and Stéphane Maite.
-*source: [CORIS Innonvation](https://www.corisinnovation.com)*
+*Source: [CORIS Innonvation](https://www.corisinnovation.com)*
 
 [^2]: NFC (Near Field Communication)
 Wireless transmission technology that simplifies the exchange of data. The technology is used in particular for Bluetooth on mobile phones.
-*source: [Phonandroïd](https://www.phonandroid.com/nfc-android-comment-marche-pour-quels-usages.html#:~:text=Le%20NFC%20)*
+*Source: [Phonandroïd](https://www.phonandroid.com/nfc-android-comment-marche-pour-quels-usages.html#:~:text=Le%20NFC%20)*
 
 [^3]: API (Application Programming Interface)
 A software interface that allows one piece of software or service to be "connected" to another piece of software or service to exchange data and functions.
-*source: [CNIL](https://www.cnil.fr/fr/definition/interface-de-programmation-dapplication-api#:~:text=Une%20API%20)*
+*Source: [CNIL](https://www.cnil.fr/fr/definition/interface-de-programmation-dapplication-api#:~:text=Une%20API%20)*
 
 [^4]: Arduino
 Arduino designs, manufactures, and supports electronic devices and software, allowing people to easily access advanced technologies that interact with the physical world. 
@@ -260,23 +265,24 @@ Arduino designs, manufactures, and supports electronic devices and software, all
 [^5]: C++
 C++ is a programming language developed in 1983 by Bjarne Stroustrup, who wanted to 'increment' the C language (hence the name, c++ meaning 'add 1 to C'). It is object-oriented programming. C++ allows you to write optimised, extremely fast code.
 It is one of the most widely used languages, particularly in software development (e.g. iPod interface, web browsers) or video game programming (e.g. PS3, PS4 operating systems), due to its performance and versatility.
-*source: [DataScientest](https://datascientest.com/langage-c-plus-plus)*
+*Source: [DataScientest](https://datascientest.com/langage-c-plus-plus)*
 
 [^6]: IDE (Integrated Development Environment)
 Software application combining all the tools needed for a software development project in one place. It provides an interface for writing code, organising text groups, and automating redundant programming tasks.
-*source: [DataScientest](https://datascientest.com/ide)*
+*Source: [DataScientest](https://datascientest.com/ide)*
 
 [^7]: Code convention
 Coding conventions are a set of guidelines for a specific programming language that recommend programming styles, practices, and methods for each aspect of a program written in that language.
-*source: [Wikipedia](https://en.wikipedia.org/wiki/Coding_conventions#:~:text=Coding%20conventions%20are%20a%20set,program%20written%20in%20that%20language.)*
+*Source: [Wikipedia](https://en.wikipedia.org/wiki/Coding_conventions#:~:text=Coding%20conventions%20are%20a%20set,program%20written%20in%20that%20language.)*
 
 [^8]: Severity
 The severity is the impact of the issues on the project/program. It measures thanks to a level system where 1 is critical, 2 is Major, 3 is Minor, and 4 is Low. It's the role of the QA to define the severity of the issue.
-*source: [TestSigma](https://testsigma.com/blog/difference-between-priority-and-severity/)*
+*Source: [TestSigma](https://testsigma.com/blog/difference-between-priority-and-severity/)*
 
 [^9]: Magic Chain
-A value that is not defined and for which we do not know what it represents.
+A value that is not defined and for which we don't know what it represents.
 (e.g: ```Action actual = () => stringCalculator.Add("1001");```
 "1001" is a magic chain and must be defined using a constant such as:
 ```const string MAXIMUM_RESULT = "1001";```
 ```Action actual = () => stringCalculator.Add(MAXIMUM_RESULT);```)
+*Source: [Microsoft Learn](https://learn.microsoft.com/fr-fr/dotnet/core/testing/unit-testing-best-practices)*
