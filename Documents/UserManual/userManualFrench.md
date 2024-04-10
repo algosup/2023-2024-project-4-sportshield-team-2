@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://assets-global.website-files.com/656097f111c9c42578f4fa01/65648d5d98f6814022b9474a_6e5ca96fcf317623caec20ca96892327.png">
+    <img src="./Img/corisLogo.png">
 </p>
 
 # <div style="text-align: right; text-align: down"> Mode d'emploi </div>
@@ -17,17 +17,17 @@
 - [Premières Etapes](#premières-etapes)
   - [Contenu de la boîte](#contenu-de-la-boîte)
   - [Chargez votre SportShield](#chargez-votre-sportshield)
-  - [Set up SportShield](#set-up-sportshield)
-- [Comment verrouiller SportShield](#comment-verrouiller-sportshield)
-- [Comment déverrouiller SportShield](#comment-déverrouiller-sportshield)
+  - [Initialisation de votre SportShield](#initialisation-de-votre-sportshield)
+- [Comment verrouiller votre SportShield](#comment-verrouiller-votre-sportshield)
+- [Comment déverrouiller votre SportShield](#comment-déverrouiller-votre-sportshield)
 - [Alarme](#alarme)
 - [App](#app)
 - [Notifications](#notifications)
-- [General Infos and Spécifications techniques](#general-infos-and-spécifications-techniques)
+- [Informations Générales and Spécifications techniques](#informations-générales-and-spécifications-techniques)
   - [Composants](#composants)
   - [Garantie de robustesse](#garantie-de-robustesse)
-    - [Antivol Câble](#antivol-câble)
-  - [Conditions environementales](#conditions-environementales)
+    - [Câble d'antivol](#câble-dantivol)
+  - [Conditions environnementales](#conditions-environnementales)
   - [Sécurité](#sécurité)
   - [Glossaire](#glossaire)
 </details>
@@ -38,7 +38,7 @@
 
 # Mesures de sécurité
 
-> ⚠️ ATTENTION • Avant utilisation, lisez le mode d'emploi pour vous assurer d'une utilisation correcte et d'une bonne compréhension. Après lecture, conservez-les dans un endroit sûr pour pouvoir vous y référer ultérieurement. Une mauvaise manipulation de ce produit peut entraîner des blessures ou des dommages physiques. Le fabricant n'assume aucune responsabilité pour tout dommage causé par une mauvaise manipulation dépassant l'utilisation normale définie dans ce manuel.
+> ⚠️ ATTENTION • Avant utilisation, lisez le mode d'emploi pour vous assurer d'une utilisation correcte et d'une bonne compréhension. Après lecture, conservez-le dans un endroit sûr pour pouvoir vous y référer ultérieurement. Une mauvaise manipulation de ce produit peut entraîner des blessures ou des dommages physiques. Le fabricant n'assume aucune responsabilité pour tout dommage causé par une mauvaise manipulation dépassant l'utilisation normale définie dans ce manuel.
 
 ## Avertissements
 
@@ -46,7 +46,7 @@
 
 - <h3><img src="./Img/warning.png" width="20"/> Faire preuve d'une prudence particulière à l'égard des enfants et des animaux domestiques, notamment dans les foyers où ils sont présents.</h3>
 
-- <h3><img src="./Img/warning.png" width="20"/> Soyez prudent lorsque vous chargez l'appareil, vous risquez de provoquer un incendie ou un choc électrique. N'appliquez pas trop de chaleur, de pression ou de tension au cordon d'alimentation et aux câbles.</h3>
+- <h3><img src="./Img/warning.png" width="20"/> Soyez prudent lorsque vous chargez l'appareil, vous risquez de provoquer un incendie ou un choc électrique. N'appliquez pas trop de chaleur, de pression ou de tension au cordon d'alimentation.</h3>
 
 - <h3><img src="./Img/warning.png" width="20"/> Ne fixez rien d'autre que les éléments spécifiés à l'appareil, toute négligence pourrait entraîner des blessures ou des dommages.</h3>
 
@@ -73,7 +73,7 @@ Votre SportShield inclut:
 Si l'appareil SportShield est à court de batterie, il ne fonctionnera plus jusqu'à ce qu'il soit rechargé. <br>
 Un SportShield entièrement chargé peut durer plus de 6 jours.
 
-Pour charger SportShield:
+Pour charger votre SportShield:
 
 1. Branchez le chargeur dans le port USB sur le SportShield.<br>
 <img src="./Img/chargingPortFrench.png" width="200"/>
@@ -82,13 +82,13 @@ Pour charger SportShield:
 <br>
 
 SportShield est en train de charger. <br>
-**CAUTION:** Essayez de ne pas utiliser SportShield pendant qu'il charge.
+**ATTENTION:** Ne pas utiliser SportShield pendant qu'il charge.
 
 <div style="page-break-after: always;"></div>
 
-## Set up SportShield
+## Initialisation de votre SportShield
 
-Pour utiliser pleinement le dispositif SportShield, vous aurez besoin de set up quelques points avec votre smartphone. <br>
+Pour utiliser pleinement le dispositif SportShield, vous aurez besoin d'initialiser quelques points avec votre smartphone. <br>
 Vous pouvez le faire soit par Bluetooth, avec une carte NFC ou avec l'appli SportShield. <br><br>
 Par Bluetooth:
 
@@ -101,46 +101,46 @@ Par Bluetooth:
   
 Avec une carte NFC:
 
-- Faites toucher l'appareil NFC et le SportShield.
+- Rentrez la carte NFC en contact avec votre SportShield.
 
 A propos de l'appli SportShield, regardez la [partie dédiée](#app).
 
 <br>
 
-SportShield est maintenant set up, vous pouvez l'utiliser quand et où vous voulez.
+SportShield est maintenant initialisé, vous pouvez l'utiliser quand et où vous voulez.
 
 <div style="page-break-after: always;"></div>
 
-# Comment verrouiller SportShield
+# Comment verrouiller votre SportShield
 
 SportShield protège vos affaires de sport contre les voleurs. Son installation n'a que quelques étapes:
 
-1. Tirez le câble de la sortie câble exit du SportShield.
+1. Tirez le câble de la sortie de câble du SportShield.
 2. Entourez vos affaires avec le câble.
-3. Attachez le câble à l'autre embout.<br>
+3. Attachez le câble au porte-câble.<br>
 <img src="./Img/cableHolderAndExitFrench.png" width="200"/>
 
-Si SportShield n'est pas connecté à votre smartphone ou avec une carte NFC, le dispositif ne fonctionnera pas comme préu.<br>
-Réferez vous à [partie set up](#set-up-sportshield).<br><br>
+Si SportShield n'est pas connecté à votre smartphone ou avec une carte NFC, le dispositif ne fonctionnera pas comme prévu.<br>
+Réferez-vous à [partie initialisation](#initialisation-de-votre-sportshield).<br><br>
 SportShield est maintenant verrouillé et vous ne pourrez plus tirer sur le câble si vous ne le déverrouillez pas. <br><br>
 Vous recevrez une notification si le SportShield détecte un choc. <br>
 Pour plus d'informations sur les notifications, reportez-vous à la [section dédiée](#notifications).
 
 <div style="page-break-after: always;"></div>
 
-# Comment déverrouiller SportShield
+# Comment déverrouiller votre SportShield
 
 Le déverrouillage de SportShield est plutôt simple. Vous pouvez le déverrouiller par Bluetooth ou à l'aide de l'application. <br>
 Par Bluetooth:
 
 1. Allez dans vos paramètres Bluetooth.<br>
 <img src="./Img/BluetoothSettingsFunctionnalities.png" width="200"/>
-1. Clickez sur le boutton "Unlock" pour déverrouiller le SportShield.<br>
+2. Cliquez sur le bouton "Unlock" pour déverrouiller le SportShield.<br>
 <img src="./Img/BluetoothUnlock.png" width="200"/>
 
 Avec une carte NFC:
 
-- Faites toucher l'appareil NFC et le SportShield.
+- Rentrez la carte NFC en contact avec votre SportShield.
 
 A propos de l'app SportShield, reportez-vous à la [section dédiée](#app).
 
@@ -153,7 +153,7 @@ SportShield est maintenant déverrouillé. L'alarme ne sonnera pas et vous pouve
 
 # Alarme
 
-Quand SportShield est verrouillé, chaque choc détecté sonnera une alarme. <br>L'intensité de l'alarme dépend de l'intensité du choc: <br>
+Quand votre SportShield est verrouillé, chaque choc détecté sonnera une alarme. <br>L'intensité de l'alarme dépend de l'intensité du choc: <br>
 
 - 3 sons légers lorsqu'un choc léger est détecté.
   
@@ -162,9 +162,9 @@ Quand SportShield est verrouillé, chaque choc détecté sonnera une alarme. <br
 
 De plus, vous pouvez arrêter l'alarme quand vous le souhaitez. Pour ce faire, vous pouvez utiliser le Bluetooth ou l'application. <br>
 
-Par Bluetooth: ce sont les mêmes étapes que le [verrouillage du SportShield](#how-to-unlock-sportshield).
+Par Bluetooth: ce sont les mêmes étapes que le [verrouillage du SportShield](#comment-verrouiller-votre-sportshield).
 
-Avec une carte NFC, ce sont les mêmes étapes que le [déverrouillage du SportShield](#how-to-unlock-sportshield).
+Avec une carte NFC, ce sont les mêmes étapes que le [déverrouillage du SportShield](#comment-déverrouiller-votre-sportshield).
 
 A propos de l'application SportShield, reportez-vous à la [partie dédiée](#app).
 
@@ -191,7 +191,7 @@ Les notifications contiennent des informations sur l'appareil, telles que les co
 
 <div style="page-break-after: always;"></div>
 
-# General Infos and Spécifications techniques
+# Informations Générales and Spécifications techniques
 
 ## Composants
 
@@ -200,30 +200,30 @@ Voici une liste des composants d'un appareil SportShield :
 - Xiao BLE Sense nrf52840
 - GNSS PA1010D
 - GSM/2G SIM800L Module
-- Electromagnet
-- Piezoelectric Buzzer
-- Lithium-Polymer Battery
-- NFC Antenna
+- Electro-aimant
+- Alarme Piezoelectric
+- Batterie Lithium-Polymer
+- Antenne NFC
 
 ## Garantie de robustesse
 
-Le SportShield étant un dispositif antivol, il doit être suffisamment résistant et répondre à certains critères de résistance.
+Le SportShield étant un dispositif antivol, il est censé être suffisamment résistant et répondre à certains critères de résistance.
 
-**Étanchéité** : Le SportShield doit être étanche à l'eau et répondre aux indices de protection IP65, 66 ou 67.
+**Étanchéité** : Le SportShield est censé être étanche à l'eau et répondre aux indices de protection IP65, 66 ou 67.
 
-**Résistance au froid** : SportShield doit être résistant au froid et répondre aux critères TCR de 0 à 50 ppm/°C.
+**Résistance au froid** : SportShield est censé être résistant au froid et répondre aux critères TCR de 0 à 50 ppm/°C.
 
-**Résistance à la chaleur** : SportShield doit être résistant à la chaleur et répondre à des valeurs TCR comprises entre 100 et 500 ppm/°C.
+**Résistance à la chaleur** : SportShield est censé être résistant à la chaleur et répondre à des valeurs TCR comprises entre 100 et 500 ppm/°C.
 
-**Robustesse** : SportShield doit être suffisamment résistant aux tentatives d'effraction.
+**Robustesse** : SportShield est censé être suffisamment résistant aux tentatives d'effraction.
 
-### Antivol Câble
+### Câble d'antivol
 
 **Le câble lui-même a fait l'objet de quelques ajustements pour répondre aux critères de résistance.** <br>
 Pour la sécurité physique, un câble multicouche et une serrure électromagnétique ont été mis en place.<br>
 De plus, le câble se rétracte automatiquement dans le boîtier et ne se déroule pas lorsqu'il est verrouillé.
 
-## Conditions environementales
+## Conditions environnementales
 
 SportShield devrait avoir une autonomie de 6 jours en milieu ambiant. <br>
 Cependant, dans un environnement froid, l'appareil peut consommer 60% plus rapidement que d'habitude (ce qui représente 3 jours et 12 heures).
@@ -232,7 +232,7 @@ Cependant, dans un environnement froid, l'appareil peut consommer 60% plus rapid
 
 ## Sécurité
 
-SportShield donne la priorité aux principes fondamentaux que sont la confidentialité, l'intégrité et la disponibilité.
+SportShield donne la priorité aux principes fondamentaux que sont la confidentialité et l'intégrité.
 
 En classant méticuleusement les données en fonction de leur impact potentiel en cas de compromission, SportShield applique des mesures strictes pour contrecarrer les tentatives d'accès non autorisé, garantissant ainsi que les données confidentielles restent sécurisées et inaccessibles aux entités non autorisées.
 
@@ -261,5 +261,5 @@ Ce guide est fourni à titre de référence uniquement. Le produit réel, y comp
 <br><br>
 
 <p align="center">
-    <img src="https://assets-global.website-files.com/656097f111c9c42578f4fa01/65648d5d98f6814022b9474a_6e5ca96fcf317623caec20ca96892327.png" width="300">
+    <img src="./Img/corisLogo.png" width="300">
 </p>
