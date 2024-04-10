@@ -1,11 +1,11 @@
-# Theorical Calculation
+# Theoretical Calculation
 
 This document aimS to find the best way to optimize the battery by the theoretical way based on component specifications and without any test due to defaulter components.
 
 <details>
 <summary>Table of content</summary>
 
-- [Theorical Calculation](#theorical-calculation)
+- [Theoretical Calculation](#theoretical-calculation)
   - [Components](#components)
   - [Work type consumption](#work-type-consumption)
     - [Buzzer consumption](#buzzer-consumption)
