@@ -5,7 +5,7 @@
 
 | Code link |
 | -------------- |
-|  |
+| [SportShield Code](https://github.com/algosup/2023-2024-project-4-sportshield-team-2/tree/main/Src) |
 
 <br>
 
@@ -87,9 +87,9 @@ The code above are the Bluetooth Declarations of Service, Features and Descripto
 In addition, there are the Bluetooth Configuration Variables.
  
  
-### Movement and Acceleration tracker 
+### Movement and Acceleration Tracker 
 
-- `LSM6DS3 imu(I2C_MODE, 0x6A)` : Acceleration/Rotation/motion sensor 
+- `LSM6DS3 imu(I2C_MODE, 0x6A)` : Acceleration/Rotation/Motion sensor 
  
 ### Module GPS 
 
@@ -101,7 +101,7 @@ In addition, there are the Bluetooth Configuration Variables.
 
 ### Module SIM 
 
-- `UART Serial2(D0, D1, NC, NC)` : Initialize the communication with the SIM CARD
+- `UART Serial2(D0, D1, NC, NC)` : Initialize the communication with the SIM CARD.
 
   - Definition of pins for SIM800L module control.
 
@@ -125,7 +125,7 @@ In addition, there are the Bluetooth Configuration Variables.
 
 - Function declarations for buzzer, GPS sensor, motion sensor, etc.
 
-## Setup fonctions  
+## Setup functions  
 
 ```
 void setup(){
@@ -142,9 +142,7 @@ This function is a one-time function and will initialize the following elements:
 
 - Battery voltage reading. 
 
-- Battery voltage reading.
-
-## Loop fonctions  
+## Loop functions  
 
 ```
 void loop(){
@@ -185,7 +183,7 @@ float getRotationData() {}
 ```
 void Temps(void) {}
 ``` 
- - This function initializes the seconds and minutes. It can be used to display in the serial monitor when a shock occurs, for example. Or to initialize timers.
+ - This function initializes the seconds and minutes. It can be used to display in the serial monitor when a shock occurs, for example or to initialize timers.
  
 ```
 void PulseBuzzer(int repetitions, unsigned long durationOn, unsigned long durationOff) {}
@@ -208,13 +206,13 @@ void activateGPS() {}
 ```
 void TimerHandler() {}
 ```
-- This function lunch the ISR timer. 
+- This function launch the ISR timer. 
 
 ```
 void SIM_ISR() {}
 ```
 
-- Initializes Postion to a TRUE boolean.
+- Initializes position as TRUE boolean.
 
 ```
 void onConnect(BLEDevice central) {}
@@ -226,7 +224,7 @@ void onConnect(BLEDevice central) {}
 void onDisconnect(BLEDevice central) {}
 ```
 
-- This fonction allow the disconnection of the bluetooth. And turn on a led to show it. 
+- This fonction allow the disconnection of the bluetooth and turn on a led to show it. 
 
 ```
 void onWritePassword(BLEDevice central, BLECharacteristic characteristic) {}
@@ -251,10 +249,10 @@ It allows the user to rename the device.
 - This function displays if the alarm is enabled or not. This allows the user to know when the alarm gets enabled or disabled.
 
 `void onReadActivation(BLEDevice central, BLECharacteristic characteristic) {}`
-- This function sets if the alarm is enabled or not.This allows the code to know when the alarm gets enabled or disabled.
+- This function sets if the alarm is enabled or not. This allows the code to know when the alarm gets enabled or disabled.
 
 `void onWriteUnlock(BLEDevice central, BLECharacteristic characteristic) {}`
-- This function activates the electromagnet if the user is authenticated. This allows the user to know  when the electromagnet should ring.
+- This function activates the electromagnet if the user is authenticated. This allows the user to know when the electromagnet should ring.
 
 `String convertDMMtoDD(String dmmCoordinates) {}`
 - This function converts decimal minutes to decimal degrees. This allows the code to understand correctly minutes as degrees.
