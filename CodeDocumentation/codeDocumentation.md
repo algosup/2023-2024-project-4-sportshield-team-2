@@ -1,4 +1,4 @@
-# Code Documentation  
+# Code Documentation Team 2
 
 <br>
 
@@ -8,6 +8,8 @@
 | Author :       | Code link |
 | -------------- | -------------- |
 | **Raphaël Descamps** <img src="https://ca.slack-edge.com/T019N8PRR7W-U05TNB290FJ-abc72bbf0d47-512" width="50px" align=center> | [SportShield Code](../CodeDocumentation/SportShield_Code/SS_05-03_anglais-batterycontrol/SS_05-03_anglais-batterycontrol.ino) |
+
+<br>
 
 ## library's included : 
 
@@ -81,7 +83,7 @@ uint32_t tim_connec = 0;
 ```
 
  
-The code below are the Bluetooth Declarations of Service, Features and Descriptors.
+The code above are the Bluetooth Declarations of Service, Features and Descriptors.
 
 In addition, there are the Bluettoth Configuration Variables.
  
@@ -106,5 +108,156 @@ In addition, there are the Bluettoth Configuration Variables.
 
   - Control variables for sending data via SIM800L module.
 
-### Others : 
+### Others variables : 
+
+- Constants and variables for motion and rotation thresholds.
+    - `float MotionData` : Motion data.
+    - `float RotationData` : Rotation data.
+
+- Battery management.
+
+- `int buzzerPin, int magnetPin` : Pins for buzzer and electromagnet.
+
+- `unsigned long previousMillis` : Previous time for buzzer.
+
+- `int currentRep` : Number of repetitions for buzzer.
+
+- `const int ledPin` : LED pin.
+
+- Function declarations for buzzer, GPS sensor, motion sensor, etc.
+
+## Setup fonctions : 
+
+```
+void setup{
+}
+```
+
+This function is a one-time function and will initialize the following elements: 
+
+- Pin and peripheral initialization
+
+- Timer initialization 
+
+- Initialization of Bluetooth, IMU, GPS and SIM modules
+
+- Battery voltage reading. 
+
+- Battery voltage reading.
+
+## Loop fonctions : 
+
+```
+void loop{
+}
+```
+
+The void loop() function being the main function of the code, it contains major pieces of code.
+As these pieces of code are numerous, they won't be documented in this document.
+Although, they will be well-commented by the developers, to enhance a clear understanding.
+
+
+## Additional functions : 
+
+ The additional functions can be used for a variety of purposes. For example, to retrieve sensor data (such as battery voltage, motion and rotation data), manage time, activate/deactivate GPS and alarm, communicate with a Bluetooth Low Energy (BLE) device, and convert GPS coordinates.
+
+Below is a more detailed description of the additional functions: 
  
+ 
+
+```
+float getBatteryVoltage() {}
+```
+ 
+- This function retrieves the battery voltage. It is useful to know if the battery needs to be charged or not. 
+
+
+```
+float getMotionData() {}
+```
+
+ - This function recovers movement data from the sensor. This makes it possible to measure the intensity of the shock (more or less strong) and to sound the buzzer according to the calculated intensity of the shock.
+
+
+```
+float getRotationData() {}
+```
+
+- Like the function `float getMotionData() `, it retrieves rotation data to make the buzzer sound according to the intensity of rotation. 
+
+```
+void Temps(void) {}
+``` 
+ - This function initializes the seconds and minutes. It can be used to display in the serial monitor when a shock occurs, for example. Or to initialize timers.
+ 
+```
+void PulseBuzzer(int repetitions, unsigned long durationOn, unsigned long durationOff) {}
+```
+
+- This function allows the buzzer to sound with repetitions and durations that can be defined.
+
+```
+void GPS_ISR() {}
+```
+
+- This function manages the start of GPS position search when required and the transmission of the acquired position when available, depending on the status of GPS activation and the status of the acquired position.
+ 
+```
+void activateGPS() {}
+```
+
+- This function activates the GPS, allowing GPS coordinates to be retrieved when a shock is detected.
+
+```
+void TimerHandler() {}
+```
+- This function lunch the ISR timer. 
+
+```
+void SIM_ISR() {}
+```
+
+- Initializes Postion to a TRUE boolean.
+
+```
+void onConnect(BLEDevice central) {}
+```
+
+- This functions allow the bluetooth connection and turn on a led to show if something is connect on bluetooth and if the apparaing bluetooth in on. 
+
+```
+void onDisconnect(BLEDevice central) {}
+```
+
+- This fonction allow the disconnection of the bluetooth. And turn on a led to show it. 
+
+```
+void onWritePassword(BLEDevice central, BLECharacteristic characteristic) {}
+```
+
+- This fonction, intialize a password to connect with the bluetooth. That is useful for the security of the device. 
+
+
+`char Conversion(unsigned short int data) {}`
+- This function converts decimal values into hexadecimal values. It allows the code to understand correctly the decimal input as a hexadecimal input.
+
+`void onWriteName(BLEDevice central, BLECharacteristic characteristic) {}`
+
+- This function saves and displays an input name only if the user is authenticated.
+It allows the user to rename the device.
+
+`void onReadName(BLEDevice central, BLECharacteristic characteristic) {}`
+
+- This function checks and displays the input name. It allows the user to display the saved name.
+
+`void onWriteActivation(BLEDevice central, BLECharacteristic characteristic) {}`
+- This function displays if the alarm is enabled or not. This allows the user to know when the alarm gets enabled or disabled.
+
+`void onReadActivation(BLEDevice central, BLECharacteristic characteristic) {}`
+- This function sets if the alarm is enabled or not.This allows the code to know when the alarm gets enabled or disabled.
+
+`void onWriteUnlock(BLEDevice central, BLECharacteristic characteristic) {}`
+- This function activates the electromagnet if the user is authenticated. This allows the user to know  when the electromagnet should ring.
+
+`String convertDMMtoDD(String dmmCoordinates) {}`
+- This function converts decimal minutes to decimal degrees. This allows the code to understand correctly minutes as degrees.
