@@ -63,7 +63,7 @@ SportShield est un dispositif antivol innovant conçu pour les équipements spor
 Votre SportShield inclut:
 
 - Un dispositif antivol SportShield<br>
-<img src="./Img/device.png" width="225"/>
+<img src="./Img/deviceFrench.png" width="225"/>
 <img src="./Img/deviceBottom.png" width="200"/>
 - Un chargeur
 - Ce mode d'emploi
@@ -76,7 +76,7 @@ Un SportShield entièrement chargé peut durer plus de 6 jours.
 Pour charger SportShield:
 
 1. Branchez le chargeur dans le port USB sur le SportShield.<br>
-<img src="./Img/chargingPort.png" width="200"/>
+<img src="./Img/chargingPortFrench.png" width="200"/>
 2. Branchez l'autre bout du chargeur dans la prise.
 
 <br>
@@ -118,7 +118,7 @@ SportShield protège vos affaires de sport contre les voleurs. Son installation 
 1. Tirez le câble de la sortie câble exit du SportShield.
 2. Entourez vos affaires avec le câble.
 3. Attachez le câble à l'autre embout.<br>
-<img src="./Img/cableHolderAndExit.png" width="200"/>
+<img src="./Img/cableHolderAndExitFrench.png" width="200"/>
 
 Si SportShield n'est pas connecté à votre smartphone ou avec une carte NFC, le dispositif ne fonctionnera pas comme préu.<br>
 Réferez vous à [partie set up](#set-up-sportshield).<br><br>
@@ -187,7 +187,7 @@ Aucune application n'ayant été synchronisée avec le dispositif SportShield, l
 
 Les notifications contiennent des informations sur l'appareil, telles que les coordonnées GPS (longitude latitude) et le pourcentage de batterie restant.<br>
 
-<img src="Img/notification.png" width="400">
+<img src="Img/notificationFrench.png" width="400">
 
 <div style="page-break-after: always;"></div>
 
