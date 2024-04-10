@@ -121,7 +121,7 @@ SportShield protège vos affaires de sport contre les voleurs. Son installation 
 <img src="./Img/cableHolderAndExitFrench.png" width="200"/>
 
 Si SportShield n'est pas connecté à votre smartphone ou avec une carte NFC, le dispositif ne fonctionnera pas comme prévu.<br>
-Réferez-vous à [partie initialisation](#initialisation-de-votre-sportshield).<br><br>
+Référez-vous à [partie initialisation](#initialisation-de-votre-sportshield).<br><br>
 SportShield est maintenant verrouillé et vous ne pourrez plus tirer sur le câble si vous ne le déverrouillez pas. <br><br>
 Vous recevrez une notification si le SportShield détecte un choc. <br>
 Pour plus d'informations sur les notifications, reportez-vous à la [section dédiée](#notifications).
@@ -168,7 +168,7 @@ Avec une carte NFC, ce sont les mêmes étapes que le [déverrouillage du SportS
 
 A propos de l'application SportShield, reportez-vous à la [partie dédiée](#app).
 
-Quand l'alarme sonne, une notification est envoyé au smartphone pairé.<br>
+Quand l'alarme sonne, une notification est envoyé au smartphone appareillé.<br>
 Pour plus d'informations sur les notifications, reportez-vous à la [section dédiée](#notifications).
 <br>
 
@@ -176,8 +176,8 @@ Pour plus d'informations sur les notifications, reportez-vous à la [section dé
 
 # App
 
-L'application SportShield serait disponible sur l'Apple App Store et le Google Play Store.<br>
-Même si l'application n'a pas encore été synchronisée avec l'appareil SportShield. <br><br>Dans ce manuel, vous ne trouverez pas pour l'instant d'informations utiles sur cette application.
+L'application SportShield sera disponible sur l'Apple App Store et le Google Play Store.<br>
+L'application n'a pas encore été synchronisée avec l'appareil SportShield. <br><br>Dans ce manuel, vous ne trouverez pas pour le moment d'informations utiles sur cette application.
 
 <br><br>
 
@@ -185,7 +185,7 @@ Même si l'application n'a pas encore été synchronisée avec l'appareil SportS
 
 Aucune application n'ayant été synchronisée avec le dispositif SportShield, la simulation mise en œuvre reproduit parfaitement son fonctionnement. <br>
 
-Les notifications contiennent des informations sur l'appareil, telles que les coordonnées GPS (longitude latitude) et le pourcentage de batterie restant.<br>
+Les notifications contiennent des informations sur l'appareil, telles que les coordonnées GPS (longitude, latitude) et le pourcentage de batterie restant.<br>
 
 <img src="Img/notificationFrench.png" width="400">
 
