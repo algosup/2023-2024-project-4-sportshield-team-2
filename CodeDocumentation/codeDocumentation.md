@@ -129,7 +129,7 @@ In addition, there are the Bluettoth Configuration Variables.
 ## Setup fonctions : 
 
 ```
-void setup{
+void setup(){
 }
 ```
 
@@ -148,7 +148,7 @@ This function is a one-time function and will initialize the following elements:
 ## Loop fonctions : 
 
 ```
-void loop{
+void loop(){
 }
 ```
 
@@ -162,8 +162,6 @@ Although, they will be well-commented by the developers, to enhance a clear unde
  The additional functions can be used for a variety of purposes. For example, to retrieve sensor data (such as battery voltage, motion and rotation data), manage time, activate/deactivate GPS and alarm, communicate with a Bluetooth Low Energy (BLE) device, and convert GPS coordinates.
 
 Below is a more detailed description of the additional functions: 
- 
- 
 
 ```
 float getBatteryVoltage() {}
