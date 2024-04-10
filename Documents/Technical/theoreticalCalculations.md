@@ -41,9 +41,9 @@ Based on a Work type of 6 hours and a sleep time of 18 hours.
 
 ### Buzzer consumption
 
-The buzzer consume 10mA/h.
-10 / 60 = 0,16mA/minute
-0,16 / 60 = 0,0027mA/second = 2,7µA/second
+The buzzer consume 10mA/h.<br>
+10 / 60 = 0,16mA/minute<br>
+0,16 / 60 = 0,0027mA/second = 2,7µA/second<br>
 
 | Alarm Type | Number of signal | activation time | rest time | total activation time | consumption |
 | ---------- | ---------------- | --------------- | --------- | --------------------- | ----------- |
@@ -55,38 +55,38 @@ The buzzer consume 10mA/h.
 
 #### Working
 
-SIM 800L consume ~350mA/hour for data sending.
-350 / 60 = 5,83mA/minute
-5,83 / 60 = 0,097mA/second = 97µA/second
+SIM 800L consume ~350mA/hour for data sending.<br>
+350 / 60 = 5,83mA/minute<br>
+5,83 / 60 = 0,097mA/second = 97µA/second<br>
 
-Based on a 3s data sending.
-97µA x 3 = 291µA
+Based on a 3s data sending.<br>
+97µA x 3 = 291µA<br>
 
-During work time we send data every 15 minutes.
+During work time we send data every 15 minutes.<br>
 
-1 hour = 60 minutes
-60 / 15 = 4
-4 x 291µA = 1,16mA/h
-3 x 4 = 12 seconds of activations/hour
+1 hour = 60 minutes<br>
+60 / 15 = 4<br>
+4 x 291µA = 1,16mA/h<br>
+3 x 4 = 12 seconds of activations/hour<br>
 
 #### Sleep mode
 
-SIM 800L consume 2mA/hour
+SIM 800L consume 2mA/hour<br>
 
-2/60 = 0,033 mA = 33µA/minute
-33 / 60 = 0,55µA
+2/60 = 0,033 mA = 33µA/minute<br>
+33 / 60 = 0,55µA<br>
 
-During sleep mode we only send data 1 time per hour.
+During sleep mode we only send data 1 time per hour.<br>
 
 #### Sleep mode minus data sending
 
 **Sleep mode**
-3 x 0,55 = 1,65µA
-2mA - 0,00165 = 1,99835mA/h
+3 x 0,55 = 1,65µA<br>
+2mA - 0,00165 = 1,99835mA/h<br>
 
 **Work Mode**
-12 x 0,55 = 6,6µA
-2mA - 0,0066 = 1,9934mA/h
+12 x 0,55 = 6,6µA<br>
+2mA - 0,0066 = 1,9934mA/h<br>
 
 ### Full calculations
 
@@ -96,19 +96,19 @@ During sleep mode we only send data 1 time per hour.
 **calm work time** => Xiao BLE + GNSS + SIM Module (sleeping) + SIM module (activated - 3s/sending - 12s in total) => 5µA + 28mA + 1,9934mA + 1,16mA = 31,1584mA/h
 **sleep mode** => Xiao BLE + GNSS + SIM module (sleeping) + SIM Module (activated - 3s/sending) => 5µA + 18µA + 1,99835mA + 291µA = 2,31235mA/h
 
-The electromagnet and alarms haven't been taken into consideration, cause their consumption depends on how many times you will trigger them by default their consumption is 0 if you don't trigger them.
+The electromagnet and alarms haven't been taken into consideration, cause their consumption depends on how many times you will trigger them by default their consumption is 0 if you don't trigger them.<br>
 
-Based on 6 hours of work and 18 hours of sleep.
+Based on 6 hours of work and 18 hours of sleep.<br>
 
-6 x 31,1584 = 186,9504mA
-18 x 2,31235 = 41,6223mA
+6 x 31,1584 = 186,9504mA<br>
+18 x 2,31235 = 41,6223mA<br>
 
-186,9504 + 41,6223 = 228,5727mA
+186,9504 + 41,6223 = 228,5727mA<br>
 
-We have a total consumption of 228,5727mA per day.
+We have a total consumption of 228,5727mA per day.<br>
 
-With the provided battery of 1100mA the device can be used for approximately 4,8 days.
-With our own battery of 3700mA the device can be used for approximately 16,1 days.
+With the provided battery of 1100mA the device can be used for approximately 4,8 days.<br>
+With our own battery of 3700mA the device can be used for approximately 16,1 days.<br>
 
 ## Online Documentation
 
