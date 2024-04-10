@@ -11,44 +11,51 @@
 
 ## Libraries Included  
 
-Library for managing timer interrupts on the NRF52 platform : 
--  **NRF52_MBED_TimerInterrupt.h**
+Library for managing timer interrupts on the NRF52 platform :
 
-Library for managing ISR timer interrupts on the NRF52 platform : 
--  **NRF52_MBED_ISR_Timer.h**
+- **NRF52_MBED_TimerInterrupt.h**
+
+Library for managing ISR timer interrupts on the NRF52 platform :
+
+- **NRF52_MBED_ISR_Timer.h**
 
 Main Arduino library for application development :
--  **Arduino.h**
 
-Library for Bluetooth Low Energy (BLE) communication on Arduino : 
--  **ArduinoBLE.h**
+- **Arduino.h**
+
+Library for Bluetooth Low Energy (BLE) communication on Arduino :
+
+- **ArduinoBLE.h**
   
-Library for communication with the LSM6DS3 accelerometer and gyroscope : 
+Library for communication with the LSM6DS3 accelerometer and gyroscope :
+
 - **LSM6DS3.h**
 
-Library for I2C protocol communication : 
--  **Wire.h**
+Library for I2C protocol communication :
+
+- **Wire.h**
   
 Library for communication with Adafruit GPS module :
--  **Adafruit_GPS.h**
+
+- **Adafruit_GPS.h**
 
 Library for communication with SIM800L GSM 2G module :
--  **SIM800L.h**
 
-Header file containing the defined structure used in the code : 
+- **SIM800L.h**
+
+Header file containing the defined structure used in the code :*
+
 - **struct.h**
 
+## Global Variable
 
-## Variables Global  
-
-### Configuration 
+### Configuration
 
 - `myConfig Config` : Structure containing configurations.
 
 - `bool isAuthenticate` : Boolean variable indicating whether authentication has been successful.
- 
- 
-### Timers 
+
+### Timers
 
 - `NRF52_MBED_Timer ITimer(NRF_TIMER_3)` : Timer for interrupts.
 
@@ -57,11 +64,10 @@ Header file containing the defined structure used in the code :
 - `#define HW_TIMER_INTERVAL_MS 1` : Hardware timer interval in milliseconds.
 
 - `#define TIMER_INTERVAL_120S 120000L` : Timer interval in milliseconds.
- 
 
-### Module bluetooth 
+### Module Bluetooth
 
-```
+```C
 BLEService PasswordService("19B10000-E8F2-537E-4F6C-D104768A1213");  
 BLEService ConfigService("19B10000-E8F2-537E-4F6C-D104768A1214");
 
@@ -81,17 +87,15 @@ bool BLE_activated = true;
 uint32_t tim_connec = 0;
 ```
 
- 
-The code above are the Bluetooth Declarations of Service, Features and Descriptors.
+The code above is the Bluetooth Declarations of Service, Features and Descriptors.
 
 In addition, there are the Bluetooth Configuration Variables.
- 
- 
-### Movement and Acceleration Tracker 
 
-- `LSM6DS3 imu(I2C_MODE, 0x6A)` : Acceleration/Rotation/Motion sensor 
- 
-### Module GPS 
+### Movement and Acceleration Tracker
+
+- `LSM6DS3 imu(I2C_MODE, 0x6A)` : Acceleration/Rotation/Motion sensor
+
+### Module GPS
 
 - `Adafruit_GPS GPS(&Serial1)` : GPS module.
 
@@ -99,7 +103,7 @@ In addition, there are the Bluetooth Configuration Variables.
 
 - `bool position_acquired` : Indicates whether a position has been acquired.
 
-### Module SIM 
+### Module SIM
 
 - `UART Serial2(D0, D1, NC, NC)` : Initialize the communication with the SIM CARD.
 
@@ -107,7 +111,7 @@ In addition, there are the Bluetooth Configuration Variables.
 
   - Control variables for sending data via SIM800L module.
 
-### Others variables  
+### Other variables  
 
 - Constants and variables for motion and rotation thresholds.
     - `float MotionData` : Motion data.
@@ -127,24 +131,24 @@ In addition, there are the Bluetooth Configuration Variables.
 
 ## Setup functions  
 
-```
+```C
 void setup(){
 }
 ```
 
-This function is a one-time function and will initialize the following elements: 
+This function is a one-time function and will initialize the following elements:
 
-- Pin and peripheral initialization
+- Pin and peripheral initialization.
 
-- Timer initialization 
+- Timer initialization.
 
-- Initialization of Bluetooth, IMU, GPS and SIM modules
+- Initialization of Bluetooth, IMU, GPS and SIM modules.
 
-- Battery voltage reading. 
+- Battery voltage reading.
 
 ## Loop functions  
 
-```
+```C
 void loop(){
 }
 ```
@@ -153,85 +157,83 @@ The void loop() function being the main function of the code, it contains major 
 As these pieces of code are numerous, they won't be documented in this document.
 Although, they will be well-commented by the developers, to enhance a clear understanding.
 
-
 ## Additional functions  
 
  The additional functions can be used for a variety of purposes. For example, to retrieve sensor data (such as battery voltage, motion and rotation data), manage time, activate/deactivate GPS and alarm, communicate with a Bluetooth Low Energy (BLE) device, and convert GPS coordinates.
 
-Below is a more detailed description of the additional functions: 
+Below is a more detailed description of the additional functions:
 
-```
+```C
 float getBatteryVoltage() {}
 ```
- 
-- This function retrieves the battery voltage. It is useful to know if the battery needs to be charged or not. 
 
+- This function retrieves the battery voltage. It is useful to know if the battery needs to be charged or not.
 
-```
+```C
 float getMotionData() {}
 ```
 
- - This function recovers movement data from the sensor. This makes it possible to measure the intensity of the shock (more or less strong) and to sound the buzzer according to the calculated intensity of the shock.
+ - This function recovers movement data from the sensor. With that it will be possible to measure the intensity of the shock (more or less strong) and to sound the buzzer according to the calculated intensity of the shock.
 
-
-```
+```C
 float getRotationData() {}
 ```
 
-- Like the function `float getMotionData() `, it retrieves rotation data to make the buzzer sound according to the intensity of rotation. 
+- Like the function `float getMotionData() `, it retrieves rotation data to make the buzzer sound according to the intensity of rotation.
 
-```
+```C
 void Temps(void) {}
-``` 
- - This function initializes the seconds and minutes. It can be used to display in the serial monitor when a shock occurs, for example or to initialize timers.
- 
 ```
+
+ - This function initialize the seconds and minutes. It can be used to display in the serial monitor when a shock occurs, for example or to initialize timers.
+
+```C
 void PulseBuzzer(int repetitions, unsigned long durationOn, unsigned long durationOff) {}
 ```
 
 - This function allows the buzzer to sound with repetitions and durations that can be defined.
 
-```
+```C
 void GPS_ISR() {}
 ```
 
 - This function manages the start of GPS position search when required and the transmission of the acquired position when available, depending on the status of GPS activation and the status of the acquired position.
- 
-```
+
+```C
 void activateGPS() {}
 ```
 
 - This function activates the GPS, allowing GPS coordinates to be retrieved when a shock is detected.
 
-```
+```C
 void TimerHandler() {}
 ```
-- This function launch the ISR timer. 
 
-```
+- This function launch the ISR timer.
+
+```C
 void SIM_ISR() {}
 ```
 
 - Initializes position as TRUE boolean.
 
-```
+```C
 void onConnect(BLEDevice central) {}
 ```
 
-- This functions allow the bluetooth connection and turn on a led to show if something is connect on bluetooth and if the apparaing bluetooth in on. 
+- This functions allow the Bluetooth connection and turn on a led to show if something is connect on Bluetooth and if the apparaing Bluetooth in on.
 
-```
+```C
 void onDisconnect(BLEDevice central) {}
 ```
 
-- This fonction allow the disconnection of the bluetooth and turn on a led to show it. 
+- This fonction allow the disconnection of the Bluetooth and turn on a led to show it. 
 
-```
+```C
 void onWritePassword(BLEDevice central, BLECharacteristic characteristic) {}
 ```
 
-- This fonction, intialize a password to connect with the bluetooth. That is useful for the security of the device. 
-
+- This fonction, intialize a password to connect with the Bluetooth. That is useful for the security of the device.
 
 `char Conversion(unsigned short int data) {}`
 - This function converts decimal values into hexadecimal values. It allows the code to understand correctly the decimal input as a hexadecimal input.
