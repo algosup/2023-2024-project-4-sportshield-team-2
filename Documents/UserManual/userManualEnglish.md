@@ -46,7 +46,9 @@
 
 - <h3><img src="./Img/warning.png" width="20"/> Use special caution for children and pets, especially in households where they are present.</h3>
 
-- <h3><img src="./Img/warning.png" width="20"/> Be careful in charging the device, it can cause a fire or electrical shock. Do not apply too much heat, pressure or tension to the power cord.</h3>
+- <h3><img src="./Img/warning.png" width="20"/> Be careful in charging the device, it can cause a fire or electrical shock.</h3>
+
+- <h3><img src="./Img/warning.png" width="20"/> Do not apply too much heat, pressure or tension to the power cord.</h3>
 
 - <h3><img src="./Img/warning.png" width="20"/> Do not attach anything other than specified things to the device, neglect could result in an injury or damage.</h3>
 
@@ -84,7 +86,7 @@ To charge SportShield:
 <br>
 
 The SportShield is now charging. <br>
-**CAUTION:** Do not use use SportShield during its charging.
+**CAUTION:** Do not use SportShield during its charging.
 
 <div style="page-break-after: always;"></div>
 
