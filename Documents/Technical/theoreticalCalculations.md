@@ -41,14 +41,14 @@ Based on a Work type of 6 hours and a sleep time of 18 hours.
 
 ### Buzzer consumption
 
-The buzzer consume 10mA/h.<br>
-10 / 60 = 0,16mA/minute<br>
-0,16 / 60 = 0,0027mA/second = 2,7µA/second<br>
+The buzzer consumes 10mA/h.<br>
+10 / 60 = 0.16mA/minute<br>
+0.16 / 60 = 0.0027mA/second = 2.7µA/second<br>
 
 | Alarm Type | Number of signal | activation time | rest time | total activation time | consumption |
 | ---------- | ---------------- | --------------- | --------- | --------------------- | ----------- |
-| **Short**  | 2                | 0.5s            | 0.5s      | **1s**                | **2,7µA**       |
-| **Medium** | 4                | 1s              | 0.5s      | **4s**                | **10,8µA**      |
+| **Short**  | 2                | 0.5s            | 0.5s      | **1s**                | **2.7µA**       |
+| **Medium** | 4                | 1s              | 0.5s      | **4s**                | **10.8µA**      |
 | **High**   | 10               | 5s              | 1s        | **50s**               | **135µA**       |
 
 ### SIM Module consumption
@@ -56,8 +56,8 @@ The buzzer consume 10mA/h.<br>
 #### Working
 
 SIM 800L consume ~350mA/hour for data sending.<br>
-350 / 60 = 5,83mA/minute<br>
-5,83 / 60 = 0,097mA/second = 97µA/second<br>
+350 / 60 = 5.83mA/minute<br>
+5.83 / 60 = 0.097mA/second = 97µA/second<br>
 
 Based on a 3s data sending.<br>
 97µA x 3 = 291µA<br>
@@ -66,49 +66,49 @@ During work time we send data every 15 minutes.<br>
 
 1 hour = 60 minutes<br>
 60 / 15 = 4<br>
-4 x 291µA = 1,16mA/h<br>
+4 x 291µA = 1.16mA/h<br>
 3 x 4 = 12 seconds of activations/hour<br>
 
 #### Sleep mode
 
 SIM 800L consume 2mA/hour<br>
 
-2/60 = 0,033 mA = 33µA/minute<br>
-33 / 60 = 0,55µA<br>
+2/60 = 0.033 mA = 33µA/minute<br>
+33 / 60 = 0.55µA<br>
 
 During sleep mode we only send data 1 time per hour.<br>
 
 #### Sleep mode minus data sending
 
 **Sleep mode**
-3 x 0,55 = 1,65µA<br>
-2mA - 0,00165 = 1,99835mA/h<br>
+3 x 0.55 = 1.65µA<br>
+2mA - 0.00165 = 1.99835mA/h<br>
 
 **Work Mode**
-12 x 0,55 = 6,6µA<br>
-2mA - 0,0066 = 1,9934mA/h<br>
+12 x 0.55 = 6.6µA<br>
+2mA - 0.0066 = 1.9934mA/h<br>
 
 ### Full calculations
 
 **full work (Average)** => 200mA + 30mA + 350mA + 425mA + 10mA = 725 mA/h<br>
 **full work (max)** => 200mA + 36mA + 350 mA + 500mA + 10mA = 1096mA/h<br>
 **sleep mode (without data sending)** => Xiao BLE + GNSS + SIM Module => 5µA + 18µA + 2mA = 2.023mA/h<br>
-**calm work time** => Xiao BLE + GNSS + SIM Module (sleeping) + SIM module (activated - 3s/sending - 12s in total) => 5µA + 28mA + 1,9934mA + 1,16mA = 31,1584mA/h<br>
-**sleep mode** => Xiao BLE + GNSS + SIM module (sleeping) + SIM Module (activated - 3s/sending) => 5µA + 18µA + 1,99835mA + 291µA = 2,31235mA/h<br>
+**calm work time** => Xiao BLE + GNSS + SIM Module (sleeping) + SIM module (activated - 3s/sending - 12s in total) => 5µA + 28mA + 1.9934mA + 1.16mA = 31.1584mA/h<br>
+**sleep mode** => Xiao BLE + GNSS + SIM module (sleeping) + SIM Module (activated - 3s/sending) => 5µA + 18µA + 1.99835mA + 291µA = 2.31235mA/h<br>
 
 The electromagnet and alarms haven't been taken into consideration, cause their consumption depends on how many times you will trigger them by default their consumption is 0 if you don't trigger them.<br>
 
 Based on 6 hours of work and 18 hours of sleep.<br>
 
-6 x 31,1584 = 186,9504mA<br>
-18 x 2,31235 = 41,6223mA<br>
+6 x 31.1584 = 186.9504mA<br>
+18 x 2.31235 = 41.6223mA<br>
 
-186,9504 + 41,6223 = 228,5727mA<br>
+186.9504 + 41.6223 = 228.5727mA<br>
 
-We have a total consumption of 228,5727mA per day.<br>
+We have a total consumption of 228.5727mA per day.<br>
 
-With the provided battery of 1100mA the device can be used for approximately 4,8 days.<br>
-With our own battery of 3700mA the device can be used for approximately 16,1 days.<br>
+With the provided battery of 1100mA the device can be used for approximately 4.8 days.<br>
+With our own battery of 3700mA the device can be used for approximately 16.1 days.<br>
 
 ## Online Documentation
 
@@ -177,7 +177,7 @@ TTL serial port for serial port, you can link directly to the microcontroller. N
 
 **Source:** [Kuongshun](https://www.kuongshun-ks.com/uno/uno-board-shield/smallest-sim800l-gprs-gsm-module-microsim-card-cor.html)
 
-- **Supply voltage:** 3,8V - 4,2V
+- **Supply voltage:** 3.8V - 4.2V
 - **Recommended supply voltage:** 4V
 - **Power consumption:**
   - sleep mode <2.0mA
