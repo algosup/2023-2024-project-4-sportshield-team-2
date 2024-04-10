@@ -47,6 +47,6 @@ jobs:
     steps:
       - name: running test
         run: |
-          cd bin
+          cd test/bin
           ./tests
         shell: bash
