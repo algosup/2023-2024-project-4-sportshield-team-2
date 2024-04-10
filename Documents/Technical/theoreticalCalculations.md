@@ -1,6 +1,6 @@
 # Theoretical Calculation
 
-This document aimS to find the best way to optimize the battery by the theoretical way based on component specifications and without any test due to defaulter components.
+This document aims to find the best way to optimize the battery by the theoretical way based on component specifications and without any test due to defaulter components.
 
 <details>
 <summary>Table of content</summary>
