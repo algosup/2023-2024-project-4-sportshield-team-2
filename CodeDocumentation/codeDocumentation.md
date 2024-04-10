@@ -2,16 +2,14 @@
 
 <br>
 
-[<img src="https://www.presse-citron.net/app/uploads/2020/06/linkedin-logo.jpg"  width="25px" align=right>](https://www.linkedin.com/in/rapha%C3%ABl-descamps-201112293)
 
-
-| Author :       | Code link |
-| -------------- | -------------- |
-| **Raphaël Descamps** <img src="https://ca.slack-edge.com/T019N8PRR7W-U05TNB290FJ-abc72bbf0d47-512" width="50px" align=center> | [SportShield Code](../CodeDocumentation/SportShield_Code/SS_05-03_anglais-batterycontrol/SS_05-03_anglais-batterycontrol.ino) |
+| Code link |
+| -------------- |
+|  |
 
 <br>
 
-## library's included : 
+## Libraries Included  
 
 Library for managing timer interrupts on the NRF52 platform : 
 -  **NRF52_MBED_TimerInterrupt.h**
@@ -24,32 +22,33 @@ Main Arduino library for application development :
 
 Library for Bluetooth Low Energy (BLE) communication on Arduino : 
 -  **ArduinoBLE.h**
-
-Header file containing the defined structure used in the code : 
-- **struct.h**
-
+  
 Library for communication with the LSM6DS3 accelerometer and gyroscope : 
 - **LSM6DS3.h**
 
 Library for I2C protocol communication : 
 -  **Wire.h**
-
+  
 Library for communication with Adafruit GPS module :
 -  **Adafruit_GPS.h**
 
 Library for communication with SIM800L GSM 2G module :
 -  **SIM800L.h**
 
-## Variables Global  :
+Header file containing the defined structure used in the code : 
+- **struct.h**
 
-### Configuration :
+
+## Variables Global  
+
+### Configuration 
 
 - `myConfig Config` : Structure containing configurations.
 
 - `bool isAuthenticate` : Boolean variable indicating whether authentication has been successful.
  
  
-### Timers :
+### Timers 
 
 - `NRF52_MBED_Timer ITimer(NRF_TIMER_3)` : Timer for interrupts.
 
@@ -60,7 +59,7 @@ Library for communication with SIM800L GSM 2G module :
 - `#define TIMER_INTERVAL_120S 120000L` : Timer interval in milliseconds.
  
 
-### Module bluetooth :
+### Module bluetooth 
 
 ```
 BLEService PasswordService("19B10000-E8F2-537E-4F6C-D104768A1213");  
@@ -85,14 +84,14 @@ uint32_t tim_connec = 0;
  
 The code above are the Bluetooth Declarations of Service, Features and Descriptors.
 
-In addition, there are the Bluettoth Configuration Variables.
+In addition, there are the Bluetooth Configuration Variables.
  
  
-### Movement and Acceleration tracker :
+### Movement and Acceleration tracker 
 
 - `LSM6DS3 imu(I2C_MODE, 0x6A)` : Acceleration/Rotation/motion sensor 
  
-### Module GPS :
+### Module GPS 
 
 - `Adafruit_GPS GPS(&Serial1)` : GPS module.
 
@@ -100,7 +99,7 @@ In addition, there are the Bluettoth Configuration Variables.
 
 - `bool position_acquired` : Indicates whether a position has been acquired.
 
-### Module SIM :
+### Module SIM 
 
 - `UART Serial2(D0, D1, NC, NC)` : Initialize the communication with the SIM CARD
 
@@ -108,7 +107,7 @@ In addition, there are the Bluettoth Configuration Variables.
 
   - Control variables for sending data via SIM800L module.
 
-### Others variables : 
+### Others variables  
 
 - Constants and variables for motion and rotation thresholds.
     - `float MotionData` : Motion data.
@@ -126,7 +125,7 @@ In addition, there are the Bluettoth Configuration Variables.
 
 - Function declarations for buzzer, GPS sensor, motion sensor, etc.
 
-## Setup fonctions : 
+## Setup fonctions  
 
 ```
 void setup(){
@@ -145,7 +144,7 @@ This function is a one-time function and will initialize the following elements:
 
 - Battery voltage reading.
 
-## Loop fonctions : 
+## Loop fonctions  
 
 ```
 void loop(){
@@ -157,7 +156,7 @@ As these pieces of code are numerous, they won't be documented in this document.
 Although, they will be well-commented by the developers, to enhance a clear understanding.
 
 
-## Additional functions : 
+## Additional functions  
 
  The additional functions can be used for a variety of purposes. For example, to retrieve sensor data (such as battery voltage, motion and rotation data), manage time, activate/deactivate GPS and alarm, communicate with a Bluetooth Low Energy (BLE) device, and convert GPS coordinates.
 
