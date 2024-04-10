@@ -90,11 +90,11 @@ During sleep mode we only send data 1 time per hour.<br>
 
 ### Full calculations
 
-**full work (Average)** => 200mA + 30mA + 350mA + 425mA + 10mA = 725 mA/h
-**full work (max)** => 200mA + 36mA + 350 mA + 500mA + 10mA = 1096mA/h
-**sleep mode (without data sending)** => Xiao BLE + GNSS + SIM Module => 5µA + 18µA + 2mA = 2.023mA/h
-**calm work time** => Xiao BLE + GNSS + SIM Module (sleeping) + SIM module (activated - 3s/sending - 12s in total) => 5µA + 28mA + 1,9934mA + 1,16mA = 31,1584mA/h
-**sleep mode** => Xiao BLE + GNSS + SIM module (sleeping) + SIM Module (activated - 3s/sending) => 5µA + 18µA + 1,99835mA + 291µA = 2,31235mA/h
+**full work (Average)** => 200mA + 30mA + 350mA + 425mA + 10mA = 725 mA/h<br>
+**full work (max)** => 200mA + 36mA + 350 mA + 500mA + 10mA = 1096mA/h<br>
+**sleep mode (without data sending)** => Xiao BLE + GNSS + SIM Module => 5µA + 18µA + 2mA = 2.023mA/h<br>
+**calm work time** => Xiao BLE + GNSS + SIM Module (sleeping) + SIM module (activated - 3s/sending - 12s in total) => 5µA + 28mA + 1,9934mA + 1,16mA = 31,1584mA/h<br>
+**sleep mode** => Xiao BLE + GNSS + SIM module (sleeping) + SIM Module (activated - 3s/sending) => 5µA + 18µA + 1,99835mA + 291µA = 2,31235mA/h<br>
 
 The electromagnet and alarms haven't been taken into consideration, cause their consumption depends on how many times you will trigger them by default their consumption is 0 if you don't trigger them.<br>
 
