@@ -6,6 +6,8 @@
 - [Week 1 (11-15 March 2024)](#week-1-11-15-march-2024)
 - [Week 2 (18-22 March 2024)](#week-2-18-22-march-2024)
 - [Week 3 (25-29 March 2024)](#week-3-25-29-march-2024)
+- [Week 4 (2-5 April 2024)](#week-4-2-5-april-2024)
+- [Week 5 (8-10 April 2024)](#week-5-8-10-april-2024)
   
 </details>
 
@@ -184,6 +186,8 @@ The third week was a good week, the team managed to simulate the functionality o
 
 ## Week 4 (2-5 April 2024)
 
+[week 4](weeklyReportFourthWeek.md)
+
 The fourth week was a shorter week due to the 1st of April. The team continued to work with LEDs to simulate the project's functionality. The team also continued to work on the test plan and the user manual.
 
 ## Topics of the fourth week
@@ -229,6 +233,41 @@ The challenges encountered this week are still the same as the previous week. Th
 ## Conclusion of the fourth week
 
 The fourth week was short, the team continued to simulate the functionality of each component with LEDs. The team also managed to finish the documentation like the test plan and the User manual. The team is motivated to continue next week's work with the LEDs. The team is looking forward to the next week to finish the work properly despite the hardware problems.
+
+## Week 5 (8-10 April 2024)
+
+[week 5](weeklyReportFifthWeek.md)
+
+The fifth week was a shorter week due to the Hackathon. The team finished working with LEDs. The team also finished working on the test plan, the user manual and the code documentation.
+
+## Topics of the fifth week
+
+1. Finish to manage each component with LEDs.
+2. Finish to write the test plan.
+3. Finish to write the user manual.
+
+## Achievements of the fifth week
+
+1. Code
+   - Write properly the code with headers files.
+   - Assure the security with the Bluetooth connection.
+   - Add a function to check the battery level with percentage.
+
+2. Documents
+   - Finish the test plan on Wednesday.
+   - Finish the user manual on Wednesday.
+
+## Challenges of the fifth week
+
+The challenges encountered this week are still the same as the previous week but the team managed to finish the work with LEDs.
+
+## Plan for the sixth week
+
+- Prepare the final presentation.
+
+## Conclusion of the fifth week
+
+The fifth week was short, the team finished simulating the functionality of each component with LEDs. The team also managed to finish the documentation like the test plan and the user manual. The team is still motivated to finish the project with the presentation next week.
 
 ## Key Performance Indicators
 
