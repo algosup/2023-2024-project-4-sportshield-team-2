@@ -8,7 +8,7 @@ The fifth week was a shorter week due to the Hackathon. The team finished workin
 
 ## This week's topics
 
-1. Finish to Manage each component with LEDs.
+1. Finish to manage each component with LEDs.
 2. Finish to write the test plan.
 3. Finish to write the user manual.
 
@@ -29,8 +29,8 @@ The challenges encountered this week are still the same as the previous week but
 
 ## Next week's plan
 
-- Prepare the final presentation
+- Prepare the final presentation.
 
 ## Conclusion
 
-The fifth week was short, the team finished simulating the functionality of each component with LEDs. The team also managed to finish the documentation like the test plan and the User manual. The team is still motivated to finish the project with the presentation next week.
+The fifth week was short, the team finished simulating the functionality of each component with LEDs. The team also managed to finish the documentation like the test plan and the user manual. The team is still motivated to finish the project with the presentation next week.
