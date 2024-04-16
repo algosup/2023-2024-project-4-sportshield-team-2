@@ -1,10 +1,10 @@
-# FourthWeeklyReport
+# FifthWeeklyReport
 
 [Cumulative Weekly Reports](mainWeeklyReport.md)
 
 ## Week 5 (8-10 April 2024)
 
-The fifth week was a shorter week due to the Hackathon. The team finished working with LEDs. The team also finished working on the test plan, the user manual and the code documentation.
+The fifth week was a shorter week due to the Hackathon. The team finished working with LEDs. The team also finished working on the test plan, the user manual, and the code documentation.
 
 ## This week's topics
 
@@ -29,8 +29,7 @@ The challenges encountered this week are still the same as the previous week but
 
 ## Next week's plan
 
-1. Presentation
-   - Prepare the final presentation
+- Prepare the final presentation
 
 ## Conclusion
 

@@ -263,8 +263,7 @@ The challenges encountered this week are still the same as the previous week but
 
 ## Plan for the sixth week
 
-1. Presentation
-   - Prepare the final presentation
+- Prepare the final presentation
 
 ## Conclusion of the fifth week
 
