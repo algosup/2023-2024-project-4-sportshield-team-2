@@ -139,9 +139,10 @@ Due to a problem with the hardware provided, we have to use ancillary equipment.
 | h | User Manual | Enzo GUILLOUCHE (Technical Writer) | Grégory PAGNOUX (Quality Assurance), Elone DELILLE (Technical Leader), Mathias GAGNEPAIN (Program Manager) | 10/04/2024 | 10/04/2024 |
 | i | Theoretical calculation | Mathias GAGNEPAIN (Program Manager) | Grégory PAGNOUX (Quality Assurance) | 10/04/2024 | 10/04/2024 |
 | i | Test Plan | Grégory PAGNOUX (Quality Assurance) | Grégory PAGNOUX (Quality Assurance), Robin DEBRY (Project Manager) | 10/04/2024 | 10/04/2024 |
-| j | 5th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 15/04/2024 |  |
+| j | 5th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 15/04/2024 | 15/04/2024 |
 | k | 6th Weekly Report | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 19/04/2024 |  |
 | l | README | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 19/04/2024 | 10/04/2024 |
+| m | Post Mortem | Robin DEBRY (Project Manager) | Grégory PAGNOUX (Quality Assurance) | 14/05/2024 |  |
 
 ## V. Code test
 
