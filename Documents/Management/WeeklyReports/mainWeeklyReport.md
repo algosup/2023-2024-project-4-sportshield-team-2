@@ -269,6 +269,27 @@ The challenges encountered this week are still the same as the previous week but
 
 The fifth week was short, the team finished simulating the functionality of each component with LEDs. The team also managed to finish the documentation like the test plan and the user manual. The team is still motivated to finish the project with the presentation next week.
 
+## Week 6 (15-19 April 2024)
+
+The sixth week was for the preparation of the oral presentation on Friday.
+
+## This week's topics
+
+- Prepare the final presentation.
+
+## Achievements
+
+- Create the slideshow for the presentation.
+- Prepare the oral presentation with the team.
+
+## Challenges
+
+No challenges this week with the preparation of the presentation.
+
+## Conclusion
+
+The team is ready for the oral presentation on Friday. The team is motivated to finish the project with this final presentation. To conclude about the project we had many challenges but we managed to present our theoretical calculations and theoretical code to the jury.
+
 ## Key Performance Indicators
 
 To follow the progress of the project you can check the [KPIs](https://docs.google.com/spreadsheets/d/1Py72_1mZQ5l20KM0fd6HdSRnmj49YibWoImaeFKPc8U/edit?usp=sharing).
